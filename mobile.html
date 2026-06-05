@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Menus — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Mobile Menus</h1>
+    <p class="lead">Choose from three distinct mobile menu styles and configure exactly how your navigation behaves on small screens — all without touching CSS or JavaScript.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#breakpoint">Setting the breakpoint</a>
+      <a href="#styles">The mobile styles</a>
+      <a href="#hamburger">Hamburger button</a>
+      <a href="#submenu">Sub-menu behaviour</a>
+      <a href="#animation">Animation</a>
+    </div>
+
+    <h2 id="breakpoint">Setting the breakpoint</h2>
+    <p>The breakpoint is the viewport width below which the desktop menu hides and the mobile menu appears. Set it in <strong>Menu Builder → Mobile</strong>.</p>
+    <p>The default is <strong>768 px</strong> (standard tablet/mobile boundary). Enter any pixel value that suits your layout.</p>
+
+    <h2 id="styles">The mobile menu styles</h2>
+
+    <h3>1. Dropdown <span class="badge badge-green">Default</span></h3>
+    <p>The most common style. Menu items stack vertically in a classic dropdown panel directly below the menu bar. Sub-items indent under their parent.</p>
+    <ul>
+      <li>Familiar and universally understood</li>
+      <li>Works well for menus with many items</li>
+      <li>Best for: blogs, corporate sites, portfolios</li>
+    </ul>
+
+    <h3>2. Fullscreen</h3>
+    <p>The menu items are centered on a full-screen overlay that covers the entire viewport. Large typography, lots of breathing room.</p>
+    <ul>
+      <li>Dramatic and modern feel</li>
+      <li>Best for sites with 5–8 top-level items maximum</li>
+      <li>Best for: agencies, photographers, landing pages</li>
+    </ul>
+
+    <h3>3. Drawer (Left or Right)</h3>
+    <p>A panel slides in from the left or right edge of the screen, partially overlapping the page content. The rest of the page dims but remains partially visible.</p>
+    <ul>
+      <li>Familiar from mobile apps (e.g. Gmail, Google Maps)</li>
+      <li>Good for deep navigation hierarchies</li>
+      <li>Best for: e-commerce, portals, documentation sites</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Switch between styles in <strong>Menu Builder → Mobile</strong>. The change takes effect immediately — no need to re-publish your menu.</p>
+      </div>
+    </div>
+
+    <h2 id="hamburger">Hamburger button</h2>
+    <p>The hamburger (☰) button is the toggle that opens and closes the mobile menu. Configure it in the <strong>Menu Builder → Mobile</strong> section:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Icon style</strong></td><td>Classic (3 lines), Modern (rounded), or Minimal (thin).</td></tr>
+          <tr><td><strong>Alignment</strong></td><td>Left, center, or right of the mobile nav bar.</td></tr>
+          <tr><td><strong>Icon colour</strong></td><td>Independent from the menu item colour.</td></tr>
+          <tr><td><strong>Button background</strong></td><td>Optional background colour behind the hamburger icon.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="submenu">Sub-menu behaviour on mobile</h2>
+    <p>When a menu item has sub-items, you can control how they expand on mobile with the <strong>accordion</strong> option:</p>
+    <ul>
+      <li><strong>Accordion on</strong> — only one sub-menu can be open at a time. Opening one automatically closes the others. Recommended for long menus.</li>
+      <li><strong>Accordion off</strong> (default) — multiple sub-menus can stay expanded at once.</li>
+    </ul>
+    <p>Set this in the <strong>Menu Builder → Mobile</strong> section.</p>
+
+    <h2 id="animation">Open / close animation</h2>
+    <p>Choose how the mobile menu panel appears and disappears:</p>
+    <ul>
+      <li><strong>Fade</strong> (default) — the panel fades in and out.</li>
+      <li><strong>Slide</strong> — the panel slides into view.</li>
+      <li><strong>Scale</strong> — the panel scales up from a smaller size.</li>
+    </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>The plugin automatically respects the <code>prefers-reduced-motion</code> CSS media query. If the visitor has enabled "Reduce motion" in their OS accessibility settings, all animations are disabled regardless of the setting above.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="visibility.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Visibility Rules</span>
+      </a>
+      <a class="next" href="layout.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Layout &amp; Effects</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

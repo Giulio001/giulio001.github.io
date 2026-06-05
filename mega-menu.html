@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Menu — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Mega Menu</h1>
+    <p class="lead">Turn any top-level menu item into a full-width dropdown panel with multiple columns, headings, images, and custom content — without writing any code.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#what-is">What is a mega menu?</a>
+      <a href="#enable">Enabling mega menu on an item</a>
+      <a href="#columns">Adding and arranging columns</a>
+      <a href="#content">Column content types</a>
+      <a href="#width">Panel width options</a>
+      <a href="#trigger">Hover vs click trigger</a>
+    </div>
+
+    <h2 id="what-is">What is a mega menu?</h2>
+    <p>A standard WordPress dropdown shows a single vertical list of sub-items. A <strong>mega menu</strong> opens a wide panel (usually the full width of the page) that can contain multiple columns, section headings, icons, images, and even arbitrary HTML. It is common on large e-commerce sites and content-heavy portals.</p>
+
+    <h2 id="enable">Enabling the mega menu on a top-level item</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder</strong> in the WordPress admin sidebar.</li>
+      <li>Click the <strong>Mega Menu</strong> section in the left sidebar.</li>
+      <li>You will see a list of all top-level menu items. Find the item you want to convert to a mega menu.</li>
+      <li>Toggle on <strong>Enable mega menu</strong> for that item.</li>
+      <li>A column editor appears below the toggle — add and configure your columns.</li>
+      <li>Click <strong>Save Menu</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Mega menus can only be applied to <strong>top-level</strong> items (direct children of the menu root). Sub-items of a mega menu are arranged inside columns, not as nested dropdowns.</p>
+      </div>
+    </div>
+
+    <h2 id="columns">Adding and arranging columns</h2>
+    <p>Once mega menu is enabled for an item, a column editor appears below the toggle. You can:</p>
+    <ul>
+      <li><strong>Add a column</strong> — click <em>Add Column</em>. Columns stack horizontally inside the panel.</li>
+      <li><strong>Reorder columns</strong> — drag the column handle left or right.</li>
+      <li><strong>Set column width</strong> — each column has a width slider (percentage). The total should add up to 100 %.</li>
+      <li><strong>Delete a column</strong> — click the trash icon on the column header.</li>
+    </ul>
+
+    <h3>Default column layout</h3>
+    <p>If you enable mega menu on an item that already has standard sub-items, the plugin automatically places those sub-items into the first column. You can then rearrange or add more columns.</p>
+
+    <h2 id="content">Column content types</h2>
+    <p>Each column can hold one or more content blocks. Click <strong>Add Content</strong> inside a column to choose from:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Content type</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Menu items</strong></td><td>A list of links from the current menu (sub-items).</td></tr>
+          <tr><td><strong>Heading</strong></td><td>A section label above a group of links.</td></tr>
+          <tr><td><strong>Image</strong></td><td>A featured image with an optional link and caption. Great for "featured product" columns.</td></tr>
+          <tr><td><strong>Custom HTML</strong></td><td>Arbitrary HTML content — embed a shortcode, a form, or any custom markup.</td></tr>
+          <tr><td><strong>Spacer</strong></td><td>Empty vertical space to separate content groups.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="width">Panel width options</h2>
+    <p>In <strong>Menu Builder → Mega Menu</strong>, scroll to the panel appearance settings to set the default panel width:</p>
+    <ul>
+      <li><strong>Full width</strong> — the panel spans the full viewport width. Content is constrained by the inner container.</li>
+      <li><strong>Container width</strong> — the panel matches the site's main content container (e.g. 1200 px).</li>
+      <li><strong>Custom width</strong> — enter a pixel value. The panel centers itself below the triggering menu item.</li>
+    </ul>
+
+    <h2 id="trigger">Hover vs click trigger</h2>
+    <p>By default, mega menu panels open on mouse hover. You can switch to a click trigger in <strong>Menu Builder → Mega Menu</strong> panel appearance settings:</p>
+    <ul>
+      <li><strong>Hover</strong> — panel opens when the user moves the cursor over the top-level item. A small configurable delay prevents accidental openings.</li>
+      <li><strong>Click</strong> — panel opens when the user clicks the item. Useful for touch-friendly designs or accessibility-first setups.</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Regardless of the trigger setting, the mega menu panel is always fully keyboard-accessible. Tab moves focus through the column links, and Escape closes the panel.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="logo.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Logo</span>
+      </a>
+      <a class="next" href="announcement.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Announcement Bar</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

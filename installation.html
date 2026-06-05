@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installation — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Getting Started</p>
+    <h1>Installation</h1>
+    <p class="lead">Install Giuliomax Menu Builder in under two minutes. No FTP access, no manual file uploads, and no paid license key required.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#method-a">Method A — WordPress plugin directory</a>
+      <a href="#method-b">Method B — Upload a ZIP file</a>
+      <a href="#activate">Activating the plugin</a>
+      <a href="#first-steps">First steps</a>
+      <a href="#uninstall">Uninstalling</a>
+    </div>
+
+    <h2 id="method-a">Method A — WordPress plugin directory <span class="badge badge-green">Recommended</span></h2>
+    <ol class="steps">
+      <li>Log in to your WordPress admin panel.</li>
+      <li>Go to <strong>Plugins → Add New Plugin</strong>.</li>
+      <li>In the search box, type <strong>Giuliomax Menu Builder</strong>.</li>
+      <li>Find the plugin in the results list and click <strong>Install Now</strong>.</li>
+      <li>Once installation is complete, click <strong>Activate</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Your server needs outbound HTTP access to reach the WordPress.org plugin API. Almost all shared hosts and managed WordPress hosts support this by default.</p>
+      </div>
+    </div>
+
+    <h2 id="method-b">Method B — Upload a ZIP file</h2>
+    <p>Use this method if your server has no outbound internet access, or if you want to install a specific version from GitHub.</p>
+    <ol class="steps">
+      <li>Download the latest <code>.zip</code> release from <a href="https://wordpress.org/plugins/giuliomax-menu-builder/" target="_blank">wordpress.org</a> or the <a href="https://github.com/Giulio001/menux-free-version" target="_blank">GitHub repository</a>.</li>
+      <li>In your WordPress admin, go to <strong>Plugins → Add New Plugin → Upload Plugin</strong>.</li>
+      <li>Click <strong>Choose File</strong>, select the downloaded <code>.zip</code>, and click <strong>Install Now</strong>.</li>
+      <li>After installation finishes, click <strong>Activate Plugin</strong>.</li>
+    </ol>
+
+    <h2 id="activate">Activating the plugin</h2>
+    <p>After activation you will notice a change in your dashboard:</p>
+    <ul>
+      <li>A new top-level item called <strong>Menu Builder</strong> appears in the left admin sidebar. This is where you build your menu, choose a theme, and configure all features.</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>You do <strong>not</strong> need to create a new menu. The plugin enhances any menu you already have in WordPress.</p>
+      </div>
+    </div>
+
+    <h2 id="first-steps">First steps after activation</h2>
+
+    <h3>1. Build your menu</h3>
+    <p>Open <strong>Menu Builder</strong> from the admin sidebar. In the <strong>Menu Structure</strong> section, add pages or custom links, set their labels, icons, and visibility rules, then save.</p>
+
+    <h3>2. Add the menu to your site</h3>
+    <p>You have two options:</p>
+    <ul>
+      <li><strong>Shortcode</strong> — copy <code>[menux]</code> and paste it in any page, text widget, or PHP template. See the <a href="shortcode.html">Shortcode</a> page for full details.</li>
+      <li><strong>Gutenberg block</strong> — if you use a block-based (FSE) theme, open the Site Editor, edit your header template part, search for <em>MenuX</em> in the block inserter, and drag it in. See the <a href="gutenberg.html">Gutenberg Block</a> page.</li>
+    </ul>
+
+    <h3>3. Configure your menu</h3>
+    <p>In <strong>Menu Builder</strong>, use the sidebar tabs to customise the look and feel:</p>
+    <ul>
+      <li>Choose one of the 50 built-in themes under <strong>Themes</strong>.</li>
+      <li>Enable or disable individual features (mega menu, search, announcement bar, WooCommerce cart, etc.) using the sidebar sections.</li>
+      <li>Set the mobile breakpoint and mobile menu style under <strong>Mobile</strong>.</li>
+    </ul>
+
+    <h2 id="uninstall">Uninstalling</h2>
+    <p>Go to <strong>Plugins → Installed Plugins</strong>, find Giuliomax Menu Builder, click <strong>Deactivate</strong>, then <strong>Delete</strong>.</p>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Deleting the plugin also removes all plugin settings stored in the database. If you plan to reinstall later, use the <a href="import-export.html">Import / Export</a> feature to save your configuration first.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="index.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Introduction</span>
+      </a>
+      <a class="next" href="shortcode.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Shortcode [menux]</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

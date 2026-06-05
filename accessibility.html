@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Advanced</p>
+    <h1>Accessibility</h1>
+    <p class="lead">Giuliomax Menu Builder is built to meet WCAG 2.2 Level AA. Navigation works fully without a mouse, dropdowns are announced to screen readers, and motion can be disabled system-wide.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#wcag">WCAG 2.2 AA compliance</a>
+      <a href="#keyboard">Keyboard navigation</a>
+      <a href="#aria">ARIA attributes</a>
+      <a href="#focus">Focus management</a>
+      <a href="#motion">Reduced motion</a>
+      <a href="#testing">Testing your menu</a>
+    </div>
+
+    <h2 id="wcag">WCAG 2.2 AA compliance</h2>
+    <p>The plugin is tested against the following WCAG 2.2 success criteria relevant to navigation components:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Criterion</th><th>Level</th><th>How it is met</th></tr></thead>
+        <tbody>
+          <tr><td>1.4.3 Contrast (Minimum)</td><td>AA</td><td>All built-in themes are tested to meet a 4.5:1 contrast ratio for text.</td></tr>
+          <tr><td>2.1.1 Keyboard</td><td>A</td><td>All functionality is operable via keyboard alone.</td></tr>
+          <tr><td>2.1.2 No Keyboard Trap</td><td>A</td><td>Focus can always leave the menu without using a pointing device.</td></tr>
+          <tr><td>2.4.3 Focus Order</td><td>A</td><td>Focus order follows the visual reading order of the menu.</td></tr>
+          <tr><td>2.4.7 Focus Visible</td><td>AA</td><td>A visible focus ring is rendered on every interactive element.</td></tr>
+          <tr><td>2.4.11 Focus Appearance</td><td>AA</td><td>Focus indicators meet minimum size and contrast requirements (new in WCAG 2.2).</td></tr>
+          <tr><td>4.1.2 Name, Role, Value</td><td>A</td><td>All interactive elements have an accessible name and correct ARIA role.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="keyboard">Keyboard navigation</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Key</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>Tab</kbd></td><td>Move focus to the next menu item or interactive element.</td></tr>
+          <tr><td><kbd>Shift + Tab</kbd></td><td>Move focus to the previous item.</td></tr>
+          <tr><td><kbd>Enter</kbd> / <kbd>Space</kbd></td><td>Activate a link, or open / close a dropdown.</td></tr>
+          <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Move focus through items inside an open dropdown or mega menu panel.</td></tr>
+          <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Move between top-level items.</td></tr>
+          <tr><td><kbd>Escape</kbd></td><td>Close the current dropdown or mega menu panel and return focus to the parent item.</td></tr>
+          <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>Jump to the first / last item in a dropdown list.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="aria">ARIA attributes</h2>
+    <p>The plugin automatically adds the following ARIA attributes to the rendered markup:</p>
+    <ul>
+      <li><code>role="navigation"</code> and <code>aria-label</code> on the <code>&lt;nav&gt;</code> element (label matches the menu name in WordPress).</li>
+      <li><code>aria-haspopup="true"</code> and <code>aria-expanded</code> on top-level items that have a dropdown or mega menu.</li>
+      <li><code>aria-controls</code> linking the trigger button to its panel.</li>
+      <li><code>role="menu"</code> and <code>role="menuitem"</code> inside dropdowns.</li>
+      <li><code>aria-current="page"</code> on the item that corresponds to the current page.</li>
+    </ul>
+    <p>You do not need to configure any of this — it is applied automatically based on the menu structure.</p>
+
+    <h2 id="focus">Focus management</h2>
+    <ul>
+      <li>When a dropdown opens, focus moves to the first item inside it.</li>
+      <li>When a dropdown closes (via Escape or by moving focus away), focus returns to the triggering item.</li>
+      <li>The mobile menu overlay traps focus inside it while open (focus cannot tab outside the panel). Closing the overlay returns focus to the hamburger button.</li>
+    </ul>
+
+    <h2 id="motion">Reduced motion</h2>
+    <p>All transitions and animations respect the <code>prefers-reduced-motion: reduce</code> CSS media query. When the user has enabled "Reduce motion" in their operating system's accessibility settings:</p>
+    <ul>
+      <li>Dropdown slide/fade animations are replaced with instant show/hide.</li>
+      <li>Mobile menu open/close transitions are instant.</li>
+      <li>The announcement bar entrance animation is disabled.</li>
+      <li>Entrance animations on menu items are disabled.</li>
+    </ul>
+
+    <h2 id="testing">Testing your menu</h2>
+    <p>After configuring your menu, use the following tools to verify accessibility:</p>
+    <ul>
+      <li><strong>Keyboard only</strong> — unplug your mouse and navigate the entire menu using only Tab, arrow keys, Enter, and Escape.</li>
+      <li><strong>axe DevTools</strong> — a free browser extension that runs automated WCAG checks on the live page.</li>
+      <li><strong>NVDA / VoiceOver</strong> — screen readers to verify that dropdown states and labels are announced correctly.</li>
+      <li><strong>Colour Contrast Analyser</strong> — verify that your custom colour overrides still meet the 4.5:1 minimum ratio.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="import-export.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Import / Export</span>
+      </a>
+      <a class="next" href="multilingual.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Multilingual</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

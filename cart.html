@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WooCommerce Cart — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>WooCommerce Cart</h1>
+    <p class="lead">Display a cart icon with a real-time item count badge directly inside your navigation bar. The badge updates instantly as customers add or remove products — no page reload needed.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#requirements">Requirements</a>
+      <a href="#enable">Enabling the cart icon</a>
+      <a href="#position">Icon position</a>
+      <a href="#styling">Styling</a>
+      <a href="#mini-cart">Mini cart dropdown</a>
+    </div>
+
+    <h2 id="requirements">Requirements</h2>
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p><strong>WooCommerce must be installed and activated</strong> for the cart icon to appear. If WooCommerce is not active, the cart icon option is hidden in the settings panel and the icon does not render on the front end.</p>
+      </div>
+    </div>
+
+    <h2 id="enable">Enabling the cart icon</h2>
+    <ol class="steps">
+      <li>Make sure WooCommerce is active on your site.</li>
+      <li>Go to <strong>Menu Builder → WooCommerce</strong>.</li>
+      <li>Toggle <strong>Show cart icon in menu</strong> to on.</li>
+      <li>Save settings.</li>
+    </ol>
+    <p>The cart icon appears at the right end of the navigation bar by default.</p>
+
+    <h2 id="position">Icon position</h2>
+    <p>You can change where the cart icon sits inside the menu bar:</p>
+    <ul>
+      <li><strong>Right</strong> (default) — after all menu items.</li>
+      <li><strong>Left</strong> — before all menu items.</li>
+    </ul>
+
+    <p>Set the position in <strong>Menu Builder → WooCommerce</strong>.</p>
+
+    <h2 id="styling">Styling the cart icon</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Icon style</strong></td><td>Choose between a cart icon, a bag icon, or a basket icon.</td></tr>
+          <tr><td><strong>Icon colour</strong></td><td>Inherits the menu item colour by default. Set a custom colour if needed.</td></tr>
+          <tr><td><strong>Show count badge</strong></td><td>Toggle to display the item count bubble on the icon.</td></tr>
+          <tr><td><strong>Show total</strong></td><td>Toggle to display the cart total amount next to the icon.</td></tr>
+          <tr><td><strong>Badge background</strong></td><td>Colour of the round count bubble.</td></tr>
+          <tr><td><strong>Hide when empty</strong></td><td>Toggle to hide the icon completely when the cart is empty.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="mini-cart">Mini cart dropdown</h2>
+    <p>Show a small product summary panel when the user interacts with the cart icon — without navigating away from the current page.</p>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder → WooCommerce</strong>.</li>
+      <li>In the <strong>Mini cart</strong> setting, choose <strong>hover</strong> (opens on mouse-over), <strong>click</strong> (opens on click), or <strong>off</strong> (disabled).</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>The cart count updates in real time using WooCommerce's native fragment system (AJAX). No custom AJAX calls are added by the plugin.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="announcement.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Announcement Bar</span>
+      </a>
+      <a class="next" href="search.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Search</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

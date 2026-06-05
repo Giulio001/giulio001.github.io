@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Themes & Categories — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Themes &amp; Categories</h1>
+    <p class="lead">Giuliomax Menu Builder ships with 50 professionally designed themes organized into 10 style categories. Pick one, click Apply, and your menu is transformed instantly.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#browsing">Browsing themes</a>
+      <a href="#categories">The 10 categories</a>
+      <a href="#applying">Applying a theme</a>
+      <a href="#customizing">Customizing after applying</a>
+      <a href="#per-instance">Per-instance overrides</a>
+    </div>
+
+    <h2 id="browsing">Browsing themes</h2>
+    <p>Open <strong>Menu Builder</strong> in your WordPress admin, then click the <strong>Themes</strong> tab in the left sidebar. You will see a grid of live preview cards — each card shows a miniature version of what the menu will look like on your site. Use the category filter chips at the top to narrow down the selection.</p>
+
+    <h2 id="categories">The 10 style categories</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Category</th><th>Character</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Dark</strong></td><td>Deep backgrounds, light text, high contrast</td><td>Tech, gaming, creative agencies</td></tr>
+          <tr><td><strong>Minimal</strong></td><td>White or near-white, fine typography, lots of space</td><td>Portfolios, SaaS, blogs</td></tr>
+          <tr><td><strong>Vibrant</strong></td><td>Bold colours, strong accents</td><td>Lifestyle, e-commerce, events</td></tr>
+          <tr><td><strong>Creative</strong></td><td>Unconventional layouts, gradient accents</td><td>Design studios, artists</td></tr>
+          <tr><td><strong>Corporate</strong></td><td>Neutral tones, professional feel</td><td>Business, finance, legal</td></tr>
+          <tr><td><strong>Nature</strong></td><td>Earthy greens and browns</td><td>Food, wellness, sustainability</td></tr>
+          <tr><td><strong>Elegant</strong></td><td>Serif-inspired, muted palette, gold accents</td><td>Luxury, hospitality, fashion</td></tr>
+          <tr><td><strong>Retro</strong></td><td>Warm tones, rounded forms, vintage feel</td><td>Food &amp; drink, boutiques</td></tr>
+          <tr><td><strong>Glass</strong></td><td>Frosted glass / backdrop-blur effect</td><td>Modern apps, crypto, tech startups</td></tr>
+          <tr><td><strong>Playful</strong></td><td>Bright colours, rounded corners, friendly tone</td><td>Kids, education, non-profits</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="applying">Applying a theme</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder</strong> and open the <strong>Themes</strong> section.</li>
+      <li>Optionally filter by category using the chips at the top.</li>
+      <li>Hover over any theme card to see a larger preview.</li>
+      <li>Click <strong>Apply</strong> on the theme you want.</li>
+      <li>A confirmation banner appears. Click <strong>Save</strong> or navigate away — the theme is already saved.</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Applying a theme is non-destructive. It writes default values for all style properties, but any manual customizations you make afterwards are preserved and override the theme defaults.</p>
+      </div>
+    </div>
+
+    <h2 id="customizing">Customizing after applying</h2>
+    <p>After you apply a theme, every property it sets is available for manual override in the style sections of <strong>Menu Builder</strong> (Colors, Typography, Layout):</p>
+    <ul>
+      <li><strong>Colours</strong> — background, text, hover, active, border</li>
+      <li><strong>Typography</strong> — font family (70+ Google Fonts), size, weight, letter spacing, text transform</li>
+      <li><strong>Spacing</strong> — padding, gap between items</li>
+      <li><strong>Shape</strong> — border radius for the bar and dropdown panels</li>
+      <li><strong>Effects</strong> — box shadow, backdrop blur (for Glass themes), entrance animations</li>
+      <li><strong>Gradient</strong> — apply a gradient to the nav bar background using the built-in gradient picker</li>
+    </ul>
+
+    <h2 id="per-instance">Per-instance overrides</h2>
+    <p>The active theme is a global setting — it applies to every instance of the menu on your site. If you need different visual styles for different menus (e.g. a header nav and a footer nav), the recommended approach is to use the <strong>Colors</strong> section to set base values and override specific properties using custom CSS targeting each menu's location wrapper.</p>
+    <p>You can place two menu locations on the same page using:</p>
+    <pre><code>[menux location="primary"]
+[menux location="footer"]</code></pre>
+
+    <div class="page-nav">
+      <a href="gutenberg.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Gutenberg Block</span>
+      </a>
+      <a class="next" href="logo.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Logo</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

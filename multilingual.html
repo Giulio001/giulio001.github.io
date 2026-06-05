@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Advanced</p>
+    <h1>Multilingual</h1>
+    <p class="lead">Giuliomax Menu Builder has built-in support for multilingual sites. When WPML, Polylang, TranslatePress, or Multilingual Press is active, the plugin detects the available languages and lets you assign a separate label to each menu item per language.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#how-it-works">How it works</a>
+      <a href="#setup">Setting up labels per language</a>
+      <a href="#detection">Supported plugins</a>
+      <a href="#rtl">RTL languages</a>
+      <a href="#strings">Translating plugin strings</a>
+    </div>
+
+    <h2 id="how-it-works">How it works</h2>
+    <p>When a compatible multilingual plugin is active, <strong>Menu Builder</strong> automatically detects the available language list. In the <strong>Multilingual</strong> section of the admin panel, you can see the detected languages.</p>
+    <p>Each menu item in <strong>Menu Builder → Menu Structure</strong> gets a separate label field for every detected language. The frontend JavaScript reads the visitor's active language and displays the correct label — no page reload or separate menu required.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>If a label for the visitor's language is not set, the plugin falls back to the default label.</p>
+      </div>
+    </div>
+
+    <h2 id="setup">Setting up labels per language</h2>
+    <ol class="steps">
+      <li>Install and activate a supported multilingual plugin (see list below).</li>
+      <li>Open <strong>Menu Builder</strong> in the WordPress admin.</li>
+      <li>Click any menu item in the <strong>Menu Structure</strong> section to expand it.</li>
+      <li>You will see a label input field for each detected language. Fill in the translated label for each language.</li>
+      <li>Click <strong>Save Menu</strong>.</li>
+    </ol>
+
+    <h2 id="detection">Supported multilingual plugins</h2>
+    <p>The plugin auto-detects languages from these plugins:</p>
+    <ul>
+      <li><strong>WPML</strong> — detected via <code>ICL_SITEPRESS_VERSION</code></li>
+      <li><strong>Polylang</strong> — detected via <code>pll_languages_list()</code></li>
+      <li><strong>TranslatePress</strong> — detected via the <code>TRP_Translate_Press</code> class</li>
+      <li><strong>Multilingual Press</strong> — detected via <code>mlp_get_available_languages()</code></li>
+    </ul>
+    <p>If no multilingual plugin is active, the plugin uses the site's default locale.</p>
+
+    <h2 id="rtl">RTL languages (Arabic, Hebrew, Persian, etc.)</h2>
+    <p>The plugin includes full RTL (right-to-left) support. When WordPress detects that the active language is RTL (via the <code>is_rtl()</code> function), MenuX automatically:</p>
+    <ul>
+      <li>Mirrors the menu layout (items flow right to left).</li>
+      <li>Flips dropdown positions (panels open to the left instead of right).</li>
+      <li>Flips the drawer direction (slides in from the right).</li>
+      <li>Reverses icon positions (cart icon, search icon).</li>
+    </ul>
+    <p>No configuration is needed — RTL mode activates automatically based on the WordPress language setting.</p>
+
+    <h2 id="strings">Translating plugin UI strings</h2>
+    <p>The plugin's own UI strings (e.g. the "Close" label for the mobile menu button) are translation-ready via the standard WordPress <code>.po</code> / <code>.mo</code> file system.</p>
+    <p>The plugin's text domain is <code>giuliomax-menu-builder</code>. To add a translation:</p>
+    <ol class="steps">
+      <li>Download the <code>.pot</code> template file from the plugin's <code>/languages</code> folder.</li>
+      <li>Open it in <a href="https://poedit.net/" target="_blank">Poedit</a> or any <code>.po</code> editor.</li>
+      <li>Save your translation as <code>giuliomax-menu-builder-{locale}.po</code> (e.g. <code>giuliomax-menu-builder-it_IT.po</code>) and compile to <code>.mo</code>.</li>
+      <li>Upload both files to <code>/wp-content/languages/plugins/</code>.</li>
+    </ol>
+
+    <div class="page-nav">
+      <a href="accessibility.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Accessibility</span>
+      </a>
+      <a class="next" href="faq.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">FAQ</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

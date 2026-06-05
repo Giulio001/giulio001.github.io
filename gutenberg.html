@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gutenberg Block — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Using the Plugin</p>
+    <h1>Gutenberg Block</h1>
+    <p class="lead">The MenuX block is a native WordPress block that lets you place your menu directly inside the Site Editor — no shortcode, no widget, no PHP required.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#when-to-use">When to use the block</a>
+      <a href="#add-block">Adding the block</a>
+      <a href="#settings">Block settings panel</a>
+      <a href="#fse-header">Using it in an FSE header</a>
+      <a href="#classic">Classic themes</a>
+    </div>
+
+    <h2 id="when-to-use">When to use the block</h2>
+    <p>Use the Gutenberg block if:</p>
+    <ul>
+      <li>Your theme is a <strong>Full Site Editing (FSE)</strong> theme (e.g. Twenty Twenty-Four, Kadence, Blocksy).</li>
+      <li>You want to manage your header layout from the <strong>Site Editor</strong> (<em>Appearance → Editor</em>).</li>
+      <li>You prefer a visual, drag-and-drop workflow over pasting shortcodes.</li>
+    </ul>
+    <p>If you use a classic (non-FSE) theme, the <a href="shortcode.html">shortcode</a> is the right tool.</p>
+
+    <h2 id="add-block">Adding the block to a page or template</h2>
+    <ol class="steps">
+      <li>Open the page or template you want to edit. For site-wide headers, go to <strong>Appearance → Editor → Templates</strong> and open your header template part.</li>
+      <li>Click the <strong>+</strong> inserter button (top-left toolbar or inside an empty block area).</li>
+      <li>Search for <strong>MenuX</strong> or <strong>Menu Builder</strong>.</li>
+      <li>Click the block to insert it, or drag it into position.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>The block is registered under the name <code>giuliomax/menu</code>. If you use a child theme or custom code that references blocks by name, use this identifier.</p>
+      </div>
+    </div>
+
+    <h2 id="settings">Block settings panel</h2>
+    <p>When the MenuX — Menu block is selected, its settings appear in the right-hand sidebar under the <strong>Block</strong> tab.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Setting</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Menu location</strong></td><td>Choose which location to render. Items assigned to that location in <strong>Menu Builder → Menu Structure</strong> will be shown.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Theme, mobile style, search, cart, and all other appearance settings are configured globally in <strong>Menu Builder</strong> — they apply to every instance of the block or shortcode on your site.</p>
+      </div>
+    </div>
+
+    <h2 id="fse-header">Recommended: placing it in an FSE header</h2>
+    <ol class="steps">
+      <li>Go to <strong>Appearance → Editor</strong>.</li>
+      <li>In the left panel, click <strong>Template Parts → Header</strong> (or create a new header template part).</li>
+      <li>Inside the header, add a <strong>Row</strong> or <strong>Group</strong> block to control alignment.</li>
+      <li>Insert the <strong>MenuX</strong> block inside that row.</li>
+      <li>Use the block's width and alignment controls to position the menu (e.g. full width, right-aligned).</li>
+      <li>Click <strong>Save</strong>. The menu is now live on all pages that use this header template.</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>You can place <strong>multiple MenuX blocks</strong> in the same template — for example, a primary nav in the header and a secondary nav in the footer — each pointing to a different menu location.</p>
+      </div>
+    </div>
+
+    <h2 id="classic">Classic themes and the block editor</h2>
+    <p>If your theme is not FSE but you still use the block editor for page content, you can insert the MenuX block into any page. However, for site-wide navigation in classic themes, the shortcode placed in a widget area or the theme's <code>header.php</code> is the more reliable approach.</p>
+
+    <div class="page-nav">
+      <a href="shortcode.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Shortcode [menux]</span>
+      </a>
+      <a class="next" href="themes.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Themes & Categories</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

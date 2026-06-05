@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortcode — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Using the Plugin</p>
+    <h1>Shortcode <code>[menux]</code></h1>
+    <p class="lead">The <code>[menux]</code> shortcode lets you place a fully styled navigation menu anywhere that accepts shortcodes: pages, posts, text widgets, classic theme templates, and more.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#basic">Basic usage</a>
+      <a href="#attributes">Attribute</a>
+      <a href="#examples">Examples</a>
+      <a href="#template">Using in PHP templates</a>
+    </div>
+
+    <h2 id="basic">Basic usage</h2>
+    <p>The simplest form of the shortcode requires no attributes. It renders the <em>primary</em> menu location:</p>
+    <pre><code>[menux]</code></pre>
+
+    <p>All menu items, themes, mobile settings, and features are configured globally in <strong>Menu Builder</strong> — the shortcode simply outputs the result wherever you place it.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>The plugin manages its own menu items in <strong>Menu Builder → Menu Structure</strong>. These are independent of WordPress's native <em>Appearance → Menus</em>.</p>
+      </div>
+    </div>
+
+    <h2 id="attributes">Attributes</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Attribute</th><th>Type</th><th>Default</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>location</code></td>
+            <td>string</td>
+            <td><code>primary</code></td>
+            <td>Which menu location to display. Each item is assigned a location in <strong>Menu Builder → Menu Structure</strong>. Available locations are <code>primary</code>, <code>footer</code>, <code>sidebar</code>, and <code>mobile</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="examples">Examples</h2>
+
+    <h3>Render the primary menu (default)</h3>
+    <pre><code>[menux]</code></pre>
+
+    <h3>Render a specific location</h3>
+    <pre><code>[menux location="footer"]</code></pre>
+
+    <h3>Two menus on one page (e.g. header and footer)</h3>
+    <pre><code>[menux location="primary"]
+[menux location="footer"]</code></pre>
+
+    <h2 id="template">Using in PHP templates</h2>
+    <p>In classic theme templates (e.g. <code>header.php</code>) you can render the shortcode with:</p>
+    <pre><code>&lt;?php echo do_shortcode('[menux]'); ?&gt;</code></pre>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>If you use a block-based (FSE) theme, use the <a href="gutenberg.html">Gutenberg block</a> instead. It integrates directly with the Site Editor and uses the same global settings.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="installation.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Installation</span>
+      </a>
+      <a class="next" href="gutenberg.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Gutenberg Block</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

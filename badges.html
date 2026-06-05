@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badges &amp; Dots — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Badges &amp; Notification Dots</h1>
+    <p class="lead">Draw attention to individual menu items with a small text badge (e.g. "New", "Hot") or a simple notification dot.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#badge">Text badges</a>
+      <a href="#dot">Notification dot</a>
+      <a href="#icons">Item icons</a>
+    </div>
+
+    <h2 id="badge">Text badges</h2>
+    <p>A badge is a small coloured label that sits next to a menu item's text — perfect for highlighting new sections or promotions.</p>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder → Menu Structure</strong>.</li>
+      <li>Click a menu item to expand its options.</li>
+      <li>Type the badge text in the <strong>Badge</strong> field (e.g. <em>New</em>, <em>Hot</em>, <em>Sale</em>).</li>
+      <li>Optionally pick a <strong>badge background colour</strong>.</li>
+      <li>Click <strong>Save Menu</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Badges are decorative and marked <code>aria-hidden</code> so they don't clutter the experience for screen-reader users. Keep the label short — one or two words works best.</p>
+      </div>
+    </div>
+
+    <h2 id="dot">Notification dot</h2>
+    <p>A notification dot is a small coloured circle attached to a menu item — useful for signalling unread activity or a new feature without any text.</p>
+    <ol class="steps">
+      <li>In <strong>Menu Builder → Menu Structure</strong>, expand a menu item.</li>
+      <li>Enable the <strong>🔴 Dot</strong> checkbox.</li>
+      <li>Click <strong>Save Menu</strong>.</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>The dot includes hidden screen-reader text so assistive technology still announces that the item has a notification.</p>
+      </div>
+    </div>
+
+    <h2 id="icons">Item icons</h2>
+    <p>Each menu item can also display a <strong>Font Awesome 6</strong> icon before its label. When adding or editing an item, enter the icon class in the icon field — for example <code>fas fa-home</code> or <code>fas fa-cart-shopping</code>.</p>
+
+    <div class="page-nav">
+      <a href="search.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Search</span>
+      </a>
+      <a class="next" href="visibility.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Visibility Rules</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

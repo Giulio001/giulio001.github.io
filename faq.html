@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Advanced</p>
+    <h1>Frequently Asked Questions</h1>
+    <p class="lead">Answers to the most common questions about Giuliomax Menu Builder.</p>
+
+    <h2>General</h2>
+
+    <h3>Is the plugin really free? Is there a Pro version?</h3>
+    <p>Yes, completely free. There is no Pro version, no premium add-ons, and no features locked behind a paywall. Everything described in this documentation is available from day one, at no cost.</p>
+
+    <h3>Where is the plugin's source code?</h3>
+    <p>The plugin is open source. The repository is at <a href="https://github.com/Giulio001/menux-free-version" target="_blank">github.com/Giulio001/menux-free-version</a>. Bug reports and pull requests are welcome.</p>
+
+    <h3>Does it work with any WordPress theme?</h3>
+    <p>Yes. The plugin renders its own markup and styles independently of the active theme. The only theme-specific consideration is <em>where</em> you place the menu — for classic themes you use the shortcode or a widget; for FSE themes you use the Gutenberg block in the Site Editor.</p>
+
+    <h3>Will it slow down my site?</h3>
+    <p>No. The plugin enqueues only the CSS and JavaScript needed for the features you have enabled. If you don't use the countdown timer, that script is not loaded. Assets are minified and served from your server (no CDN calls to third-party services).</p>
+
+    <h2>Installation &amp; Compatibility</h2>
+
+    <h3>What version of WordPress do I need?</h3>
+    <p>WordPress 5.8 or higher. For the best Full Site Editing (FSE) experience with the Gutenberg block, WordPress 6.0 or higher is recommended.</p>
+
+    <h3>Does it work with page builders (Elementor, Divi, Beaver Builder)?</h3>
+    <p>Yes, via the <code>[menux]</code> shortcode. In Elementor, use the <em>Shortcode</em> widget and paste <code>[menux]</code>. In Divi, use the <em>Code</em> module. In Beaver Builder, use the <em>HTML</em> module.</p>
+
+    <h3>Does it conflict with other menu plugins?</h3>
+    <p>It can coexist with other menu plugins as long as they are not both applied to the same menu location. If you were using another plugin (e.g. Max Mega Menu, UberMenu) before, deactivate it before activating Giuliomax Menu Builder to avoid style conflicts.</p>
+
+    <h3>Can I use it on a multisite installation?</h3>
+    <p>Yes. Network-activate it to make it available on all sites, or activate it per site. Settings are stored per site, not network-wide.</p>
+
+    <h2>Themes &amp; Styling</h2>
+
+    <h3>Can I create my own themes?</h3>
+    <p>You can heavily customize any built-in theme using the style controls in <strong>Menu Builder (Colors / Typography / Layout sections)</strong>. Saving those customizations as a named "preset" (Export → Save as preset) is on the roadmap for a future release.</p>
+
+    <h3>My custom font isn't in the 70+ Google Fonts list. Can I use it?</h3>
+    <p>Yes. Load your font via your theme, a plugin, or by enqueueing it manually, then enter the font family name in <strong>Menu Builder (Colors / Typography / Layout sections) → Typography → Font family → Custom</strong>. The plugin will use whatever font is available in the browser.</p>
+
+    <h3>How do I reset all style changes and go back to the theme defaults?</h3>
+    <p>In <strong>Menu Builder (Colors / Typography / Layout sections)</strong>, click <em>Reset to theme defaults</em> at the bottom of the panel. This restores all values to what the currently applied theme set.</p>
+
+    <h2>Mega Menu</h2>
+
+    <h3>The mega menu panel is cut off on the right side of the screen. How do I fix it?</h3>
+    <p>Set the panel width to <strong>Full width</strong> in <strong>Menu Builder → Mega Menu → Panel width</strong>. If you need a narrower panel, check that your site's container CSS doesn't apply <code>overflow: hidden</code> to an ancestor element of the menu.</p>
+
+    <h3>Can I put a contact form or a WooCommerce product inside a mega menu column?</h3>
+    <p>Yes — use the <strong>Custom HTML</strong> column content type and paste any shortcode or HTML. For example: <code>[contact-form-7 id="123"]</code> or a WooCommerce product shortcode.</p>
+
+    <h2>Mobile</h2>
+
+    <h3>The desktop menu and the mobile menu are both visible at the same time. How do I fix it?</h3>
+    <p>This usually means another CSS rule is overriding the plugin's breakpoint styles. Open browser DevTools, inspect the menu wrapper, and look for a <code>display</code> property coming from your theme. Add a more specific CSS rule to your theme's stylesheet, or adjust the breakpoint value in <strong>Menu Builder → Mobile</strong>.</p>
+
+    <h2>WooCommerce</h2>
+
+    <h3>The cart count doesn't update without a page reload.</h3>
+    <p>Make sure your caching plugin (if any) is not caching WooCommerce AJAX requests. Most caching plugins have a WooCommerce-compatible mode or automatically exclude cart fragment requests — check your caching plugin's documentation.</p>
+
+    <h2>Getting help</h2>
+    <p>If your question isn't answered here:</p>
+    <ul>
+      <li>Open an issue on <a href="https://github.com/Giulio001/menux-free-version/issues" target="_blank">GitHub</a>.</li>
+      <li>Leave a support thread on the <a href="https://wordpress.org/plugins/giuliomax-menu-builder/#support" target="_blank">WordPress.org support forum</a>.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="multilingual.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Multilingual</span>
+      </a>
+      <span></span>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout &amp; Effects — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Layout &amp; Effects</h1>
+    <p class="lead">Fine-tune how the navigation bar is arranged, make it stick to the top as visitors scroll, and add tasteful animations — all from the Layout section of Menu Builder.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#spacing">Spacing and alignment</a>
+      <a href="#sticky">Sticky navigation</a>
+      <a href="#progress">Scroll progress bar</a>
+      <a href="#entrance">Entrance animation</a>
+      <a href="#link-anim">Link hover animation</a>
+      <a href="#dropdown">Dropdown indicator</a>
+    </div>
+
+    <h2 id="spacing">Spacing and alignment</h2>
+    <p>In the <strong>Layout</strong> section you can control how the menu items are arranged:</p>
+    <ul>
+      <li><strong>Alignment</strong> — where the items sit in the bar: start, center, end, space-between, or space-evenly.</li>
+      <li><strong>Gap</strong> — the spacing between menu items.</li>
+      <li><strong>Horizontal / vertical padding</strong> — the inner padding of the nav bar.</li>
+      <li><strong>Container border radius</strong> — round the corners of the whole bar.</li>
+      <li><strong>Push last item</strong> — pin the final menu item to the opposite edge (handy for a "Contact" or "Login" call-to-action).</li>
+    </ul>
+
+    <h2 id="sticky">Sticky navigation</h2>
+    <p>Enable <strong>Sticky</strong> to keep the navigation bar fixed at the top of the screen as the visitor scrolls down the page.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Shrink on scroll</strong></td><td>The bar becomes more compact once the page is scrolled.</td></tr>
+          <tr><td><strong>Shadow</strong></td><td>Adds a drop shadow under the bar when it is stuck.</td></tr>
+          <tr><td><strong>Mirror layout</strong></td><td>Use a different alignment for the stuck state than the default state.</td></tr>
+          <tr><td><strong>Transition</strong></td><td>How smoothly the bar animates between states (in seconds).</td></tr>
+          <tr><td><strong>Z-index</strong></td><td>Stacking order, in case the bar needs to sit above other fixed elements.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="progress">Scroll progress bar</h2>
+    <p>A thin bar that fills up as the visitor scrolls through the page — a popular touch on long articles and documentation.</p>
+    <ol class="steps">
+      <li>Enable <strong>Scroll progress bar</strong> in the Layout section.</li>
+      <li>Choose its <strong>colour</strong>, <strong>height</strong> (1–10 px), and <strong>position</strong> (top or bottom of the nav bar).</li>
+    </ol>
+
+    <h2 id="entrance">Entrance animation</h2>
+    <p>Animate the menu when the page first loads. Pick from <strong>Fade in</strong>, <strong>Slide down/up/left/right</strong>, <strong>Zoom in</strong>, or <strong>Flip X</strong> — or leave it on <strong>None</strong>.</p>
+    <p>You can also tune the <strong>duration</strong>, a <strong>delay</strong> before it starts, and a <strong>stagger</strong> so items appear one after another.</p>
+
+    <h2 id="link-anim">Link hover animation</h2>
+    <p>Add a micro-interaction when the visitor hovers over a menu link. Options include <strong>Lift</strong>, <strong>Scale</strong>, <strong>Pulse</strong>, <strong>Bounce</strong>, <strong>Shake</strong>, <strong>Glow</strong>, and <strong>Animated underline</strong>.</p>
+
+    <h2 id="dropdown">Dropdown indicator</h2>
+    <p>Items with a submenu can show a small indicator. Choose the shape — <strong>triangle</strong>, <strong>chevron</strong>, <strong>dot</strong>, or <strong>none</strong> — and optionally set its colour, size, and whether it rotates when the dropdown opens.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>All animations respect the visitor's <code>prefers-reduced-motion</code> setting — see the <a href="accessibility.html">Accessibility</a> page.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="mobile.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Mobile Menus</span>
+      </a>
+      <a class="next" href="wp-integration.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">WP Integration</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

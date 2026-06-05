@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import / Export — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Tools</p>
+    <h1>Import / Export</h1>
+    <p class="lead">Back up your entire menu configuration to a single JSON file, or transfer it between sites — for example from a staging site to production.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#export">Exporting your configuration</a>
+      <a href="#import">Importing a configuration</a>
+      <a href="#contents">What's included</a>
+    </div>
+
+    <h2 id="export">Exporting your configuration</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder → Import / Export</strong>.</li>
+      <li>Click <strong>Export</strong>.</li>
+      <li>A JSON file is downloaded to your computer. Keep it somewhere safe as a backup.</li>
+    </ol>
+
+    <h2 id="import">Importing a configuration</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder → Import / Export</strong> on the destination site.</li>
+      <li>Click <strong>Choose file</strong> and select a previously exported JSON file.</li>
+      <li>The configuration is applied and the page reloads with your imported settings.</li>
+    </ol>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Importing <strong>overwrites</strong> the current menu items and style settings on the destination site. If you want to keep the existing setup, export it first as a backup before importing.</p>
+      </div>
+    </div>
+
+    <h2 id="contents">What's included in the file</h2>
+    <p>The exported JSON contains the two main pieces of your configuration:</p>
+    <ul>
+      <li><strong>Menu items</strong> — your full menu structure, including labels, icons, badges, visibility rules, and mega menu columns.</li>
+      <li><strong>Style</strong> — all appearance settings: the active theme's values, colours, typography, layout, mobile behaviour, and feature toggles (announcement, search, cart, etc.).</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>The file is plain JSON, so you can store it in version control alongside your project to track changes to your menu over time.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="wp-integration.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">WP Integration</span>
+      </a>
+      <a class="next" href="accessibility.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Accessibility</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcement Bar — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Announcement Bar</h1>
+    <p class="lead">Add a slim promotional banner above (or below) your navigation bar with a custom message, call-to-action link, and an optional live countdown timer.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#enable">Enabling the bar</a>
+      <a href="#content">Setting the message and link</a>
+      <a href="#countdown">Countdown timer</a>
+      <a href="#styling">Styling</a>
+      <a href="#position">Position and dismissal</a>
+    </div>
+
+    <h2 id="enable">Enabling the bar</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder → Announcement</strong>.</li>
+      <li>Toggle <strong>Enable announcement bar</strong> to on.</li>
+      <li>Save settings.</li>
+    </ol>
+    <p>The bar appears immediately on the front end, above the navigation by default.</p>
+
+    <h2 id="content">Setting the message and link</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Field</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Message text</strong></td><td>The text shown in the bar. Plain text only — HTML is not rendered.</td></tr>
+          <tr><td><strong>Link URL</strong></td><td>Optional. If set, the entire message text becomes a clickable link to this URL.</td></tr>
+          <tr><td><strong>Open in new tab</strong></td><td>Toggle to open the link in a new browser tab.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="countdown">Countdown timer</h2>
+    <p>The countdown timer displays a live, ticking clock inside the announcement bar — useful for flash sales, event deadlines, or limited-time offers.</p>
+
+    <ol class="steps">
+      <li>In the <strong>Menu Builder → Announcement</strong> section, toggle <strong>Enable countdown</strong>.</li>
+      <li>Set the <strong>End date and time</strong> using the date field. The timer counts down to this moment using the site's timezone (set under <em>Settings → General → Timezone</em>).</li>
+      <li>Optionally enter an <strong>Expired message</strong> — the text shown when the countdown reaches zero instead of the digits.</li>
+      <li>Save settings.</li>
+    </ol>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>The target moment is calculated server-side, but the live ticking uses the visitor's browser clock. If a visitor's device clock is wrong, the displayed remaining time will be off for them. For auctions where exact timing is critical, use a dedicated countdown plugin in addition to this feature.</p>
+      </div>
+    </div>
+
+    <h3>Timer display format</h3>
+    <p>The timer shows <strong>Days · Hours · Minutes · Seconds</strong>. The days segment is hidden automatically when there is less than one day remaining. You can also set a <strong>countdown label</strong> (the text shown before the timer, default "Ends in:").</p>
+
+    <h2 id="styling">Styling the announcement bar</h2>
+    <p>All style options are available in the <strong>Menu Builder → Announcement</strong> section:</p>
+    <ul>
+      <li><strong>Background colour</strong> — solid colour chosen with the colour picker</li>
+      <li><strong>Text colour</strong></li>
+      <li><strong>Font size</strong> — independent from the main menu font</li>
+      <li><strong>Vertical padding</strong> — controls the bar height</li>
+    </ul>
+
+    <h2 id="position">Position and dismissal</h2>
+    <ul>
+      <li><strong>Position</strong> — Above the nav bar (default) or below it.</li>
+      <li><strong>Dismissal</strong> — Toggle <em>Allow dismissal</em> to show a close (×) button. Once dismissed, the bar stays hidden for a configurable number of days (stored via cookie).</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="mega-menu.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Mega Menu</span>
+      </a>
+      <a class="next" href="cart.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">WooCommerce Cart</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

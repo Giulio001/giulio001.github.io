@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Logo</h1>
+    <p class="lead">Add a logo image directly inside the navigation bar, position it however you like, and optionally show a different logo on mobile.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#adding">Adding a logo</a>
+      <a href="#position">Position</a>
+      <a href="#size">Size and shape</a>
+      <a href="#mobile">Separate mobile logo</a>
+      <a href="#link">Making the logo a link</a>
+    </div>
+
+    <h2 id="adding">Adding a logo</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder</strong> and open the <strong>Logo</strong> section in the left sidebar.</li>
+      <li>Click <strong>Upload</strong> to pick an image from the WordPress Media Library, or paste an external image URL.</li>
+      <li>The logo appears in the live preview at the top of the page immediately.</li>
+      <li>Click <strong>Save Menu</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Each logo slot accepts either a Media Library attachment or an external URL. Use the <strong>Change</strong> button to replace it or the <strong>clear</strong> button to remove it.</p>
+      </div>
+    </div>
+
+    <h2 id="position">Position</h2>
+    <p>Choose where the logo sits relative to the menu links:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Position</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Left</strong></td><td>Before the nav links.</td></tr>
+          <tr><td><strong>Right</strong></td><td>After the nav links.</td></tr>
+          <tr><td><strong>Center</strong></td><td>Centered between the items.</td></tr>
+          <tr><td><strong>Center split</strong></td><td>Logo in the middle, with links on both sides.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="size">Size and shape</h2>
+    <ul>
+      <li><strong>Width</strong> and <strong>Height</strong> — set a value with a unit (px, %, etc.). Leave one empty to keep the aspect ratio.</li>
+      <li><strong>Max width</strong> — caps the logo size so it never overflows on smaller screens.</li>
+      <li><strong>Border radius</strong> — round the corners of the logo (useful for circular badge logos).</li>
+      <li><strong>Vertical alignment</strong> — fine-tune how the logo aligns against the menu items.</li>
+      <li><strong>Alt text</strong> — describe the logo for screen readers and SEO.</li>
+    </ul>
+
+    <h2 id="mobile">Separate mobile logo</h2>
+    <p>You can upload a second image to use specifically on mobile — handy when your full logo is too wide for small screens and you want to show a compact mark instead.</p>
+    <ul>
+      <li>Upload an image in the <strong>mobile logo</strong> slot to override the desktop logo below the breakpoint.</li>
+      <li>Alternatively, enable <strong>Hide on mobile</strong> to remove the logo entirely on small screens.</li>
+    </ul>
+
+    <h2 id="link">Making the logo a link</h2>
+    <ol class="steps">
+      <li>Enable <strong>Link</strong> in the Logo settings.</li>
+      <li>Enter the destination <strong>URL</strong> (typically your home page).</li>
+      <li>Optionally set the link to open in a new tab.</li>
+    </ol>
+
+    <div class="page-nav">
+      <a href="themes.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Themes &amp; Categories</span>
+      </a>
+      <a class="next" href="mega-menu.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Mega Menu</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

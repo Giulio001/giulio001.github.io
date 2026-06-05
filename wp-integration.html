@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WP Integration — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Tools</p>
+    <h1>WP Menu Integration</h1>
+    <p class="lead">Replace your theme's native navigation menus with a Menu Builder menu — without editing any template files. Ideal for classic PHP themes that call <code>wp_nav_menu()</code>.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#what">What it does</a>
+      <a href="#mapping">Mapping a theme location</a>
+      <a href="#notes">Notes and limitations</a>
+    </div>
+
+    <h2 id="what">What it does</h2>
+    <p>Many classic themes render their header navigation by calling <code>wp_nav_menu()</code> against a registered <em>theme location</em> (e.g. "Primary Menu", "Footer Menu"). The WP Integration tool lets you intercept those locations and render a Menu Builder menu in their place — so you get all the plugin's styling and features without touching <code>header.php</code> or using a shortcode.</p>
+
+    <h2 id="mapping">Mapping a theme location</h2>
+    <ol class="steps">
+      <li>Go to <strong>Menu Builder → WP Integration</strong>.</li>
+      <li>You will see a table of every navigation location registered by your active theme.</li>
+      <li>For each location, pick a Menu Builder location (<code>primary</code>, <code>footer</code>, <code>sidebar</code>, or <code>mobile</code>) from the dropdown to replace it — or leave <strong>— Don't replace —</strong> to keep the theme's original menu.</li>
+      <li>Click <strong>Save Menu</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>If your theme registers no menu locations, the table shows a notice. In that case your theme does not call <code>register_nav_menus()</code>, and you should use the <a href="shortcode.html">shortcode</a> or the <a href="gutenberg.html">Gutenberg block</a> instead.</p>
+      </div>
+    </div>
+
+    <h2 id="notes">Notes and limitations</h2>
+    <ul>
+      <li>A Menu Builder location marked <strong>⚠ no items</strong> has no menu items assigned to it. Selecting it will simply keep the theme's original menu rather than rendering an empty one.</li>
+      <li>The dropdown shows how many items each location contains, so you can confirm you're mapping to the right one.</li>
+      <li>This tool targets classic, PHP-based themes. For block-based (FSE) themes, edit the header template part and use the <a href="gutenberg.html">Gutenberg block</a> instead.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="layout.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Layout &amp; Effects</span>
+      </a>
+      <a class="next" href="import-export.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Import / Export</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>

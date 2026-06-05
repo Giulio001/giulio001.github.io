@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visibility Rules — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Visibility Rules</h1>
+    <p class="lead">Show or hide individual menu items based on who is viewing the site, what device they are on, when they are visiting, or whether they are logged in.</p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#how">How visibility rules work</a>
+      <a href="#user-role">Visibility dropdown</a>
+      <a href="#device">Device</a>
+      <a href="#schedule">Schedule &amp; time</a>
+      <a href="#login">Page &amp; campaign targeting</a>
+      <a href="#combining">Combining rules</a>
+    </div>
+
+    <h2 id="how">How visibility rules work</h2>
+    <p>Each menu item has its own set of visibility rules. Rules are configured inside <strong>Menu Builder → Menu Structure</strong> — click any item in the list to expand its options and look for the <strong>Visibility</strong> dropdown and the <strong>Advanced conditions</strong> section.</p>
+    <p>By default, all items are visible to everyone. As soon as you set a rule, the item is only shown to visitors that match that condition. Multiple rule types are combined with <strong>AND</strong> logic — all enabled rules must match for the item to appear.</p>
+
+    <h2 id="user-role">Visibility dropdown (role &amp; login)</h2>
+    <p>Each item has a single <strong>Visibility</strong> dropdown where you pick one of the following:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Everyone</strong></td><td>Default. No restriction — the item is shown to all visitors.</td></tr>
+          <tr><td><strong>Any logged-in user</strong></td><td>Visible only to users who are logged in (any role).</td></tr>
+          <tr><td><strong>Guests only (not logged in)</strong></td><td>Visible only to visitors who are not logged in. Useful for "Login" / "Register" links.</td></tr>
+          <tr><td><strong>[Role] only</strong></td><td>Visible only to users with that exact role — e.g. "Administrator only", "Editor only", "Customer only". You pick one role from the list.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Custom roles added by other plugins (e.g. WooCommerce's "Shop Manager" or "Customer") appear in the dropdown automatically. To target <strong>several</strong> roles at once, use the <strong>Roles</strong> field in the Advanced conditions instead (enter a comma-separated list, e.g. <code>editor,author</code> — the item shows only to users who have one of those roles).</p>
+      </div>
+    </div>
+
+    <h2 id="device">Device</h2>
+    <p>In the Advanced conditions, show or hide an item based on the visitor's device type:</p>
+    <ul>
+      <li><strong>All devices</strong> — default.</li>
+      <li><strong>Mobile only</strong> — shown only on phones/tablets, hidden on desktop.</li>
+      <li><strong>Desktop only</strong> — shown only on desktop, hidden on mobile.</li>
+    </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Device detection is performed server-side on page load using WordPress's <code>wp_is_mobile()</code> function. Unlike CSS media queries, this means the correct HTML is sent to the browser — not just hidden with CSS — which avoids content flashing. Note that <code>wp_is_mobile()</code> treats tablets as mobile devices.</p>
+      </div>
+    </div>
+
+    <h2 id="schedule">Schedule &amp; time</h2>
+    <p>Two independent scheduling controls are available in the Advanced conditions.</p>
+
+    <h3>Date range</h3>
+    <p>Set a <strong>Start date/time</strong> and/or <strong>End date/time</strong>. The item is only visible between those moments (inclusive). Leave either field empty for an open-ended range — useful for scheduling a promotional link to appear and disappear automatically.</p>
+
+    <h3>Daily time window</h3>
+    <p>Set a <strong>From</strong> and <strong>To</strong> time (HH:MM). The item is only visible during that window each day. Example: show a "Live support" link only between 09:00 and 18:00.</p>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Schedule rules use your WordPress site's timezone (set under <em>Settings → General → Timezone</em>), not the visitor's local time.</p>
+      </div>
+    </div>
+
+    <h2 id="login">Page &amp; campaign targeting</h2>
+    <p>Two more conditions round out the Advanced section:</p>
+    <ul>
+      <li><strong>Pages</strong> — restrict the item to specific pages by entering their page IDs (comma-separated).</li>
+      <li><strong>UTM source</strong> — show the item only when the visitor arrives with a matching <code>utm_source</code> query parameter. Useful for tailoring the menu to a specific marketing campaign.</li>
+    </ul>
+
+    <h2 id="combining">Combining rules</h2>
+    <p>All active rules must match simultaneously (AND logic). For example, to show a menu item only to <em>logged-in users on desktop during business hours</em>:</p>
+    <ul>
+      <li>Visibility dropdown → <strong>Any logged-in user</strong></li>
+      <li>Device → <strong>Desktop only</strong></li>
+      <li>Daily time window → <strong>09:00–18:00</strong></li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="badges.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Badges &amp; Dots</span>
+      </a>
+      <a class="next" href="mobile.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">Mobile Menus</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>
