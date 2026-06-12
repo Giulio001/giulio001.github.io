@@ -12,20 +12,22 @@
   <article>
     <p class="breadcrumb">Features</p>
     <h1>Mobile Menus</h1>
-    <p class="lead">Choose from three distinct mobile menu styles and configure exactly how your navigation behaves on small screens — all without touching CSS or JavaScript.</p>
+    <p class="lead">Choose from four distinct mobile menu styles and configure exactly how your navigation behaves on small screens — all without touching CSS or JavaScript.</p>
 
     <div class="on-this-page">
       <strong>On this page</strong>
       <a href="#breakpoint">Setting the breakpoint</a>
       <a href="#styles">The mobile styles</a>
       <a href="#hamburger">Hamburger button</a>
+      <a href="#link-colors">Mobile link colors</a>
       <a href="#submenu">Sub-menu behaviour</a>
-      <a href="#animation">Animation</a>
+      <a href="#mega-mobile">Mega menus on mobile</a>
+      <a href="#preview">Live phone preview</a>
     </div>
 
     <h2 id="breakpoint">Setting the breakpoint</h2>
     <p>The breakpoint is the viewport width below which the desktop menu hides and the mobile menu appears. Set it in <strong>Menu Builder → Mobile</strong>.</p>
-    <p>The default is <strong>768 px</strong> (standard tablet/mobile boundary). Enter any pixel value that suits your layout.</p>
+    <p>The default is <strong>768 px</strong> (standard tablet/mobile boundary). Enter any pixel value that suits your layout, or choose <strong>Auto</strong> to let the plugin detect the available space dynamically.</p>
 
     <h2 id="styles">The mobile menu styles</h2>
 
@@ -45,13 +47,16 @@
       <li>Best for: agencies, photographers, landing pages</li>
     </ul>
 
-    <h3>3. Drawer (Left or Right)</h3>
-    <p>A panel slides in from the left or right edge of the screen, partially overlapping the page content. The rest of the page dims but remains partially visible.</p>
+    <h3>3. Drawer — Left</h3>
+    <p>A panel slides in from the left edge of the screen, partially overlapping the page content. The rest of the page dims but remains partially visible.</p>
     <ul>
       <li>Familiar from mobile apps (e.g. Gmail, Google Maps)</li>
       <li>Good for deep navigation hierarchies</li>
       <li>Best for: e-commerce, portals, documentation sites</li>
     </ul>
+
+    <h3>4. Drawer — Right</h3>
+    <p>Same as the Left Drawer but slides in from the right edge. Useful when your hamburger button sits on the right side of the bar and a left-aligned panel would feel counterintuitive.</p>
 
     <div class="callout tip">
       <span class="callout-icon">💡</span>
@@ -70,10 +75,19 @@
           <tr><td><strong>Icon style</strong></td><td>Classic (3 lines), Modern (rounded), or Minimal (thin).</td></tr>
           <tr><td><strong>Alignment</strong></td><td>Left, center, or right of the mobile nav bar.</td></tr>
           <tr><td><strong>Icon colour</strong></td><td>Independent from the menu item colour.</td></tr>
-          <tr><td><strong>Button background</strong></td><td>Optional background colour behind the hamburger icon.</td></tr>
+          <tr><td><strong>Button background</strong></td><td>Optional background colour behind the hamburger icon. The plugin forces a transparent default so your theme's button styles don't bleed through.</td></tr>
         </tbody>
       </table>
     </div>
+
+    <h2 id="link-colors">Mobile link colors</h2>
+    <p>You can give the links inside the mobile menu their own colors, completely independent from the desktop menu. Find three dedicated color pickers in <strong>Style → Hamburger → Mobile link text</strong>:</p>
+    <ul>
+      <li><strong>Normal</strong> — default link color inside the mobile menu</li>
+      <li><strong>Hover</strong> — color when the link is touched or hovered</li>
+      <li><strong>Active</strong> — color for the currently active item</li>
+    </ul>
+    <p>Leave any field empty to inherit the desktop menu colors.</p>
 
     <h2 id="submenu">Sub-menu behaviour on mobile</h2>
     <p>When a menu item has sub-items, you can control how they expand on mobile with the <strong>accordion</strong> option:</p>
@@ -83,13 +97,23 @@
     </ul>
     <p>Set this in the <strong>Menu Builder → Mobile</strong> section.</p>
 
-    <h2 id="animation">Open / close animation</h2>
-    <p>Choose how the mobile menu panel appears and disappears:</p>
+    <h2 id="mega-mobile">Mega menus on mobile</h2>
+    <p>When a top-level item has a mega menu enabled, tapping it on mobile slides in a dedicated full-screen panel showing only those links — with a ← back button at the top. This gives the navigation a native app feel (similar to large retail sites) while keeping the list clean and readable.</p>
+    <p>You can control mega menu mobile behavior per item from the <strong>⚡ Mega Menu</strong> panel:</p>
     <ul>
-      <li><strong>Fade</strong> (default) — the panel fades in and out.</li>
-      <li><strong>Slide</strong> — the panel slides into view.</li>
-      <li><strong>Scale</strong> — the panel scales up from a smaller size.</li>
+      <li><strong>Visible on mobile</strong> (push-screen) — the default push navigation described above.</li>
+      <li><strong>Hidden on mobile</strong> — the mega panel is not rendered on small screens; sub-items are hidden entirely.</li>
     </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>On mobile, per-item mega menu appearance overrides (background, colors, fonts) are automatically neutralised so links always render with the same neutral style as the rest of the mobile menu — avoiding broken color combinations from desktop presets.</p>
+      </div>
+    </div>
+
+    <h2 id="preview">Live phone preview</h2>
+    <p>While you are in the <strong>Mobile</strong> tab of the admin panel, a sticky phone mockup on the right side of the screen updates in real time as you change any mobile setting — open style, overlay color, hamburger alignment, link color, drawer width, and more. No save required to see the effect.</p>
 
     <div class="callout note">
       <span class="callout-icon">ℹ️</span>
