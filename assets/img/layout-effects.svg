@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="300" viewBox="0 0 880 300" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+    <filter id="sh" x="-5%" y="-30%" width="110%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1f2937" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="880" height="300" fill="#f9fafb"/>
+  <!-- nav bar -->
+  <g filter="url(#sh)">
+    <rect x="20" y="24" width="840" height="52" rx="10" fill="#ffffff"/>
+  </g>
+  <!-- scroll progress bar -->
+  <rect x="20" y="24" width="840" height="4" rx="2" fill="#e5e7eb"/>
+  <rect x="20" y="24" width="504" height="4" rx="2" fill="url(#bar)"/>
+  <!-- logo -->
+  <rect x="40" y="38" width="20" height="16" rx="4" fill="url(#acc)"/>
+  <text x="68" y="53" font-size="13.5" font-weight="700" fill="#111827">Acme</text>
+  <!-- nav links -->
+  <text x="176" y="54" font-size="13" fill="#6b7280">Home</text>
+  <text x="236" y="54" font-size="13" fill="#6b7280">About</text>
+  <!-- scroll-spy active link -->
+  <rect x="293" y="36" width="76" height="26" rx="7" fill="#eef2ff"/>
+  <text x="331" y="53" font-size="13" font-weight="600" fill="#667eea" text-anchor="middle">Features</text>
+  <text x="416" y="54" font-size="13" fill="#6b7280">Pricing</text>
+  <text x="480" y="54" font-size="13" fill="#6b7280">Blog</text>
+  <!-- sticky badge -->
+  <rect x="692" y="36" width="148" height="24" rx="12" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="766" y="52" font-size="11" fill="#374151" text-anchor="middle" font-weight="500">Sticky &#8212; active</text>
+  <!-- page content hint -->
+  <rect x="20" y="76" width="840" height="60" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="40" y="100" font-size="15" font-weight="700" fill="#111827">Features</text>
+  <rect x="40" y="110" width="500" height="8" rx="3" fill="#e5e7eb"/>
+  <rect x="40" y="126" width="360" height="8" rx="3" fill="#f0f0f3"/>
+  <!-- scroll spy dashed line -->
+  <line x1="331" y1="76" x2="331" y2="100" stroke="#667eea" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- 4 annotation cards -->
+  <!-- Sticky -->
+  <rect x="20" y="152" width="196" height="128" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="40" y="177" font-size="11" font-weight="700" letter-spacing="0.8" fill="#9ca3af">STICKY NAV</text>
+  <text x="40" y="199" font-size="12.5" fill="#374151">Fixed at top on scroll</text>
+  <text x="40" y="217" font-size="12" fill="#6b7280">&#8226; Shrink on scroll</text>
+  <text x="40" y="234" font-size="12" fill="#6b7280">&#8226; Drop shadow</text>
+  <text x="40" y="251" font-size="12" fill="#6b7280">&#8226; Z-index control</text>
+  <text x="40" y="268" font-size="12" fill="#6b7280">&#8226; Mirror layout</text>
+  <!-- Scroll Progress -->
+  <rect x="228" y="152" width="196" height="128" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="248" y="177" font-size="11" font-weight="700" letter-spacing="0.8" fill="#9ca3af">SCROLL PROGRESS</text>
+  <rect x="248" y="186" width="156" height="7" rx="3" fill="#e5e7eb"/>
+  <rect x="248" y="186" width="94" height="7" rx="3" fill="url(#bar)"/>
+  <text x="248" y="216" font-size="12.5" fill="#374151">Thin bar top / bottom</text>
+  <text x="248" y="234" font-size="12" fill="#6b7280">&#8226; Custom color</text>
+  <text x="248" y="251" font-size="12" fill="#6b7280">&#8226; Height 1&#8211;10 px</text>
+  <text x="248" y="268" font-size="12" fill="#6b7280">&#8226; Position: top / btm</text>
+  <!-- Scroll Spy -->
+  <rect x="436" y="152" width="196" height="128" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="456" y="177" font-size="11" font-weight="700" letter-spacing="0.8" fill="#9ca3af">SCROLL SPY</text>
+  <text x="456" y="199" font-size="12.5" fill="#374151">Active section &#8594; link</text>
+  <text x="456" y="217" font-size="12" fill="#6b7280">&#8226; Configurable offset</text>
+  <text x="456" y="234" font-size="12" fill="#6b7280">&#8226; Smooth scroll</text>
+  <text x="456" y="251" font-size="12" fill="#6b7280">&#8226; ARIA live regions</text>
+  <text x="456" y="268" font-size="12" fill="#6b7280">&#8226; Hash URL updates</text>
+  <!-- Animations -->
+  <rect x="644" y="152" width="196" height="128" rx="12" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="664" y="177" font-size="11" font-weight="700" letter-spacing="0.8" fill="#9ca3af">ANIMATIONS</text>
+  <text x="664" y="199" font-size="12.5" fill="#374151">Entrance on page load</text>
+  <text x="664" y="217" font-size="12" fill="#6b7280">&#8226; Fade &#183; Slide &#183; Zoom</text>
+  <text x="664" y="234" font-size="12" fill="#6b7280">&#8226; Hover: Lift &#183; Glow</text>
+  <text x="664" y="251" font-size="12" fill="#6b7280">&#8226; Stagger per item</text>
+  <text x="664" y="268" font-size="12" fill="#6b7280">&#8226; Reduced-motion safe</text>
+</svg>
