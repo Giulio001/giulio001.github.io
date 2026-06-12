@@ -12,7 +12,7 @@
   <article>
     <p class="breadcrumb">Features</p>
     <h1>Mega Menu</h1>
-    <p class="lead">Turn any top-level menu item into a full-width panel with up to 4 columns — mix links, headings, images, shortcodes, and auto-updating dynamic lists without writing any code.</p>
+    <p class="lead">Turn any top-level menu item into a full-width panel with up to 4 columns — mix links, headings, images, shortcodes, and more without writing any code.</p>
 
     <div class="on-this-page">
       <strong>On this page</strong>
@@ -20,19 +20,22 @@
       <a href="#enable">Enabling mega menu on an item</a>
       <a href="#columns">Adding and arranging columns</a>
       <a href="#content">Column content types</a>
-      <a href="#dynamic">Dynamic content (auto-populated)</a>
+      <a href="#appearance">Per-item appearance</a>
+      <a href="#presets">Presets</a>
+      <a href="#mobile">Mobile behavior</a>
       <a href="#global">Global settings</a>
     </div>
 
     <h2 id="what-is">What is a mega menu?</h2>
-    <p>A standard WordPress dropdown shows a single vertical list of sub-items. A <strong>mega menu</strong> opens a wide panel that can contain multiple columns, section headings, icons, images, and even arbitrary HTML. It is common on large e-commerce sites and content-heavy portals.</p>
+    <p>A standard WordPress dropdown shows a single vertical list of sub-items. A <strong>mega menu</strong> opens a wide panel that can contain multiple columns, section headings, icons, and images. It is common on large e-commerce sites and content-heavy portals.</p>
 
     <h2 id="enable">Enabling the mega menu on a top-level item</h2>
     <ol class="steps">
-      <li>Go to <strong>Menu Builder</strong> in the WordPress admin sidebar.</li>
-      <li>Click the <strong>Mega Menu</strong> tab in the left panel.</li>
-      <li>Find the top-level item you want to convert and click <strong>Edit columns</strong>.</li>
-      <li>Add columns, populate them with content blocks, then click <strong>Save Menu</strong>.</li>
+      <li>Go to <strong>Menu Builder → ⚡ Mega Menu</strong> in the admin sidebar.</li>
+      <li>The item list shows <strong>ON/OFF</strong> status badges for each first-level nav item.</li>
+      <li>Click <strong>＋ Enable Mega Menu</strong> on the item you want to convert.</li>
+      <li>Click <strong>⚡ Edit Columns ▶</strong> to open the column editor modal.</li>
+      <li>Add columns, populate them with content blocks, then close the modal and save.</li>
     </ol>
 
     <div class="callout note">
@@ -46,6 +49,7 @@
     <p>Inside the column editor modal you can:</p>
     <ul>
       <li><strong>Add a column</strong> — click <em>+ Add Column</em>. Columns are laid out horizontally inside the panel.</li>
+      <li><strong>Duplicate a column</strong> — click the duplicate icon on any column header to clone it (including all its items) and insert it right after the original. Disabled at the 4-column maximum.</li>
       <li><strong>Reorder columns</strong> — drag the column handle left or right.</li>
       <li><strong>Set column width</strong> — enter a percentage. Leave blank for equal distribution across all columns.</li>
       <li><strong>Set alignment</strong> — choose Left, Center, or Right for all items in the column.</li>
@@ -83,102 +87,70 @@
           </tr>
           <tr>
             <td><strong>Shortcode</strong></td>
-            <td>Renders any shortcode or Gutenberg reusable block inside the column — useful for contact forms, newsletters, or custom widgets.</td>
+            <td>Renders any shortcode inside the column — useful for contact forms, newsletters, product grids, or custom widgets.</td>
             <td>Shortcode string</td>
           </tr>
-          <tr>
-            <td><strong>✨ Dynamic</strong></td>
-            <td>Auto-populated list of links pulled from live site content. Stays up to date automatically. <a href="#dynamic">See below →</a></td>
-            <td>Source, Count, Order, Icon, View all</td>
-          </tr>
         </tbody>
       </table>
     </div>
 
-    <h2 id="dynamic">✨ Dynamic content <span style="font-size:0.6em;font-weight:400;color:#6b7280;vertical-align:middle;">Added in v3.4.1</span></h2>
-    <p>The <strong>Dynamic</strong> block auto-populates a list of links from live WordPress content. No manual updates — when you publish a new post or add a category, the menu reflects it automatically.</p>
+    <h2 id="appearance">Per-item appearance</h2>
+    <p>Each mega menu panel has its own independent <strong>🎨 Appearance</strong> tab inside the editor modal. Changes apply only to that item's panel and override the global defaults. Click <strong>↺ Reset to global defaults</strong> to clear all overrides for that item.</p>
 
-    <h3>Sources</h3>
     <div class="table-wrap">
       <table>
-        <thead>
-          <tr><th>Source</th><th>What it shows</th><th>Order options</th></tr>
-        </thead>
+        <thead><tr><th>Control</th><th>Description</th></tr></thead>
         <tbody>
-          <tr>
-            <td><strong>Recent posts</strong></td>
-            <td>Published posts from any post type (<code>post</code>, <code>product</code>, <code>event</code>, etc.)</td>
-            <td>Most recent · Title A–Z · Recently updated</td>
-          </tr>
-          <tr>
-            <td><strong>WooCommerce categories</strong></td>
-            <td>Non-empty product categories (requires WooCommerce active)</td>
-            <td>Name A–Z · Most products · Manual order</td>
-          </tr>
+          <tr><td><strong>Background</strong></td><td>Solid color, one of 12 gradient presets, or a custom gradient built with the visual gradient picker (direction compass + two color pickers).</td></tr>
+          <tr><td><strong>Panel max width (px)</strong></td><td>Constrains this panel's width (400–2400 px) and centers it. Leave empty for full-width behavior.</td></tr>
+          <tr><td><strong>Padding top/bottom &amp; left/right</strong></td><td>Inner spacing of the panel.</td></tr>
+          <tr><td><strong>Column gap</strong></td><td>Space between columns.</td></tr>
+          <tr><td><strong>Border radius</strong></td><td>Rounding applied to the two bottom corners of the panel.</td></tr>
+          <tr><td><strong>Font size</strong></td><td>Base font size for all content inside the panel.</td></tr>
+          <tr><td><strong>Link / Heading / Accent / Hover / Description / Divider color</strong></td><td>Full per-panel color control independent of the main Colors section.</td></tr>
+          <tr><td><strong>Divider style</strong></td><td>Solid, dashed, or dotted.</td></tr>
+          <tr><td><strong>Open/close animation speed</strong></td><td>Duration of the panel transition (0–800 ms). Set to 0 for instant.</td></tr>
         </tbody>
       </table>
     </div>
 
-    <h3>Settings</h3>
+    <h2 id="presets">Presets</h2>
+    <p>The <strong>✨ Presets</strong> tab inside the Appearance panel lets you load a complete column layout in one click. There are <strong>20 industry templates</strong> ready to go:</p>
+    <p>SaaS, E-Commerce, Agency, Restaurant, Travel, Healthcare, Real Estate, Law Firm, Finance, Fashion, Hotel, Nonprofit, Events, Automotive, Gaming, Fitness, Beauty &amp; Wellness, Tech Startup, Portfolio, and Education.</p>
+    <p>Presets populate both the column content <em>and</em> a matching color palette — so they look polished out of the box regardless of your main menu theme.</p>
+
+    <h2 id="mobile">Mobile behavior</h2>
+    <p>On mobile, tapping a mega menu item slides in a dedicated full-screen panel with a ← back button at the top — giving the experience a native app feel. Per-item background colors and fonts are neutralised on mobile so the links always render with the same clean style as the rest of the mobile menu.</p>
+    <p>You can set the mobile behavior per item in the Mega Menu panel:</p>
     <ul>
-      <li><strong>Source</strong> — Posts or WooCommerce categories.</li>
-      <li><strong>Post type</strong> — for Posts source only; defaults to <code>post</code>. Enter any registered post type slug (e.g. <code>product</code>, <code>event</code>).</li>
-      <li><strong>Max items</strong> — number of links to show, from 1 to 20.</li>
-      <li><strong>Order by</strong> — depends on the selected source (see table above).</li>
-      <li><strong>Icon</strong> — optional Font Awesome class applied to every generated link (e.g. <code>fa-solid fa-file</code>).</li>
-      <li><strong>"View all" link</strong> — optional link appended at the bottom of the list, styled in the accent color.
-        <ul>
-          <li>For Posts: links to the blog page or the post type archive.</li>
-          <li>For Categories: links to the WooCommerce shop page.</li>
-          <li>Label is customizable; defaults to <em>View all →</em>.</li>
-        </ul>
-      </li>
+      <li><strong>Visible on mobile</strong> — uses the push-navigation panel described above.</li>
+      <li><strong>Hidden on mobile</strong> — the mega panel is not rendered on small screens.</li>
     </ul>
 
-    <h3>Caching</h3>
-    <p>Dynamic block output is cached for <strong>6 hours</strong> per unique configuration. The cache is automatically invalidated whenever a post or term is saved, published, trashed, or deleted — so the menu always reflects current content without any manual action.</p>
+    <h2 id="global">Global settings</h2>
+    <p>These settings are found at the top of the <strong>⚡ Mega Menu</strong> panel and apply site-wide:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Setting</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Full width</strong></td>
+            <td>Per-item checkbox that makes this panel span the full viewport width.</td>
+          </tr>
+          <tr>
+            <td><strong>Default link / heading / accent colors</strong></td>
+            <td>Site-wide color defaults for mega panel content. Per-item Appearance overrides take precedence.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <div class="callout tip">
       <span class="callout-icon">💡</span>
       <div class="callout-body">
-        <p>WPML and Polylang are supported: the cache key includes the current locale, so each language gets its own set of translated post titles and category names automatically.</p>
+        <p>The "forgiving hover" behavior is built in — the mega panel waits for the mouse instead of vanishing mid-journey when the user moves diagonally toward the panel content.</p>
       </div>
-    </div>
-
-    <h3>Example layout</h3>
-    <p>A typical two-column mega menu using Dynamic content:</p>
-    <ul>
-      <li><strong>Column 1</strong> — Heading "Latest Articles" → Dynamic (Posts, 5 items, Most recent) → "View all posts"</li>
-      <li><strong>Column 2</strong> — Heading "Shop by Category" → Dynamic (WooCommerce categories, 6 items, Name A–Z) → "View all categories"</li>
-    </ul>
-
-    <h2 id="global">Global settings</h2>
-    <p>These settings apply to all mega menu panels on the page and are found at the top of the <strong>Mega Menu</strong> tab:</p>
-
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Setting</th><th>Description</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Max width (px)</strong></td>
-            <td>Constrains the panel width. Leave blank for full viewport width.</td>
-          </tr>
-          <tr>
-            <td><strong>Open animation (ms)</strong></td>
-            <td>Duration of the open/close transition. Set to <code>0</code> for instant.</td>
-          </tr>
-          <tr>
-            <td><strong>Background</strong></td>
-            <td>Per-item solid color or gradient preset (White, Dark, Purple, Indigo, and more).</td>
-          </tr>
-          <tr>
-            <td><strong>Disable on mobile</strong></td>
-            <td>Hides the mega panel on small screens and falls back to the standard mobile menu. Enabled by default — recommended to keep on.</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
 
     <div class="page-nav">

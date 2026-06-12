@@ -35,7 +35,7 @@
     <div class="sidebar-head">
       <div class="sidebar-logo">
         <a href="index.html">Giuliomax Menu Builder</a>
-        <span class="version">v3.4.0</span>
+        <span class="version">v3.8.2</span>
       </div>
       <button type="button" class="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span class="sidebar-toggle-current">${currentLabel}</span>
