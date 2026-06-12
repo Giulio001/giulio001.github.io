@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="150" fill="#f9fafb"/>
+
+  <!-- announcement bar (.menux-announcement-bar) bg default #667eea, position above -->
+  <rect x="20" y="22" width="840" height="44" rx="8" fill="url(#acc)"/>
+  <text x="250" y="49" font-size="14" font-weight="600" fill="#ffffff">🔥 Summer Sale — 30% off everything</text>
+
+  <!-- countdown (.menux-ann-countdown): label + d:h:m:s segments -->
+  <text x="540" y="49" font-size="12.5" fill="#e0e7ff">Ends in:</text>
+  <g font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <rect x="592" y="33" width="22" height="22" rx="5" fill="#ffffff" fill-opacity="0.18"/><text x="603" y="48">02</text><text x="603" y="61" font-size="8" font-weight="500" fill="#dbe2ff">d</text>
+    <text x="620" y="48">:</text>
+    <rect x="628" y="33" width="22" height="22" rx="5" fill="#ffffff" fill-opacity="0.18"/><text x="639" y="48">11</text><text x="639" y="61" font-size="8" font-weight="500" fill="#dbe2ff">h</text>
+    <text x="656" y="48">:</text>
+    <rect x="664" y="33" width="22" height="22" rx="5" fill="#ffffff" fill-opacity="0.18"/><text x="675" y="48">45</text><text x="675" y="61" font-size="8" font-weight="500" fill="#dbe2ff">m</text>
+    <text x="692" y="48">:</text>
+    <rect x="700" y="33" width="22" height="22" rx="5" fill="#ffffff" fill-opacity="0.18"/><text x="711" y="48">09</text><text x="711" y="61" font-size="8" font-weight="500" fill="#dbe2ff">s</text>
+  </g>
+
+  <!-- close (.menux-ann-close) -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <line x1="828" y1="38" x2="840" y2="50"/><line x1="840" y1="38" x2="828" y2="50"/>
+  </g>
+
+  <!-- hint of nav below -->
+  <rect x="20" y="74" width="840" height="40" rx="8" fill="#ffffff" stroke="#e5e7eb"/>
+  <rect x="42" y="86" width="20" height="16" rx="5" fill="url(#acc)"/>
+  <text x="72" y="99" font-size="13" font-weight="700" fill="#111827">Acme</text>
+  <text x="700" y="99" font-size="12.5" fill="#374151">Home</text>
+  <text x="760" y="99" font-size="12.5" fill="#374151">Shop</text>
+  <text x="816" y="99" font-size="12.5" fill="#374151">Cart</text>
+
+  <text x="20" y="138" font-size="12" fill="#9ca3af">Announcement bar above the nav — clickable message + live d:h:m:s countdown, dismissible (×).</text>
+</svg>

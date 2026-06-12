@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="640" viewBox="0 0 420 640" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/>
+    </linearGradient>
+    <clipPath id="screen"><rect x="70" y="40" width="280" height="560" rx="26"/></clipPath>
+  </defs>
+  <rect width="420" height="640" fill="#f9fafb"/>
+
+  <!-- phone frame -->
+  <rect x="60" y="30" width="300" height="580" rx="38" fill="#111827"/>
+  <rect x="70" y="40" width="280" height="560" rx="26" fill="#ffffff"/>
+
+  <g clip-path="url(#screen)">
+    <!-- dimmed page behind (.menux-overlay: #000 @ .9) -->
+    <rect x="70" y="40" width="280" height="560" fill="#ffffff"/>
+    <rect x="70" y="40" width="280" height="56" fill="#ffffff" stroke="#e5e7eb"/>
+    <rect x="86" y="58" width="20" height="18" rx="5" fill="url(#acc)"/>
+    <text x="114" y="73" font-size="13" font-weight="700" fill="#111827">Acme</text>
+    <!-- overlay dim -->
+    <rect x="70" y="40" width="280" height="560" fill="#000000" opacity="0.55"/>
+
+    <!-- drawer-left (width 280 scaled) -->
+    <rect x="70" y="40" width="208" height="560" fill="#ffffff"/>
+    <!-- close X (.menux-close-btn, default #333) -->
+    <g stroke="#333333" stroke-width="2" stroke-linecap="round">
+      <line x1="246" y1="62" x2="258" y2="74"/><line x1="258" y1="62" x2="246" y2="74"/>
+    </g>
+    <rect x="86" y="56" width="20" height="18" rx="5" fill="url(#acc)"/>
+    <text x="114" y="71" font-size="13" font-weight="700" fill="#111827">Acme</text>
+
+    <!-- list -->
+    <text x="92" y="124" font-size="15" font-weight="600" fill="#667eea">Home</text>
+    <line x1="92" y1="142" x2="256" y2="142" stroke="#f0f0f3"/>
+    <text x="92" y="174" font-size="15" fill="#374151">Features</text>
+    <line x1="92" y1="192" x2="256" y2="192" stroke="#f0f0f3"/>
+
+    <!-- expanded accordion item -->
+    <text x="92" y="224" font-size="15" fill="#374151">Products</text>
+    <path d="M236 214 l6 6 l6 -6" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round"/>
+    <rect x="78" y="238" width="192" height="92" fill="#f9fafb"/>
+    <text x="108" y="262" font-size="13.5" fill="#4b5563">Analytics</text>
+    <text x="108" y="288" font-size="13.5" fill="#4b5563">Automation</text>
+    <text x="108" y="314" font-size="13.5" fill="#4b5563">Integrations</text>
+    <line x1="92" y1="346" x2="256" y2="346" stroke="#f0f0f3"/>
+
+    <text x="92" y="378" font-size="15" fill="#374151">Pricing</text>
+    <line x1="92" y1="396" x2="256" y2="396" stroke="#f0f0f3"/>
+    <text x="92" y="428" font-size="15" fill="#374151">Blog</text>
+
+    <!-- CTA in drawer -->
+    <rect x="92" y="460" width="156" height="40" rx="8" fill="url(#acc)"/>
+    <text x="170" y="485" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">Get Started</text>
+  </g>
+
+  <text x="210" y="630" font-size="12" fill="#9ca3af" text-anchor="middle">Mobile — Left Drawer style with overlay, accordion submenu and CTA.</text>
+</svg>
