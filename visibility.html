@@ -13,6 +13,7 @@
     <p class="breadcrumb">Features</p>
     <h1>Visibility Rules</h1>
     <p class="lead">Show or hide individual menu items based on who is viewing the site, what device they are on, when they are visiting, or whether they are logged in.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="assets/img/visibility.svg" alt="Menu item list showing visibility rules: Everyone, Logged-in user, Guests only, Mobile only and a time-based schedule" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
 
     <div class="on-this-page">
       <strong>On this page</strong>
@@ -37,8 +38,8 @@
         <tbody>
           <tr><td><strong>Everyone</strong></td><td>Default. No restriction — the item is shown to all visitors.</td></tr>
           <tr><td><strong>Any logged-in user</strong></td><td>Visible only to users who are logged in (any role).</td></tr>
-          <tr><td><strong>Guests only (not logged in)</strong></td><td>Visible only to visitors who are not logged in. Useful for "Login" / "Register" links.</td></tr>
-          <tr><td><strong>[Role] only</strong></td><td>Visible only to users with that exact role — e.g. "Administrator only", "Editor only", "Customer only". You pick one role from the list.</td></tr>
+          <tr><td><strong>Guests only (not logged in)</strong></td><td>Visible only to visitors who are not logged in. Useful for “Login” / “Register” links.</td></tr>
+          <tr><td><strong>[Role] only</strong></td><td>Visible only to users with that exact role — e.g. “Administrator only”, “Editor only”, “Customer only”. You pick one role from the list.</td></tr>
         </tbody>
       </table>
     </div>
@@ -46,12 +47,12 @@
     <div class="callout tip">
       <span class="callout-icon">💡</span>
       <div class="callout-body">
-        <p>Custom roles added by other plugins (e.g. WooCommerce's "Shop Manager" or "Customer") appear in the dropdown automatically. To target <strong>several</strong> roles at once, use the <strong>Roles</strong> field in the Advanced conditions instead (enter a comma-separated list, e.g. <code>editor,author</code> — the item shows only to users who have one of those roles).</p>
+        <p>Custom roles added by other plugins (e.g. WooCommerce’s “Shop Manager” or “Customer”) appear in the dropdown automatically. To target <strong>several</strong> roles at once, use the <strong>Roles</strong> field in the Advanced conditions instead (enter a comma-separated list, e.g. <code>editor,author</code> — the item shows only to users who have one of those roles).</p>
       </div>
     </div>
 
     <h2 id="device">Device</h2>
-    <p>In the Advanced conditions, show or hide an item based on the visitor's device type:</p>
+    <p>In the Advanced conditions, show or hide an item based on the visitor’s device type:</p>
     <ul>
       <li><strong>All devices</strong> — default.</li>
       <li><strong>Mobile only</strong> — shown only on phones/tablets, hidden on desktop.</li>
@@ -61,7 +62,7 @@
     <div class="callout note">
       <span class="callout-icon">ℹ️</span>
       <div class="callout-body">
-        <p>Device detection is performed server-side on page load using WordPress's <code>wp_is_mobile()</code> function. Unlike CSS media queries, this means the correct HTML is sent to the browser — not just hidden with CSS — which avoids content flashing. Note that <code>wp_is_mobile()</code> treats tablets as mobile devices.</p>
+        <p>Device detection is performed server-side on page load using WordPress’s <code>wp_is_mobile()</code> function. Unlike CSS media queries, this means the correct HTML is sent to the browser — not just hidden with CSS — which avoids content flashing. Note that <code>wp_is_mobile()</code> treats tablets as mobile devices.</p>
       </div>
     </div>
 
@@ -72,12 +73,12 @@
     <p>Set a <strong>Start date/time</strong> and/or <strong>End date/time</strong>. The item is only visible between those moments (inclusive). Leave either field empty for an open-ended range — useful for scheduling a promotional link to appear and disappear automatically.</p>
 
     <h3>Daily time window</h3>
-    <p>Set a <strong>From</strong> and <strong>To</strong> time (HH:MM). The item is only visible during that window each day. Example: show a "Live support" link only between 09:00 and 18:00.</p>
+    <p>Set a <strong>From</strong> and <strong>To</strong> time (HH:MM). The item is only visible during that window each day. Example: show a “Live support” link only between 09:00 and 18:00.</p>
 
     <div class="callout warn">
       <span class="callout-icon">⚠️</span>
       <div class="callout-body">
-        <p>Schedule rules use your WordPress site's timezone (set under <em>Settings → General → Timezone</em>), not the visitor's local time.</p>
+        <p>Schedule rules use your WordPress site’s timezone (set under <em>Settings → General → Timezone</em>), not the visitor’s local time.</p>
       </div>
     </div>
 
