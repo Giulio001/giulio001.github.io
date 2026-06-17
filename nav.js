@@ -18,6 +18,7 @@
     { href: "visibility.html",   label: "Visibility Rules" },
     { href: "mobile.html",       label: "Mobile Menus" },
     { href: "layout.html",       label: "Layout & Effects" },
+    { href: "footer.html",       label: "Footer Builder" },
     { group: "Tools" },
     { href: "wp-integration.html", label: "WP Integration" },
     { href: "import-export.html",  label: "Import / Export" },
@@ -35,7 +36,7 @@
     <div class="sidebar-head">
       <div class="sidebar-logo">
         <a href="index.html">Giuliomax Menu Builder</a>
-        <span class="version">v3.8.2</span>
+        <span class="version">v3.9.0</span>
       </div>
       <button type="button" class="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span class="sidebar-toggle-current">${currentLabel}</span>

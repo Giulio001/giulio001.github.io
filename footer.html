@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Builder — Giuliomax Menu Builder Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Features</p>
+    <h1>Footer Builder</h1>
+    <p class="lead">Build a professional, multi-column site footer entirely inside the WordPress admin — choose up to six sections per row, style every detail visually, and place it with a block, a shortcode, or automatically on every page.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="assets/img/footer.svg" alt="A multi-column dark footer built with MenuX showing About, Quick Links, Contact and Follow Us sections, a bottom bar with copyright and legal links, and a scroll-to-top button" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>On this page</strong>
+      <a href="#enable">Enabling &amp; placement</a>
+      <a href="#wizard">Setup Wizard</a>
+      <a href="#sections">Footer sections</a>
+      <a href="#bottom">Bottom bar</a>
+      <a href="#themes">Footer themes</a>
+      <a href="#styling">Styling</a>
+      <a href="#placing">Placing the footer</a>
+    </div>
+
+    <h2 id="enable">Enabling &amp; placement</h2>
+    <p>Open <strong>Menu Builder → Footer</strong>. The toolbar at the top of the page controls the footer’s global behaviour:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Control</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Enable footer</strong></td><td>Master on/off switch. The footer only renders when this is on <em>and</em> at least one section has been added.</td></tr>
+          <tr><td><strong>Layout</strong></td><td><strong>First column wide</strong> (the first section is wider — ideal for an About block), <strong>Equal columns</strong>, or <strong>Centered</strong>.</td></tr>
+          <tr><td><strong>Placement</strong></td><td><strong>Manual</strong> — you place it yourself with the block or shortcode. <strong>Automatic</strong> — the footer is injected at the bottom of every page for you.</td></tr>
+          <tr><td><strong>Priority</strong></td><td>Shown only when Placement is Automatic. The <code>wp_footer</code> hook priority (1–9999, default 100) — lower numbers print earlier. Raise it if the footer collides with another plugin.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Automatic placement is smart about duplicates: if a footer was already output manually (via block or shortcode) earlier on the same page, the auto-injector skips itself so you never get two footers.</p>
+      </div>
+    </div>
+
+    <h2 id="wizard">Setup Wizard</h2>
+    <p>The fastest way to a complete footer is the <strong>🪄 Setup Wizard</strong> button in the toolbar. It walks you through four steps — <strong>layout → theme → content → bottom bar</strong> — and populates a full, styled footer in under a minute. The wizard opens automatically the first time you visit the Footer page.</p>
+
+    <h2 id="sections">Footer sections</h2>
+    <p>The footer is built from <strong>sections</strong> (the columns). Click <strong>＋ Add section</strong> to add one — up to <strong>6</strong> per row. Every section card has a <strong>Title</strong>, a <strong>Hide on mobile</strong> checkbox, and a <strong>⧉ Duplicate</strong> button that clones the whole section (including its content) and inserts it below.</p>
+    <p>There are <strong>7 section types</strong>:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>What it renders</th><th>Key fields</th></tr></thead>
+        <tbody>
+          <tr><td><strong>About / text</strong></td><td>An optional logo image followed by a paragraph of text — typically a short company description.</td><td>Logo image, image width, text</td></tr>
+          <tr><td><strong>Link list</strong></td><td>A vertical list of links (up to 20), each able to open in a new tab.</td><td>Label, URL, open in new tab</td></tr>
+          <tr><td><strong>Contact info</strong></td><td>Address, phone and email. The phone becomes a <code>tel:</code> link and the email a <code>mailto:</code> link automatically.</td><td>Address, phone, email</td></tr>
+          <tr><td><strong>Social icons</strong></td><td>A row of branded social icons (up to 14) linking to your profiles.</td><td>Network + URL per icon</td></tr>
+          <tr><td><strong>Opening hours</strong></td><td>A simple list of lines (up to 10), e.g. “Mon–Fri: 9–18”.</td><td>One line per row</td></tr>
+          <tr><td><strong>Newsletter</strong></td><td>An email signup form that posts to any external service (Mailchimp, ConvertKit, Brevo, …).</td><td>Form action URL, subtitle, placeholder, button text, GDPR text</td></tr>
+          <tr><td><strong>Custom HTML</strong></td><td>Any HTML you like, sanitised with WordPress’s <code>wp_kses_post</code> — useful for embeds, badges or shortcodes.</td><td>HTML</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>The <strong>Social icons</strong> section supports 14 networks: Facebook, Instagram, X (Twitter), LinkedIn, YouTube, TikTok, Pinterest, GitHub, WhatsApp, Telegram, Discord, Spotify, Threads and Email. Icons come from Font Awesome 6 brand glyphs.</p>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>The <strong>Newsletter</strong> section renders nothing until you fill in a form <em>action URL</em> — this prevents an empty form from accidentally posting back to the current page. Add an optional GDPR consent checkbox to keep signups compliant.</p>
+      </div>
+    </div>
+
+    <h2 id="bottom">Bottom bar</h2>
+    <p>Below the sections sits an optional <strong>bottom bar</strong>, configured in the same page:</p>
+    <ul>
+      <li><strong>Copyright text</strong> — free text; the token <code>{year}</code> is replaced with the current year automatically.</li>
+      <li><strong>Legal links</strong> — up to 6 small links (Privacy, Terms, Cookies, …).</li>
+      <li><strong>Social in bottom bar</strong> — mirror your social icons into the bottom bar.</li>
+      <li><strong>Scroll-to-top button</strong> — a floating, accent-coloured arrow that appears after the visitor scrolls 300&nbsp;px and smooth-scrolls back to the top.</li>
+    </ul>
+
+    <h2 id="themes">Footer themes</h2>
+    <p>The <strong>🎨 Footer Themes</strong> grid applies a curated palette in one click. There are <strong>11 themes</strong>:</p>
+    <p>Midnight, Carbon Gold, Graphite, Deep Ocean, Evergreen, Bordeaux, Sapphire, Aurora, Porcelain, Sandstone and Editorial.</p>
+    <p>Each is hand-tuned for contrast and harmony — the dark palettes include subtle depth gradients. Applying a theme is non-destructive: every individual colour remains editable afterwards in the Style panel.</p>
+
+    <h2 id="styling">Styling</h2>
+    <p>The <strong>🎛 Style</strong> panel (with a live preview beside it) gives you full visual control. A <strong>👁 Live Preview</strong> updates in real time as you change sections, colours and typography — matching the public front end.</p>
+
+    <h3>Colours</h3>
+    <p>Background, headings, text, links, link hover, accent, plus the bottom bar background and text. An optional CSS background <strong>gradient</strong> can override the solid background.</p>
+
+    <h3>Layout</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Range</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Accent bar</strong> (thin coloured line on top)</td><td>On/off + height 1–10&nbsp;px</td></tr>
+          <tr><td><strong>Vertical padding</strong></td><td>16–160&nbsp;px</td></tr>
+          <tr><td><strong>Horizontal padding</strong></td><td>0–120&nbsp;px</td></tr>
+          <tr><td><strong>Column gap</strong></td><td>8–120&nbsp;px</td></tr>
+          <tr><td><strong>Content max width</strong></td><td>600–1920&nbsp;px</td></tr>
+          <tr><td><strong>Link spacing</strong></td><td>2–40&nbsp;px</td></tr>
+          <tr><td><strong>Mobile alignment</strong></td><td>Left or Center</td></tr>
+          <tr><td><strong>Bottom bar divider</strong></td><td>Show/hide the top border</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Typography</h3>
+    <ul>
+      <li><strong>Heading</strong> — size (10–28&nbsp;px), weight (Regular–Extra-bold), and style (UPPERCASE or Normal).</li>
+      <li><strong>Text size</strong> — 11–20&nbsp;px.</li>
+      <li><strong>Link hover effect</strong> — Slide right, Animated underline, or Color only.</li>
+    </ul>
+
+    <h3>Social icons</h3>
+    <p>Choose an icon <strong>style</strong> — Circle badge, Rounded square, or Plain icons — and a <strong>size</strong> from 12–28&nbsp;px.</p>
+
+    <h3>Custom CSS</h3>
+    <p>A scoped CSS box for fine overrides. Use <code>.menux-footer</code> as the parent selector to keep your rules contained to the footer.</p>
+
+    <h2 id="placing">Placing the footer</h2>
+    <p>There are three ways to get the footer onto your site — pick whichever suits your theme:</p>
+    <ul>
+      <li><strong>Automatic</strong> — set Placement to <em>Automatic</em> in the toolbar and the footer appears at the bottom of every page. No block or shortcode required.</li>
+      <li><strong>Gutenberg block</strong> — add the <strong>MenuX — Footer</strong> block to a footer template part in the Site Editor (FSE themes).</li>
+      <li><strong>Shortcode</strong> — paste <code>[menux_footer]</code> into any page, widget area, or page builder (Elementor, Divi, classic themes).</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">🌍</span>
+      <div class="callout-body">
+        <p>All footer text — headings, links, copyright and more — is translatable. The builder registers every string with the WPML / Polylang String Translation API, and TranslatePress translates the rendered output directly. See the <a href="multilingual.html">Multilingual</a> page.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="layout.html">
+        <span class="nav-dir">← Previous</span>
+        <span class="nav-title">Layout &amp; Effects</span>
+      </a>
+      <a class="next" href="wp-integration.html">
+        <span class="nav-dir">Next →</span>
+        <span class="nav-title">WP Integration</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="nav.js"></script>
+</body>
+</html>
