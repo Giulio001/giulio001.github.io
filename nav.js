@@ -124,30 +124,44 @@
     document.body.appendChild(overlay);
   }
 
+  /* ── Italian content loader ───────────────────────────────────────────── */
+  function loadItalianContent(callback) {
+    if (window.MENUX_IT) { callback(); return; }
+    const s = document.createElement('script');
+    s.src = 'it.js';
+    s.onload = callback;
+    s.onerror = callback;
+    document.head.appendChild(s);
+  }
+
+  function applyItalianContent() {
+    const current = window.location.pathname.split('/').pop() || 'index.html';
+    const article = document.querySelector('article');
+    if (article && window.MENUX_IT && window.MENUX_IT[current]) {
+      article.innerHTML = window.MENUX_IT[current];
+    }
+  }
+
   /* ── Apply page-level translations ───────────────────────────────────── */
   function applyTranslations(lang) {
     const tr = T[lang];
     if (!tr) return;
 
-    // "On this page" heading
     document.querySelectorAll('.on-this-page > strong').forEach(el => {
       el.textContent = tr.onThisPage;
     });
 
-    // Breadcrumb — English group name → translated
     const bc = document.querySelector('.breadcrumb');
     if (bc) {
       const key = bc.textContent.trim();
       if (tr.groups[key]) bc.textContent = tr.groups[key];
     }
 
-    // Page-nav direction labels
     document.querySelectorAll('.page-nav .nav-dir').forEach(el => {
       if (el.textContent.includes('→'))      el.textContent = tr.next;
       else if (el.textContent.includes('←')) el.textContent = tr.prev;
     });
 
-    // Page-nav link titles
     document.querySelectorAll('.page-nav a[href]').forEach(a => {
       const label = tr.labels[a.getAttribute('href')];
       if (label) {
@@ -251,7 +265,11 @@
       location.reload();
     });
 
-    applyTranslations(lang);
+    if (lang === 'it') {
+      loadItalianContent(() => { applyItalianContent(); applyTranslations(lang); });
+    } else {
+      applyTranslations(lang);
+    }
   }
 
   /* ── Bootstrap ────────────────────────────────────────────────────────── */
