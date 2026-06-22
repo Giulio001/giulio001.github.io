@@ -170,6 +170,8 @@
   const getLang = ()  => localStorage.getItem(LANG_KEY);
   const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
+  const FLAG = { en: '&#x1F1EC;&#x1F1E7;', it: '&#x1F1EE;&#x1F1F9;', de: '&#x1F1E9;&#x1F1EA;', es: '&#x1F1EA;&#x1F1F8;' };
+
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
     const l = (navigator.language || 'en').toLowerCase();
@@ -338,8 +340,7 @@
           <div class="sidebar-logo-meta">
             <span class="version">v3.9.0</span>
             <div class="lang-switch">
-              <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Switch language">${lang.toUpperCase()} &#9662;</button>
-              <div class="lang-menu" hidden>${buildLangMenu(lang)}</div>
+              <button type="button" class="lang-toggle" aria-label="Switch language">${FLAG[lang] || ''} ${lang.toUpperCase()} &#9662;</button>
             </div>
           </div>
         </div>
@@ -386,26 +387,11 @@
       });
     });
 
-    /* Language dropdown */
+    /* Language switcher — opens the full picker overlay */
     const langToggle = sidebar.querySelector(".lang-toggle");
-    const langMenu   = sidebar.querySelector(".lang-menu");
     langToggle.addEventListener("click", e => {
       e.stopPropagation();
-      const isOpen = !langMenu.hidden;
-      langMenu.hidden = isOpen;
-      langToggle.setAttribute("aria-expanded", isOpen ? "false" : "true");
-    });
-    sidebar.querySelectorAll(".lang-opt-sm").forEach(btn => {
-      btn.addEventListener("click", () => {
-        setLang(btn.dataset.lang);
-        location.reload();
-      });
-    });
-    document.addEventListener("click", () => {
-      if (!langMenu.hidden) {
-        langMenu.hidden = true;
-        langToggle.setAttribute("aria-expanded", "false");
-      }
+      showPicker(() => location.reload());
     });
 
     /* Load translated content */
