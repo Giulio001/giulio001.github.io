@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortcode [menux] — Giuliomax Menu Builder</title>
+  <meta name="description" content="O shortcode [menux] permite inserir o menu em qualquer página, post, widget ou template que aceite shortcodes.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/shortcode.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/shortcode.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/shortcode.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/shortcode.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/shortcode.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/shortcode.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/shortcode.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/shortcode.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Shortcode [menux] — Giuliomax Menu Builder">
+  <meta property="og:description" content="O shortcode [menux] permite inserir o menu em qualquer página, post, widget ou template que aceite shortcodes.">
+  <meta property="og:url" content="https://giulio001.github.io/pt/shortcode.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shortcode [menux] — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O shortcode [menux] permite inserir o menu em qualquer página, post, widget ou template que aceite shortcodes.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Usando o plugin › Shortcode [menux]</nav>
+<h1>Shortcode [menux]</h1>
+<p>O shortcode <code>[menux]</code> permite inserir o menu em qualquer página, post, widget ou template que aceite shortcodes.</p>
+
+<h2 id="uso-basico">Uso básico</h2>
+<pre><code>[menux id="123"]</code></pre>
+<p>Substitua <code>123</code> pelo ID do menu criado em <strong>Aparência › Menus</strong>. Para encontrar o ID, edite o menu e observe o número na URL do painel (<code>menu=123</code>).</p>
+
+<h2 id="parametros">Parâmetros disponíveis</h2>
+<table>
+  <thead><tr><th>Parâmetro</th><th>Padrão</th><th>Descrição</th></tr></thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>—</td><td>ID do menu (obrigatório)</td></tr>
+    <tr><td><code>layout</code></td><td><code>horizontal</code></td><td><code>horizontal</code> ou <code>vertical</code></td></tr>
+    <tr><td><code>sticky</code></td><td><code>false</code></td><td><code>true</code> para fixar o menu no scroll</td></tr>
+    <tr><td><code>theme</code></td><td><code>light</code></td><td><code>light</code>, <code>dark</code> ou slug de tema personalizado</td></tr>
+    <tr><td><code>mobile_breakpoint</code></td><td><code>768</code></td><td>Ponto de quebra em pixels para o menu mobile</td></tr>
+    <tr><td><code>logo</code></td><td>—</td><td>ID de mídia ou URL da imagem do logotipo</td></tr>
+    <tr><td><code>search</code></td><td><code>false</code></td><td><code>true</code> para exibir a barra de busca</td></tr>
+    <tr><td><code>cart</code></td><td><code>false</code></td><td><code>true</code> para exibir o ícone do carrinho WooCommerce</td></tr>
+  </tbody>
+</table>
+
+<h2 id="exemplos">Exemplos</h2>
+<pre><code>[menux id="10" sticky="true" theme="dark"]</code></pre>
+<pre><code>[menux id="10" layout="vertical" search="true" cart="true"]</code></pre>
+
+<h2 id="onde-usar">Onde usar</h2>
+<ul>
+  <li>Diretamente no editor de páginas ou posts</li>
+  <li>Em widgets de texto ou HTML</li>
+  <li>No arquivo <code>header.php</code> do tema via <code>&lt;?php echo do_shortcode('[menux id="10"]'); ?&gt;</code></li>
+  <li>Em templates de construtores de página (Elementor, Divi, WPBakery)</li>
+</ul>
+
+<div class="page-nav">
+  <a href="installation.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Instalação</span></a>
+  <a class="next" href="gutenberg.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Bloco Gutenberg</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

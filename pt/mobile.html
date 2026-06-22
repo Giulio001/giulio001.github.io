@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menus mobile — Giuliomax Menu Builder</title>
+  <meta name="description" content="O Giuliomax Menu Builder oferece controle total sobre a experiência de navegação em dispositivos móveis, com suporte a gestos de toque, animações e layouts…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/mobile.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mobile.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mobile.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mobile.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mobile.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mobile.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mobile.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mobile.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Menus mobile — Giuliomax Menu Builder">
+  <meta property="og:description" content="O Giuliomax Menu Builder oferece controle total sobre a experiência de navegação em dispositivos móveis, com suporte a gestos de toque, animações e layouts…">
+  <meta property="og:url" content="https://giulio001.github.io/pt/mobile.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menus mobile — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O Giuliomax Menu Builder oferece controle total sobre a experiência de navegação em dispositivos móveis, com suporte a gestos de toque, animações e layouts…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Funcionalidades › Menus mobile</nav>
+<h1>Menus mobile</h1>
+<p>O Giuliomax Menu Builder oferece controle total sobre a experiência de navegação em dispositivos móveis, com suporte a gestos de toque, animações e layouts dedicados para telas menores.</p>
+
+<h2 id="ponto-de-quebra">Ponto de quebra</h2>
+<p>O ponto de quebra define a largura em pixels abaixo da qual o menu muda para o modo mobile. O valor padrão é <code>768px</code>, mas pode ser personalizado:</p>
+<ul>
+  <li>No shortcode: <code>[menux id="10" mobile_breakpoint="960"]</code></li>
+  <li>No bloco Gutenberg: campo <strong>Ponto de quebra mobile</strong> no painel lateral.</li>
+  <li>No painel global: <strong>Giuliomax › Configurações › Mobile</strong>.</li>
+</ul>
+
+<h2 id="botao-hamburguer">Botão hambúrguer</h2>
+<p>No modo mobile, o menu é ocultado e um botão hambúrguer (☰) é exibido. Ao tocar, o menu abre em um painel deslizante ou em modo acordeão, dependendo da configuração.</p>
+<ul>
+  <li><strong>Ícone personalizado</strong>: substitua o ícone padrão por um SVG próprio.</li>
+  <li><strong>Texto do botão</strong>: adicione um rótulo ao lado do ícone (ex.: "Menu").</li>
+  <li><strong>Animação</strong>: o ícone pode animar para um "×" ao abrir o menu.</li>
+</ul>
+
+<h2 id="modos-de-abertura">Modos de abertura</h2>
+<ul>
+  <li><strong>Painel deslizante (off-canvas)</strong>: o menu desliza da esquerda ou da direita.</li>
+  <li><strong>Acordeão inline</strong>: o menu expande abaixo do botão hambúrguer, empurrando o conteúdo da página para baixo.</li>
+  <li><strong>Fullscreen overlay</strong>: o menu ocupa toda a tela com fundo semitransparente.</li>
+</ul>
+
+<h2 id="gestos">Gestos de toque</h2>
+<p>No modo off-canvas, o usuário pode fechar o menu deslizando o dedo para o lado oposto à abertura. O gesto é detectado por um listener de <code>touchstart</code>/<code>touchend</code> nativo, sem dependência de bibliotecas externas.</p>
+
+<h2 id="menu-exclusivo-mobile">Menu exclusivo para mobile</h2>
+<p>Você pode configurar um menu diferente para ser exibido no mobile, independente do menu desktop. Isso é útil para simplificar a navegação em telas menores, ocultando itens secundários.</p>
+
+<div class="page-nav">
+  <a href="visibility.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Regras de visibilidade</span></a>
+  <a class="next" href="layout.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Layout e efeitos</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

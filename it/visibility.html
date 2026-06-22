@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regole di Visibilità — Giuliomax Menu Builder</title>
+  <meta name="description" content="Mostra o nascondi singole voci di menu in base a chi visita il sito, quale dispositivo usa, quando accede o se è autenticato.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/visibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/visibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/visibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/visibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/visibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/visibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/visibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/visibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Regole di Visibilità — Giuliomax Menu Builder">
+  <meta property="og:description" content="Mostra o nascondi singole voci di menu in base a chi visita il sito, quale dispositivo usa, quando accede o se è autenticato.">
+  <meta property="og:url" content="https://giulio001.github.io/it/visibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Regole di Visibilità — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Mostra o nascondi singole voci di menu in base a chi visita il sito, quale dispositivo usa, quando accede o se è autenticato.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funzionalità</p>
+<h1>Regole di Visibilità</h1>
+<p class="lead">Mostra o nascondi singole voci di menu in base a chi visita il sito, quale dispositivo usa, quando accede o se è autenticato.</p>
+
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/visibility.svg" alt="Regole di visibilità per le voci di menu" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#how">Come funzionano le regole di visibilità</a><a href="#user-role">Menu a tendina Visibilità</a><a href="#device">Dispositivo</a><a href="#schedule">Pianificazione e orario</a><a href="#login">Pagina e campagna</a><a href="#combining">Combinare le regole</a></div>
+
+<h2 id="how">Come funzionano le regole di visibilità</h2>
+<p>Le regole di visibilità si applicano a livello di singola voce di menu. Per ogni voce puoi definire una o più condizioni: la voce viene mostrata solo se <strong>tutte</strong> le condizioni attive sono soddisfatte contemporaneamente (logica AND).</p>
+<p>Se nessuna regola è configurata, la voce è sempre visibile a tutti i visitatori. Le regole vengono valutate lato server al momento del rendering del menu, quindi non c'è alcun contenuto nascosto nel DOM che un utente potrebbe scoprire ispezionando il codice sorgente.</p>
+
+<h2 id="user-role">Menu a tendina Visibilità (ruolo e login)</h2>
+<p>Il selettore di visibilità principale controlla chi può vedere la voce in base al suo stato di autenticazione o ruolo WordPress:</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Opzione</th><th>Comportamento</th></tr></thead>
+  <tbody>
+    <tr><td>Tutti</td><td>La voce è visibile a qualsiasi visitatore, sia loggato che non loggato (impostazione predefinita).</td></tr>
+    <tr><td>Qualsiasi utente loggato</td><td>La voce è visibile solo agli utenti autenticati, indipendentemente dal loro ruolo.</td></tr>
+    <tr><td>Solo ospiti</td><td>La voce è visibile solo ai visitatori non autenticati.</td></tr>
+    <tr><td>Solo [Ruolo]</td><td>La voce è visibile solo agli utenti con il ruolo WordPress specificato (es. Amministratore, Editor, Abbonato).</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Sono supportati anche i ruoli personalizzati creati da altri plugin. Per mostrare una voce a più ruoli specifici, crea voci di menu duplicate con regole di visibilità diverse, oppure usa l'opzione "Qualsiasi utente loggato" se i ruoli condividono l'accesso.</p></div></div>
+
+<h2 id="device">Dispositivo</h2>
+<p>Puoi limitare la visibilità di una voce in base al tipo di dispositivo del visitatore:</p>
+<ul>
+  <li><strong>Tutti i dispositivi</strong> — visibile su desktop e mobile (predefinito).</li>
+  <li><strong>Solo desktop</strong> — nascosta sui dispositivi mobili.</li>
+  <li><strong>Solo mobile</strong> — nascosta sui dispositivi desktop.</li>
+</ul>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Il rilevamento del dispositivo usa la funzione <code>wp_is_mobile()</code> di WordPress, che si basa sull'user agent del browser. Non è un rilevamento della larghezza dello schermo: un tablet potrebbe essere classificato come mobile o desktop a seconda del browser e del sistema operativo.</p></div></div>
+
+<h2 id="schedule">Pianificazione e orario</h2>
+<p>Le regole di pianificazione permettono di mostrare voci di menu solo durante un periodo specifico o una finestra oraria giornaliera.</p>
+<h3>Intervallo di date</h3>
+<p>Imposta una data di inizio e una data di fine: la voce sarà visibile solo durante quell'intervallo. Utile per promozioni stagionali, eventi o contenuti a tempo limitato.</p>
+<h3>Finestra oraria giornaliera</h3>
+<p>Imposta un orario di inizio e un orario di fine (es. 12:00–14:00): la voce sarà visibile solo durante quella finestra ogni giorno. Utile per mostrare un menu del pranzo o un'offerta dell'ora di punta.</p>
+
+<div class="callout warn"><span class="callout-icon">⚠️</span><div class="callout-body"><p>Tutti gli orari di pianificazione vengono confrontati con il fuso orario del sito WordPress, configurato in <strong>Impostazioni → Generali → Fuso orario</strong>. Assicurati che il fuso orario del sito sia impostato correttamente prima di usare le regole orarie.</p></div></div>
+
+<h2 id="login">Pagina e campagna</h2>
+<p>Per casi d'uso più avanzati, puoi mostrare voci di menu condizionalmente in base alla pagina corrente o ai parametri UTM della campagna:</p>
+<ul>
+  <li><strong>Pagine specifiche</strong> — mostra la voce solo quando l'utente si trova su determinate pagine (per ID o slug).</li>
+  <li><strong>Sorgente UTM</strong> — mostra la voce solo quando l'URL contiene un parametro UTM specifico (es. <code>utm_source=newsletter</code>).</li>
+</ul>
+
+<h2 id="combining">Combinare le regole</h2>
+<p>Tutte le regole attive su una voce vengono valutate contemporaneamente con logica AND. Ad esempio, puoi combinare:</p>
+<ul>
+  <li>Visibilità: <strong>Qualsiasi utente loggato</strong></li>
+  <li>Dispositivo: <strong>Solo desktop</strong></li>
+  <li>Intervallo di date: <strong>1 dic – 31 dic</strong></li>
+</ul>
+
+<div class="page-nav"><a href="badges.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Badge &amp; Puntini di Notifica</span></a><a class="next" href="mobile.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Menu Mobile</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

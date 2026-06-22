@@ -321,95 +321,27 @@
     document.body.appendChild(overlay);
   }
 
-  /* ── Content loaders ──────────────────────────────────────────────────── */
-  function loadScript(src, cb) {
-    const s = document.createElement('script');
-    s.src = src; s.onload = cb; s.onerror = cb;
-    document.head.appendChild(s);
-  }
+  /* ── URL / language helpers ───────────────────────────────────────────── */
+  const LANGS = ['it','de','es','nl','pt'];
 
-  function loadItalianContent(cb) {
-    if (window.MENUX_IT) { cb(); return; }
-    loadScript('it.js', cb);
+  /* Each language is served from its own folder (/it/, /de/, …); English
+     lives at the site root. Content is static per URL — no client-side
+     swapping — so every language version is independently crawlable. */
+  function currentPage() {
+    const last = window.location.pathname.split('/').pop();
+    return last && last.endsWith('.html') ? last : 'index.html';
   }
-  function applyItalianContent() {
-    const page = window.location.pathname.split('/').pop() || 'index.html';
-    const article = document.querySelector('article');
-    if (article && window.MENUX_IT && window.MENUX_IT[page])
-      article.innerHTML = window.MENUX_IT[page];
+  function currentLang() {
+    const seg = window.location.pathname.split('/').filter(Boolean)[0];
+    return LANGS.includes(seg) ? seg : 'en';
   }
-
-  function loadGermanContent(cb) {
-    if (window.MENUX_DE) { cb(); return; }
-    loadScript('de.js', cb);
+  function urlFor(lang, page) {
+    if (lang === 'en') return page === 'index.html' ? '/' : '/' + page;
+    return page === 'index.html' ? '/' + lang + '/' : '/' + lang + '/' + page;
   }
-  function applyGermanContent() {
-    const page = window.location.pathname.split('/').pop() || 'index.html';
-    const article = document.querySelector('article');
-    if (article && window.MENUX_DE && window.MENUX_DE[page])
-      article.innerHTML = window.MENUX_DE[page];
-  }
-
-  function loadSpanishContent(cb) {
-    if (window.MENUX_ES) { cb(); return; }
-    loadScript('es.js', cb);
-  }
-  function applySpanishContent() {
-    const page = window.location.pathname.split('/').pop() || 'index.html';
-    const article = document.querySelector('article');
-    if (article && window.MENUX_ES && window.MENUX_ES[page])
-      article.innerHTML = window.MENUX_ES[page];
-  }
-
-  function loadDutchContent(cb) {
-    if (window.MENUX_NL) { cb(); return; }
-    loadScript('nl.js', cb);
-  }
-  function applyDutchContent() {
-    const page = window.location.pathname.split('/').pop() || 'index.html';
-    const article = document.querySelector('article');
-    if (article && window.MENUX_NL && window.MENUX_NL[page])
-      article.innerHTML = window.MENUX_NL[page];
-  }
-
-  function loadPortugueseContent(cb) {
-    if (window.MENUX_PT) { cb(); return; }
-    loadScript('pt.js', cb);
-  }
-  function applyPortugueseContent() {
-    const page = window.location.pathname.split('/').pop() || 'index.html';
-    const article = document.querySelector('article');
-    if (article && window.MENUX_PT && window.MENUX_PT[page])
-      article.innerHTML = window.MENUX_PT[page];
-  }
-
-  /* ── Apply page-level UI translations ────────────────────────────────── */
-  function applyTranslations(lang) {
-    const tr = T[lang];
-    if (!tr) return;
-
-    document.querySelectorAll('.on-this-page > strong').forEach(el => {
-      el.textContent = tr.onThisPage;
-    });
-
-    const bc = document.querySelector('.breadcrumb');
-    if (bc) {
-      const key = bc.textContent.trim();
-      if (tr.groups[key]) bc.textContent = tr.groups[key];
-    }
-
-    document.querySelectorAll('.page-nav .nav-dir').forEach(el => {
-      if (el.textContent.includes('→'))      el.textContent = tr.next;
-      else if (el.textContent.includes('←')) el.textContent = tr.prev;
-    });
-
-    document.querySelectorAll('.page-nav a[href]').forEach(a => {
-      const label = tr.labels[a.getAttribute('href')];
-      if (label) {
-        const title = a.querySelector('.nav-title');
-        if (title) title.textContent = label;
-      }
-    });
+  function goToLang(lang) {
+    setLang(lang);
+    if (lang !== currentLang()) window.location.href = urlFor(lang, currentPage());
   }
 
   /* ── Pages manifest ───────────────────────────────────────────────────── */
@@ -513,35 +445,33 @@
       });
     });
 
-    /* Language switcher — opens the full picker overlay */
+    /* Language switcher — opens the full picker overlay, then navigates */
     const langToggle = sidebar.querySelector(".lang-toggle");
     langToggle.addEventListener("click", e => {
       e.stopPropagation();
-      showPicker(() => location.reload());
+      showPicker(chosen => goToLang(chosen));
     });
-
-    /* Load translated content */
-    if (lang === 'it') {
-      loadItalianContent(() => { applyItalianContent(); applyTranslations(lang); });
-    } else if (lang === 'de') {
-      loadGermanContent(() => { applyGermanContent(); applyTranslations(lang); });
-    } else if (lang === 'es') {
-      loadSpanishContent(() => { applySpanishContent(); applyTranslations(lang); });
-    } else if (lang === 'nl') {
-      loadDutchContent(() => { applyDutchContent(); applyTranslations(lang); });
-    } else if (lang === 'pt') {
-      loadPortugueseContent(() => { applyPortugueseContent(); applyTranslations(lang); });
-    } else {
-      applyTranslations(lang);
-    }
   }
 
   /* ── Bootstrap ────────────────────────────────────────────────────────── */
+  const here  = currentLang();
   const saved = getLang();
-  if (saved) {
-    document.addEventListener("DOMContentLoaded", () => init(saved));
+
+  if (here !== 'en') {
+    /* Explicit language URL — respect it and remember the preference */
+    setLang(here);
+    document.addEventListener("DOMContentLoaded", () => init(here));
+  } else if (saved && T[saved] && saved !== 'en') {
+    /* On the default (English) URL but the visitor has chosen another
+       language before — send them to their version. Crawlers have no saved
+       preference, so they never redirect and every URL stays indexable. */
+    window.location.replace(urlFor(saved, currentPage()));
   } else {
-    document.addEventListener("DOMContentLoaded", () => showPicker(chosen => init(chosen)));
+    document.addEventListener("DOMContentLoaded", () => {
+      init('en');
+      /* First-ever visit on the English site: offer the language picker */
+      if (!saved) showPicker(chosen => goToLang(chosen));
+    });
   }
 
 })();

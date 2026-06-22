@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito WooCommerce — Giuliomax Menu Builder</title>
+  <meta name="description" content="Muestra un icono del carrito de compras en el menú de navegación con un contador que se actualiza en tiempo real cada vez que el cliente añade o elimina un…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/cart.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/cart.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/cart.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/cart.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/cart.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/cart.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/cart.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/cart.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Carrito WooCommerce — Giuliomax Menu Builder">
+  <meta property="og:description" content="Muestra un icono del carrito de compras en el menú de navegación con un contador que se actualiza en tiempo real cada vez que el cliente añade o elimina un…">
+  <meta property="og:url" content="https://giulio001.github.io/es/cart.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Carrito WooCommerce — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Muestra un icono del carrito de compras en el menú de navegación con un contador que se actualiza en tiempo real cada vez que el cliente añade o elimina un…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funcionalidades</p>
+<h1>Carrito WooCommerce</h1>
+<p class="lead">Muestra un icono del carrito de compras en el menú de navegación con un contador que se actualiza en tiempo real cada vez que el cliente añade o elimina un artículo.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#activar">Activar el icono del carrito</a>
+  <a href="#estilo">Estilo y posición</a>
+  <a href="#comportamiento">Comportamiento al hacer clic</a>
+</div>
+
+<h2 id="activar">Activar el icono del carrito</h2>
+<p>El icono del carrito se activa automáticamente cuando WooCommerce está instalado y activo. Ve a <strong>Menu Builder → Carrito</strong> y activa el interruptor <strong>Mostrar icono del carrito</strong>.</p>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Si WooCommerce no está instalado, la sección de Carrito en el admin no aparece y el icono no se renderiza en el frontend.</p></div>
+</div>
+
+<h2 id="estilo">Estilo y posición</h2>
+<p>El icono del carrito puede personalizarse con las siguientes opciones:</p>
+<ul>
+  <li><strong>Posición</strong> — colócalo al principio o al final de la barra de navegación.</li>
+  <li><strong>Icono</strong> — elige entre carrito de compras, bolsa de la compra o cesta.</li>
+  <li><strong>Color</strong> — hereda el color de los enlaces del menú o establece uno personalizado.</li>
+  <li><strong>Contador</strong> — muestra el número de artículos como una burbuja. Puedes elegir el color de fondo y del texto del contador.</li>
+  <li><strong>Ocultar cuando está vacío</strong> — el icono (y el contador) solo aparece cuando hay artículos en el carrito.</li>
+</ul>
+
+<h2 id="comportamiento">Comportamiento al hacer clic</h2>
+<p>Elige qué ocurre cuando el visitante hace clic en el icono del carrito:</p>
+<ul>
+  <li><strong>Ir a la página del carrito</strong> — redirige a <code>/carrito</code> (o la URL del carrito configurada en WooCommerce).</li>
+  <li><strong>Abrir el panel lateral del carrito</strong> — muestra un mini-carrito deslizante sin abandonar la página actual.</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body"><p>El contador se actualiza mediante los fragmentos de carrito de WooCommerce. Si usas un plugin de caché, asegúrate de que las solicitudes AJAX de WooCommerce no estén en caché para que el contador se actualice correctamente.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="announcement.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Barra de anuncios</span></a>
+  <a class="next" href="search.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Búsqueda</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

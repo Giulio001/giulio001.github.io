@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder está desarrollado para cumplir con WCAG 2.2 Nivel AA. La navegación funciona completamente sin ratón, los desplegables se anuncian a…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Accesibilidad — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder está desarrollado para cumplir con WCAG 2.2 Nivel AA. La navegación funciona completamente sin ratón, los desplegables se anuncian a…">
+  <meta property="og:url" content="https://giulio001.github.io/es/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Accesibilidad — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder está desarrollado para cumplir con WCAG 2.2 Nivel AA. La navegación funciona completamente sin ratón, los desplegables se anuncian a…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Avanzado</p>
+<h1>Accesibilidad</h1>
+<p class="lead">Giuliomax Menu Builder está desarrollado para cumplir con WCAG 2.2 Nivel AA. La navegación funciona completamente sin ratón, los desplegables se anuncian a los lectores de pantalla y el movimiento puede desactivarse a nivel del sistema.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#wcag">Conformidad WCAG 2.2 AA</a>
+  <a href="#teclado">Navegación por teclado</a>
+  <a href="#aria">Atributos ARIA</a>
+  <a href="#foco">Gestión del foco</a>
+  <a href="#movimiento">Movimiento reducido</a>
+  <a href="#testing">Verificar tu menú</a>
+</div>
+
+<h2 id="wcag">Conformidad WCAG 2.2 AA</h2>
+<p>El plugin se prueba frente a los siguientes criterios de éxito de WCAG 2.2 relevantes para componentes de navegación:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Criterio</th><th>Nivel</th><th>Cómo se cumple</th></tr></thead>
+    <tbody>
+      <tr><td>1.4.3 Contraste (mínimo)</td><td>AA</td><td>Todos los temas integrados se prueban para alcanzar una relación de contraste de 4,5:1 para el texto.</td></tr>
+      <tr><td>2.1.1 Teclado</td><td>A</td><td>Toda la funcionalidad es operable únicamente con teclado.</td></tr>
+      <tr><td>2.1.2 Sin trampa de teclado</td><td>A</td><td>El foco siempre puede salir del menú sin usar un dispositivo señalador.</td></tr>
+      <tr><td>2.4.3 Orden del foco</td><td>A</td><td>El orden del foco sigue el orden de lectura visual del menú.</td></tr>
+      <tr><td>2.4.7 Foco visible</td><td>AA</td><td>Se muestra un indicador de foco visible en cada elemento interactivo.</td></tr>
+      <tr><td>2.4.11 Apariencia del foco</td><td>AA</td><td>Los indicadores de foco cumplen los requisitos mínimos de tamaño y contraste (nuevo en WCAG 2.2).</td></tr>
+      <tr><td>4.1.2 Nombre, rol, valor</td><td>A</td><td>Todos los elementos interactivos tienen un nombre accesible y el rol ARIA correcto.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="teclado">Navegación por teclado</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Tecla</th><th>Acción</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>Tab</kbd></td><td>Mover el foco al siguiente elemento del menú o elemento interactivo.</td></tr>
+      <tr><td><kbd>Shift + Tab</kbd></td><td>Mover el foco al elemento anterior.</td></tr>
+      <tr><td><kbd>Enter</kbd> / <kbd>Espacio</kbd></td><td>Activar un enlace, o abrir / cerrar un desplegable.</td></tr>
+      <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Mover el foco por los elementos dentro de un desplegable o panel de megamenú abierto.</td></tr>
+      <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Moverse entre elementos de nivel superior.</td></tr>
+      <tr><td><kbd>Escape</kbd></td><td>Cerrar el desplegable o panel de megamenú actual y devolver el foco al elemento padre.</td></tr>
+      <tr><td><kbd>Inicio</kbd> / <kbd>Fin</kbd></td><td>Saltar al primer / último elemento en una lista desplegable.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="aria">Atributos ARIA</h2>
+<p>El plugin añade automáticamente los siguientes atributos ARIA al marcado renderizado:</p>
+<ul>
+  <li><code>role="navigation"</code> y <code>aria-label</code> en el elemento <code>&lt;nav&gt;</code> (la etiqueta corresponde al nombre del menú en WordPress).</li>
+  <li><code>aria-haspopup="true"</code> y <code>aria-expanded</code> en los elementos de nivel superior que tienen un desplegable o megamenú.</li>
+  <li><code>aria-controls</code> vinculando el botón disparador con su panel.</li>
+  <li><code>role="menu"</code> y <code>role="menuitem"</code> dentro de los desplegables.</li>
+  <li><code>aria-current="page"</code> en el elemento correspondiente a la página actual.</li>
+</ul>
+<p>No necesitas configurar nada de esto — se aplica automáticamente en función de la estructura del menú.</p>
+
+<h2 id="foco">Gestión del foco</h2>
+<ul>
+  <li>Cuando se abre un desplegable, el foco se mueve al primer elemento dentro de él.</li>
+  <li>Cuando se cierra un desplegable (con Escape o al mover el foco fuera), el foco vuelve al elemento que lo activó.</li>
+  <li>El overlay del menú móvil atrapa el foco dentro mientras está abierto (el foco no puede tabular fuera del panel). Al cerrar el overlay, el foco regresa al botón hamburguesa.</li>
+</ul>
+
+<h2 id="movimiento">Movimiento reducido</h2>
+<p>Todas las transiciones y animaciones respetan la media query CSS <code>prefers-reduced-motion: reduce</code>. Cuando el usuario ha activado "Reducir movimiento" en la configuración de accesibilidad de su sistema operativo:</p>
+<ul>
+  <li>Las animaciones de deslizamiento/fundido de los desplegables se reemplazan por aparición/desaparición instantánea.</li>
+  <li>Las transiciones de apertura/cierre del menú móvil son instantáneas.</li>
+  <li>La animación de entrada de la barra de anuncios se desactiva.</li>
+  <li>Las animaciones de entrada en los elementos del menú se desactivan.</li>
+</ul>
+
+<h2 id="testing">Verificar tu menú</h2>
+<p>Tras configurar el menú, usa las siguientes herramientas para verificar la accesibilidad:</p>
+<ul>
+  <li><strong>Solo teclado</strong> — desconecta el ratón y navega por todo el menú usando únicamente Tab, teclas de flecha, Enter y Escape.</li>
+  <li><strong>axe DevTools</strong> — una extensión de navegador gratuita que ejecuta comprobaciones automáticas de WCAG en la página en vivo.</li>
+  <li><strong>NVDA / VoiceOver</strong> — lectores de pantalla para verificar que los estados de los desplegables y las etiquetas se anuncian correctamente.</li>
+  <li><strong>Colour Contrast Analyser</strong> — comprueba que tus personalizaciones de color siguen cumpliendo el ratio mínimo de 4,5:1.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="import-export.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Importar / Exportar</span></a>
+  <a class="next" href="multilingual.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Multilingüe</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

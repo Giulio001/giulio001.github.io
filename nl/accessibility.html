@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toegankelijkheid — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/nl/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Toegankelijkheid — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door…">
+  <meta property="og:url" content="https://giulio001.github.io/nl/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Toegankelijkheid — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Geavanceerd</p>
+<h1>Toegankelijkheid</h1>
+<p class="lead">Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door schermlezers en beweging kan systeembreed worden uitgeschakeld.</p>
+<div class="on-this-page">
+  <strong>Op deze pagina</strong>
+  <a href="#wcag">WCAG 2.2 AA-conformiteit</a>
+  <a href="#toetsenbord">Toetsenbordnavigatie</a>
+  <a href="#aria">ARIA-attributen</a>
+  <a href="#focus">Focusbeheer</a>
+  <a href="#beweging">Verminderde beweging</a>
+  <a href="#testen">Je menu testen</a>
+</div>
+
+<h2 id="wcag">WCAG 2.2 AA-conformiteit</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Criterium</th><th>Niveau</th><th>Hoe het is geïmplementeerd</th></tr></thead>
+    <tbody>
+      <tr><td>1.4.3 Contrast (minimum)</td><td>AA</td><td>Alle ingebouwde thema's worden getest op een contrastverhouding van 4,5:1 voor tekst.</td></tr>
+      <tr><td>2.1.1 Toetsenbord</td><td>A</td><td>Alle functionaliteit is uitsluitend met het toetsenbord te bedienen.</td></tr>
+      <tr><td>2.1.2 Geen toetsenbordval</td><td>A</td><td>De focus kan het menu altijd verlaten zonder een aanwijsapparaat.</td></tr>
+      <tr><td>2.4.3 Focusvolgorde</td><td>A</td><td>De focusvolgorde volgt de visuele leesvolgorde van het menu.</td></tr>
+      <tr><td>2.4.7 Focus zichtbaar</td><td>AA</td><td>Er is een zichtbare focusring op elk interactief element.</td></tr>
+      <tr><td>2.4.11 Focusweergave</td><td>AA</td><td>Focusindicatoren voldoen aan minimale grootte- en contrastvereisten (nieuw in WCAG 2.2).</td></tr>
+      <tr><td>4.1.2 Naam, rol, waarde</td><td>A</td><td>Alle interactieve elementen hebben een toegankelijke naam en de juiste ARIA-rol.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="toetsenbord">Toetsenbordnavigatie</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Toets</th><th>Actie</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>Tab</kbd></td><td>Focus verplaatsen naar het volgende menu-item of interactief element.</td></tr>
+      <tr><td><kbd>Shift + Tab</kbd></td><td>Focus verplaatsen naar het vorige item.</td></tr>
+      <tr><td><kbd>Enter</kbd> / <kbd>Spatiebalk</kbd></td><td>Een link activeren of een dropdown openen/sluiten.</td></tr>
+      <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Focus verplaatsen door items in een open dropdown of megamenupaneel.</td></tr>
+      <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Schakelen tussen items op het hoogste niveau.</td></tr>
+      <tr><td><kbd>Escape</kbd></td><td>De huidige dropdown of het megamenupaneel sluiten en focus terugsturen naar het bovenliggende item.</td></tr>
+      <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>Springen naar het eerste/laatste item in een dropdownlijst.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="aria">ARIA-attributen</h2>
+<ul>
+  <li><code>role="navigation"</code> en <code>aria-label</code> op het <code>&lt;nav&gt;</code>-element.</li>
+  <li><code>aria-haspopup="true"</code> en <code>aria-expanded</code> op items met een dropdown of megamenu.</li>
+  <li><code>aria-controls</code> die de triggerknop koppelt aan zijn paneel.</li>
+  <li><code>role="menu"</code> en <code>role="menuitem"</code> binnen dropdowns.</li>
+  <li><code>aria-current="page"</code> op het item dat overeenkomt met de huidige pagina.</li>
+</ul>
+
+<h2 id="focus">Focusbeheer</h2>
+<ul>
+  <li>Wanneer een dropdown opent, verschuift de focus naar het eerste item daarin.</li>
+  <li>Wanneer een dropdown sluit, keert de focus terug naar het activerende item.</li>
+  <li>De mobiele menu-overlay houdt de focus vast zolang hij open is. Sluiten brengt de focus terug naar de hamburgerknop.</li>
+</ul>
+
+<h2 id="beweging">Verminderde beweging</h2>
+<p>Alle overgangen respecteren de CSS-mediaquery <code>prefers-reduced-motion: reduce</code>. Bij ingeschakelde "Beweging verminderen"-voorkeur:</p>
+<ul>
+  <li>Dropdown-animaties worden vervangen door direct tonen/verbergen.</li>
+  <li>Overgangen bij openen/sluiten van het mobiele menu zijn direct.</li>
+  <li>De ingangsanimatie van de aankondigingsbalk is uitgeschakeld.</li>
+  <li>Ingangsanimaties op menu-items zijn uitgeschakeld.</li>
+</ul>
+
+<h2 id="testen">Je menu testen</h2>
+<ul>
+  <li><strong>Alleen toetsenbord</strong> — koppel de muis los en navigeer het hele menu via Tab, pijltoetsen, Enter en Escape.</li>
+  <li><strong>axe DevTools</strong> — gratis browserextensie voor geautomatiseerde WCAG-controles.</li>
+  <li><strong>NVDA / VoiceOver</strong> — schermlezers om dropdownstatussen en labels te verifiëren.</li>
+  <li><strong>Colour Contrast Analyser</strong> — controleer of aangepaste kleuren nog steeds de minimumverhouding van 4,5:1 halen.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="import-export.html"><span class="nav-dir">← Vorige</span><span class="nav-title">Importeren / Exporteren</span></a>
+  <a class="next" href="multilingual.html"><span class="nav-dir">Volgende →</span><span class="nav-title">Meertalig</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra Annunci — Giuliomax Menu Builder</title>
+  <meta name="description" content="Aggiungi un sottile banner promozionale sopra (o sotto) la barra di navigazione con un messaggio personalizzato, un link di invito all'azione e un timer…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/announcement.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/announcement.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/announcement.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/announcement.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/announcement.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/announcement.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/announcement.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/announcement.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Barra Annunci — Giuliomax Menu Builder">
+  <meta property="og:description" content="Aggiungi un sottile banner promozionale sopra (o sotto) la barra di navigazione con un messaggio personalizzato, un link di invito all'azione e un timer…">
+  <meta property="og:url" content="https://giulio001.github.io/it/announcement.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Barra Annunci — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Aggiungi un sottile banner promozionale sopra (o sotto) la barra di navigazione con un messaggio personalizzato, un link di invito all'azione e un timer…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funzionalità</p>
+<h1>Barra Annunci</h1>
+<p class="lead">Aggiungi un sottile banner promozionale sopra (o sotto) la barra di navigazione con un messaggio personalizzato, un link di invito all'azione e un timer countdown opzionale.</p>
+
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/announcement-countdown.svg" alt="Barra annunci con countdown" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#enable">Attivare la barra</a><a href="#content">Impostare il messaggio e il link</a><a href="#countdown">Timer countdown</a><a href="#styling">Stile</a><a href="#position">Posizione e chiusura</a></div>
+
+<h2 id="enable">Attivare la barra</h2>
+<ol class="steps">
+  <li>Vai su <strong>Menu Builder → Barra annunci</strong>.</li>
+  <li>Attiva l'interruttore <strong>Abilita barra annunci</strong>.</li>
+  <li>Configura il messaggio, il link e le opzioni di stile (vedi sezioni seguenti), quindi salva.</li>
+</ol>
+<p>La barra annunci è visibile immediatamente su tutte le pagine del sito che mostrano il menu.</p>
+
+<h2 id="content">Impostare il messaggio e il link</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Campo</th><th>Descrizione</th></tr></thead>
+  <tbody>
+    <tr><td>Testo del messaggio</td><td>Il testo promozionale visualizzato nella barra. Supporta HTML di base (grassetto, corsivo, link).</td></tr>
+    <tr><td>URL del link</td><td>URL della pagina di destinazione quando l'utente fa clic sulla barra.</td></tr>
+    <tr><td>Apri in nuova scheda</td><td>Se attivo, il link si apre in una nuova scheda del browser.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="countdown">Timer countdown</h2>
+<p>Il countdown è uno strumento efficace per creare urgenza attorno a offerte a tempo limitato. Visualizza giorni, ore, minuti e secondi rimanenti fino a una data di scadenza specificata.</p>
+<ol class="steps">
+  <li>Nella sezione <strong>Countdown</strong>, attiva l'interruttore <strong>Mostra countdown</strong>.</li>
+  <li>Imposta la <strong>Data di scadenza</strong> usando il selettore di data e ora.</li>
+  <li>Scegli il <strong>Fuso orario</strong> di riferimento per il countdown.</li>
+  <li>Salva le impostazioni. Il timer apparirà nella barra accanto al messaggio.</li>
+</ol>
+
+<div class="callout warn"><span class="callout-icon">⚠️</span><div class="callout-body"><p>Il countdown si basa sull'orologio del browser del visitatore. Se l'orologio del dispositivo non è sincronizzato correttamente, il timer potrebbe mostrare un valore leggermente diverso da quello atteso. Per offerte critiche, considera di gestire la scadenza lato server.</p></div></div>
+
+<h3>Formato di visualizzazione del timer</h3>
+<p>Il timer countdown mostra automaticamente i segmenti rilevanti: se mancano più di 24 ore alla scadenza, vengono mostrati giorni, ore, minuti e secondi. Nelle ultime 24 ore vengono mostrati solo ore, minuti e secondi. Quando il countdown raggiunge zero, la barra può essere configurata per scomparire automaticamente o per mostrare un messaggio alternativo.</p>
+
+<h2 id="styling">Stile</h2>
+<p>La barra annunci supporta le seguenti opzioni di personalizzazione visiva:</p>
+<ul>
+  <li><strong>Colore di sfondo</strong> — colore della barra (solido o gradiente).</li>
+  <li><strong>Colore del testo</strong> — colore del messaggio e del countdown.</li>
+  <li><strong>Dimensione del testo</strong> — dimensione del font del messaggio.</li>
+  <li><strong>Altezza della barra</strong> — altezza in pixel della barra annunci.</li>
+</ul>
+
+<h2 id="position">Posizione e chiusura</h2>
+<ul>
+  <li><strong>Posizione</strong> — la barra può essere visualizzata <strong>sopra</strong> la barra di navigazione (predefinito) oppure <strong>sotto</strong> di essa.</li>
+  <li><strong>Chiusura</strong> — puoi abilitare un pulsante di chiusura (×) che consente agli utenti di nascondere la barra. La preferenza viene memorizzata in un cookie di sessione, in modo che la barra rimanga nascosta durante la stessa visita.</li>
+</ul>
+
+<div class="page-nav"><a href="mega-menu.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Mega Menu</span></a><a class="next" href="cart.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Carrello WooCommerce</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

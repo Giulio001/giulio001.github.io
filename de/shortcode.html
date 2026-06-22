@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shortcode [menux] — Giuliomax Menu Builder</title>
+  <meta name="description" content="Der Shortcode [menux] ermöglicht es dir, ein vollständig gestaltetes Navigationsmenü überall einzufügen, wo Shortcodes unterstützt werden: Seiten, Beiträge…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/shortcode.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/shortcode.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/shortcode.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/shortcode.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/shortcode.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/shortcode.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/shortcode.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/shortcode.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Shortcode [menux] — Giuliomax Menu Builder">
+  <meta property="og:description" content="Der Shortcode [menux] ermöglicht es dir, ein vollständig gestaltetes Navigationsmenü überall einzufügen, wo Shortcodes unterstützt werden: Seiten, Beiträge…">
+  <meta property="og:url" content="https://giulio001.github.io/de/shortcode.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shortcode [menux] — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Der Shortcode [menux] ermöglicht es dir, ein vollständig gestaltetes Navigationsmenü überall einzufügen, wo Shortcodes unterstützt werden: Seiten, Beiträge…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Plugin verwenden</p>
+<h1>Shortcode <code>[menux]</code></h1>
+<p class="lead">Der Shortcode <code>[menux]</code> ermöglicht es dir, ein vollständig gestaltetes Navigationsmenü überall einzufügen, wo Shortcodes unterstützt werden: Seiten, Beiträge, Text-Widgets, klassische Theme-Templates und mehr.</p>
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/shortcode.svg" alt="Code-Editor mit dem [menux]-Shortcode und der gerenderten primären und Footer-Navigationsleiste" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#basic">Grundlegende Verwendung</a>
+  <a href="#attributes">Attribute</a>
+  <a href="#examples">Beispiele</a>
+  <a href="#template">Verwendung in PHP-Templates</a>
+</div>
+<h2 id="basic">Grundlegende Verwendung</h2>
+<p>Die einfachste Form des Shortcodes benötigt keine Attribute. Er rendert den <em>primären</em> Menübereich:</p>
+<pre><code>[menux]</code></pre>
+<p>Alle Menüpunkte, Themes, Mobile-Einstellungen und Funktionen werden global in <strong>Menu Builder</strong> konfiguriert — der Shortcode gibt das Ergebnis einfach an der Stelle aus, an der du ihn einfügst.</p>
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Das Plugin verwaltet seine eigenen Menüpunkte in <strong>Menu Builder → Menüstruktur</strong>. Diese sind unabhängig von WordPress' nativen <em>Design → Menüs</em>.</p></div>
+</div>
+<h2 id="attributes">Attribute</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Attribut</th><th>Typ</th><th>Standard</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>location</code></td>
+      <td>string</td>
+      <td><code>primary</code></td>
+      <td>Welcher Menübereich angezeigt werden soll. Jeder Punkt wird einem Bereich in <strong>Menu Builder → Menüstruktur</strong> zugewiesen. Verfügbare Bereiche: <code>primary</code>, <code>footer</code>, <code>sidebar</code> und <code>mobile</code>.</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2 id="examples">Beispiele</h2>
+<h3>Primäres Menü rendern (Standard)</h3>
+<pre><code>[menux]</code></pre>
+<h3>Einen bestimmten Bereich rendern</h3>
+<pre><code>[menux location="footer"]</code></pre>
+<h3>Zwei Menüs auf einer Seite (z. B. Kopf- und Fußzeile)</h3>
+<pre><code>[menux location="primary"]
+[menux location="footer"]</code></pre>
+<h2 id="template">Verwendung in PHP-Templates</h2>
+<p>In klassischen Theme-Templates (z. B. <code>header.php</code>) kannst du den Shortcode so rendern:</p>
+<pre><code>&lt;?php echo do_shortcode('[menux]'); ?&gt;</code></pre>
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body"><p>Wenn du ein blockbasiertes (FSE) Theme verwendest, nutze stattdessen den <a href="gutenberg.html">Gutenberg-Block</a>. Er integriert sich direkt in den Website-Editor und verwendet dieselben globalen Einstellungen.</p></div>
+</div>
+<div class="page-nav">
+  <a href="installation.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Installation</span></a>
+  <a class="next" href="gutenberg.html"><span class="nav-dir">Weiter →</span><span class="nav-title">Gutenberg-Block</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

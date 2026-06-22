@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Badge &amp; Puntini di Notifica — Giuliomax Menu Builder</title>
+  <meta name="description" content="Attira l'attenzione su singole voci di menu con un piccolo badge testuale (es. &quot;Nuovo&quot;, &quot;Hot&quot;) o un semplice puntino di notifica.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/badges.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/badges.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/badges.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/badges.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/badges.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/badges.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/badges.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/badges.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Badge &amp; Puntini di Notifica — Giuliomax Menu Builder">
+  <meta property="og:description" content="Attira l'attenzione su singole voci di menu con un piccolo badge testuale (es. &quot;Nuovo&quot;, &quot;Hot&quot;) o un semplice puntino di notifica.">
+  <meta property="og:url" content="https://giulio001.github.io/it/badges.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Badge &amp; Puntini di Notifica — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Attira l'attenzione su singole voci di menu con un piccolo badge testuale (es. &quot;Nuovo&quot;, &quot;Hot&quot;) o un semplice puntino di notifica.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funzionalità</p>
+<h1>Badge &amp; Puntini di Notifica</h1>
+<p class="lead">Attira l'attenzione su singole voci di menu con un piccolo badge testuale (es. "Nuovo", "Hot") o un semplice puntino di notifica.</p>
+
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/components.svg" alt="Esempi di badge e puntini di notifica" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#badge">Badge testuali</a><a href="#dot">Puntino di notifica</a><a href="#icons">Icone delle voci</a></div>
+
+<h2 id="badge">Badge testuali</h2>
+<p>Un badge testuale è una piccola etichetta colorata visualizzata accanto all'etichetta della voce di menu — ideale per segnalare novità, promozioni o contenuti in evidenza.</p>
+<ol class="steps">
+  <li>Vai su <strong>Menu Builder → Voci</strong> e fai clic sulla voce a cui vuoi aggiungere il badge.</li>
+  <li>Nel pannello delle impostazioni della voce, individua la sezione <strong>Badge</strong>.</li>
+  <li>Inserisci il testo del badge nel campo apposito (es. "Nuovo", "Sale", "Hot").</li>
+  <li>Scegli il colore di sfondo e il colore del testo del badge.</li>
+  <li>Salva le modifiche.</li>
+</ol>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Il badge viene reso con l'attributo <code>aria-hidden="true"</code> per evitare che gli screen reader lo annuncino due volte — l'etichetta della voce è già letta dal lettore di schermo. Se il testo del badge è semanticamente rilevante, considera di aggiungerlo anche al testo alternativo o all'etichetta ARIA della voce.</p></div></div>
+
+<h2 id="dot">Puntino di notifica</h2>
+<p>Il puntino di notifica è un piccolo cerchio colorato che appare nell'angolo superiore destro dell'icona o del testo della voce — più discreto di un badge testuale, utile per indicare aggiornamenti non letti o nuovi contenuti.</p>
+<ol class="steps">
+  <li>Nelle impostazioni della voce di menu, individua la sezione <strong>Puntino di notifica</strong>.</li>
+  <li>Attiva l'interruttore <strong>Mostra puntino</strong>.</li>
+  <li>Scegli il colore del puntino.</li>
+</ol>
+
+<div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Il puntino include automaticamente un testo nascosto visivamente accessibile agli screen reader (es. "Nuovi elementi disponibili"), in modo che gli utenti che navigano con tecnologie assistive ricevano comunque l'informazione.</p></div></div>
+
+<h2 id="icons">Icone delle voci</h2>
+<p>Puoi aggiungere un'icona accanto all'etichetta di qualsiasi voce di menu usando Font Awesome 6. Inserisci il nome della classe dell'icona (es. <code>fa-solid fa-house</code>) nel campo <strong>Icona</strong> delle impostazioni della voce. L'icona viene visualizzata prima del testo dell'etichetta e si adatta automaticamente al colore dei link del tema attivo.</p>
+
+<div class="page-nav"><a href="search.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Ricerca</span></a><a class="next" href="visibility.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Regole di Visibilità</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

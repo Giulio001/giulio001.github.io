@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gutenberg-Block — Giuliomax Menu Builder</title>
+  <meta name="description" content="Der MenuX-Block ist ein nativer WordPress-Block, mit dem du dein Menü direkt im Website-Editor platzieren kannst — kein Shortcode, kein Widget, kein PHP…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/gutenberg.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/gutenberg.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/gutenberg.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/gutenberg.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/gutenberg.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/gutenberg.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/gutenberg.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/gutenberg.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Gutenberg-Block — Giuliomax Menu Builder">
+  <meta property="og:description" content="Der MenuX-Block ist ein nativer WordPress-Block, mit dem du dein Menü direkt im Website-Editor platzieren kannst — kein Shortcode, kein Widget, kein PHP…">
+  <meta property="og:url" content="https://giulio001.github.io/de/gutenberg.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gutenberg-Block — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Der MenuX-Block ist ein nativer WordPress-Block, mit dem du dein Menü direkt im Website-Editor platzieren kannst — kein Shortcode, kein Widget, kein PHP…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Plugin verwenden</p>
+<h1>Gutenberg-Block</h1>
+<p class="lead">Der MenuX-Block ist ein nativer WordPress-Block, mit dem du dein Menü direkt im Website-Editor platzieren kannst — kein Shortcode, kein Widget, kein PHP erforderlich.</p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#when-to-use">Wann den Block verwenden</a>
+  <a href="#add-block">Block hinzufügen</a>
+  <a href="#settings">Block-Einstellungsbereich</a>
+  <a href="#fse-header">Verwendung in einem FSE-Header</a>
+  <a href="#classic">Klassische Themes</a>
+</div>
+<h2 id="when-to-use">Wann den Block verwenden</h2>
+<p>Verwende den Gutenberg-Block, wenn:</p>
+<ul>
+  <li>Dein Theme ein <strong>Full Site Editing (FSE)</strong>-Theme ist (z. B. Twenty Twenty-Four, Kadence, Blocksy).</li>
+  <li>Du das Header-Layout im <strong>Website-Editor</strong> (<em>Design → Editor</em>) verwalten möchtest.</li>
+  <li>Du einen visuellen Drag-and-Drop-Workflow bevorzugst.</li>
+</ul>
+<p>Bei einem klassischen (Nicht-FSE) Theme ist der <a href="shortcode.html">Shortcode</a> die richtige Wahl.</p>
+<h2 id="add-block">Block zu einer Seite oder einem Template hinzufügen</h2>
+<ol class="steps">
+  <li>Öffne die Seite oder das Template, das du bearbeiten möchtest. Für siteweite Header: <strong>Design → Editor → Templates</strong> öffnen und Kopfzeilen-Template-Teil auswählen.</li>
+  <li>Klicke auf den <strong>+</strong>-Einfüger-Button (oben links oder in einem leeren Blockbereich).</li>
+  <li>Suche nach <strong>MenuX</strong> oder <strong>Menu Builder</strong>.</li>
+  <li>Klicke auf den Block, um ihn einzufügen, oder ziehe ihn an die gewünschte Position.</li>
+</ol>
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Der Block ist unter dem Namen <code>giuliomax/menu</code> registriert. Wenn du ein Child-Theme oder benutzerdefinierten Code verwendest, der Blöcke nach Name referenziert, nutze diesen Bezeichner.</p></div>
+</div>
+<h2 id="settings">Block-Einstellungsbereich</h2>
+<p>Wenn der MenuX-Menü-Block ausgewählt ist, erscheinen seine Einstellungen in der rechten Seitenleiste unter dem Tab <strong>Block</strong>.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Einstellung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Menübereich</strong></td><td>Wähle, welchen Bereich gerendert werden soll. Die diesem Bereich in <strong>Menu Builder → Menüstruktur</strong> zugewiesenen Punkte werden angezeigt.</td></tr>
+  </tbody>
+</table></div>
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Theme, Mobile-Stil, Suche, Warenkorb und alle anderen Erscheinungseinstellungen werden global in <strong>Menu Builder</strong> konfiguriert — sie gelten für jede Instanz des Blocks oder Shortcodes auf deiner Website.</p></div>
+</div>
+<h2 id="fse-header">Empfohlen: Platzierung in einem FSE-Header</h2>
+<ol class="steps">
+  <li>Gehe zu <strong>Design → Editor</strong>.</li>
+  <li>Klicke im linken Bereich auf <strong>Template-Teile → Kopfzeile</strong> (oder erstelle einen neuen Kopfzeilen-Template-Teil).</li>
+  <li>Füge innerhalb der Kopfzeile einen <strong>Reihe</strong>- oder <strong>Gruppe</strong>-Block zur Ausrichtungssteuerung hinzu.</li>
+  <li>Füge den <strong>MenuX</strong>-Block in diese Reihe ein.</li>
+  <li>Verwende die Breiten- und Ausrichtungssteuerungen des Blocks zum Positionieren (z. B. volle Breite, rechtsbündig).</li>
+  <li>Klicke auf <strong>Speichern</strong>. Das Menü ist jetzt auf allen Seiten aktiv, die diesen Header-Template verwenden.</li>
+</ol>
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body"><p>Du kannst <strong>mehrere MenuX-Blöcke</strong> im selben Template platzieren — z. B. eine primäre Navigation im Header und eine sekundäre im Footer — jeder mit einem anderen Menübereich.</p></div>
+</div>
+<h2 id="classic">Klassische Themes und der Block-Editor</h2>
+<p>Wenn dein Theme kein FSE-Theme ist, aber dennoch den Block-Editor für Seiteninhalte nutzt, kannst du den MenuX-Block in eine beliebige Seite einfügen. Für eine siteweite Navigation in klassischen Themes ist jedoch der Shortcode in einem Widget-Bereich oder in <code>header.php</code> die zuverlässigere Methode.</p>
+<div class="page-nav">
+  <a href="shortcode.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Shortcode [menux]</span></a>
+  <a class="next" href="themes.html"><span class="nav-dir">Weiter →</span><span class="nav-title">Themes &amp; Kategorien</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

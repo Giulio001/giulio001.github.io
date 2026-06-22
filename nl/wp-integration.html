@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WP-integratie — Giuliomax Menu Builder</title>
+  <meta name="description" content="Vervang de native navigatiemenu's van je thema door een Menu Builder-menu — zonder sjabloonbestanden te bewerken. Ideaal voor klassieke PHP-thema's die…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/nl/wp-integration.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/wp-integration.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/wp-integration.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/wp-integration.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/wp-integration.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/wp-integration.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/wp-integration.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/wp-integration.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="WP-integratie — Giuliomax Menu Builder">
+  <meta property="og:description" content="Vervang de native navigatiemenu's van je thema door een Menu Builder-menu — zonder sjabloonbestanden te bewerken. Ideaal voor klassieke PHP-thema's die…">
+  <meta property="og:url" content="https://giulio001.github.io/nl/wp-integration.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WP-integratie — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Vervang de native navigatiemenu's van je thema door een Menu Builder-menu — zonder sjabloonbestanden te bewerken. Ideaal voor klassieke PHP-thema's die…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Hulpmiddelen</p>
+<h1>WP-integratie</h1>
+<p class="lead">Vervang de native navigatiemenu's van je thema door een Menu Builder-menu — zonder sjabloonbestanden te bewerken. Ideaal voor klassieke PHP-thema's die <code>wp_nav_menu()</code> gebruiken.</p>
+<div class="on-this-page">
+  <strong>Op deze pagina</strong>
+  <a href="#wat">Wat het doet</a>
+  <a href="#koppelen">Themalocatie koppelen</a>
+  <a href="#opmerkingen">Opmerkingen en beperkingen</a>
+</div>
+
+<h2 id="wat">Wat het doet</h2>
+<p>Veel klassieke thema's renderen hun koptekstnavigatie door <code>wp_nav_menu()</code> aan te roepen tegen een geregistreerde <em>themalocatie</em> (bijv. "Primair menu", "Voettekstmenu"). Met het WP-integratiehulpmiddel kun je die locaties onderscheppen en een Menu Builder-menu renderen — zo profiteer je van alle stijlen en functies van de plugin zonder <code>header.php</code> te wijzigen of een shortcode te gebruiken.</p>
+
+<h2 id="koppelen">Themalocatie koppelen</h2>
+<ol class="steps">
+  <li>Ga naar <strong>Menu Builder → WP-integratie</strong>.</li>
+  <li>Je ziet een tabel met alle navigatielocaties die door je actieve thema zijn geregistreerd.</li>
+  <li>Kies voor elke locatie een Menu Builder-locatie (<code>primary</code>, <code>footer</code>, <code>sidebar</code> of <code>mobile</code>) uit de keuzelijst om deze te vervangen — of laat <strong>— Niet vervangen —</strong> staan om het oorspronkelijke thema-menu te behouden.</li>
+  <li>Klik op <strong>Menu opslaan</strong>.</li>
+</ol>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Als je thema geen menulocaties registreert, toont de tabel een melding. In dat geval roept je thema <code>register_nav_menus()</code> niet aan en gebruik je in plaats daarvan de <a href="shortcode.html">shortcode</a> of het <a href="gutenberg.html">Gutenberg-blok</a>.</p></div>
+</div>
+
+<h2 id="opmerkingen">Opmerkingen en beperkingen</h2>
+<ul>
+  <li>Een Menu Builder-locatie met de aanduiding <strong>⚠ geen items</strong> heeft geen menu-items toegewezen. Als je die selecteert, blijft het oorspronkelijke thema-menu behouden in plaats van een leeg menu te renderen.</li>
+  <li>De keuzelijst toont hoeveel items elke locatie bevat, zodat je kunt bevestigen dat je aan de juiste locatie koppelt.</li>
+  <li>Dit hulpmiddel is bedoeld voor klassieke PHP-thema's. Voor blokgebaseerde (FSE-)thema's bewerk je het koptekstsjabloononderdeel en gebruik je het <a href="gutenberg.html">Gutenberg-blok</a>.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="footer.html"><span class="nav-dir">← Vorige</span><span class="nav-title">Footer Builder</span></a>
+  <a class="next" href="import-export.html"><span class="nav-dir">Volgende →</span><span class="nav-title">Importeren / Exporteren</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

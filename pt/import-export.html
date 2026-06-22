@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importar / Exportar — Giuliomax Menu Builder</title>
+  <meta name="description" content="A função de importação e exportação permite fazer backup das configurações do plugin, migrar entre ambientes (desenvolvimento, homologação, produção) e…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/import-export.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/import-export.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/import-export.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/import-export.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/import-export.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/import-export.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/import-export.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/import-export.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Importar / Exportar — Giuliomax Menu Builder">
+  <meta property="og:description" content="A função de importação e exportação permite fazer backup das configurações do plugin, migrar entre ambientes (desenvolvimento, homologação, produção) e…">
+  <meta property="og:url" content="https://giulio001.github.io/pt/import-export.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Importar / Exportar — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="A função de importação e exportação permite fazer backup das configurações do plugin, migrar entre ambientes (desenvolvimento, homologação, produção) e…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Ferramentas › Importar / Exportar</nav>
+<h1>Importar / Exportar</h1>
+<p>A função de importação e exportação permite fazer backup das configurações do plugin, migrar entre ambientes (desenvolvimento, homologação, produção) e compartilhar configurações entre sites.</p>
+
+<h2 id="exportar">Exportar configurações</h2>
+<ol>
+  <li>Acesse <strong>Giuliomax › Importar / Exportar</strong>.</li>
+  <li>Selecione o que deseja exportar: configurações gerais, temas personalizados, Footer Builder ou tudo.</li>
+  <li>Clique em <strong>Exportar</strong> — um arquivo <code>.json</code> será baixado automaticamente.</li>
+</ol>
+
+<h2 id="importar">Importar configurações</h2>
+<ol>
+  <li>Acesse <strong>Giuliomax › Importar / Exportar</strong> no site de destino.</li>
+  <li>Clique em <strong>Selecionar arquivo</strong> e escolha o arquivo <code>.json</code> exportado anteriormente.</li>
+  <li>Escolha o modo de importação: <strong>Mesclar</strong> (preserva configurações existentes e adiciona/substitui apenas o que está no arquivo) ou <strong>Substituir tudo</strong> (apaga as configurações atuais antes de importar).</li>
+  <li>Clique em <strong>Importar</strong> e aguarde a confirmação.</li>
+</ol>
+
+<h2 id="o-que-e-exportado">O que é exportado</h2>
+<ul>
+  <li>Todas as opções de <strong>Giuliomax › Configurações</strong></li>
+  <li>Temas personalizados criados em <strong>Giuliomax › Temas</strong></li>
+  <li>Configurações do <strong>Footer Builder</strong></li>
+  <li>Configurações da <strong>Barra de avisos</strong></li>
+</ul>
+<p><strong>Nota:</strong> os menus em si (estrutura de itens) são gerenciados pelo WordPress e não estão incluídos no arquivo de exportação do plugin. Para exportar menus, use a função nativa de exportação do WordPress em <strong>Ferramentas › Exportar</strong>.</p>
+
+<h2 id="entre-ambientes">Migração entre ambientes</h2>
+<p>O fluxo recomendado para migrar de desenvolvimento para produção:</p>
+<ol>
+  <li>Exporte as configurações do plugin no ambiente de desenvolvimento.</li>
+  <li>Use o exportador nativo do WordPress para exportar os menus e conteúdo.</li>
+  <li>No ambiente de produção, importe primeiro o conteúdo via WordPress, depois as configurações do plugin.</li>
+</ol>
+
+<div class="page-nav">
+  <a href="wp-integration.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Integração WP</span></a>
+  <a class="next" href="accessibility.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Acessibilidade</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

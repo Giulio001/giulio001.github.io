@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibilità — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder è costruito per soddisfare i requisiti WCAG 2.2 Livello AA. La navigazione funziona completamente senza mouse, i dropdown vengono…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Accessibilità — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder è costruito per soddisfare i requisiti WCAG 2.2 Livello AA. La navigazione funziona completamente senza mouse, i dropdown vengono…">
+  <meta property="og:url" content="https://giulio001.github.io/it/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Accessibilità — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder è costruito per soddisfare i requisiti WCAG 2.2 Livello AA. La navigazione funziona completamente senza mouse, i dropdown vengono…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Avanzato</p>
+<h1>Accessibilità</h1>
+<p class="lead">Giuliomax Menu Builder è costruito per soddisfare i requisiti WCAG 2.2 Livello AA. La navigazione funziona completamente senza mouse, i dropdown vengono annunciati agli screen reader e il movimento può essere disabilitato a livello di sistema.</p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#wcag">Conformità WCAG 2.2 AA</a><a href="#keyboard">Navigazione da tastiera</a><a href="#aria">Attributi ARIA</a><a href="#focus">Gestione del focus</a><a href="#motion">Riduzione del movimento</a><a href="#testing">Testare il menu</a></div>
+
+<h2 id="wcag">Conformità WCAG 2.2 AA</h2>
+<p>La tabella seguente mostra i criteri di successo WCAG 2.2 rilevanti per la navigazione e come Menu Builder li soddisfa:</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Criterio</th><th>Livello</th><th>Come viene soddisfatto</th></tr></thead>
+  <tbody>
+    <tr><td>1.4.3 Contrasto (minimo)</td><td>AA</td><td>Tutti i temi predefiniti sono stati verificati per garantire un rapporto di contrasto di almeno 4,5:1 per il testo normale.</td></tr>
+    <tr><td>2.1.1 Tastiera</td><td>A</td><td>Tutte le funzionalità del menu sono accessibili tramite tastiera, senza richiedere un dispositivo di puntamento.</td></tr>
+    <tr><td>2.4.3 Ordine del focus</td><td>A</td><td>L'ordine del focus nel menu segue l'ordine visivo delle voci e dei sottomenu.</td></tr>
+    <tr><td>2.4.7 Focus visibile</td><td>AA</td><td>Tutti gli elementi interattivi mostrano un indicatore di focus visibile e chiaramente identificabile.</td></tr>
+    <tr><td>2.5.3 Etichetta nel nome</td><td>A</td><td>I nomi accessibili degli elementi interattivi includono il testo visibile dell'etichetta.</td></tr>
+    <tr><td>3.2.3 Navigazione coerente</td><td>AA</td><td>L'ordine e la posizione delle voci di menu rimangono coerenti tra le pagine.</td></tr>
+    <tr><td>4.1.2 Nome, ruolo, valore</td><td>A</td><td>Tutti gli elementi del menu espongono ruolo, nome e stato corretti tramite attributi ARIA.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="keyboard">Navigazione da tastiera</h2>
+<p>Tabella completa delle scorciatoie da tastiera supportate nella navigazione del menu:</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Tasto</th><th>Azione</th></tr></thead>
+  <tbody>
+    <tr><td><kbd>Tab</kbd></td><td>Sposta il focus alla voce di menu successiva.</td></tr>
+    <tr><td><kbd>Shift</kbd>+<kbd>Tab</kbd></td><td>Sposta il focus alla voce di menu precedente.</td></tr>
+    <tr><td><kbd>Enter</kbd> / <kbd>Space</kbd></td><td>Attiva il link o apre/chiude il sottomenu della voce focalizzata.</td></tr>
+    <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Naviga tra le voci di un sottomenu o mega menu aperto.</td></tr>
+    <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Apre il sottomenu della voce focalizzata (→) o torna al livello superiore (←).</td></tr>
+    <tr><td><kbd>Escape</kbd></td><td>Chiude il sottomenu o mega menu aperto e restituisce il focus alla voce genitore.</td></tr>
+    <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>Sposta il focus alla prima o all'ultima voce del menu corrente.</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="aria">Attributi ARIA</h2>
+<p>Menu Builder genera automaticamente tutti gli attributi ARIA necessari per una navigazione accessibile:</p>
+<ul>
+  <li><code>role="navigation"</code> e <code>aria-label</code> sull'elemento <code>&lt;nav&gt;</code> per identificare la regione di navigazione.</li>
+  <li><code>aria-haspopup="true"</code> sulle voci con sottomenu o mega menu.</li>
+  <li><code>aria-controls</code> che punta all'ID del pannello dropdown controllato dalla voce.</li>
+  <li><code>role="menu"</code> e <code>role="menuitem"</code> sui sottomenu e sulle loro voci.</li>
+  <li><code>aria-current="page"</code> sulla voce che corrisponde alla pagina correntemente visualizzata.</li>
+</ul>
+<p>Gli attributi <code>aria-expanded</code> vengono aggiornati dinamicamente in JavaScript ogni volta che un sottomenu viene aperto o chiuso, in modo che gli screen reader annuncino correttamente lo stato del controllo.</p>
+
+<h2 id="focus">Gestione del focus</h2>
+<ul>
+  <li>Quando un dropdown viene chiuso tramite <kbd>Escape</kbd>, il focus ritorna automaticamente alla voce genitore che lo ha aperto.</li>
+  <li>Il modal di ricerca intrappola il focus al suo interno mentre è aperto, in modo che Tab non possa portare il focus fuori dal modal.</li>
+  <li>Quando il modal di ricerca viene chiuso, il focus ritorna al pulsante che lo ha aperto.</li>
+</ul>
+
+<h2 id="motion">Riduzione del movimento</h2>
+<p>Menu Builder rispetta la media query CSS <code>prefers-reduced-motion: reduce</code>. Quando l'utente ha abilitato l'opzione di riduzione del movimento nel sistema operativo:</p>
+<ul>
+  <li>Le animazioni di apertura/chiusura dei dropdown sono eliminate.</li>
+  <li>L'animazione di ingresso della barra di navigazione è disabilitata.</li>
+  <li>Le transizioni di hover sui link sono ridotte al minimo.</li>
+  <li>L'animazione della barra di avanzamento scroll è semplificata.</li>
+</ul>
+
+<h2 id="testing">Testare il menu</h2>
+<p>Per verificare l'accessibilità del menu sul tuo sito, si consiglia di usare i seguenti strumenti e metodi:</p>
+<ul>
+  <li><strong>Solo tastiera</strong> — naviga l'intero menu usando solo Tab, frecce direzionali, Enter e Escape, senza toccare il mouse.</li>
+  <li><strong>axe DevTools</strong> — estensione del browser (Chrome/Firefox) che analizza la pagina e segnala i problemi di accessibilità WCAG.</li>
+  <li><strong>NVDA / VoiceOver</strong> — testa il menu con un lettore di schermo reale: NVDA su Windows, VoiceOver su macOS/iOS.</li>
+  <li><strong>Colour Contrast Analyser</strong> — strumento desktop per verificare manualmente il rapporto di contrasto tra testo e sfondo su colori personalizzati.</li>
+</ul>
+
+<div class="page-nav"><a href="import-export.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Import / Export</span></a><a class="next" href="multilingual.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Multilingua</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

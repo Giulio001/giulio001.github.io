@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankündigungsleiste — Giuliomax Menu Builder</title>
+  <meta name="description" content="Füge ein schmales Werbebanner oberhalb (oder unterhalb) deiner Navigationsleiste ein — mit einer benutzerdefinierten Nachricht, einem CTA-Link und einem…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/announcement.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/announcement.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/announcement.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/announcement.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/announcement.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/announcement.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/announcement.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/announcement.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Ankündigungsleiste — Giuliomax Menu Builder">
+  <meta property="og:description" content="Füge ein schmales Werbebanner oberhalb (oder unterhalb) deiner Navigationsleiste ein — mit einer benutzerdefinierten Nachricht, einem CTA-Link und einem…">
+  <meta property="og:url" content="https://giulio001.github.io/de/announcement.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ankündigungsleiste — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Füge ein schmales Werbebanner oberhalb (oder unterhalb) deiner Navigationsleiste ein — mit einer benutzerdefinierten Nachricht, einem CTA-Link und einem…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funktionen</p>
+<h1>Ankündigungsleiste</h1>
+<p class="lead">Füge ein schmales Werbebanner oberhalb (oder unterhalb) deiner Navigationsleiste ein — mit einer benutzerdefinierten Nachricht, einem CTA-Link und einem optionalen Live-Countdown-Timer.</p>
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/announcement-countdown.svg" alt="MenuX-Ankündigungsleiste mit einer Nachricht und einem Live-Countdown" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#enable">Leiste aktivieren</a>
+  <a href="#content">Nachricht und Link festlegen</a>
+  <a href="#countdown">Countdown-Timer</a>
+  <a href="#styling">Gestaltung</a>
+  <a href="#position">Position und Schließen</a>
+</div>
+<h2 id="enable">Leiste aktivieren</h2>
+<ol class="steps">
+  <li>Gehe zu <strong>Menu Builder → Ankündigung</strong>.</li>
+  <li>Schalte <strong>Ankündigungsleiste aktivieren</strong> ein.</li>
+  <li>Einstellungen speichern.</li>
+</ol>
+<p>Die Leiste erscheint sofort im Frontend, standardmäßig oberhalb der Navigation.</p>
+<h2 id="content">Nachricht und Link festlegen</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Feld</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Nachrichtentext</strong></td><td>Der in der Leiste angezeigte Text. Nur Klartext — HTML wird nicht gerendert.</td></tr>
+    <tr><td><strong>Link-URL</strong></td><td>Optional. Wenn gesetzt, wird der gesamte Nachrichtentext zu einem klickbaren Link.</td></tr>
+    <tr><td><strong>In neuem Tab öffnen</strong></td><td>Schalter, um den Link in einem neuen Browser-Tab zu öffnen.</td></tr>
+  </tbody>
+</table></div>
+<h2 id="countdown">Countdown-Timer</h2>
+<p>Der Countdown-Timer zeigt eine live ticking Uhr in der Ankündigungsleiste — nützlich für Blitzverkäufe, Event-Deadlines oder zeitlich begrenzte Angebote.</p>
+<ol class="steps">
+  <li>Aktiviere im Bereich <strong>Menu Builder → Ankündigung</strong> den Schalter <strong>Countdown aktivieren</strong>.</li>
+  <li>Lege über das Datumsfeld das <strong>Enddatum und die Uhrzeit</strong> fest. Der Timer läuft ab diesem Zeitpunkt herunter (gemäß der Website-Zeitzone unter <em>Einstellungen → Allgemein → Zeitzone</em>).</li>
+  <li>Optional: Gib eine <strong>Ablaufmeldung</strong> ein — der Text, der angezeigt wird, wenn der Countdown null erreicht.</li>
+  <li>Einstellungen speichern.</li>
+</ol>
+<div class="callout warn">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body"><p>Der Zielzeitpunkt wird serverseitig berechnet, aber das Live-Ticken verwendet die Browser-Uhr des Besuchers. Bei einer falsch eingestellten Geräteuhr weicht die angezeigte Restzeit ab. Für zeitkritische Auktionen empfiehlt sich ein dediziertes Countdown-Plugin.</p></div>
+</div>
+<h3>Anzeigeformat des Timers</h3>
+<p>Der Timer zeigt <strong>Tage · Stunden · Minuten · Sekunden</strong>. Das Tage-Segment wird automatisch ausgeblendet, wenn weniger als ein Tag verbleibt. Du kannst auch eine <strong>Countdown-Beschriftung</strong> festlegen (der Text vor dem Timer, Standard „Endet in:").</p>
+<h2 id="styling">Gestaltung der Ankündigungsleiste</h2>
+<ul>
+  <li><strong>Hintergrundfarbe</strong> — Volltonfarbe über den Farbwähler</li>
+  <li><strong>Textfarbe</strong></li>
+  <li><strong>Schriftgröße</strong> — unabhängig von der Menü-Schrift</li>
+  <li><strong>Vertikaler Innenabstand</strong> — bestimmt die Leistenhöhe</li>
+</ul>
+<h2 id="position">Position und Schließen</h2>
+<ul>
+  <li><strong>Position</strong> — Oberhalb der Navigationsleiste (Standard) oder darunter.</li>
+  <li><strong>Schließen</strong> — <em>Schließen erlauben</em> aktivieren, um einen ×-Button anzuzeigen. Nach dem Schließen bleibt die Leiste für eine konfigurierbare Anzahl von Tagen ausgeblendet (im Browser-localStorage gespeichert).</li>
+</ul>
+<div class="page-nav">
+  <a href="mega-menu.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Mega-Menü</span></a>
+  <a class="next" href="cart.html"><span class="nav-dir">Weiter →</span><span class="nav-title">WooCommerce-Warenkorb</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reglas de visibilidad — Giuliomax Menu Builder</title>
+  <meta name="description" content="Controla qué elementos del menú ve cada visitante según su estado de sesión (conectado o no) o su rol en WordPress.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/visibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/visibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/visibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/visibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/visibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/visibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/visibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/visibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Reglas de visibilidad — Giuliomax Menu Builder">
+  <meta property="og:description" content="Controla qué elementos del menú ve cada visitante según su estado de sesión (conectado o no) o su rol en WordPress.">
+  <meta property="og:url" content="https://giulio001.github.io/es/visibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reglas de visibilidad — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Controla qué elementos del menú ve cada visitante según su estado de sesión (conectado o no) o su rol en WordPress.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funcionalidades</p>
+<h1>Reglas de visibilidad</h1>
+<p class="lead">Controla qué elementos del menú ve cada visitante según su estado de sesión (conectado o no) o su rol en WordPress.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#como">Cómo funcionan</a>
+  <a href="#configurar">Configurar reglas</a>
+  <a href="#roles">Visibilidad por rol</a>
+</div>
+
+<h2 id="como">Cómo funcionan</h2>
+<p>Por defecto, todos los elementos del menú son visibles para todos los visitantes. Las reglas de visibilidad te permiten restringir o dirigir la visibilidad de cada elemento de forma individual, sin necesitar código PHP ni plugins adicionales.</p>
+
+<h2 id="configurar">Configurar reglas</h2>
+<ol class="steps">
+  <li>En <strong>Menu Builder → Estructura del menú</strong>, haz clic en cualquier elemento para desplegarlo.</li>
+  <li>Busca el desplegable <strong>Visibilidad</strong>.</li>
+  <li>Elige una de las opciones disponibles:</li>
+</ol>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Opción</th><th>Quién ve este elemento</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Todos</strong></td><td>Todos los visitantes, independientemente de su estado de sesión (valor por defecto).</td></tr>
+      <tr><td><strong>Solo usuarios conectados</strong></td><td>Solo los usuarios que hayan iniciado sesión en WordPress.</td></tr>
+      <tr><td><strong>Solo usuarios desconectados</strong></td><td>Solo los visitantes que <em>no</em> hayan iniciado sesión (útil para el enlace "Iniciar sesión").</td></tr>
+      <tr><td><strong>Por rol</strong></td><td>Solo los usuarios con un rol específico de WordPress (ver abajo).</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="roles">Visibilidad por rol</h2>
+<p>Al elegir la opción <strong>Por rol</strong>, se muestra una lista de todos los roles de WordPress disponibles en tu instalación (Suscriptor, Colaborador, Autor, Editor, Administrador y cualquier rol personalizado creado por plugins). Puedes seleccionar uno o varios roles.</p>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Las reglas de visibilidad se aplican en el servidor al renderizar el HTML del menú. Los elementos ocultos no se incluyen en el código fuente de la página, por lo que no pueden verse inspeccionando el DOM.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="badges.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Insignias y puntos</span></a>
+  <a class="next" href="mobile.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Menús para móvil</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

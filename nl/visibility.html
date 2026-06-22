@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zichtbaarheidsregels — Giuliomax Menu Builder</title>
+  <meta name="description" content="Bepaal welke menu-items elke bezoeker ziet op basis van inlogstatus (ingelogd of uitgelogd) of WordPress-gebruikersrol.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/nl/visibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/visibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/visibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/visibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/visibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/visibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/visibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/visibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Zichtbaarheidsregels — Giuliomax Menu Builder">
+  <meta property="og:description" content="Bepaal welke menu-items elke bezoeker ziet op basis van inlogstatus (ingelogd of uitgelogd) of WordPress-gebruikersrol.">
+  <meta property="og:url" content="https://giulio001.github.io/nl/visibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zichtbaarheidsregels — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Bepaal welke menu-items elke bezoeker ziet op basis van inlogstatus (ingelogd of uitgelogd) of WordPress-gebruikersrol.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Mogelijkheden</p>
+<h1>Zichtbaarheidsregels</h1>
+<p class="lead">Bepaal welke menu-items elke bezoeker ziet op basis van inlogstatus (ingelogd of uitgelogd) of WordPress-gebruikersrol.</p>
+<div class="on-this-page">
+  <strong>Op deze pagina</strong>
+  <a href="#hoe">Hoe het werkt</a>
+  <a href="#instellen">Regels instellen</a>
+  <a href="#rollen">Zichtbaarheid per rol</a>
+</div>
+
+<h2 id="hoe">Hoe het werkt</h2>
+<p>Standaard zijn alle menu-items zichtbaar voor alle bezoekers. Met zichtbaarheidsregels kun je de zichtbaarheid van elk item afzonderlijk beperken of sturen, zonder PHP-code of extra plugins.</p>
+
+<h2 id="instellen">Regels instellen</h2>
+<ol class="steps">
+  <li>Klik in <strong>Menu Builder → Menustructuur</strong> op een item om het uit te klappen.</li>
+  <li>Zoek de keuzelijst <strong>Zichtbaarheid</strong>.</li>
+  <li>Kies een van de beschikbare opties:</li>
+</ol>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Optie</th><th>Wie ziet dit item</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Iedereen</strong></td><td>Alle bezoekers, ongeacht inlogstatus (standaard).</td></tr>
+      <tr><td><strong>Alleen ingelogde gebruikers</strong></td><td>Alleen gebruikers die zijn ingelogd bij WordPress.</td></tr>
+      <tr><td><strong>Alleen uitgelogde gebruikers</strong></td><td>Alleen bezoekers die <em>niet</em> zijn ingelogd (handig voor een "Inloggen"-link).</td></tr>
+      <tr><td><strong>Op rol</strong></td><td>Alleen gebruikers met een specifieke WordPress-rol (zie hieronder).</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="rollen">Zichtbaarheid per rol</h2>
+<p>Als je de optie <strong>Op rol</strong> kiest, verschijnt een lijst van alle WordPress-rollen in je installatie (Abonnee, Medewerker, Auteur, Redacteur, Beheerder en aangepaste rollen van plugins). Je kunt één of meerdere rollen selecteren.</p>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Zichtbaarheidsregels worden server-side toegepast bij het renderen van de menu-HTML. Verborgen items worden niet opgenomen in de paginabroncode en zijn daardoor niet zichtbaar via DOM-inspectie.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="badges.html"><span class="nav-dir">← Vorige</span><span class="nav-title">Badges en stippen</span></a>
+  <a class="next" href="mobile.html"><span class="nav-dir">Volgende →</span><span class="nav-title">Mobiele menu's</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

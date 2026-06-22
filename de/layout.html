@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout &amp; Effekte — Giuliomax Menu Builder</title>
+  <meta name="description" content="Passe an, wie die Navigationsleiste angeordnet ist, lasse sie beim Scrollen oben haften und füge dezente Animationen hinzu — alles im Bereich Layout des Menu…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/layout.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/layout.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/layout.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/layout.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/layout.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/layout.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/layout.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/layout.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Layout &amp; Effekte — Giuliomax Menu Builder">
+  <meta property="og:description" content="Passe an, wie die Navigationsleiste angeordnet ist, lasse sie beim Scrollen oben haften und füge dezente Animationen hinzu — alles im Bereich Layout des Menu…">
+  <meta property="og:url" content="https://giulio001.github.io/de/layout.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Layout &amp; Effekte — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Passe an, wie die Navigationsleiste angeordnet ist, lasse sie beim Scrollen oben haften und füge dezente Animationen hinzu — alles im Bereich Layout des Menu…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funktionen</p>
+<h1>Layout &amp; Effekte</h1>
+<p class="lead">Passe an, wie die Navigationsleiste angeordnet ist, lasse sie beim Scrollen oben haften und füge dezente Animationen hinzu — alles im Bereich Layout des Menu Builders.</p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#spacing">Abstände und Ausrichtung</a>
+  <a href="#sticky">Sticky-Navigation</a>
+  <a href="#progress">Scroll-Fortschrittsanzeige</a>
+  <a href="#entrance">Einblendanimation</a>
+  <a href="#link-anim">Link-Hover-Animation</a>
+  <a href="#dropdown">Dropdown-Indikator</a>
+  <a href="#scroll-spy">Scroll Spy</a>
+</div>
+
+<h2 id="spacing">Abstände und Ausrichtung</h2>
+<p>Im Bereich <strong>Layout</strong> kannst du steuern, wie die Menüelemente angeordnet werden:</p>
+<ul>
+  <li><strong>Ausrichtung</strong> — wo die Elemente in der Leiste sitzen: Start, Mitte, Ende, Abstand gleichmäßig oder Abstand zwischen Elementen.</li>
+  <li><strong>Abstand</strong> — der Zwischenraum zwischen den Menüelementen.</li>
+  <li><strong>Horizontales / vertikales Padding</strong> — das Innenabstand der Navigationsleiste.</li>
+  <li><strong>Container-Rahmenradius</strong> — runde die Ecken der gesamten Leiste ab.</li>
+  <li><strong>Letztes Element verschieben</strong> — fixiere das letzte Menüelement am gegenüberliegenden Rand (praktisch für einen „Kontakt"- oder „Anmelden"-Call-to-Action).</li>
+</ul>
+
+<h2 id="sticky">Sticky-Navigation</h2>
+<p>Aktiviere <strong>Sticky</strong>, damit die Navigationsleiste beim Scrollen am oberen Bildschirmrand fixiert bleibt.</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Option</th><th>Beschreibung</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Beim Scrollen verkleinern</strong></td><td>Die Leiste wird kompakter, sobald die Seite gescrollt wird.</td></tr>
+      <tr><td><strong>Schatten</strong></td><td>Fügt einen Schatten unter der Leiste hinzu, wenn sie fixiert ist.</td></tr>
+      <tr><td><strong>Layout spiegeln</strong></td><td>Verwende eine andere Ausrichtung für den fixierten Zustand als für den Standardzustand.</td></tr>
+      <tr><td><strong>Übergang</strong></td><td>Wie sanft die Leiste zwischen den Zuständen animiert (in Sekunden).</td></tr>
+      <tr><td><strong>Z-Index</strong></td><td>Stapelreihenfolge, falls die Leiste über anderen fixierten Elementen liegen soll.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="progress">Scroll-Fortschrittsanzeige</h2>
+<p>Eine dünne Linie, die sich beim Scrollen füllt — ein beliebtes Element in langen Artikeln und Dokumentationen.</p>
+<ol class="steps">
+  <li>Aktiviere <strong>Scroll-Fortschrittsanzeige</strong> im Bereich Layout.</li>
+  <li>Wähle die <strong>Farbe</strong>, <strong>Höhe</strong> (1–10 px) und <strong>Position</strong> (oben oder unten an der Navigationsleiste).</li>
+</ol>
+
+<h2 id="entrance">Einblendanimation</h2>
+<p>Animiere das Menü beim ersten Laden der Seite. Wähle aus <strong>Einblenden</strong>, <strong>Einfahren von oben/unten/links/rechts</strong>, <strong>Hineinzoomen</strong> oder <strong>Flip X</strong> — oder lass es auf <strong>Keine</strong>.</p>
+<p>Du kannst auch die <strong>Dauer</strong>, eine <strong>Verzögerung</strong> vor dem Start und einen <strong>Versatz</strong> einstellen, damit die Elemente nacheinander erscheinen.</p>
+
+<h2 id="link-anim">Link-Hover-Animation</h2>
+<p>Füge eine Mikrointeraktion hinzu, wenn der Besucher mit der Maus über einen Menülink fährt. Optionen umfassen <strong>Hochheben</strong>, <strong>Skalieren</strong>, <strong>Pulsieren</strong>, <strong>Aufspringen</strong>, <strong>Schütteln</strong>, <strong>Leuchten</strong> und <strong>Animiertes Unterstreichen</strong>.</p>
+
+<h2 id="dropdown">Dropdown-Indikator</h2>
+<p>Elemente mit einem Untermenü können einen kleinen Indikator anzeigen. Wähle die Form — <strong>Dreieck</strong>, <strong>Pfeil</strong>, <strong>Punkt</strong> oder <strong>Kein</strong> — und optional Farbe, Größe und ob er sich beim Öffnen des Dropdowns dreht.</p>
+<p>Das Dropdown-Panel selbst ist vollständig anpassbar unter <strong>Stil → Untermenü-Dropdown</strong>: Rahmenradius, horizontales und vertikales Padding, Schriftgröße, Schriftgewicht und Mindestbreite. Die Hover-Farbe wird adaptiv aus dem Untermenü-Hintergrund berechnet, sodass sie auf hellen und dunklen Themes sichtbar bleibt.</p>
+
+<h2 id="scroll-spy">Scroll Spy</h2>
+<p>Scroll Spy hebt automatisch den Navigationslink hervor, der dem Abschnitt entspricht, der gerade im Viewport sichtbar ist — ein gängiges Muster in Dokumentationen, Landingpages und einseitigen Sites.</p>
+<ol class="steps">
+  <li>Aktiviere <strong>Scroll Spy</strong> unter <strong>Layout → Layout</strong>.</li>
+  <li>Lege einen <strong>Auslöser-Versatz</strong> fest (Standard: 80 px) — die Höhe der Sticky-Leiste wird zur Laufzeit automatisch addiert.</li>
+  <li>Aktiviere optional <strong>Sanftes Scrollen</strong> mit History-API-Hash-Aktualisierungen und ARIA-Live-Region-Ankündigungen für Screenreader.</li>
+</ol>
+<p>Der letzte Abschnitt der Seite wird immer aktiviert, wenn ganz nach unten gescrollt wird. Links aktiver Abschnitte teilen das visuelle Design, das unter <strong>Farben → Aktiver Link</strong> definiert ist.</p>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Alle Animationen berücksichtigen die <code>prefers-reduced-motion</code>-Einstellung des Besuchers — siehe die Seite <a href="accessibility.html">Barrierefreiheit</a>.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="mobile.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Mobile Menüs</span></a>
+  <a class="next" href="footer.html"><span class="nav-dir">Weiter →</span><span class="nav-title">Footer Builder</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

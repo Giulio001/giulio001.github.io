@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constructor de pie de página — Giuliomax Menu Builder</title>
+  <meta name="description" content="Crea un pie de página profesional y multicolumna directamente desde el panel de WordPress, elige hasta seis secciones por fila, personaliza cada detalle…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/footer.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/footer.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/footer.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/footer.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/footer.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/footer.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/footer.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/footer.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Constructor de pie de página — Giuliomax Menu Builder">
+  <meta property="og:description" content="Crea un pie de página profesional y multicolumna directamente desde el panel de WordPress, elige hasta seis secciones por fila, personaliza cada detalle…">
+  <meta property="og:url" content="https://giulio001.github.io/es/footer.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Constructor de pie de página — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Crea un pie de página profesional y multicolumna directamente desde el panel de WordPress, elige hasta seis secciones por fila, personaliza cada detalle…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funcionalidades</p>
+<h1>Constructor de pie de página</h1>
+<p class="lead">Crea un pie de página profesional y multicolumna directamente desde el panel de WordPress, elige hasta seis secciones por fila, personaliza cada detalle visualmente y colócalo con un bloque, un shortcode o automáticamente en todas las páginas.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#activar">Activación y colocación</a>
+  <a href="#asistente">Asistente de configuración</a>
+  <a href="#secciones">Secciones del pie de página</a>
+  <a href="#inferior">Barra inferior</a>
+  <a href="#temas">Temas del pie de página</a>
+  <a href="#estilo">Estilo</a>
+  <a href="#colocar">Colocar el pie de página</a>
+</div>
+
+<h2 id="activar">Activación y colocación</h2>
+<p>Abre <strong>Menu Builder → Pie de página</strong>. La barra de herramientas en la parte superior de la página controla el comportamiento global del pie de página:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Ajuste</th><th>Descripción</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Activar pie de página</strong></td><td>Interruptor principal. El pie de página solo se renderiza cuando está activado <em>y</em> se ha añadido al menos una sección.</td></tr>
+      <tr><td><strong>Diseño</strong></td><td><strong>Primera columna ancha</strong> (la primera sección es más ancha, ideal para un bloque "Sobre nosotros"), <strong>Columnas iguales</strong> o <strong>Centrado</strong>.</td></tr>
+      <tr><td><strong>Colocación</strong></td><td><strong>Manual</strong> — lo colocas tú con el bloque o el shortcode. <strong>Automático</strong> — el pie de página se inserta al final de todas las páginas.</td></tr>
+      <tr><td><strong>Prioridad</strong></td><td>Solo visible con Colocación automática. Prioridad del hook <code>wp_footer</code> (1–9999, por defecto 100) — los números menores se imprimen antes. Auméntala si el pie de página colisiona con otro plugin.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>La colocación automática evita duplicados: si ya se generó un pie de página manualmente (con bloque o shortcode) más arriba en la misma página, la inserción automática se omite para que nunca aparezcan dos pies de página.</p></div>
+</div>
+
+<h2 id="asistente">Asistente de configuración</h2>
+<p>La forma más rápida de crear un pie de página completo es el botón <strong>🪄 Asistente de configuración</strong> en la barra de herramientas. Te guía por cuatro pasos — <strong>diseño → tema → contenido → barra inferior</strong> — y genera un pie de página completo y estilizado en menos de un minuto. El asistente se abre automáticamente la primera vez que visitas la página de Pie de página.</p>
+
+<h2 id="secciones">Secciones del pie de página</h2>
+<p>El pie de página se construye a partir de <strong>secciones</strong> (las columnas). Haz clic en <strong>＋ Añadir sección</strong> para añadir una — hasta <strong>6</strong> por fila. Cada tarjeta de sección tiene un <strong>Título</strong>, una casilla <strong>Ocultar en móvil</strong> y un botón <strong>⧉ Duplicar</strong> que clona toda la sección (incluyendo su contenido) e la inserta justo debajo.</p>
+<p>Hay <strong>7 tipos de sección</strong>:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Tipo</th><th>Qué renderiza</th><th>Campos principales</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Sobre nosotros / texto</strong></td><td>Una imagen de logotipo opcional seguida de un párrafo de texto — normalmente una breve descripción de la empresa.</td><td>Imagen del logo, ancho de la imagen, texto</td></tr>
+      <tr><td><strong>Lista de enlaces</strong></td><td>Una lista vertical de enlaces (hasta 20), cada uno puede abrirse en una nueva pestaña.</td><td>Etiqueta, URL, abrir en nueva pestaña</td></tr>
+      <tr><td><strong>Información de contacto</strong></td><td>Dirección, teléfono y correo electrónico. El teléfono se convierte en enlace <code>tel:</code> y el correo en <code>mailto:</code> automáticamente.</td><td>Dirección, teléfono, correo</td></tr>
+      <tr><td><strong>Iconos de redes sociales</strong></td><td>Una fila de iconos de redes sociales (hasta 14) con enlaces a tus perfiles.</td><td>Red + URL por icono</td></tr>
+      <tr><td><strong>Horario de atención</strong></td><td>Una lista simple de líneas (hasta 10), p. ej. "Lun–Vie: 9–18 h".</td><td>Una línea por entrada</td></tr>
+      <tr><td><strong>Newsletter</strong></td><td>Un formulario de suscripción por correo que envía a cualquier servicio externo (Mailchimp, ConvertKit, Brevo, …).</td><td>URL de acción del formulario, subtítulo, placeholder, texto del botón, texto RGPD</td></tr>
+      <tr><td><strong>HTML personalizado</strong></td><td>Cualquier HTML, saneado con <code>wp_kses_post</code> de WordPress — útil para inserciones, badges o shortcodes.</td><td>HTML</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>La sección de <strong>iconos de redes sociales</strong> admite 14 redes: Facebook, Instagram, X (Twitter), LinkedIn, YouTube, TikTok, Pinterest, GitHub, WhatsApp, Telegram, Discord, Spotify, Threads y Correo electrónico. Los iconos provienen de los glifos de marca de Font Awesome 6.</p></div>
+</div>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body"><p>La sección <strong>Newsletter</strong> no renderiza nada hasta que introduzcas una <em>URL de acción</em> del formulario — esto evita que un formulario vacío envíe accidentalmente a la página actual. Añade una casilla opcional de consentimiento RGPD para mantener las suscripciones en regla.</p></div>
+</div>
+
+<h2 id="inferior">Barra inferior</h2>
+<p>Debajo de las secciones hay una <strong>barra inferior</strong> opcional, configurada en la misma página:</p>
+<ul>
+  <li><strong>Texto de copyright</strong> — texto libre; el token <code>{year}</code> se reemplaza automáticamente por el año actual.</li>
+  <li><strong>Enlaces legales</strong> — hasta 6 pequeños enlaces (Privacidad, Términos, Cookies, …).</li>
+  <li><strong>Redes sociales en la barra inferior</strong> — muestra también tus iconos sociales en la barra inferior.</li>
+  <li><strong>Botón volver arriba</strong> — una flecha flotante con el color de acento que aparece después de 300&nbsp;px de scroll y sube suavemente al inicio.</li>
+</ul>
+
+<h2 id="temas">Temas del pie de página</h2>
+<p>La cuadrícula de <strong>🎨 Temas del pie de página</strong> aplica una paleta de colores cuidadosamente seleccionada con un solo clic. Hay <strong>11 temas</strong>:</p>
+<p>Midnight, Carbon Gold, Graphite, Deep Ocean, Evergreen, Bordeaux, Sapphire, Aurora, Porcelain, Sandstone y Editorial.</p>
+<p>Cada uno está ajustado para el contraste y la armonía visual — las paletas oscuras incluyen sutiles degradados de profundidad. Aplicar un tema no es destructivo: cada color individual sigue siendo editable en el panel de estilo.</p>
+
+<h2 id="estilo">Estilo</h2>
+<p>El panel <strong>🎛 Estilo</strong> (con vista previa en vivo junto a él) te da control visual completo. Una <strong>👁 Vista previa en vivo</strong> se actualiza en tiempo real al cambiar secciones, colores y tipografía.</p>
+
+<h3>Colores</h3>
+<p>Fondo, encabezados, texto, enlaces, hover de enlace, acento, más el fondo y el texto de la barra inferior. Un <strong>degradado</strong> CSS de fondo opcional puede reemplazar el fondo sólido.</p>
+
+<h3>Diseño</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Opción</th><th>Rango</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Barra de acento</strong> (línea de color en la parte superior)</td><td>Activar/desactivar + altura 1–10&nbsp;px</td></tr>
+      <tr><td><strong>Relleno vertical</strong></td><td>16–160&nbsp;px</td></tr>
+      <tr><td><strong>Relleno horizontal</strong></td><td>0–120&nbsp;px</td></tr>
+      <tr><td><strong>Separación entre columnas</strong></td><td>8–120&nbsp;px</td></tr>
+      <tr><td><strong>Ancho máximo del contenido</strong></td><td>600–1920&nbsp;px</td></tr>
+      <tr><td><strong>Espaciado de enlaces</strong></td><td>2–40&nbsp;px</td></tr>
+      <tr><td><strong>Alineación en móvil</strong></td><td>Izquierda o Centrado</td></tr>
+      <tr><td><strong>Divisor de barra inferior</strong></td><td>Mostrar/ocultar el borde superior</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Tipografía</h3>
+<ul>
+  <li><strong>Encabezado</strong> — tamaño (10–28&nbsp;px), peso (Regular–Extranegrita) y estilo (MAYÚSCULAS o Normal).</li>
+  <li><strong>Tamaño del texto</strong> — 11–20&nbsp;px.</li>
+  <li><strong>Efecto hover de enlace</strong> — Deslizar a la derecha, Subrayado animado o Solo color.</li>
+</ul>
+
+<h3>Iconos de redes sociales</h3>
+<p>Elige un <strong>estilo</strong> — Círculo, Cuadrado redondeado o Iconos simples — y un <strong>tamaño</strong> de 12–28&nbsp;px.</p>
+
+<h3>CSS personalizado</h3>
+<p>Un campo CSS con alcance limitado para ajustes finos. Usa <code>.menux-footer</code> como selector padre para mantener tus reglas contenidas al pie de página.</p>
+
+<h2 id="colocar">Colocar el pie de página</h2>
+<p>Hay tres formas de añadir el pie de página a tu sitio — elige la que mejor se adapte a tu tema:</p>
+<ul>
+  <li><strong>Automático</strong> — establece la Colocación en <em>Automático</em> en la barra de herramientas y el pie de página aparecerá al final de todas las páginas. No se necesita bloque ni shortcode.</li>
+  <li><strong>Bloque de Gutenberg</strong> — añade el bloque <strong>MenuX — Footer</strong> a una parte de plantilla de pie de página en el Editor del sitio (temas FSE).</li>
+  <li><strong>Shortcode</strong> — pega <code>[menux_footer]</code> en cualquier página, área de widgets o constructor de páginas (Elementor, Divi, temas clásicos).</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🌍</span>
+  <div class="callout-body"><p>Todos los textos del pie de página — encabezados, enlaces, copyright y más — son traducibles. El constructor registra cada cadena con la API de traducción de cadenas de WPML / Polylang, y TranslatePress traduce la salida renderizada directamente. Consulta la página de <a href="multilingual.html">Multilingüe</a>.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="layout.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Diseño y efectos</span></a>
+  <a class="next" href="wp-integration.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Integración WP</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

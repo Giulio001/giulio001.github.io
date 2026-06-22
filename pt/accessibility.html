@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade — Giuliomax Menu Builder</title>
+  <meta name="description" content="O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes WCAG 2.1 nível AA e as práticas do WAI-ARIA…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Acessibilidade — Giuliomax Menu Builder">
+  <meta property="og:description" content="O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes WCAG 2.1 nível AA e as práticas do WAI-ARIA…">
+  <meta property="og:url" content="https://giulio001.github.io/pt/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Acessibilidade — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes WCAG 2.1 nível AA e as práticas do WAI-ARIA…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Avançado › Acessibilidade</nav>
+<h1>Acessibilidade</h1>
+<p>O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes <strong>WCAG 2.1 nível AA</strong> e as práticas do <strong>WAI-ARIA Authoring Practices Guide</strong>.</p>
+
+<h2 id="teclado">Navegação por teclado</h2>
+<ul>
+  <li><kbd>Tab</kbd> / <kbd>Shift+Tab</kbd>: percorre os itens do menu em ordem.</li>
+  <li><kbd>Enter</kbd> / <kbd>Space</kbd>: abre submenus e aciona links.</li>
+  <li><kbd>Esc</kbd>: fecha o submenu aberto e retorna o foco ao item pai.</li>
+  <li><kbd>→</kbd> / <kbd>←</kbd>: navega entre itens do mesmo nível no menu horizontal.</li>
+  <li><kbd>↓</kbd> / <kbd>↑</kbd>: navega entre itens dentro de um dropdown aberto.</li>
+</ul>
+
+<h2 id="aria">Atributos ARIA</h2>
+<ul>
+  <li><code>role="navigation"</code> e <code>aria-label</code> no elemento <code>&lt;nav&gt;</code>.</li>
+  <li><code>aria-haspopup="true"</code> e <code>aria-expanded</code> nos itens com submenus.</li>
+  <li><code>aria-current="page"</code> no item que corresponde à página atual.</li>
+  <li><code>aria-hidden="true"</code> em elementos decorativos (ícones, separadores).</li>
+  <li>Textos alternativos via <code>aria-label</code> nos botões de hambúrguer e fechar.</li>
+</ul>
+
+<h2 id="contraste">Contraste de cores</h2>
+<p>Todos os temas padrão do plugin atendem à razão mínima de contraste de <strong>4,5:1</strong> para texto normal e <strong>3:1</strong> para texto grande, conforme o critério WCAG 1.4.3. Ao criar temas personalizados, use a ferramenta de verificação de contraste integrada no painel para confirmar a conformidade.</p>
+
+<h2 id="reduced-motion">Preferência por movimento reduzido</h2>
+<p>O plugin respeita automaticamente a configuração <code>prefers-reduced-motion: reduce</code> do sistema operacional do usuário:</p>
+<ul>
+  <li>Animações de dropdown são substituídas por exibição direta.</li>
+  <li>Transições de abertura/fechamento do menu mobile são instantâneas.</li>
+  <li>A animação de entrada da barra de avisos é desativada.</li>
+  <li>Animações de entrada dos itens de menu são desativadas.</li>
+</ul>
+
+<h2 id="screen-readers">Leitores de tela</h2>
+<p>O plugin foi testado com NVDA + Firefox, VoiceOver + Safari e JAWS + Chrome. Os estados dos submenus (expandido/recolhido) são anunciados corretamente. O foco é gerenciado de forma explícita ao abrir e fechar dropdowns e o overlay de busca.</p>
+
+<h2 id="testar">Testando seu menu</h2>
+<ul>
+  <li><strong>Somente teclado</strong> — desconecte o mouse e navegue o menu inteiro via Tab, setas, Enter e Escape.</li>
+  <li><strong>axe DevTools</strong> — extensão gratuita para auditorias WCAG automatizadas.</li>
+  <li><strong>NVDA / VoiceOver</strong> — leitores de tela para verificar estados e labels.</li>
+  <li><strong>Colour Contrast Analyser</strong> — confirme se as cores personalizadas mantêm a razão mínima de 4,5:1.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="import-export.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Importar / Exportar</span></a>
+  <a class="next" href="multilingual.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Multilíngue</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

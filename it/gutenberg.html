@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blocco Gutenberg — Giuliomax Menu Builder</title>
+  <meta name="description" content="Il blocco MenuX è un blocco WordPress nativo che ti permette di inserire il menu direttamente nell'Editor del Sito — senza shortcode, senza widget, senza PHP.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/gutenberg.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/gutenberg.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/gutenberg.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/gutenberg.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/gutenberg.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/gutenberg.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/gutenberg.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/gutenberg.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Blocco Gutenberg — Giuliomax Menu Builder">
+  <meta property="og:description" content="Il blocco MenuX è un blocco WordPress nativo che ti permette di inserire il menu direttamente nell'Editor del Sito — senza shortcode, senza widget, senza PHP.">
+  <meta property="og:url" content="https://giulio001.github.io/it/gutenberg.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blocco Gutenberg — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Il blocco MenuX è un blocco WordPress nativo che ti permette di inserire il menu direttamente nell'Editor del Sito — senza shortcode, senza widget, senza PHP.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Uso del Plugin</p>
+<h1>Blocco Gutenberg</h1>
+<p class="lead">Il blocco MenuX è un blocco WordPress nativo che ti permette di inserire il menu direttamente nell'Editor del Sito — senza shortcode, senza widget, senza PHP.</p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#when-to-use">Quando usare il blocco</a><a href="#add-block">Aggiungere il blocco</a><a href="#settings">Pannello impostazioni del blocco</a><a href="#fse-header">Utilizzo in un'intestazione FSE</a><a href="#classic">Temi classici</a></div>
+
+<h2 id="when-to-use">Quando usare il blocco</h2>
+<p>Il blocco MenuX è la scelta ideale se utilizzi un tema a blocchi (Full Site Editing) oppure se stai costruendo layout di pagina nell'editor a blocchi di WordPress. Offre i seguenti vantaggi:</p>
+<ul>
+  <li>Integrazione nativa con l'Editor del Sito — nessun shortcode da ricordare.</li>
+  <li>Posizionamento visivo direttamente nel template dell'intestazione o del footer.</li>
+  <li>Compatibilità completa con i blocchi di WordPress, incluso il blocco Modello.</li>
+</ul>
+<p>Per i temi classici che utilizzano file template PHP, lo shortcode <code>[menux]</code> o la funzione di Integrazione WP sono generalmente più pratici.</p>
+
+<h2 id="add-block">Aggiungere il blocco a una pagina o template</h2>
+<ol class="steps">
+  <li>Apri la pagina o il template in cui vuoi inserire il menu nell'editor a blocchi o nell'Editor del Sito.</li>
+  <li>Fai clic sul pulsante <strong>+</strong> per aprire l'inseritore di blocchi.</li>
+  <li>Cerca <strong>MenuX</strong> e seleziona il blocco dai risultati.</li>
+  <li>Il blocco viene inserito nella posizione del cursore e il menu viene visualizzato immediatamente.</li>
+</ol>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Il nome tecnico del blocco è <code>giuliomax/menu</code>. Puoi fare riferimento a questo nome in codice personalizzato o quando utilizzi l'API dei blocchi di WordPress.</p></div></div>
+
+<h2 id="settings">Pannello impostazioni del blocco</h2>
+<p>Selezionando il blocco MenuX nell'editor, nella barra laterale destra appare il pannello delle impostazioni del blocco con le opzioni disponibili:</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Impostazione</th><th>Descrizione</th></tr></thead>
+  <tbody>
+    <tr><td>Posizione menu</td><td>Seleziona quale posizione di menu visualizzare (ad es. Primary, Secondary). Le posizioni disponibili sono quelle definite in Menu Builder → Impostazioni.</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Tutte le altre impostazioni (tema, layout, mobile, ecc.) vengono gestite globalmente in Menu Builder e si applicano automaticamente al blocco.</p></div></div>
+
+<h2 id="fse-header">Consigliato: inserimento in un'intestazione FSE</h2>
+<ol class="steps">
+  <li>Vai su <strong>Aspetto → Editor</strong> per aprire l'Editor del Sito.</li>
+  <li>Seleziona <strong>Template → Intestazione</strong> (o crea un nuovo template di intestazione).</li>
+  <li>Fai clic su <strong>Modifica</strong> per entrare in modalità di modifica.</li>
+  <li>Fai clic sul pulsante <strong>+</strong> e cerca <strong>MenuX</strong>.</li>
+  <li>Inserisci il blocco nell'intestazione, nella posizione desiderata.</li>
+  <li>Salva il template. Il menu apparirà ora in tutte le pagine che utilizzano quel template.</li>
+</ol>
+
+<div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Puoi inserire più blocchi MenuX nello stesso template o in template diversi, ciascuno con una posizione di menu differente — ad esempio un menu principale nell'intestazione e un menu secondario nel footer.</p></div></div>
+
+<h2 id="classic">Temi classici e l'editor a blocchi</h2>
+<p>Nei temi classici, l'editor a blocchi è disponibile per la modifica dei contenuti delle pagine, ma il template del sito (intestazione, footer) è gestito dai file PHP del tema. In questo caso, per inserire il menu nell'intestazione del tema classico è preferibile usare lo shortcode <code>[menux]</code> tramite <code>do_shortcode()</code> nel file template, oppure la funzione di Integrazione WP che sostituisce automaticamente i menu nativi del tema.</p>
+
+<div class="page-nav"><a href="shortcode.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Shortcode [menux]</span></a><a class="next" href="themes.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Temi &amp; Categorie</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Mobile — Giuliomax Menu Builder</title>
+  <meta name="description" content="Scegli tra quattro stili distinti di menu mobile e configura esattamente come si comporta la navigazione su schermi piccoli — senza toccare CSS o JavaScript.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/mobile.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mobile.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mobile.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mobile.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mobile.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mobile.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mobile.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mobile.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Menu Mobile — Giuliomax Menu Builder">
+  <meta property="og:description" content="Scegli tra quattro stili distinti di menu mobile e configura esattamente come si comporta la navigazione su schermi piccoli — senza toccare CSS o JavaScript.">
+  <meta property="og:url" content="https://giulio001.github.io/it/mobile.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menu Mobile — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Scegli tra quattro stili distinti di menu mobile e configura esattamente come si comporta la navigazione su schermi piccoli — senza toccare CSS o JavaScript.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funzionalità</p>
+<h1>Menu Mobile</h1>
+<p class="lead">Scegli tra quattro stili distinti di menu mobile e configura esattamente come si comporta la navigazione su schermi piccoli — senza toccare CSS o JavaScript.</p>
+
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/mobile-menu.svg" alt="Stili di menu mobile" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#breakpoint">Impostare il breakpoint</a><a href="#styles">Gli stili mobile</a><a href="#hamburger">Pulsante hamburger</a><a href="#link-colors">Colori dei link mobile</a><a href="#submenu">Comportamento dei sottomenu</a><a href="#mega-mobile">Mega menu su mobile</a><a href="#preview">Anteprima telefono live</a></div>
+
+<h2 id="breakpoint">Impostare il breakpoint</h2>
+<p>Il breakpoint determina la larghezza dello schermo sotto la quale il menu desktop viene sostituito dal menu mobile. Il valore predefinito è <strong>768 px</strong>, corrispondente alla larghezza tipica dei tablet in modalità verticale.</p>
+<p>Se selezioni l'opzione <strong>Auto</strong>, Menu Builder sceglierà automaticamente il breakpoint in base alla larghezza del contenitore del menu, adattandosi dinamicamente al layout del tema.</p>
+
+<h2 id="styles">Gli stili del menu mobile</h2>
+<h3>1. Dropdown (Predefinito)</h3>
+<p>Il menu mobile a dropdown si apre verticalmente sotto il pulsante hamburger, all'interno del flusso della pagina. È lo stile più semplice e familiare.</p>
+<ul>
+  <li>Non occupa l'intero schermo.</li>
+  <li>Ideale per menu con poche voci.</li>
+</ul>
+
+<h3>2. Fullscreen</h3>
+<p>Il menu fullscreen si apre sopra l'intera pagina, coprendo tutto lo schermo con un overlay. Le voci sono centrate e solitamente mostrate con un font grande.</p>
+<ul>
+  <li>Crea un impatto visivo forte.</li>
+  <li>Ideale per siti creativi e portfolio.</li>
+</ul>
+
+<h3>3. Drawer — Sinistra</h3>
+<p>Il drawer sinistro scorre da sinistra verso destra, come un pannello laterale. Il contenuto della pagina rimane visibile sullo sfondo (spesso oscurato).</p>
+<ul>
+  <li>Familiare agli utenti di app mobile native.</li>
+  <li>Ideale per menu con molte voci e sottomenu profondi.</li>
+</ul>
+
+<h3>4. Drawer — Destra</h3>
+<p>Come il drawer sinistro, ma si apre dal lato destro dello schermo. Preferibile per siti RTL (destra a sinistra) o per ragioni estetiche.</p>
+<ul>
+  <li>Stessa funzionalità del drawer sinistro.</li>
+  <li>Adatto a layout con navigazione posizionata a destra.</li>
+</ul>
+
+<div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Puoi cambiare stile mobile in qualsiasi momento senza perdere la configurazione delle voci o del tema. Sperimenta con l'anteprima live per trovare lo stile più adatto al tuo sito.</p></div></div>
+
+<h2 id="hamburger">Pulsante hamburger</h2>
+<p>Il pulsante hamburger (☰) è il controllo che gli utenti toccano per aprire il menu mobile. Puoi personalizzarlo dalle seguenti opzioni:</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Opzione</th><th>Descrizione</th></tr></thead>
+  <tbody>
+    <tr><td>Stile icona</td><td>Icona hamburger (tre linee), croce (×), puntini o icona personalizzata.</td></tr>
+    <tr><td>Allineamento</td><td>Posiziona il pulsante a sinistra, al centro o a destra della barra mobile.</td></tr>
+    <tr><td>Colore icona</td><td>Colore delle linee dell'icona hamburger.</td></tr>
+    <tr><td>Sfondo del pulsante</td><td>Colore di sfondo del pulsante (trasparente per impostazione predefinita).</td></tr>
+  </tbody>
+</table></div>
+
+<h2 id="link-colors">Colori dei link mobile</h2>
+<p>I colori dei link nel menu mobile sono indipendenti da quelli del menu desktop e possono essere configurati separatamente:</p>
+<ul>
+  <li><strong>Normale</strong> — colore predefinito dei link nel menu mobile.</li>
+  <li><strong>Hover</strong> — colore dei link quando l'utente li tocca o ci passa sopra.</li>
+  <li><strong>Attivo</strong> — colore della voce che corrisponde alla pagina corrente.</li>
+</ul>
+<p>Se non vengono configurati colori separati, il menu mobile eredita i colori del tema attivo.</p>
+
+<h2 id="submenu">Comportamento dei sottomenu su mobile</h2>
+<p>I sottomenu (dropdown) si comportano diversamente su mobile rispetto al desktop, dove si aprono al passaggio del mouse. Puoi scegliere tra due modalità:</p>
+<ul>
+  <li><strong>Accordion attivo</strong> — i sottomenu si espandono e si contraggono al tocco della voce genitore. Solo un sottomenu alla volta rimane aperto.</li>
+  <li><strong>Accordion disattivo</strong> — tutti i sottomenu sono espansi per impostazione predefinita, mostrando l'intera struttura del menu.</li>
+</ul>
+<p>La modalità accordion è generalmente preferibile per menu con molti livelli di nidificazione, in quanto evita che il menu diventi troppo lungo.</p>
+
+<h2 id="mega-mobile">Mega menu su mobile</h2>
+<p>I pannelli mega menu vengono adattati automaticamente per i dispositivi mobili: le colonne vengono impilate verticalmente e il contenuto viene presentato in formato accordion.</p>
+<p>Puoi controllare il comportamento del mega menu su mobile per ogni singola voce:</p>
+<ul>
+  <li><strong>Visibile su mobile</strong> — il pannello viene mostrato come accordion espandibile.</li>
+  <li><strong>Nascosto su mobile</strong> — la voce si comporta come un link semplice su mobile.</li>
+</ul>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>I contenuti di tipo Shortcode all'interno delle colonne del mega menu vengono renderizzati normalmente anche su mobile, ma elementi complessi come slider o mappe potrebbero richiedere CSS personalizzato per adattarsi correttamente agli schermi piccoli.</p></div></div>
+
+<h2 id="preview">Anteprima telefono live</h2>
+<p>La sezione <strong>Menu Builder → Mobile → Anteprima</strong> mostra una simulazione del menu mobile all'interno di un frame a forma di smartphone, aggiornata in tempo reale mentre modifichi le impostazioni. Utile per verificare l'aspetto senza dover ridimensionare la finestra del browser.</p>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>L'anteprima rispetta le preferenze di sistema per la riduzione del movimento (<code>prefers-reduced-motion</code>): se le animazioni sono disabilitate a livello di sistema operativo, anche l'anteprima non mostrerà animazioni.</p></div></div>
+
+<div class="page-nav"><a href="visibility.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Regole di Visibilità</span></a><a class="next" href="layout.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Layout &amp; Effetti</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

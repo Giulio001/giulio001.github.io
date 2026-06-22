@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sichtbarkeitsregeln — Giuliomax Menu Builder</title>
+  <meta name="description" content="Zeige oder verberge einzelne Menüpunkte basierend auf dem Besucher, dem verwendeten Gerät, dem Zeitpunkt des Besuchs oder dem Anmeldestatus.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/visibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/visibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/visibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/visibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/visibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/visibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/visibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/visibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Sichtbarkeitsregeln — Giuliomax Menu Builder">
+  <meta property="og:description" content="Zeige oder verberge einzelne Menüpunkte basierend auf dem Besucher, dem verwendeten Gerät, dem Zeitpunkt des Besuchs oder dem Anmeldestatus.">
+  <meta property="og:url" content="https://giulio001.github.io/de/visibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sichtbarkeitsregeln — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Zeige oder verberge einzelne Menüpunkte basierend auf dem Besucher, dem verwendeten Gerät, dem Zeitpunkt des Besuchs oder dem Anmeldestatus.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funktionen</p>
+<h1>Sichtbarkeitsregeln</h1>
+<p class="lead">Zeige oder verberge einzelne Menüpunkte basierend auf dem Besucher, dem verwendeten Gerät, dem Zeitpunkt des Besuchs oder dem Anmeldestatus.</p>
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/visibility.svg" alt="Menüpunktliste mit Sichtbarkeitsregeln: Alle, Angemeldete Nutzer, Gäste und zeitbasierter Zeitplan" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#how">Funktionsweise</a>
+  <a href="#user-role">Sichtbarkeits-Dropdown</a>
+  <a href="#device">Gerät</a>
+  <a href="#schedule">Zeitplan &amp; Uhrzeit</a>
+  <a href="#login">Seiten- &amp; Kampagnen-Targeting</a>
+  <a href="#combining">Regeln kombinieren</a>
+</div>
+<h2 id="how">Funktionsweise</h2>
+<p>Jeder Menüpunkt hat eigene Sichtbarkeitsregeln. Diese werden in <strong>Menu Builder → Menüstruktur</strong> konfiguriert — klicke auf einen Punkt in der Liste, um seine Optionen zu erweitern, und suche nach dem <strong>Sichtbarkeits</strong>-Dropdown und dem Bereich <strong>Erweiterte Bedingungen</strong>.</p>
+<p>Standardmäßig sind alle Punkte für alle Besucher sichtbar. Sobald eine Regel gesetzt ist, wird der Punkt nur Besuchern angezeigt, die diese Bedingung erfüllen. Mehrere Regeltypen werden mit <strong>UND</strong>-Logik kombiniert — alle aktivierten Regeln müssen zutreffen, damit der Punkt erscheint.</p>
+<h2 id="user-role">Sichtbarkeits-Dropdown (Rolle &amp; Anmeldung)</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Option</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Alle</strong></td><td>Standard. Keine Einschränkung — der Punkt ist für alle Besucher sichtbar.</td></tr>
+    <tr><td><strong>Alle angemeldeten Nutzer</strong></td><td>Nur für angemeldete Nutzer sichtbar (beliebige Rolle).</td></tr>
+    <tr><td><strong>Nur Gäste (nicht angemeldet)</strong></td><td>Nur für nicht angemeldete Besucher sichtbar. Nützlich für „Anmelden"- / „Registrieren"-Links.</td></tr>
+    <tr><td><strong>Nur [Rolle]</strong></td><td>Nur für Nutzer mit genau dieser Rolle sichtbar — z. B. „Nur Administrator", „Nur Editor".</td></tr>
+  </tbody>
+</table></div>
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body"><p>Benutzerdefinierte Rollen anderer Plugins (z. B. WooCommerces „Shop-Manager" oder „Kunde") erscheinen automatisch im Dropdown. Um <strong>mehrere</strong> Rollen gleichzeitig anzusprechen, verwende das Feld <strong>Rollen</strong> in den erweiterten Bedingungen (kommagetrennte Liste, z. B. <code>editor,author</code>).</p></div>
+</div>
+<h2 id="device">Gerät</h2>
+<p>In den erweiterten Bedingungen kannst du einen Punkt nach Gerätetyp ein- oder ausblenden:</p>
+<ul>
+  <li><strong>Alle Geräte</strong> — Standard.</li>
+  <li><strong>Nur Mobilgeräte</strong> — nur auf Smartphones/Tablets sichtbar, auf Desktop ausgeblendet.</li>
+  <li><strong>Nur Desktop</strong> — nur auf Desktop sichtbar, auf Mobilgeräten ausgeblendet.</li>
+</ul>
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Die Geräteerkennung erfolgt serverseitig beim Laden der Seite über WordPress' <code>wp_is_mobile()</code>-Funktion. Im Gegensatz zu CSS-Media-Queries wird das korrekte HTML an den Browser gesendet — kein Content-Flashing. Beachte: <code>wp_is_mobile()</code> behandelt Tablets als Mobilgeräte.</p></div>
+</div>
+<h2 id="schedule">Zeitplan &amp; Uhrzeit</h2>
+<p>In den erweiterten Bedingungen stehen zwei unabhängige Zeitplan-Steuerungen zur Verfügung.</p>
+<h3>Datumsbereich</h3>
+<p>Lege ein <strong>Start-Datum/Uhrzeit</strong> und/oder <strong>End-Datum/Uhrzeit</strong> fest. Der Punkt ist nur in diesem Zeitraum sichtbar (einschließlich). Ein Feld leer lassen für einen offenen Bereich — z. B. für einen Aktionslink, der automatisch erscheint und verschwindet.</p>
+<h3>Tägliches Zeitfenster</h3>
+<p>Lege eine <strong>Von</strong>- und <strong>Bis</strong>-Uhrzeit (HH:MM) fest. Der Punkt ist nur in diesem Fenster täglich sichtbar. Beispiel: „Live-Support"-Link nur zwischen 09:00 und 18:00 anzeigen.</p>
+<div class="callout warn">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body"><p>Zeitplanregeln verwenden die Zeitzone deiner WordPress-Website (unter <em>Einstellungen → Allgemein → Zeitzone</em>), nicht die lokale Zeit des Besuchers.</p></div>
+</div>
+<h2 id="login">Seiten- &amp; Kampagnen-Targeting</h2>
+<ul>
+  <li><strong>Seiten</strong> — Punkt auf bestimmte Seiten beschränken durch Eingabe der Seiten-IDs (kommagetrennt).</li>
+  <li><strong>UTM-Quelle</strong> — Punkt nur anzeigen, wenn der Besucher mit einem passenden <code>utm_source</code>-Parameter ankommt. Nützlich für kampagnenspezifische Menüanpassungen.</li>
+</ul>
+<h2 id="combining">Regeln kombinieren</h2>
+<p>Alle aktiven Regeln müssen gleichzeitig zutreffen (UND-Logik). Beispiel — Menüpunkt nur für <em>angemeldete Nutzer auf Desktop während der Geschäftszeiten</em> anzeigen:</p>
+<ul>
+  <li>Sichtbarkeits-Dropdown → <strong>Alle angemeldeten Nutzer</strong></li>
+  <li>Gerät → <strong>Nur Desktop</strong></li>
+  <li>Tägliches Zeitfenster → <strong>09:00–18:00</strong></li>
+</ul>
+<div class="page-nav">
+  <a href="badges.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Abzeichen &amp; Punkte</span></a>
+  <a class="next" href="mobile.html"><span class="nav-dir">Weiter →</span><span class="nav-title">Mobile Menüs</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

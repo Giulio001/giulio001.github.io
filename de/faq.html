@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Häufig gestellte Fragen — Giuliomax Menu Builder</title>
+  <meta name="description" content="Antworten auf die häufigsten Fragen zum Giuliomax Menu Builder.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/faq.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/faq.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/faq.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/faq.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/faq.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/faq.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/faq.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Häufig gestellte Fragen — Giuliomax Menu Builder">
+  <meta property="og:description" content="Antworten auf die häufigsten Fragen zum Giuliomax Menu Builder.">
+  <meta property="og:url" content="https://giulio001.github.io/de/faq.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Häufig gestellte Fragen — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Antworten auf die häufigsten Fragen zum Giuliomax Menu Builder.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Erweitert</p>
+<h1>Häufig gestellte Fragen</h1>
+<p class="lead">Antworten auf die häufigsten Fragen zum Giuliomax Menu Builder.</p>
+
+<h2>Allgemein</h2>
+
+<h3>Ist das Plugin wirklich kostenlos? Gibt es eine Pro-Version?</h3>
+<p>Ja, vollständig kostenlos. Es gibt keine Pro-Version, keine Premium-Add-ons und keine Funktionen hinter einer Bezahlschranke. Alles, was in dieser Dokumentation beschrieben wird, ist von Anfang an kostenlos verfügbar.</p>
+
+<h3>Wo befindet sich der Quellcode des Plugins?</h3>
+<p>Das Plugin ist Open Source. Das Repository befindet sich unter <a href="https://github.com/Giulio001/menux-free-version" target="_blank">github.com/Giulio001/menux-free-version</a>. Bug-Reports und Pull Requests sind willkommen.</p>
+
+<h3>Funktioniert es mit jedem WordPress-Theme?</h3>
+<p>Ja. Das Plugin rendert sein eigenes Markup und seine eigenen Stile unabhängig vom aktiven Theme. Die einzige themespezifische Überlegung betrifft die <em>Platzierung</em> des Menüs — für klassische Themes verwendest du den Shortcode oder ein Widget; für FSE-Themes den Gutenberg-Block im Site-Editor.</p>
+
+<h3>Verlangsamt es meine Website?</h3>
+<p>Nein. Das Plugin bindet nur das CSS und JavaScript ein, das für die von dir aktivierten Funktionen benötigt wird. Wenn du den Countdown-Timer nicht verwendest, wird dieses Skript nicht geladen. Assets sind minimiert und werden von deinem Server bereitgestellt (keine CDN-Aufrufe an Drittanbieter-Dienste).</p>
+
+<h2>Installation &amp; Kompatibilität</h2>
+
+<h3>Welche WordPress-Version benötige ich?</h3>
+<p>WordPress 5.8 oder höher. Für die beste Full-Site-Editing-Erfahrung (FSE) mit dem Gutenberg-Block wird WordPress 6.0 oder höher empfohlen.</p>
+
+<h3>Funktioniert es mit Page-Buildern (Elementor, Divi, Beaver Builder)?</h3>
+<p>Ja, über den <code>[menux]</code>-Shortcode. In Elementor verwende das Widget <em>Shortcode</em> und füge <code>[menux]</code> ein. In Divi verwende das <em>Code</em>-Modul. In Beaver Builder das <em>HTML</em>-Modul.</p>
+
+<h3>Verursacht es Konflikte mit anderen Menü-Plugins?</h3>
+<p>Es kann neben anderen Menü-Plugins koexistieren, solange beide nicht auf dieselbe Menü-Location angewendet werden. Wenn du zuvor ein anderes Plugin verwendet hast (z. B. Max Mega Menu, UberMenu), deaktiviere es vor der Aktivierung von Giuliomax Menu Builder, um Stil-Konflikte zu vermeiden.</p>
+
+<h3>Kann ich es bei einer Multisite-Installation verwenden?</h3>
+<p>Ja. Aktiviere es netzwerkweit, um es auf allen Sites verfügbar zu machen, oder aktiviere es pro Site. Einstellungen werden pro Site gespeichert, nicht netzwerkweit.</p>
+
+<h2>Themes &amp; Gestaltung</h2>
+
+<h3>Kann ich eigene Themes erstellen?</h3>
+<p>Du kannst jedes eingebaute Theme mithilfe der Stilsteuerungen in <strong>Menu Builder (Farben / Typografie / Layout)</strong> stark anpassen. Das Speichern dieser Anpassungen als benanntes „Preset" (Export → Als Preset speichern) ist für eine zukünftige Version geplant.</p>
+
+<h3>Meine benutzerdefinierte Schriftart steht nicht in der Liste mit 70+ Google Fonts. Kann ich sie trotzdem verwenden?</h3>
+<p>Ja. Lade deine Schriftart über dein Theme, ein Plugin oder manuell ein, und gib dann den Schriftfamiliennamen unter <strong>Menu Builder → Typografie → Schriftfamilie → Benutzerdefiniert</strong> ein. Das Plugin verwendet die Schriftart, die im Browser verfügbar ist.</p>
+
+<h3>Wie setze ich alle Stiländerungen zurück und kehre zu den Theme-Standardwerten zurück?</h3>
+<p>Klicke in <strong>Menu Builder (Farben / Typografie / Layout)</strong> auf <em>Auf Theme-Standardwerte zurücksetzen</em> am unteren Ende des Panels. Dadurch werden alle Werte auf die des aktuell angewendeten Themes zurückgesetzt.</p>
+
+<h2>Mega-Menü</h2>
+
+<h3>Das Mega-Menü-Panel wird am rechten Bildschirmrand abgeschnitten. Wie behebe ich das?</h3>
+<p>Setze die Panel-Breite auf <strong>Volle Breite</strong> unter <strong>Menu Builder → Mega-Menü → Panel-Breite</strong>. Wenn du ein schmaleres Panel benötigst, überprüfe, ob das Container-CSS deiner Website <code>overflow: hidden</code> auf ein übergeordnetes Element des Menüs anwendet.</p>
+
+<h3>Kann ich ein Kontaktformular oder ein WooCommerce-Produkt in eine Mega-Menü-Spalte einfügen?</h3>
+<p>Ja — verwende den Spalteninhalt-Typ <strong>Shortcode</strong> und füge einen beliebigen Shortcode oder HTML ein. Zum Beispiel: <code>[contact-form-7 id="123"]</code> oder einen WooCommerce-Produkt-Shortcode.</p>
+
+<h2>Mobilgeräte</h2>
+
+<h3>Desktop- und Mobilmenü sind gleichzeitig sichtbar. Wie behebe ich das?</h3>
+<p>Das bedeutet normalerweise, dass eine andere CSS-Regel die Breakpoint-Stile des Plugins überschreibt. Öffne die Browser-DevTools, untersuche den Menü-Container und suche nach einer <code>display</code>-Eigenschaft aus deinem Theme. Füge eine spezifischere CSS-Regel zu deinem Theme-Stylesheet hinzu oder passe den Breakpoint-Wert unter <strong>Menu Builder → Mobile</strong> an.</p>
+
+<h2>WooCommerce</h2>
+
+<h3>Die Warenkorbanzahl wird ohne Neuladen der Seite nicht aktualisiert.</h3>
+<p>Stelle sicher, dass dein Caching-Plugin (falls vorhanden) keine WooCommerce-AJAX-Anfragen zwischenspeichert. Die meisten Caching-Plugins haben einen WooCommerce-kompatiblen Modus oder schließen Warenkorb-Fragment-Anfragen automatisch aus — lies die Dokumentation deines Caching-Plugins.</p>
+
+<h2>Hilfe erhalten</h2>
+<p>Wenn deine Frage hier nicht beantwortet wird:</p>
+<ul>
+  <li>Öffne ein Issue auf <a href="https://github.com/Giulio001/menux-free-version/issues" target="_blank">GitHub</a>.</li>
+  <li>Hinterlasse einen Support-Thread im <a href="https://wordpress.org/plugins/giuliomax-menu-builder/#support" target="_blank">WordPress.org-Supportforum</a>.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="multilingual.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Mehrsprachigkeit</span></a>
+  <span></span>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

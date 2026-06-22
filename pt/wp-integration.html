@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integração WP — Giuliomax Menu Builder</title>
+  <meta name="description" content="O Giuliomax Menu Builder foi projetado para se integrar ao ecossistema WordPress sem conflitos, respeitando os hooks, filtros e APIs nativas da plataforma.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/wp-integration.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/wp-integration.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/wp-integration.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/wp-integration.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/wp-integration.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/wp-integration.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/wp-integration.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/wp-integration.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Integração WP — Giuliomax Menu Builder">
+  <meta property="og:description" content="O Giuliomax Menu Builder foi projetado para se integrar ao ecossistema WordPress sem conflitos, respeitando os hooks, filtros e APIs nativas da plataforma.">
+  <meta property="og:url" content="https://giulio001.github.io/pt/wp-integration.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Integração WP — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O Giuliomax Menu Builder foi projetado para se integrar ao ecossistema WordPress sem conflitos, respeitando os hooks, filtros e APIs nativas da plataforma.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Ferramentas › Integração WP</nav>
+<h1>Integração WP</h1>
+<p>O Giuliomax Menu Builder foi projetado para se integrar ao ecossistema WordPress sem conflitos, respeitando os hooks, filtros e APIs nativas da plataforma.</p>
+
+<h2 id="hooks">Hooks e filtros PHP</h2>
+<p>O plugin expõe filtros que permitem personalizar o comportamento via código no <code>functions.php</code> do tema ou em um plugin auxiliar:</p>
+<ul>
+  <li><code>menux_menu_args</code>: modifica os argumentos passados para <code>wp_nav_menu()</code>.</li>
+  <li><code>menux_item_classes</code>: adiciona ou remove classes CSS dos itens do menu.</li>
+  <li><code>menux_badge_count</code>: fornece dinamicamente o valor de um contador de badge.</li>
+  <li><code>menux_before_render</code> / <code>menux_after_render</code>: ações disparadas antes e depois da renderização do menu.</li>
+  <li><code>menux_footer_row</code>: filtra o HTML de uma linha do Footer Builder.</li>
+</ul>
+
+<h2 id="construtores-de-pagina">Construtores de página</h2>
+<p>O plugin é compatível com os principais construtores de página:</p>
+<ul>
+  <li><strong>Elementor</strong>: use o widget <em>Giuliomax Menu</em> disponível na aba de widgets.</li>
+  <li><strong>Divi</strong>: insira o shortcode <code>[menux]</code> em um módulo de texto.</li>
+  <li><strong>WPBakery</strong>: use o elemento <em>Shortcode</em> com <code>[menux id="ID"]</code>.</li>
+  <li><strong>Beaver Builder</strong>: módulo HTML com o shortcode.</li>
+</ul>
+
+<h2 id="multisite">WordPress Multisite</h2>
+<p>O plugin suporta instalações Multisite. Cada subsite pode ter sua própria configuração de menu independente. O plugin pode ser ativado em toda a rede ou site a site, conforme necessário.</p>
+
+<h2 id="cache">Compatibilidade com cache</h2>
+<p>O Giuliomax Menu Builder é compatível com os principais plugins de cache (WP Super Cache, W3 Total Cache, WP Rocket, LiteSpeed Cache). Os elementos dinâmicos (carrinho, contadores, regras de visibilidade por papel) usam fragmentos de cache ou carregamento via AJAX para garantir exibição correta mesmo com cache ativo.</p>
+
+<h2 id="cdn">CDN e assets</h2>
+<p>Os assets do plugin (CSS e JS) são enfileirados corretamente via <code>wp_enqueue_style</code> e <code>wp_enqueue_script</code>, respeitando as dependências e a versão. Em ambientes com CDN, os caminhos são filtrados automaticamente pelo WordPress.</p>
+
+<div class="page-nav">
+  <a href="footer.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Footer Builder</span></a>
+  <a class="next" href="import-export.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Importar / Exportar</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

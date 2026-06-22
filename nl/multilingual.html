@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meertalig — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder werkt naadloos samen met de populairste WordPress-vertaalplugins. Je kunt één menu bouwen en het automatisch laten aanpassen aan de…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/nl/multilingual.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/multilingual.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/multilingual.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/multilingual.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/multilingual.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/multilingual.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/multilingual.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/multilingual.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:title" content="Meertalig — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder werkt naadloos samen met de populairste WordPress-vertaalplugins. Je kunt één menu bouwen en het automatisch laten aanpassen aan de…">
+  <meta property="og:url" content="https://giulio001.github.io/nl/multilingual.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meertalig — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder werkt naadloos samen met de populairste WordPress-vertaalplugins. Je kunt één menu bouwen en het automatisch laten aanpassen aan de…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentatie</a> › Geavanceerd › Meertalig</nav>
+<h1>Meertalig</h1>
+<p>Giuliomax Menu Builder werkt naadloos samen met de populairste WordPress-vertaalplugins. Je kunt één menu bouwen en het automatisch laten aanpassen aan de taal van de bezoeker, zonder dubbel configuratiewerk.</p>
+
+<h2 id="wpml">WPML</h2>
+<p>Met WPML (WordPress Multilingual Plugin) kun je voor elke taal afzonderlijke menu-items vertalen en tonen.</p>
+<ol>
+  <li>Installeer en configureer WPML zoals gebruikelijk.</li>
+  <li>Ga naar <strong>Weergave › Menu's</strong> en vertaal de menu-items via het WPML-menu-vertaalscherm.</li>
+  <li>Wijs het vertaalde menu toe aan de locatie die Giuliomax Menu Builder uitleest.</li>
+  <li>De plugin detecteert automatisch de actieve taal van WPML en toont het bijbehorende menu.</li>
+</ol>
+<p><strong>Tip:</strong> gebruik de WPML-widget voor de taalkiezer en voeg deze toe aan het header-gedeelte van je thema om bezoekers eenvoudig te laten schakelen.</p>
+
+<h2 id="polylang">Polylang</h2>
+<p>Polylang gebruikt hetzelfde WordPress-menusysteem. Elke taal krijgt zijn eigen menulocatie-toewijzing.</p>
+<ol>
+  <li>Maak per taal een aparte versie van het menu aan in <strong>Weergave › Menu's</strong>.</li>
+  <li>Wijs elk menu toe aan de juiste menulocatie voor de bijbehorende taal.</li>
+  <li>Polylang zorgt er automatisch voor dat de juiste locatie-toewijzing actief is op basis van de bezochte taal.</li>
+  <li>Giuliomax Menu Builder leest de actieve menulocatie uit en geeft het correcte menu weer.</li>
+</ol>
+
+<h2 id="translatepress">TranslatePress</h2>
+<p>TranslatePress vertaalt de volledige pagina, inclusief menu-items, via een visuele vertaalinterface.</p>
+<ol>
+  <li>Installeer TranslatePress en voeg je doeltalen toe in de instellingen.</li>
+  <li>Gebruik de visuele vertaler (tandwiel op de frontend) om menu-items rechtstreeks op de pagina te vertalen.</li>
+  <li>TranslatePress slaat de vertalingen op en past ze toe op elke pagina, ook op de menuitems van Giuliomax Menu Builder.</li>
+</ol>
+<p><strong>Opmerking:</strong> custom HTML-blokken en megamenu-inhoud worden ook vertaald zolang de tekst zichtbaar is in de DOM tijdens het vertalen.</p>
+
+<h2 id="handmatig">Handmatige aanpak zonder plugin</h2>
+<p>Als je geen vertaalplugin gebruikt, kun je toch meertalige menu's aanbieden via WordPress-paginastructuur:</p>
+<ul>
+  <li>Maak voor elke taal een aparte menustructuur aan en wijs die toe aan dezelfde locatie via conditionele code in <code>functions.php</code>.</li>
+  <li>Gebruik een sessie- of cookie-gebaseerde taalkiezer om de taalvoorkeur op te slaan en de juiste menu-structuur te laden.</li>
+  <li>Verwijs menu-items naar vertaalde pagina-URL's (<code>/en/about/</code>, <code>/it/chi-siamo/</code>).</li>
+</ul>
+
+<h2 id="rtl">RTL-taalondersteuning</h2>
+<p>Giuliomax Menu Builder detecteert automatisch de RTL-richting (rechts naar links) op basis van het <code>dir="rtl"</code>-attribuut op het <code>&lt;html&gt;</code>-element, ingesteld door WPML of Polylang.</p>
+<ul>
+  <li>Dropdowns openen naar links in plaats van rechts.</li>
+  <li>Megamenu-kolommen worden in omgekeerde volgorde weergegeven.</li>
+  <li>Het mobiele menu-icoontje en de sluitknop worden gespiegeld.</li>
+  <li>Marges, paddings en pijltjes worden automatisch omgekeerd via logische CSS-eigenschappen.</li>
+</ul>
+
+<h2 id="tips">Best practices</h2>
+<ul>
+  <li>Test het menu in elke taal na het vertalen om te controleren of alle labels, tooltips en megamenu-titels correct zijn.</li>
+  <li>Gebruik <strong>hreflang</strong>-tags op je pagina's voor correcte SEO-indexering per taal.</li>
+  <li>Zorg dat de sluiting (<code>Esc</code>-toets) en focus-volgorde ook in RTL-talen correct werken — test dit met een schermlezer.</li>
+  <li>Sla vertaalde badge-labels en aankondigingsteksten op in de vertaalplugin, niet hardgecodeerd in de HTML-output.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="accessibility.html"><span class="nav-dir">← Vorige</span><span class="nav-title">Toegankelijkheid</span></a>
+  <a class="next" href="faq.html"><span class="nav-dir">Volgende →</span><span class="nav-title">Veelgestelde vragen</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

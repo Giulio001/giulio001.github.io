@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Builder — Giuliomax Menu Builder</title>
+  <meta name="description" content="Erstelle einen professionellen, mehrspaltigen Website-Footer vollständig im WordPress-Admin — wähle bis zu sechs Abschnitte pro Reihe, gestalte jedes Detail…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/footer.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/footer.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/footer.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/footer.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/footer.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/footer.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/footer.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/footer.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Footer Builder — Giuliomax Menu Builder">
+  <meta property="og:description" content="Erstelle einen professionellen, mehrspaltigen Website-Footer vollständig im WordPress-Admin — wähle bis zu sechs Abschnitte pro Reihe, gestalte jedes Detail…">
+  <meta property="og:url" content="https://giulio001.github.io/de/footer.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Footer Builder — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Erstelle einen professionellen, mehrspaltigen Website-Footer vollständig im WordPress-Admin — wähle bis zu sechs Abschnitte pro Reihe, gestalte jedes Detail…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funktionen</p>
+<h1>Footer Builder</h1>
+<p class="lead">Erstelle einen professionellen, mehrspaltigen Website-Footer vollständig im WordPress-Admin — wähle bis zu sechs Abschnitte pro Reihe, gestalte jedes Detail visuell und platziere ihn per Block, Shortcode oder automatisch auf jeder Seite.</p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#enable">Aktivierung &amp; Platzierung</a>
+  <a href="#wizard">Einrichtungsassistent</a>
+  <a href="#sections">Footer-Abschnitte</a>
+  <a href="#bottom">Untere Leiste</a>
+  <a href="#themes">Footer-Themes</a>
+  <a href="#styling">Gestaltung</a>
+  <a href="#placing">Footer platzieren</a>
+</div>
+
+<h2 id="enable">Aktivierung &amp; Platzierung</h2>
+<p>Öffne <strong>Menu Builder → Footer</strong>. Die Symbolleiste oben auf der Seite steuert das globale Verhalten des Footers:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Einstellung</th><th>Beschreibung</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Footer aktivieren</strong></td><td>Hauptschalter. Der Footer wird nur gerendert, wenn dies aktiviert ist <em>und</em> mindestens ein Abschnitt hinzugefügt wurde.</td></tr>
+      <tr><td><strong>Layout</strong></td><td><strong>Erste Spalte breit</strong> (der erste Abschnitt ist breiter — ideal für einen Über-uns-Block), <strong>Gleiche Spalten</strong> oder <strong>Zentriert</strong>.</td></tr>
+      <tr><td><strong>Platzierung</strong></td><td><strong>Manuell</strong> — du platzierst ihn selbst mit dem Block oder Shortcode. <strong>Automatisch</strong> — der Footer wird automatisch am Ende jeder Seite eingefügt.</td></tr>
+      <tr><td><strong>Priorität</strong></td><td>Wird nur bei automatischer Platzierung angezeigt. Die <code>wp_footer</code>-Hook-Priorität (1–9999, Standard 100) — niedrigere Zahlen werden früher ausgegeben. Erhöhe sie, wenn der Footer mit einem anderen Plugin kollidiert.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Die automatische Platzierung vermeidet Duplikate: Wenn ein Footer bereits manuell (per Block oder Shortcode) auf derselben Seite ausgegeben wurde, überspringt die automatische Einbindung sich selbst — du bekommst nie zwei Footer.</p></div>
+</div>
+
+<h2 id="wizard">Einrichtungsassistent</h2>
+<p>Der schnellste Weg zu einem vollständigen Footer ist der <strong>🪄 Einrichtungsassistent</strong>-Button in der Symbolleiste. Er führt dich durch vier Schritte — <strong>Layout → Theme → Inhalt → Untere Leiste</strong> — und befüllt in weniger als einer Minute einen vollständig gestalteten Footer. Der Assistent öffnet sich automatisch beim ersten Besuch der Footer-Seite.</p>
+
+<h2 id="sections">Footer-Abschnitte</h2>
+<p>Der Footer wird aus <strong>Abschnitten</strong> (den Spalten) aufgebaut. Klicke auf <strong>＋ Abschnitt hinzufügen</strong>, um einen hinzuzufügen — bis zu <strong>6</strong> pro Reihe. Jede Abschnittskarte hat einen <strong>Titel</strong>, ein Kontrollkästchen <strong>Auf Mobilgeräten ausblenden</strong> und einen <strong>⧉ Duplizieren</strong>-Button, der den gesamten Abschnitt (einschließlich Inhalt) klont und darunter einfügt.</p>
+<p>Es gibt <strong>7 Abschnittstypen</strong>:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Typ</th><th>Was er rendert</th><th>Wichtige Felder</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Über uns / Text</strong></td><td>Ein optionales Logo-Bild gefolgt von einem Textabsatz — typischerweise eine kurze Unternehmensbeschreibung.</td><td>Logo-Bild, Bildbreite, Text</td></tr>
+      <tr><td><strong>Linkliste</strong></td><td>Eine vertikale Liste von Links (bis zu 20), jeder kann in einem neuen Tab geöffnet werden.</td><td>Bezeichnung, URL, in neuem Tab öffnen</td></tr>
+      <tr><td><strong>Kontaktdaten</strong></td><td>Adresse, Telefon und E-Mail. Telefon wird automatisch zu einem <code>tel:</code>-Link, E-Mail zu einem <code>mailto:</code>-Link.</td><td>Adresse, Telefon, E-Mail</td></tr>
+      <tr><td><strong>Social-Icons</strong></td><td>Eine Reihe von gebrandeten Social-Icons (bis zu 14) mit Links zu deinen Profilen.</td><td>Netzwerk + URL pro Icon</td></tr>
+      <tr><td><strong>Öffnungszeiten</strong></td><td>Eine einfache Liste von Zeilen (bis zu 10), z. B. „Mo–Fr: 9–18 Uhr".</td><td>Eine Zeile pro Eintrag</td></tr>
+      <tr><td><strong>Newsletter</strong></td><td>Ein E-Mail-Anmeldeformular, das an einen externen Dienst postet (Mailchimp, ConvertKit, Brevo, …).</td><td>Formular-Action-URL, Untertitel, Platzhalter, Button-Text, DSGVO-Text</td></tr>
+      <tr><td><strong>Eigenes HTML</strong></td><td>Beliebiges HTML, bereinigt mit WordPress's <code>wp_kses_post</code> — nützlich für Einbettungen, Abzeichen oder Shortcodes.</td><td>HTML</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Der Abschnitt <strong>Social-Icons</strong> unterstützt 14 Netzwerke: Facebook, Instagram, X (Twitter), LinkedIn, YouTube, TikTok, Pinterest, GitHub, WhatsApp, Telegram, Discord, Spotify, Threads und E-Mail. Icons stammen aus Font Awesome 6 Brand-Glyphen.</p></div>
+</div>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body"><p>Der Abschnitt <strong>Newsletter</strong> rendert nichts, bis du eine Formular-<em>Action-URL</em> einträgst — so wird verhindert, dass ein leeres Formular versehentlich an die aktuelle Seite postet. Füge ein optionales DSGVO-Einwilligungskästchen hinzu, um Anmeldungen rechtskonform zu gestalten.</p></div>
+</div>
+
+<h2 id="bottom">Untere Leiste</h2>
+<p>Unterhalb der Abschnitte befindet sich eine optionale <strong>untere Leiste</strong>, die auf derselben Seite konfiguriert wird:</p>
+<ul>
+  <li><strong>Copyright-Text</strong> — freier Text; der Token <code>{year}</code> wird automatisch durch das aktuelle Jahr ersetzt.</li>
+  <li><strong>Rechtliche Links</strong> — bis zu 6 kleine Links (Datenschutz, AGB, Cookies, …).</li>
+  <li><strong>Social in unterer Leiste</strong> — spiegele deine Social-Icons in die untere Leiste.</li>
+  <li><strong>Nach-oben-Button</strong> — ein schwebendes, akzentfarbenes Pfeil-Icon, das nach 300&nbsp;px Scrollen erscheint und sanft zurück nach oben scrollt.</li>
+</ul>
+
+<h2 id="themes">Footer-Themes</h2>
+<p>Das Raster <strong>🎨 Footer-Themes</strong> wendet eine sorgfältig zusammengestellte Farbpalette mit einem Klick an. Es gibt <strong>11 Themes</strong>:</p>
+<p>Midnight, Carbon Gold, Graphite, Deep Ocean, Evergreen, Bordeaux, Sapphire, Aurora, Porcelain, Sandstone und Editorial.</p>
+<p>Jedes Theme ist auf Kontrast und Harmonie abgestimmt — die dunklen Paletten enthalten dezente Tiefenverläufe. Das Anwenden eines Themes ist nicht destruktiv: Jede einzelne Farbe bleibt danach im Stil-Panel bearbeitbar.</p>
+
+<h2 id="styling">Gestaltung</h2>
+<p>Das <strong>🎛 Stil</strong>-Panel (mit Live-Vorschau daneben) gibt dir vollständige visuelle Kontrolle. Eine <strong>👁 Live-Vorschau</strong> aktualisiert sich in Echtzeit, wenn du Abschnitte, Farben und Typografie änderst — entsprechend dem öffentlichen Frontend.</p>
+
+<h3>Farben</h3>
+<p>Hintergrund, Überschriften, Text, Links, Link-Hover, Akzent sowie Hintergrund und Text der unteren Leiste. Ein optionaler CSS-Hintergrund-<strong>Verlauf</strong> kann den einfarbigen Hintergrund überschreiben.</p>
+
+<h3>Layout</h3>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Option</th><th>Bereich</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Akzentlinie</strong> (dünne farbige Linie oben)</td><td>Ein/aus + Höhe 1–10&nbsp;px</td></tr>
+      <tr><td><strong>Vertikales Padding</strong></td><td>16–160&nbsp;px</td></tr>
+      <tr><td><strong>Horizontales Padding</strong></td><td>0–120&nbsp;px</td></tr>
+      <tr><td><strong>Spaltenabstand</strong></td><td>8–120&nbsp;px</td></tr>
+      <tr><td><strong>Maximale Inhaltsbreite</strong></td><td>600–1920&nbsp;px</td></tr>
+      <tr><td><strong>Link-Abstand</strong></td><td>2–40&nbsp;px</td></tr>
+      <tr><td><strong>Mobile Ausrichtung</strong></td><td>Links oder Mitte</td></tr>
+      <tr><td><strong>Trennlinie untere Leiste</strong></td><td>Oberen Rand ein-/ausblenden</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3>Typografie</h3>
+<ul>
+  <li><strong>Überschrift</strong> — Größe (10–28&nbsp;px), Gewicht (Normal–Extra-fett) und Stil (GROSSBUCHSTABEN oder Normal).</li>
+  <li><strong>Textgröße</strong> — 11–20&nbsp;px.</li>
+  <li><strong>Link-Hover-Effekt</strong> — Nach rechts gleiten, Animiertes Unterstreichen oder Nur Farbe.</li>
+</ul>
+
+<h3>Social-Icons</h3>
+<p>Wähle einen Icon-<strong>Stil</strong> — Kreisabzeichen, Abgerundetes Quadrat oder Einfache Icons — und eine <strong>Größe</strong> von 12–28&nbsp;px.</p>
+
+<h3>Eigenes CSS</h3>
+<p>Ein eingegrenztes CSS-Feld für feine Anpassungen. Verwende <code>.menux-footer</code> als übergeordneten Selektor, um deine Regeln auf den Footer zu beschränken.</p>
+
+<h2 id="placing">Footer platzieren</h2>
+<p>Es gibt drei Möglichkeiten, den Footer auf deiner Website einzubinden — wähle die passende für dein Theme:</p>
+<ul>
+  <li><strong>Automatisch</strong> — setze Platzierung auf <em>Automatisch</em> in der Symbolleiste, und der Footer erscheint am Ende jeder Seite. Kein Block oder Shortcode erforderlich.</li>
+  <li><strong>Gutenberg-Block</strong> — füge den Block <strong>MenuX — Footer</strong> zu einem Footer-Template-Part im Site-Editor hinzu (FSE-Themes).</li>
+  <li><strong>Shortcode</strong> — füge <code>[menux_footer]</code> in eine beliebige Seite, einen Widget-Bereich oder einen Page-Builder ein (Elementor, Divi, klassische Themes).</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🌍</span>
+  <div class="callout-body"><p>Alle Footer-Texte — Überschriften, Links, Copyright und mehr — sind übersetzbar. Der Builder registriert jeden String mit der WPML- / Polylang-String-Translation-API, und TranslatePress übersetzt die gerenderte Ausgabe direkt. Siehe die Seite <a href="multilingual.html">Mehrsprachigkeit</a>.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="layout.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Layout &amp; Effekte</span></a>
+  <a class="next" href="wp-integration.html"><span class="nav-dir">Weiter →</span><span class="nav-title">WP-Menüintegration</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

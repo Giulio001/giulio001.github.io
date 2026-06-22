@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Builder — Giuliomax Menu Builder</title>
+  <meta name="description" content="Costruisci un footer professionale e multi-colonna interamente dall'amministrazione di WordPress — scegli fino a sei sezioni per riga, personalizza ogni…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/footer.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/footer.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/footer.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/footer.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/footer.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/footer.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/footer.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/footer.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Footer Builder — Giuliomax Menu Builder">
+  <meta property="og:description" content="Costruisci un footer professionale e multi-colonna interamente dall'amministrazione di WordPress — scegli fino a sei sezioni per riga, personalizza ogni…">
+  <meta property="og:url" content="https://giulio001.github.io/it/footer.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Footer Builder — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Costruisci un footer professionale e multi-colonna interamente dall'amministrazione di WordPress — scegli fino a sei sezioni per riga, personalizza ogni…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funzionalità</p>
+<h1>Footer Builder</h1>
+<p class="lead">Costruisci un footer professionale e multi-colonna interamente dall'amministrazione di WordPress — scegli fino a sei sezioni per riga, personalizza ogni dettaglio visivamente e inseriscilo con un blocco, uno shortcode o automaticamente su ogni pagina.</p>
+
+<p style="margin:2rem 0 2.5rem;"><img src="/assets/img/footer.svg" alt="Footer Builder con più colonne e sezioni" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#enable">Attivazione e inserimento</a><a href="#wizard">Procedura guidata</a><a href="#sections">Sezioni del footer</a><a href="#bottom">Barra inferiore</a><a href="#themes">Temi footer</a><a href="#styling">Stile</a><a href="#placing">Inserire il footer</a></div>
+
+<h2 id="enable">Attivazione e inserimento</h2>
+<p>Prima di usare il Footer Builder, devi abilitarlo e scegliere come inserirlo nel sito:</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Opzione</th><th>Descrizione</th></tr></thead>
+  <tbody>
+    <tr><td>Abilita footer</td><td>Attiva il Footer Builder. Se disabilitato, il footer nativo del tema rimane invariato.</td></tr>
+    <tr><td>Layout</td><td>Numero di colonne per riga nella sezione principale del footer (da 1 a 6).</td></tr>
+    <tr><td>Posizionamento</td><td>Modalità di inserimento: automatico (agganciato al hook <code>wp_footer</code>), blocco Gutenberg o shortcode.</td></tr>
+    <tr><td>Priorità</td><td>Priorità del hook WordPress per il posizionamento automatico (predefinito: 10).</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Se il tuo tema ha già un footer nativo, evita di usare il posizionamento automatico e quello del tema contemporaneamente, per non visualizzare due footer. Usa il blocco o lo shortcode per un controllo preciso della posizione.</p></div></div>
+
+<h2 id="wizard">Procedura guidata</h2>
+<p>La procedura guidata di configurazione del Footer Builder ti accompagna in 4 passi: scelta del layout, selezione del tema, configurazione delle sezioni e impostazione della barra inferiore. Puoi avviare la procedura guidata facendo clic su <strong>Avvia procedura guidata</strong> nella pagina principale del Footer Builder.</p>
+
+<h2 id="sections">Sezioni del footer</h2>
+<p>Ciascuna colonna del footer può contenere una o più sezioni di contenuto. Le sezioni disponibili sono:</p>
+<p>Puoi trascinare le sezioni per riordinarle all'interno di una colonna e aggiungere più sezioni dello stesso tipo in colonne diverse.</p>
+<div class="table-wrap"><table>
+  <thead><tr><th>Tipo di sezione</th><th>Descrizione</th></tr></thead>
+  <tbody>
+    <tr><td>Testo/Chi siamo</td><td>Un blocco di testo libero con supporto HTML di base — ideale per presentare brevemente il sito o l'azienda.</td></tr>
+    <tr><td>Lista di link</td><td>Un elenco di link personalizzabili con etichetta, URL e opzione di apertura in nuova scheda.</td></tr>
+    <tr><td>Informazioni di contatto</td><td>Indirizzo, telefono, email e altri dati di contatto con icone opzionali.</td></tr>
+    <tr><td>Icone social</td><td>Link ai profili social con icone colorate. Supporta 14 reti sociali.</td></tr>
+    <tr><td>Orari di apertura</td><td>Tabella settimanale con orari di apertura e chiusura per ogni giorno.</td></tr>
+    <tr><td>Newsletter</td><td>Form di iscrizione alla newsletter, compatibile con i principali servizi di email marketing.</td></tr>
+    <tr><td>HTML personalizzato</td><td>Inserisci qualsiasi codice HTML o shortcode WordPress.</td></tr>
+  </tbody>
+</table></div>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>La sezione Icone social supporta 14 reti sociali, tra cui Facebook, Instagram, Twitter/X, LinkedIn, YouTube, TikTok, Pinterest, Snapchat, WhatsApp, Telegram, GitHub, Dribbble, Behance e RSS.</p></div></div>
+
+<div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>La sezione Newsletter si integra con i principali servizi tramite shortcode: inserisci lo shortcode del tuo plugin di email marketing (es. Mailchimp for WP, MailPoet) nel campo apposito e il form verrà renderizzato automaticamente.</p></div></div>
+
+<h2 id="bottom">Barra inferiore</h2>
+<p>La barra inferiore (bottom bar) è una striscia sottile sotto le colonne principali del footer, solitamente usata per il copyright e i link legali.</p>
+<ul>
+  <li><strong>Testo copyright</strong> — testo personalizzabile con supporto per il segnaposto <code>{year}</code> che inserisce automaticamente l'anno corrente.</li>
+  <li><strong>Link legali</strong> — elenco di link (Privacy policy, Termini di servizio, Cookie policy) visualizzati in riga.</li>
+  <li><strong>Social nella barra inferiore</strong> — opzione per mostrare le icone social anche nella barra inferiore, invece che (o oltre che) nelle sezioni principali.</li>
+  <li><strong>Pulsante torna in cima</strong> — un pulsante che al clic riporta l'utente all'inizio della pagina con uno scroll fluido.</li>
+</ul>
+
+<h2 id="themes">Temi footer</h2>
+<p>Come per i menu, il Footer Builder include una libreria di temi predefiniti che puoi applicare con un clic. I temi controllano colori, tipografia e stile visivo dell'intero footer.</p>
+<p>Sono disponibili 11 temi footer: Dark Classic, Dark Modern, Light Minimal, Light Corporate, Warm Earthy, Cool Blue, Green Nature, Elegant Gold, Retro Cream, Glass Frosted e Playful Pastel. Ogni tema è completamente personalizzabile dopo l'applicazione.</p>
+
+<h2 id="styling">Stile</h2>
+<p>Oltre ai temi predefiniti, puoi personalizzare ogni aspetto visivo del footer dalla sezione <strong>Menu Builder → Footer → Stile</strong>:</p>
+<h3>Colori</h3>
+<p>Sfondo del footer, colore del testo, colore dei link, colore hover dei link, colore delle intestazioni di sezione, colore della barra inferiore.</p>
+<h3>Layout</h3>
+<div class="table-wrap"><table>
+  <thead><tr><th>Opzione</th><th>Descrizione</th></tr></thead>
+  <tbody>
+    <tr><td>Padding superiore/inferiore</td><td>Spaziatura interna verticale delle colonne principali.</td></tr>
+    <tr><td>Padding laterale</td><td>Spaziatura interna orizzontale del footer.</td></tr>
+    <tr><td>Gap tra colonne</td><td>Spazio orizzontale tra le colonne.</td></tr>
+    <tr><td>Gap tra sezioni</td><td>Spazio verticale tra le sezioni all'interno di una colonna.</td></tr>
+    <tr><td>Larghezza massima</td><td>Larghezza massima del contenuto del footer.</td></tr>
+    <tr><td>Allineamento testo</td><td>Allineamento orizzontale del testo nelle colonne (sinistra, centro, destra).</td></tr>
+    <tr><td>Divisore tra colonne</td><td>Linea verticale opzionale tra le colonne.</td></tr>
+    <tr><td>Divisore barra inferiore</td><td>Linea orizzontale tra le colonne principali e la barra inferiore.</td></tr>
+  </tbody>
+</table></div>
+<h3>Tipografia</h3>
+<ul>
+  <li><strong>Font delle intestazioni</strong> — famiglia, dimensione e peso delle intestazioni di sezione.</li>
+  <li><strong>Font del testo</strong> — famiglia e dimensione del testo normale.</li>
+  <li><strong>Font dei link</strong> — stile dei link (dimensione, decorazione, peso).</li>
+</ul>
+<h3>Icone social</h3>
+<p>Dimensione, stile (cerchio, quadrato, nessuno), colore e colore hover delle icone social nel footer.</p>
+<h3>CSS personalizzato</h3>
+<p>Inserisci CSS personalizzato applicato esclusivamente al footer — ideale per aggiustamenti specifici senza modificare il CSS globale del sito.</p>
+
+<h2 id="placing">Inserire il footer</h2>
+<p>Puoi inserire il footer nel sito in tre modi diversi:</p>
+<ul>
+  <li><strong>Automatico</strong> — il footer viene agganciato al hook <code>wp_footer</code> di WordPress e appare automaticamente in fondo a ogni pagina. Adatto alla maggior parte dei temi classici.</li>
+  <li><strong>Blocco Gutenberg</strong> — inserisci il blocco <strong>MenuX Footer</strong> nel template del footer tramite l'Editor del Sito. Ideale per i temi FSE.</li>
+  <li><strong>Shortcode</strong> — usa <code>[menux_footer]</code> in qualsiasi pagina, post o area widget per posizionare il footer manualmente.</li>
+</ul>
+
+<div class="callout tip"><span class="callout-icon">🌍</span><div class="callout-body"><p>Il Footer Builder è compatibile con WPML e Polylang: puoi creare versioni tradotte del contenuto del footer per ogni lingua del sito, con testi, link e sezioni indipendenti per ogni lingua.</p></div></div>
+
+<div class="page-nav"><a href="layout.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Layout &amp; Effetti</span></a><a class="next" href="wp-integration.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Integrazione WP</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

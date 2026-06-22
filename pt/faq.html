@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perguntas frequentes — Giuliomax Menu Builder</title>
+  <meta name="description" content="Abaixo você encontra respostas para as dúvidas mais comuns sobre o Giuliomax Menu Builder. Se a sua pergunta não está aqui, entre em contato pelo formulário…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/faq.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/faq.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/faq.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/faq.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/faq.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/faq.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/faq.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Perguntas frequentes — Giuliomax Menu Builder">
+  <meta property="og:description" content="Abaixo você encontra respostas para as dúvidas mais comuns sobre o Giuliomax Menu Builder. Se a sua pergunta não está aqui, entre em contato pelo formulário…">
+  <meta property="og:url" content="https://giulio001.github.io/pt/faq.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Perguntas frequentes — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Abaixo você encontra respostas para as dúvidas mais comuns sobre o Giuliomax Menu Builder. Se a sua pergunta não está aqui, entre em contato pelo formulário…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Avançado › Perguntas frequentes</nav>
+<h1>Perguntas frequentes</h1>
+<p>Abaixo você encontra respostas para as dúvidas mais comuns sobre o Giuliomax Menu Builder. Se a sua pergunta não está aqui, entre em contato pelo formulário de suporte no painel do WordPress.</p>
+
+<h2 id="compatibilidade">Compatibilidade</h2>
+
+<details>
+<summary><strong>O plugin funciona com qualquer tema do WordPress?</strong></summary>
+<p>O Giuliomax Menu Builder substitui o elemento de navegação padrão do seu tema. O plugin funciona com a maioria dos temas, mas alguns carregam estilos de navegação próprios que podem gerar conflitos. Nesses casos, adicione a classe CSS <code>.menux-nav</code> às regras de especificidade CSS do seu tema para resolver os conflitos.</p>
+</details>
+
+<details>
+<summary><strong>O plugin é compatível com Gutenberg e o Site Editor?</strong></summary>
+<p>Sim. Você pode adicionar o bloco Giuliomax Menu Builder pelo inseridor de blocos no editor clássico, no editor de posts e no Full Site Editor. No Site Editor, use o bloco em um template de cabeçalho.</p>
+</details>
+
+<details>
+<summary><strong>Funciona com WooCommerce?</strong></summary>
+<p>Sim, o widget de carrinho integra nativamente com o WooCommerce. Você precisa do WooCommerce 6.0 ou superior. A contagem de itens e o subtotal são atualizados em tempo real via AJAX sem recarregar a página.</p>
+</details>
+
+<details>
+<summary><strong>Qual versão do WordPress é necessária?</strong></summary>
+<p>O Giuliomax Menu Builder requer WordPress 6.0 ou superior e PHP 7.4 ou superior. Recomendamos sempre usar a versão estável mais recente do WordPress.</p>
+</details>
+
+<h2 id="problemas-de-instalacao">Problemas de instalação</h2>
+
+<details>
+<summary><strong>O shortcode não exibe nada na página.</strong></summary>
+<p>Verifique se você especificou o ID correto do menu no shortcode (<code>[menux id="123"]</code>). Acesse <strong>Aparência › Menus</strong> para encontrar o ID na URL ao editar o menu. Certifique-se também de que a localização do menu está corretamente atribuída.</p>
+</details>
+
+<details>
+<summary><strong>O menu está sendo exibido duas vezes.</strong></summary>
+<p>Isso acontece quando o tema e o shortcode ou bloco do Giuliomax Menu Builder exibem o mesmo menu. Desative a navegação padrão do tema em <strong>Aparência › Personalizar › Menus</strong> ou remova a chamada <code>wp_nav_menu()</code> no <code>header.php</code> do seu tema.</p>
+</details>
+
+<details>
+<summary><strong>Os estilos não são carregados após a ativação.</strong></summary>
+<p>Limpe o cache do seu plugin de cache (ex.: WP Super Cache, W3 Total Cache) e eventuais caches de CDN. Se você usa um plugin de minificação, adicione os arquivos CSS e JS do Giuliomax à lista de exclusões para evitar conflitos.</p>
+</details>
+
+<h2 id="aparencia">Aparência e estilo</h2>
+
+<details>
+<summary><strong>Como altero a cor do menu?</strong></summary>
+<p>Acesse <strong>Giuliomax › Aparência</strong> no painel. Lá você encontra seletores de cor para fundo, texto, hover, acento e mais. Todas as alterações são salvas como variáveis CSS e ficam visíveis imediatamente no frontend.</p>
+</details>
+
+<details>
+<summary><strong>Posso adicionar CSS personalizado?</strong></summary>
+<p>Sim. Use o campo <strong>CSS personalizado</strong> nas configurações do plugin ou o personalizador do WordPress (<strong>Aparência › Personalizar › CSS adicional</strong>). Use <code>.menux-nav</code> ou seletores mais específicos como <code>.menux-nav .menux-item</code> para seus estilos.</p>
+</details>
+
+<details>
+<summary><strong>As fontes não correspondem ao meu tema.</strong></summary>
+<p>O plugin herda a fonte do tema via <code>font-family: inherit</code> por padrão. Se isso não estiver acontecendo, verifique se um arquivo de reset CSS está sobrescrevendo isso. Adicione <code>.menux-nav { font-family: var(--fonte-do-tema, inherit); }</code> ao seu CSS personalizado.</p>
+</details>
+
+<h2 id="desempenho">Desempenho</h2>
+
+<details>
+<summary><strong>O plugin deixa meu site mais lento?</strong></summary>
+<p>O Giuliomax Menu Builder é otimizado para desempenho. CSS e JS são entregues minificados e carregados apenas nas páginas onde o menu está ativo. O carregamento de scripts é adiado (<code>defer</code>) para não bloquear o caminho crítico de renderização.</p>
+</details>
+
+<details>
+<summary><strong>Posso agrupar os assets do plugin com outros scripts?</strong></summary>
+<p>Sim, via plugin de cache ou ferramenta de bundling. Garanta que a ordem de carregamento esteja correta: o CSS do Giuliomax deve vir após o reset stylesheet do seu tema, e o JS deve vir após <code>jquery</code> (se aplicável).</p>
+</details>
+
+<h2 id="licenca">Licença e atualizações</h2>
+
+<details>
+<summary><strong>Como recebo as atualizações?</strong></summary>
+<p>As atualizações são distribuídas automaticamente pelo sistema de atualizações do WordPress assim que uma nova versão é disponibilizada. Acesse <strong>Painel › Atualizações</strong> para verificar manualmente.</p>
+</details>
+
+<details>
+<summary><strong>Posso usar o plugin em vários sites?</strong></summary>
+<p>Consulte os termos de licença incluídos na sua compra. A versão gratuita pode ser usada em sites ilimitados. Licenças premium têm restrições específicas de domínio conforme descrito no seu documento de licença.</p>
+</details>
+
+<details>
+<summary><strong>O que acontece com minhas configurações se eu desativar o plugin?</strong></summary>
+<p>Desativar o plugin não remove as configurações. Toda a configuração permanece no banco de dados do WordPress. Remover o plugin (via <strong>Plugins › Plugins instalados › Excluir</strong>) apaga todos os dados do plugin por padrão. Se quiser preservar os dados, exporte-os primeiro em <strong>Giuliomax › Importar / Exportar</strong>.</p>
+</details>
+
+<div class="page-nav">
+  <a href="multilingual.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Multilíngue</span></a>
+  <span></span>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

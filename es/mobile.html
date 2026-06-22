@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menús para móvil — Giuliomax Menu Builder</title>
+  <meta name="description" content="Menu Builder genera automáticamente una versión responsiva del menú para dispositivos móviles, con botón hamburguesa, animaciones y un panel deslizante…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/mobile.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mobile.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mobile.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mobile.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mobile.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mobile.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mobile.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mobile.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Menús para móvil — Giuliomax Menu Builder">
+  <meta property="og:description" content="Menu Builder genera automáticamente una versión responsiva del menú para dispositivos móviles, con botón hamburguesa, animaciones y un panel deslizante…">
+  <meta property="og:url" content="https://giulio001.github.io/es/mobile.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Menús para móvil — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Menu Builder genera automáticamente una versión responsiva del menú para dispositivos móviles, con botón hamburguesa, animaciones y un panel deslizante…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Funcionalidades</p>
+<h1>Menús para móvil</h1>
+<p class="lead">Menu Builder genera automáticamente una versión responsiva del menú para dispositivos móviles, con botón hamburguesa, animaciones y un panel deslizante completamente personalizable.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#breakpoint">Punto de corte</a>
+  <a href="#tipos">Tipos de menú móvil</a>
+  <a href="#hamburger">Botón hamburguesa</a>
+  <a href="#estilo">Estilo del panel</a>
+  <a href="#megamovil">Megamenú en móvil</a>
+  <a href="#preview">Vista previa en tiempo real</a>
+</div>
+
+<h2 id="breakpoint">Punto de corte</h2>
+<p>Define el ancho de ventana (en píxeles) por debajo del cual el menú de escritorio se oculta y aparece el menú móvil. El valor por defecto es <strong>768 px</strong>. Puedes ajustarlo en <strong>Menu Builder → Móvil → Punto de corte</strong>.</p>
+
+<h2 id="tipos">Tipos de menú móvil</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Tipo</th><th>Descripción</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Cajón (push)</strong></td><td>Un panel lateral que se desliza desde el borde de la pantalla y empuja el contenido de la página hacia un lado.</td></tr>
+      <tr><td><strong>Superposición completa</strong></td><td>Un panel a pantalla completa que cubre toda la página con un fondo semitransparente.</td></tr>
+      <tr><td><strong>Desplegable</strong></td><td>Un menú desplegable que aparece justo debajo de la barra de navegación.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="hamburger">Botón hamburguesa</h2>
+<p>El botón para abrir y cerrar el menú móvil es completamente personalizable:</p>
+<ul>
+  <li><strong>Estilo</strong> — hamburguesa clásica, líneas con espacio, Cruz (×) o Flecha.</li>
+  <li><strong>Tamaño</strong> — en píxeles.</li>
+  <li><strong>Color</strong> — hereda el color de los enlaces del menú o usa uno personalizado.</li>
+  <li><strong>Alineación</strong> — izquierda, derecha o centrado dentro de la barra.</li>
+  <li><strong>Animación</strong> — el icono se anima al abrirse y cerrarse.</li>
+</ul>
+
+<h2 id="estilo">Estilo del panel</h2>
+<p>El panel móvil tiene su propia sección de estilo independiente del menú de escritorio:</p>
+<ul>
+  <li><strong>Color de fondo</strong> y <strong>color del overlay</strong>.</li>
+  <li><strong>Color de los enlaces</strong> y <strong>color hover</strong>.</li>
+  <li><strong>Tamaño y peso de la fuente</strong>.</li>
+  <li><strong>Animación de apertura</strong> — deslizamiento desde la izquierda, derecha, arriba o abajo.</li>
+  <li><strong>Dirección del cajón</strong> — izquierda o derecha.</li>
+</ul>
+
+<h2 id="megamovil">Megamenú en móvil</h2>
+<p>Cuando un elemento del menú principal tiene un megamenú, al pulsarlo en móvil se abre un panel de pantalla completa con un botón ← Volver, dando a la navegación un aspecto de aplicación nativa.</p>
+<ul>
+  <li><strong>Visible en móvil</strong> — la navegación push descrita anteriormente.</li>
+  <li><strong>Oculto en móvil</strong> — el panel no se renderiza en pantallas pequeñas.</li>
+</ul>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>En móvil, las personalizaciones individuales de estilo del megamenú (fondo, colores, fuentes) se desactivan automáticamente para que los enlaces se muestren siempre con el estilo neutro del menú móvil.</p></div>
+</div>
+
+<h2 id="preview">Vista previa del teléfono en tiempo real</h2>
+<p>Mientras tienes abierta la pestaña <strong>Móvil</strong> en el panel de administración, un modelo de teléfono fijo a la derecha se actualiza en tiempo real con cada cambio de configuración móvil: estilo, color del overlay, alineación del hamburguesa, color de los enlaces y más.</p>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>El plugin respeta automáticamente la media query CSS <code>prefers-reduced-motion</code>. Si el visitante ha activado "Reducir movimiento" en la configuración de accesibilidad de su sistema operativo, todas las animaciones se desactivan.</p></div>
+</div>
+
+<div class="page-nav">
+  <a href="visibility.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Reglas de visibilidad</span></a>
+  <a class="next" href="layout.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Diseño y efectos</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

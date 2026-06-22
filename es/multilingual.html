@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingüe — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder tiene soporte integrado para sitios multilingües. Cuando WPML, Polylang, TranslatePress o Multilingual Press está activo, el plugin…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/multilingual.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/multilingual.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/multilingual.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/multilingual.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/multilingual.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/multilingual.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/multilingual.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/multilingual.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Multilingüe — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder tiene soporte integrado para sitios multilingües. Cuando WPML, Polylang, TranslatePress o Multilingual Press está activo, el plugin…">
+  <meta property="og:url" content="https://giulio001.github.io/es/multilingual.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Multilingüe — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder tiene soporte integrado para sitios multilingües. Cuando WPML, Polylang, TranslatePress o Multilingual Press está activo, el plugin…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Avanzado</p>
+<h1>Multilingüe</h1>
+<p class="lead">Giuliomax Menu Builder tiene soporte integrado para sitios multilingües. Cuando WPML, Polylang, TranslatePress o Multilingual Press está activo, el plugin detecta los idiomas disponibles y te permite asignar una etiqueta diferente a cada elemento del menú por idioma.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#como">Cómo funciona</a>
+  <a href="#configurar">Configurar etiquetas por idioma</a>
+  <a href="#plugins">Plugins compatibles</a>
+  <a href="#rtl">Idiomas RTL</a>
+  <a href="#strings">Traducir las cadenas del plugin</a>
+</div>
+
+<h2 id="como">Cómo funciona</h2>
+<p>Cuando hay un plugin multilingüe compatible activo, <strong>Menu Builder</strong> detecta automáticamente la lista de idiomas disponibles. En la sección <strong>Multilingüe</strong> del panel de administración puedes ver los idiomas detectados.</p>
+<p>Cada elemento del menú en <strong>Menu Builder → Estructura del menú</strong> obtiene un campo de etiqueta independiente para cada idioma detectado. El JavaScript del frontend lee el idioma activo del visitante y muestra la etiqueta correcta, sin recargar la página ni necesitar un menú separado.</p>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Si no hay una etiqueta configurada para el idioma del visitante, el plugin usa la etiqueta por defecto como respaldo.</p></div>
+</div>
+
+<h2 id="configurar">Configurar etiquetas por idioma</h2>
+<ol class="steps">
+  <li>Instala y activa un plugin multilingüe compatible (ver lista abajo).</li>
+  <li>Abre <strong>Menu Builder</strong> en el administrador de WordPress.</li>
+  <li>Haz clic en cualquier elemento del menú en la <strong>Estructura del menú</strong> para desplegarlo.</li>
+  <li>Verás un campo de etiqueta para cada idioma detectado. Rellena la etiqueta traducida para cada idioma.</li>
+  <li>Haz clic en <strong>Guardar menú</strong>.</li>
+</ol>
+
+<h2 id="plugins">Plugins multilingües compatibles</h2>
+<p>El plugin detecta automáticamente los idiomas de estos plugins:</p>
+<ul>
+  <li><strong>WPML</strong> — detectado mediante <code>ICL_SITEPRESS_VERSION</code></li>
+  <li><strong>Polylang</strong> — detectado mediante <code>pll_languages_list()</code></li>
+  <li><strong>TranslatePress</strong> — detectado mediante la clase <code>TRP_Translate_Press</code></li>
+  <li><strong>Multilingual Press</strong> — detectado mediante <code>mlp_get_available_languages()</code></li>
+</ul>
+<p>Si no hay ningún plugin multilingüe activo, el plugin usa el idioma predeterminado del sitio.</p>
+
+<h2 id="rtl">Idiomas RTL (árabe, hebreo, persa, etc.)</h2>
+<p>El plugin incluye soporte completo para RTL (derecha a izquierda). Cuando WordPress detecta que el idioma activo es RTL (mediante la función <code>is_rtl()</code>), MenuX activa automáticamente:</p>
+<ul>
+  <li>El diseño del menú en espejo (los elementos fluyen de derecha a izquierda).</li>
+  <li>Posiciones de desplegable invertidas (los paneles se abren a la izquierda en lugar de a la derecha).</li>
+  <li>Dirección del cajón invertida (se desliza desde la derecha).</li>
+  <li>Posiciones de iconos invertidas (icono del carrito, icono de búsqueda).</li>
+</ul>
+<p>No se requiere ninguna configuración — el modo RTL se activa automáticamente según la configuración de idioma de WordPress.</p>
+
+<h2 id="strings">Traducir las cadenas de interfaz del plugin</h2>
+<p>Las cadenas de interfaz del propio plugin (p. ej. la etiqueta "Cerrar" del botón del menú móvil) están listas para traducirse mediante el sistema estándar de archivos <code>.po</code> / <code>.mo</code> de WordPress.</p>
+<p>El text domain del plugin es <code>giuliomax-menu-builder</code>. Para añadir una traducción:</p>
+<ol class="steps">
+  <li>Descarga el archivo de plantilla <code>.pot</code> desde la carpeta <code>/languages</code> del plugin.</li>
+  <li>Ábrelo en <a href="https://poedit.net/" target="_blank">Poedit</a> o cualquier editor de <code>.po</code>.</li>
+  <li>Guarda tu traducción como <code>giuliomax-menu-builder-{locale}.po</code> (p. ej. <code>giuliomax-menu-builder-es_ES.po</code>) y compílalo a <code>.mo</code>.</li>
+  <li>Sube ambos archivos a <code>/wp-content/languages/plugins/</code>.</li>
+</ol>
+
+<div class="page-nav">
+  <a href="accessibility.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Accesibilidad</span></a>
+  <a class="next" href="faq.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Preguntas frecuentes</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

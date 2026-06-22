@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilíngue — Giuliomax Menu Builder</title>
+  <meta name="description" content="O Giuliomax Menu Builder funciona perfeitamente com os plugins de tradução mais populares do WordPress. Você cria um menu e ele se adapta automaticamente ao…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/multilingual.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/multilingual.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/multilingual.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/multilingual.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/multilingual.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/multilingual.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/multilingual.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/multilingual.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Multilíngue — Giuliomax Menu Builder">
+  <meta property="og:description" content="O Giuliomax Menu Builder funciona perfeitamente com os plugins de tradução mais populares do WordPress. Você cria um menu e ele se adapta automaticamente ao…">
+  <meta property="og:url" content="https://giulio001.github.io/pt/multilingual.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Multilíngue — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O Giuliomax Menu Builder funciona perfeitamente com os plugins de tradução mais populares do WordPress. Você cria um menu e ele se adapta automaticamente ao…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Avançado › Multilíngue</nav>
+<h1>Multilíngue</h1>
+<p>O Giuliomax Menu Builder funciona perfeitamente com os plugins de tradução mais populares do WordPress. Você cria um menu e ele se adapta automaticamente ao idioma do visitante, sem necessidade de reconfiguração.</p>
+
+<h2 id="wpml">WPML</h2>
+<p>Com o WPML (WordPress Multilingual Plugin), você pode traduzir e exibir itens de menu separados para cada idioma.</p>
+<ol>
+  <li>Instale e configure o WPML normalmente.</li>
+  <li>Acesse <strong>Aparência › Menus</strong> e traduza os itens pelo painel de tradução de menus do WPML.</li>
+  <li>Atribua o menu traduzido à localização que o Giuliomax Menu Builder utiliza.</li>
+  <li>O plugin detecta automaticamente o idioma ativo do WPML e exibe o menu correspondente.</li>
+</ol>
+<p><strong>Dica:</strong> use o widget de seletor de idioma do WPML e adicione-o à área de cabeçalho do seu tema para facilitar a troca de idioma pelos visitantes.</p>
+
+<h2 id="polylang">Polylang</h2>
+<p>O Polylang usa o mesmo sistema de menus do WordPress — cada idioma recebe sua própria atribuição de localização.</p>
+<ol>
+  <li>Crie uma versão do menu para cada idioma em <strong>Aparência › Menus</strong>.</li>
+  <li>Atribua cada menu à localização correta para o idioma correspondente.</li>
+  <li>O Polylang garante automaticamente que a atribuição correta esteja ativa com base no idioma visitado.</li>
+  <li>O Giuliomax Menu Builder lê a localização ativa e exibe o menu correto.</li>
+</ol>
+
+<h2 id="translatepress">TranslatePress</h2>
+<p>O TranslatePress traduz a página inteira, incluindo itens de menu, por meio de uma interface de tradução visual.</p>
+<ol>
+  <li>Instale o TranslatePress e adicione seus idiomas de destino nas configurações.</li>
+  <li>Use o tradutor visual (engrenagem no frontend) para traduzir os itens de menu diretamente na página.</li>
+  <li>O TranslatePress salva as traduções e as aplica em todas as páginas, inclusive nos itens do Giuliomax Menu Builder.</li>
+</ol>
+<p><strong>Observação:</strong> blocos HTML personalizados e conteúdo de megamenus também são traduzidos, desde que o texto esteja visível no DOM durante o processo de tradução.</p>
+
+<h2 id="manual">Abordagem manual sem plugin</h2>
+<p>Se você não usa um plugin de tradução, ainda pode oferecer menus multilíngues através da estrutura de páginas do WordPress:</p>
+<ul>
+  <li>Crie estruturas de menu separadas para cada idioma e atribua-as à mesma localização com código condicional no <code>functions.php</code>.</li>
+  <li>Use um seletor de idioma baseado em sessão ou cookie para armazenar a preferência e carregar a estrutura de menu adequada.</li>
+  <li>Aponte os itens de menu para URLs de páginas traduzidas (<code>/en/about/</code>, <code>/pt/sobre/</code>).</li>
+</ul>
+
+<h2 id="rtl">Suporte a idiomas RTL</h2>
+<p>O Giuliomax Menu Builder detecta automaticamente a direção RTL (direita para esquerda) com base no atributo <code>dir="rtl"</code> no elemento <code>&lt;html&gt;</code>, definido pelo WPML ou Polylang.</p>
+<ul>
+  <li>Dropdowns abrem para a esquerda em vez de direita.</li>
+  <li>Colunas do megamenu são exibidas em ordem invertida.</li>
+  <li>O ícone do menu mobile e o botão fechar são espelhados.</li>
+  <li>Margens, paddings e setas são invertidos automaticamente via propriedades lógicas do CSS.</li>
+</ul>
+
+<h2 id="boas-praticas">Boas práticas</h2>
+<ul>
+  <li>Teste o menu em cada idioma após a tradução para verificar se todos os labels, tooltips e títulos do megamenu estão corretos.</li>
+  <li>Use tags <strong>hreflang</strong> nas suas páginas para indexação SEO correta por idioma.</li>
+  <li>Garanta que o fechamento via <kbd>Esc</kbd> e a ordem de foco funcionem corretamente também em idiomas RTL — teste com um leitor de tela.</li>
+  <li>Armazene labels de badges traduzidos e textos da barra de avisos no plugin de tradução, não hardcoded no HTML.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="accessibility.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Acessibilidade</span></a>
+  <a class="next" href="faq.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Perguntas frequentes</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

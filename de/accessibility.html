@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barrierefreiheit — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder ist für die Einhaltung von WCAG 2.2 Level AA entwickelt. Die Navigation funktioniert vollständig ohne Maus, Dropdowns werden für…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/de/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="Barrierefreiheit — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder ist für die Einhaltung von WCAG 2.2 Level AA entwickelt. Die Navigation funktioniert vollständig ohne Maus, Dropdowns werden für…">
+  <meta property="og:url" content="https://giulio001.github.io/de/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Barrierefreiheit — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder ist für die Einhaltung von WCAG 2.2 Level AA entwickelt. Die Navigation funktioniert vollständig ohne Maus, Dropdowns werden für…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Erweitert</p>
+<h1>Barrierefreiheit</h1>
+<p class="lead">Giuliomax Menu Builder ist für die Einhaltung von WCAG 2.2 Level AA entwickelt. Die Navigation funktioniert vollständig ohne Maus, Dropdowns werden für Screenreader angekündigt, und Bewegungen können systemweit deaktiviert werden.</p>
+<div class="on-this-page">
+  <strong>Auf dieser Seite</strong>
+  <a href="#wcag">WCAG 2.2 AA-Konformität</a>
+  <a href="#keyboard">Tastaturnavigation</a>
+  <a href="#aria">ARIA-Attribute</a>
+  <a href="#focus">Fokus-Management</a>
+  <a href="#motion">Reduzierte Bewegung</a>
+  <a href="#testing">Dein Menü testen</a>
+</div>
+
+<h2 id="wcag">WCAG 2.2 AA-Konformität</h2>
+<p>Das Plugin wird gegen die folgenden WCAG 2.2-Erfolgskriterien für Navigationskomponenten getestet:</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Kriterium</th><th>Level</th><th>Umsetzung</th></tr></thead>
+    <tbody>
+      <tr><td>1.4.3 Kontrast (Minimum)</td><td>AA</td><td>Alle eingebauten Themes werden getestet, um ein Kontrastverhältnis von 4,5:1 für Text zu erreichen.</td></tr>
+      <tr><td>2.1.1 Tastatur</td><td>A</td><td>Alle Funktionen sind ausschließlich per Tastatur bedienbar.</td></tr>
+      <tr><td>2.1.2 Keine Tastaturfalle</td><td>A</td><td>Der Fokus kann das Menü jederzeit ohne Zeigegerät verlassen.</td></tr>
+      <tr><td>2.4.3 Fokus-Reihenfolge</td><td>A</td><td>Die Fokus-Reihenfolge folgt der visuellen Lesereihenfolge des Menüs.</td></tr>
+      <tr><td>2.4.7 Fokus sichtbar</td><td>AA</td><td>Ein sichtbarer Fokusring wird auf jedem interaktiven Element gerendert.</td></tr>
+      <tr><td>2.4.11 Fokusdarstellung</td><td>AA</td><td>Fokusindikatoren erfüllen Mindestanforderungen für Größe und Kontrast (neu in WCAG 2.2).</td></tr>
+      <tr><td>4.1.2 Name, Rolle, Wert</td><td>A</td><td>Alle interaktiven Elemente haben einen zugänglichen Namen und die korrekte ARIA-Rolle.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="keyboard">Tastaturnavigation</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Taste</th><th>Aktion</th></tr></thead>
+    <tbody>
+      <tr><td><kbd>Tab</kbd></td><td>Fokus auf das nächste Menüelement oder interaktive Element verschieben.</td></tr>
+      <tr><td><kbd>Shift + Tab</kbd></td><td>Fokus auf das vorherige Element verschieben.</td></tr>
+      <tr><td><kbd>Enter</kbd> / <kbd>Leertaste</kbd></td><td>Einen Link aktivieren oder ein Dropdown öffnen / schließen.</td></tr>
+      <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Fokus durch Elemente in einem geöffneten Dropdown oder Mega-Menü-Panel bewegen.</td></tr>
+      <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Zwischen Elementen der obersten Ebene wechseln.</td></tr>
+      <tr><td><kbd>Escape</kbd></td><td>Das aktuelle Dropdown oder Mega-Menü-Panel schließen und den Fokus auf das übergeordnete Element zurücksetzen.</td></tr>
+      <tr><td><kbd>Pos1</kbd> / <kbd>Ende</kbd></td><td>Zum ersten / letzten Element in einer Dropdown-Liste springen.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="aria">ARIA-Attribute</h2>
+<p>Das Plugin fügt dem gerenderten Markup automatisch folgende ARIA-Attribute hinzu:</p>
+<ul>
+  <li><code>role="navigation"</code> und <code>aria-label</code> am <code>&lt;nav&gt;</code>-Element (Label entspricht dem Menünamen in WordPress).</li>
+  <li><code>aria-haspopup="true"</code> und <code>aria-expanded</code> an Elementen der obersten Ebene, die ein Dropdown oder Mega-Menü haben.</li>
+  <li><code>aria-controls</code> verknüpft den Auslöser-Button mit seinem Panel.</li>
+  <li><code>role="menu"</code> und <code>role="menuitem"</code> innerhalb von Dropdowns.</li>
+  <li><code>aria-current="page"</code> am Element, das der aktuellen Seite entspricht.</li>
+</ul>
+<p>Du musst nichts davon konfigurieren — es wird automatisch basierend auf der Menüstruktur angewendet.</p>
+
+<h2 id="focus">Fokus-Management</h2>
+<ul>
+  <li>Wenn ein Dropdown geöffnet wird, bewegt sich der Fokus auf das erste Element darin.</li>
+  <li>Wenn ein Dropdown geschlossen wird (per Escape oder durch Wegbewegen des Fokus), kehrt der Fokus zum auslösenden Element zurück.</li>
+  <li>Das Mobilmenü-Overlay hält den Fokus bei geöffnetem Panel im Inneren (Fokus kann nicht nach außen tabben). Das Schließen des Overlays gibt den Fokus an den Hamburger-Button zurück.</li>
+</ul>
+
+<h2 id="motion">Reduzierte Bewegung</h2>
+<p>Alle Übergänge und Animationen berücksichtigen die CSS-Media-Query <code>prefers-reduced-motion: reduce</code>. Wenn der Benutzer in den Barrierefreiheitseinstellungen seines Betriebssystems „Bewegung reduzieren" aktiviert hat:</p>
+<ul>
+  <li>Dropdown-Gleit-/Einblendanimationen werden durch sofortiges Einblenden/Ausblenden ersetzt.</li>
+  <li>Übergänge beim Öffnen/Schließen des Mobilmenüs erfolgen sofort.</li>
+  <li>Die Einblendanimation der Ankündigungsleiste wird deaktiviert.</li>
+  <li>Einblendanimationen für Menüelemente werden deaktiviert.</li>
+</ul>
+
+<h2 id="testing">Dein Menü testen</h2>
+<p>Verwende nach der Konfiguration deines Menüs folgende Werkzeuge zur Überprüfung der Barrierefreiheit:</p>
+<ul>
+  <li><strong>Nur Tastatur</strong> — trenne die Maus ab und navigiere das gesamte Menü ausschließlich mit Tab, Pfeiltasten, Enter und Escape.</li>
+  <li><strong>axe DevTools</strong> — eine kostenlose Browser-Erweiterung, die automatische WCAG-Prüfungen auf der Live-Seite durchführt.</li>
+  <li><strong>NVDA / VoiceOver</strong> — Screenreader zur Überprüfung, ob Dropdown-Zustände und Labels korrekt angekündigt werden.</li>
+  <li><strong>Colour Contrast Analyser</strong> — überprüfe, ob deine benutzerdefinierten Farbüberschreibungen noch das Mindestverhältnis von 4,5:1 erfüllen.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="import-export.html"><span class="nav-dir">← Zurück</span><span class="nav-title">Import / Export</span></a>
+  <a class="next" href="multilingual.html"><span class="nav-dir">Weiter →</span><span class="nav-title">Mehrsprachigkeit</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

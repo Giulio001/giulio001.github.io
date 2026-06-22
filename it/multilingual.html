@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingua — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder ha un supporto integrato per i siti multilingua. Quando WPML, Polylang, TranslatePress o Multilingual Press è attivo, il plugin rileva…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/multilingual.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/multilingual.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/multilingual.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/multilingual.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/multilingual.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/multilingual.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/multilingual.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/multilingual.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Multilingua — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder ha un supporto integrato per i siti multilingua. Quando WPML, Polylang, TranslatePress o Multilingual Press è attivo, il plugin rileva…">
+  <meta property="og:url" content="https://giulio001.github.io/it/multilingual.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Multilingua — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder ha un supporto integrato per i siti multilingua. Quando WPML, Polylang, TranslatePress o Multilingual Press è attivo, il plugin rileva…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Avanzato</p>
+<h1>Multilingua</h1>
+<p class="lead">Giuliomax Menu Builder ha un supporto integrato per i siti multilingua. Quando WPML, Polylang, TranslatePress o Multilingual Press è attivo, il plugin rileva le lingue disponibili e ti permette di assegnare un'etichetta separata a ciascuna voce di menu per ogni lingua.</p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#how-it-works">Come funziona</a><a href="#setup">Configurare le etichette per lingua</a><a href="#detection">Plugin supportati</a><a href="#rtl">Lingue RTL</a><a href="#strings">Tradurre le stringhe del plugin</a></div>
+
+<h2 id="how-it-works">Come funziona</h2>
+<p>Quando un plugin multilingua compatibile è attivo, Menu Builder aggiunge automaticamente un pannello di traduzione nelle impostazioni di ogni voce di menu. In quel pannello trovi un campo etichetta per ciascuna lingua configurata nel sito.</p>
+<p>Al momento del rendering del menu, Menu Builder rileva la lingua corrente dell'utente (tramite il plugin multilingua attivo) e usa l'etichetta corrispondente a quella lingua. Gli URL delle voci di menu non sono modificati da Menu Builder: la reindirizzazione verso la versione tradotta della pagina di destinazione è gestita dal plugin multilingua.</p>
+
+<div class="callout note"><span class="callout-icon">ℹ️</span><div class="callout-body"><p>Se per una lingua non è stata fornita un'etichetta tradotta, Menu Builder usa automaticamente l'etichetta predefinita della voce come ripiego. Non è necessario compilare tutte le lingue per far funzionare il menu.</p></div></div>
+
+<h2 id="setup">Configurare le etichette per lingua</h2>
+<ol class="steps">
+  <li>Assicurati che uno dei plugin multilingua supportati sia installato, attivato e configurato con almeno due lingue.</li>
+  <li>Vai su <strong>Menu Builder → Voci</strong>.</li>
+  <li>Fai clic su una voce di menu per aprire il pannello delle sue impostazioni.</li>
+  <li>Nella sezione <strong>Traduzioni</strong>, troverai un campo etichetta per ogni lingua configurata nel sito.</li>
+  <li>Inserisci l'etichetta tradotta per ciascuna lingua e salva.</li>
+</ol>
+
+<h2 id="detection">Plugin multilingua supportati</h2>
+<p>Menu Builder rileva automaticamente i seguenti plugin multilingua e si integra con essi:</p>
+<ul>
+  <li><strong>WPML</strong> — il plugin multilingua più diffuso per WordPress. Menu Builder usa l'API di WPML per rilevare la lingua corrente.</li>
+  <li><strong>Polylang</strong> — alternativa leggera e gratuita a WPML. Supporto completo tramite le funzioni native di Polylang.</li>
+  <li><strong>TranslatePress</strong> — soluzione di traduzione front-end. Menu Builder espone le etichette delle voci all'interfaccia di traduzione di TranslatePress.</li>
+  <li><strong>Multilingual Press</strong> — plugin per reti multisite multilingua. Menu Builder supporta la rete WordPress multisite con lingue separate per sito.</li>
+</ul>
+<p>Se stai usando un plugin multilingua diverso da quelli elencati, le etichette per lingua non saranno disponibili, ma il menu funzionerà normalmente con l'etichetta predefinita.</p>
+
+<h2 id="rtl">Lingue RTL (arabo, ebraico, persiano, ecc.)</h2>
+<p>Menu Builder supporta pienamente le lingue con scrittura da destra a sinistra (RTL). Quando il sito è in una lingua RTL, il layout della barra di navigazione viene automaticamente specchiato:</p>
+<ul>
+  <li>Le voci del menu si ordinano da destra a sinistra.</li>
+  <li>I dropdown si aprono verso sinistra invece che verso destra.</li>
+  <li>Il logo si sposta al lato destro (o a quello impostato come "inizio" nella direzione RTL).</li>
+  <li>Le frecce degli indicatori dropdown vengono invertite.</li>
+</ul>
+<p>Il mirroring RTL viene attivato automaticamente quando il plugin multilingua imposta la direzione del testo su RTL per la lingua corrente. Non è necessaria alcuna configurazione manuale in Menu Builder.</p>
+
+<h2 id="strings">Tradurre le stringhe del plugin</h2>
+<p>Le stringhe dell'interfaccia utente di Menu Builder (etichette dei pulsanti, messaggi di errore, testo dell'admin) possono essere tradotte usando i file .po/.mo standard di WordPress.</p>
+<p>Il plugin include un file .pot (template di traduzione) nella cartella <code>/languages/</code> del plugin. Puoi usarlo come base per creare traduzioni in qualsiasi lingua.</p>
+<ol class="steps">
+  <li>Scarica il file <code>giuliomax-menu-builder.pot</code> dalla cartella <code>/languages/</code> del plugin.</li>
+  <li>Aprilo con <a href="https://poedit.net/" target="_blank">Poedit</a> o un editor di file .po compatibile.</li>
+  <li>Traduci le stringhe e salva il file con il nome del locale corretto (es. <code>giuliomax-menu-builder-it_IT.po</code>). Poedit genererà automaticamente il file .mo compilato.</li>
+  <li>Carica i file .po e .mo nella cartella <code>/languages/plugins/</code> della tua installazione WordPress (o nella cartella <code>/languages/</code> del plugin stesso).</li>
+</ol>
+
+<div class="page-nav"><a href="accessibility.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Accessibilità</span></a><a class="next" href="faq.html"><span class="nav-dir">Successivo →</span><span class="nav-title">FAQ</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

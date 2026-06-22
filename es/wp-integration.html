@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integración WP — Giuliomax Menu Builder</title>
+  <meta name="description" content="Reemplaza los menús de navegación nativos de tu tema por un menú de Menu Builder, sin necesidad de editar ningún archivo de plantilla. Ideal para temas…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/es/wp-integration.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/wp-integration.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/wp-integration.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/wp-integration.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/wp-integration.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/wp-integration.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/wp-integration.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/wp-integration.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Integración WP — Giuliomax Menu Builder">
+  <meta property="og:description" content="Reemplaza los menús de navegación nativos de tu tema por un menú de Menu Builder, sin necesidad de editar ningún archivo de plantilla. Ideal para temas…">
+  <meta property="og:url" content="https://giulio001.github.io/es/wp-integration.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Integración WP — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Reemplaza los menús de navegación nativos de tu tema por un menú de Menu Builder, sin necesidad de editar ningún archivo de plantilla. Ideal para temas…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Herramientas</p>
+<h1>Integración WP</h1>
+<p class="lead">Reemplaza los menús de navegación nativos de tu tema por un menú de Menu Builder, sin necesidad de editar ningún archivo de plantilla. Ideal para temas clásicos en PHP que usan <code>wp_nav_menu()</code>.</p>
+<div class="on-this-page">
+  <strong>En esta página</strong>
+  <a href="#que">Qué hace</a>
+  <a href="#asignar">Asignar una ubicación del tema</a>
+  <a href="#notas">Notas y limitaciones</a>
+</div>
+
+<h2 id="que">Qué hace</h2>
+<p>Muchos temas clásicos renderizan su navegación de encabezado llamando a <code>wp_nav_menu()</code> contra una <em>ubicación de tema</em> registrada (p. ej. "Menú principal", "Menú del pie"). La herramienta de Integración WP te permite interceptar esas ubicaciones y renderizar en su lugar un menú de Menu Builder, obteniendo todos los estilos y funcionalidades del plugin sin tocar <code>header.php</code> ni usar un shortcode.</p>
+
+<h2 id="asignar">Asignar una ubicación del tema</h2>
+<ol class="steps">
+  <li>Ve a <strong>Menu Builder → Integración WP</strong>.</li>
+  <li>Verás una tabla con todas las ubicaciones de navegación registradas por tu tema activo.</li>
+  <li>Para cada ubicación, elige una ubicación de Menu Builder (<code>primary</code>, <code>footer</code>, <code>sidebar</code> o <code>mobile</code>) en el desplegable para reemplazarla, o deja <strong>— No reemplazar —</strong> para mantener el menú original del tema.</li>
+  <li>Haz clic en <strong>Guardar menú</strong>.</li>
+</ol>
+
+<div class="callout note">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body"><p>Si tu tema no registra ubicaciones de menú, la tabla muestra un aviso. En ese caso, tu tema no llama a <code>register_nav_menus()</code> y debes usar el <a href="shortcode.html">shortcode</a> o el <a href="gutenberg.html">bloque de Gutenberg</a> en su lugar.</p></div>
+</div>
+
+<h2 id="notas">Notas y limitaciones</h2>
+<ul>
+  <li>Una ubicación de Menu Builder marcada como <strong>⚠ sin elementos</strong> no tiene elementos de menú asignados. Seleccionarla simplemente mantendrá el menú original del tema en lugar de renderizar uno vacío.</li>
+  <li>El desplegable muestra cuántos elementos tiene cada ubicación, para que puedas confirmar que estás mapeando a la correcta.</li>
+  <li>Esta herramienta está pensada para temas clásicos basados en PHP. Para los temas basados en bloques (FSE), edita la parte de plantilla del encabezado y usa el <a href="gutenberg.html">bloque de Gutenberg</a>.</li>
+</ul>
+
+<div class="page-nav">
+  <a href="footer.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Constructor de pie de página</span></a>
+  <a class="next" href="import-export.html"><span class="nav-dir">Siguiente →</span><span class="nav-title">Importar / Exportar</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

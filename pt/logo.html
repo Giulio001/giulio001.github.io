@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logotipo — Giuliomax Menu Builder</title>
+  <meta name="description" content="O Giuliomax Menu Builder suporta logotipo integrado diretamente no menu, com controle independente de tamanho, link e versão alternativa para o modo escuro.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/pt/logo.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/logo.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/logo.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/logo.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/logo.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/logo.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/logo.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/logo.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Logotipo — Giuliomax Menu Builder">
+  <meta property="og:description" content="O Giuliomax Menu Builder suporta logotipo integrado diretamente no menu, com controle independente de tamanho, link e versão alternativa para o modo escuro.">
+  <meta property="og:url" content="https://giulio001.github.io/pt/logo.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Logotipo — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O Giuliomax Menu Builder suporta logotipo integrado diretamente no menu, com controle independente de tamanho, link e versão alternativa para o modo escuro.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<nav class="breadcrumb"><a href="index.html">Documentação</a> › Funcionalidades › Logotipo</nav>
+<h1>Logotipo</h1>
+<p>O Giuliomax Menu Builder suporta logotipo integrado diretamente no menu, com controle independente de tamanho, link e versão alternativa para o modo escuro.</p>
+
+<h2 id="adicionar-logo">Adicionar um logotipo</h2>
+<ol>
+  <li>No shortcode, use o parâmetro <code>logo="ID_DA_MIDIA"</code> ou <code>logo="URL_DA_IMAGEM"</code>.</li>
+  <li>No bloco Gutenberg, acesse o painel lateral e clique em <strong>Selecionar logotipo</strong>.</li>
+  <li>No painel de configurações em <strong>Giuliomax › Geral</strong>, defina o logotipo padrão que será usado quando nenhum for especificado.</li>
+</ol>
+
+<h2 id="tamanho">Tamanho e proporções</h2>
+<p>O tamanho do logotipo é controlado via CSS ou pelas opções do painel:</p>
+<ul>
+  <li><strong>Largura máxima</strong>: define o tamanho máximo em pixels.</li>
+  <li><strong>Altura máxima</strong>: útil para manter logos horizontais e verticais proporcionais.</li>
+  <li>Em telas menores, o logotipo é redimensionado automaticamente para caber no cabeçalho mobile.</li>
+</ul>
+
+<h2 id="logo-dark">Logotipo para modo escuro</h2>
+<p>Se o seu site usa um tema claro com versão escura, você pode definir dois logotipos diferentes:</p>
+<ul>
+  <li><strong>Logo padrão</strong>: exibido em temas claros.</li>
+  <li><strong>Logo modo escuro</strong>: exibido automaticamente quando <code>prefers-color-scheme: dark</code> é detectado ou quando o tema escuro está ativo.</li>
+</ul>
+
+<h2 id="link-do-logo">Link do logotipo</h2>
+<p>Por padrão, o logotipo linka para a página inicial do site (<code>/</code>). Você pode alterar esse link nas configurações do menu em <strong>Giuliomax › Geral › URL do logotipo</strong>.</p>
+
+<h2 id="alt-text">Texto alternativo</h2>
+<p>O atributo <code>alt</code> do logotipo é obtido automaticamente das informações da mídia no WordPress. Verifique se o campo <strong>Texto alternativo</strong> está preenchido na Biblioteca de Mídia para garantir acessibilidade adequada.</p>
+
+<div class="page-nav">
+  <a href="themes.html"><span class="nav-dir">← Anterior</span><span class="nav-title">Temas e categorias</span></a>
+  <a class="next" href="mega-menu.html"><span class="nav-dir">Próximo →</span><span class="nav-title">Megamenu</span></a>
+</div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

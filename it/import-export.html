@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Import / Export — Giuliomax Menu Builder</title>
+  <meta name="description" content="Esegui il backup dell'intera configurazione del menu in un singolo file JSON, oppure trasferiscila tra siti — ad esempio da un sito di staging alla…">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/it/import-export.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/import-export.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/import-export.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/import-export.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/import-export.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/import-export.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/import-export.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/import-export.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Import / Export — Giuliomax Menu Builder">
+  <meta property="og:description" content="Esegui il backup dell'intera configurazione del menu in un singolo file JSON, oppure trasferiscila tra siti — ad esempio da un sito di staging alla…">
+  <meta property="og:url" content="https://giulio001.github.io/it/import-export.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Import / Export — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Esegui il backup dell'intera configurazione del menu in un singolo file JSON, oppure trasferiscila tra siti — ad esempio da un sito di staging alla…">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+<p class="breadcrumb">Strumenti</p>
+<h1>Import / Export</h1>
+<p class="lead">Esegui il backup dell'intera configurazione del menu in un singolo file JSON, oppure trasferiscila tra siti — ad esempio da un sito di staging alla produzione.</p>
+
+<div class="on-this-page"><strong>In questa pagina</strong><a href="#export">Esportare la configurazione</a><a href="#import">Importare una configurazione</a><a href="#contents">Cosa è incluso</a></div>
+
+<h2 id="export">Esportare la configurazione</h2>
+<ol class="steps">
+  <li>Vai su <strong>Menu Builder → Strumenti → Import / Export</strong>.</li>
+  <li>Fai clic su <strong>Esporta configurazione</strong>.</li>
+  <li>Il browser scarica un file <code>menux-export.json</code> contenente l'intera configurazione del menu.</li>
+</ol>
+
+<h2 id="import">Importare una configurazione</h2>
+<ol class="steps">
+  <li>Nella stessa pagina, fai clic su <strong>Scegli file</strong> nella sezione Import e seleziona il file JSON esportato in precedenza.</li>
+  <li>Fai clic su <strong>Importa configurazione</strong>.</li>
+  <li>Conferma l'operazione nella finestra di dialogo di conferma.</li>
+</ol>
+
+<div class="callout warn"><span class="callout-icon">⚠️</span><div class="callout-body"><p>L'importazione sovrascrive le voci di menu e le impostazioni di stile correnti. L'operazione non può essere annullata. Esegui prima un export della configurazione attuale se desideri conservarla come backup.</p></div></div>
+
+<h2 id="contents">Cosa è incluso nel file</h2>
+<p>Il file JSON di export contiene uno snapshot completo della configurazione di Menu Builder al momento dell'esportazione:</p>
+<ul>
+  <li><strong>Voci di menu</strong> — tutte le voci, i loro attributi (etichetta, URL, target, badge, icona, visibilità, ecc.) e la struttura gerarchica (voci figlio, mega menu).</li>
+  <li><strong>Stile</strong> — tema attivo, personalizzazioni di colori, tipografia, spaziatura, impostazioni mobile, layout e tutti gli altri parametri di configurazione visiva.</li>
+</ul>
+
+<div class="callout tip"><span class="callout-icon">💡</span><div class="callout-body"><p>Il file di export è JSON standard leggibile da qualsiasi editor di testo. Puoi versionarlo in un repository Git per tenere traccia delle modifiche alla configurazione del menu nel tempo, proprio come faresti con il codice sorgente.</p></div></div>
+
+<div class="page-nav"><a href="wp-integration.html"><span class="nav-dir">← Precedente</span><span class="nav-title">Integrazione WP</span></a><a class="next" href="accessibility.html"><span class="nav-dir">Successivo →</span><span class="nav-title">Accessibilità</span></a></div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>
