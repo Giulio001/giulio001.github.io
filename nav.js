@@ -37,11 +37,12 @@
       },
       onThisPage: "On this page",
       pickTitle:  "Choose your language",
-      pickSub:    "Documentation is available in English, Italian, German, and Spanish.",
+      pickSub:    "Documentation is available in English, Italian, German, Spanish, and Dutch.",
       langEN:     "English",
       langIT:     "Italian",
       langDE:     "German",
       langES:     "Spanish",
+      langNL:     "Dutch",
       next:       "Next →",
       prev:       "← Prev",
     },
@@ -77,11 +78,12 @@
       },
       onThisPage: "In questa pagina",
       pickTitle:  "Scegli la tua lingua",
-      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco e spagnolo.",
+      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo e olandese.",
       langEN:     "Inglese",
       langIT:     "Italiano",
       langDE:     "Tedesco",
       langES:     "Spagnolo",
+      langNL:     "Olandese",
       next:       "Successivo →",
       prev:       "← Precedente",
     },
@@ -117,11 +119,12 @@
       },
       onThisPage: "Auf dieser Seite",
       pickTitle:  "Sprache wählen",
-      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch und Spanisch verfügbar.",
+      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch und Niederländisch verfügbar.",
       langEN:     "Englisch",
       langIT:     "Italienisch",
       langDE:     "Deutsch",
       langES:     "Spanisch",
+      langNL:     "Niederländisch",
       next:       "Weiter →",
       prev:       "← Zurück",
     },
@@ -157,26 +160,68 @@
       },
       onThisPage: "En esta página",
       pickTitle:  "Elige tu idioma",
-      pickSub:    "La documentación está disponible en inglés, italiano, alemán y español.",
+      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español y neerlandés.",
       langEN:     "Inglés",
       langIT:     "Italiano",
       langDE:     "Alemán",
       langES:     "Español",
+      langNL:     "Neerlandés",
       next:       "Siguiente →",
       prev:       "← Anterior",
+    },
+    nl: {
+      groups: {
+        "Getting Started":  "Aan de slag",
+        "Using the Plugin": "Plugin gebruiken",
+        "Features":         "Mogelijkheden",
+        "Tools":            "Hulpmiddelen",
+        "Advanced":         "Geavanceerd"
+      },
+      labels: {
+        "index.html":          "Inleiding",
+        "installation.html":   "Installatie",
+        "shortcode.html":      "Shortcode [menux]",
+        "gutenberg.html":      "Gutenberg-blok",
+        "themes.html":         "Thema's en categorieën",
+        "logo.html":           "Logo",
+        "mega-menu.html":      "Megamenu",
+        "announcement.html":   "Aankondigingsbalk",
+        "cart.html":           "WooCommerce-winkelwagen",
+        "search.html":         "Zoeken",
+        "badges.html":         "Badges en stippen",
+        "visibility.html":     "Zichtbaarheidsregels",
+        "mobile.html":         "Mobiele menu's",
+        "layout.html":         "Opmaak en effecten",
+        "footer.html":         "Footer Builder",
+        "wp-integration.html": "WP-integratie",
+        "import-export.html":  "Importeren / Exporteren",
+        "accessibility.html":  "Toegankelijkheid",
+        "multilingual.html":   "Meertalig",
+        "faq.html":            "Veelgestelde vragen"
+      },
+      onThisPage: "Op deze pagina",
+      pickTitle:  "Kies je taal",
+      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans en Nederlands.",
+      langEN:     "Engels",
+      langIT:     "Italiaans",
+      langDE:     "Duits",
+      langES:     "Spaans",
+      langNL:     "Nederlands",
+      next:       "Volgende →",
+      prev:       "← Vorige",
     }
   };
 
   const getLang = ()  => localStorage.getItem(LANG_KEY);
   const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
-  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸' };
-  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español' };
+  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱' };
+  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands' };
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
     const l = (navigator.language || 'en').toLowerCase();
-    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : 'en';
+    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : 'en';
     const tr = T[uiLang];
 
     const overlay = document.createElement('div');
@@ -202,6 +247,10 @@
           <button class="lang-opt" data-lang="es">
             <span class="lang-flag">${FLAG.es}</span>
             <span class="lang-name">${NATIVE.es}</span>
+          </button>
+          <button class="lang-opt" data-lang="nl">
+            <span class="lang-flag">${FLAG.nl}</span>
+            <span class="lang-name">${NATIVE.nl}</span>
           </button>
         </div>
       </div>`;
@@ -256,6 +305,17 @@
     const article = document.querySelector('article');
     if (article && window.MENUX_ES && window.MENUX_ES[page])
       article.innerHTML = window.MENUX_ES[page];
+  }
+
+  function loadDutchContent(cb) {
+    if (window.MENUX_NL) { cb(); return; }
+    loadScript('nl.js', cb);
+  }
+  function applyDutchContent() {
+    const page = window.location.pathname.split('/').pop() || 'index.html';
+    const article = document.querySelector('article');
+    if (article && window.MENUX_NL && window.MENUX_NL[page])
+      article.innerHTML = window.MENUX_NL[page];
   }
 
   /* ── Apply page-level UI translations ────────────────────────────────── */
@@ -402,6 +462,8 @@
       loadGermanContent(() => { applyGermanContent(); applyTranslations(lang); });
     } else if (lang === 'es') {
       loadSpanishContent(() => { applySpanishContent(); applyTranslations(lang); });
+    } else if (lang === 'nl') {
+      loadDutchContent(() => { applyDutchContent(); applyTranslations(lang); });
     } else {
       applyTranslations(lang);
     }

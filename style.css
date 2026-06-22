@@ -426,16 +426,19 @@ tr:last-child td { border-bottom: none; }
   margin: 0 0 28px;
 }
 .lang-picker-btns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 .lang-opt {
+  flex: 1 1 calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 18px 12px;
+  padding: 16px 10px;
   border: 2px solid var(--border);
   border-radius: 14px;
   background: #fff;
@@ -449,17 +452,17 @@ tr:last-child td { border-bottom: none; }
   transform: translateY(-2px);
 }
 .lang-flag {
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 1;
   display: block;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Twemoji Mozilla", sans-serif;
 }
-.lang-name  { font-size: 13px; font-weight: 600; color: var(--text); }
+.lang-name { font-size: 12px; font-weight: 600; color: var(--text); white-space: nowrap; }
 
 @media (max-width: 480px) {
   .lang-picker-box { padding: 28px 20px; }
-  .lang-picker-btns { gap: 10px; }
-  .lang-opt { padding: 14px 10px; gap: 7px; }
+  .lang-picker-btns { gap: 8px; }
+  .lang-opt { flex: 1 1 calc(50% - 8px); max-width: calc(50% - 8px); padding: 12px 8px; gap: 7px; }
   .lang-flag { font-size: 1.7rem; }
 }
 
