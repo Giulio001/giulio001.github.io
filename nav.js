@@ -37,12 +37,13 @@
       },
       onThisPage: "On this page",
       pickTitle:  "Choose your language",
-      pickSub:    "Documentation is available in English, Italian, German, Spanish, and Dutch.",
+      pickSub:    "Documentation is available in English, Italian, German, Spanish, Dutch, and Portuguese.",
       langEN:     "English",
       langIT:     "Italian",
       langDE:     "German",
       langES:     "Spanish",
       langNL:     "Dutch",
+      langPT:     "Portuguese (BR)",
       next:       "Next →",
       prev:       "← Prev",
     },
@@ -78,12 +79,13 @@
       },
       onThisPage: "In questa pagina",
       pickTitle:  "Scegli la tua lingua",
-      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo e olandese.",
+      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo, olandese e portoghese.",
       langEN:     "Inglese",
       langIT:     "Italiano",
       langDE:     "Tedesco",
       langES:     "Spagnolo",
       langNL:     "Olandese",
+      langPT:     "Portoghese (BR)",
       next:       "Successivo →",
       prev:       "← Precedente",
     },
@@ -119,12 +121,13 @@
       },
       onThisPage: "Auf dieser Seite",
       pickTitle:  "Sprache wählen",
-      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch und Niederländisch verfügbar.",
+      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch, Niederländisch und Portugiesisch verfügbar.",
       langEN:     "Englisch",
       langIT:     "Italienisch",
       langDE:     "Deutsch",
       langES:     "Spanisch",
       langNL:     "Niederländisch",
+      langPT:     "Portugiesisch (BR)",
       next:       "Weiter →",
       prev:       "← Zurück",
     },
@@ -160,12 +163,13 @@
       },
       onThisPage: "En esta página",
       pickTitle:  "Elige tu idioma",
-      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español y neerlandés.",
+      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español, neerlandés y portugués.",
       langEN:     "Inglés",
       langIT:     "Italiano",
       langDE:     "Alemán",
       langES:     "Español",
       langNL:     "Neerlandés",
+      langPT:     "Portugués (BR)",
       next:       "Siguiente →",
       prev:       "← Anterior",
     },
@@ -201,27 +205,70 @@
       },
       onThisPage: "Op deze pagina",
       pickTitle:  "Kies je taal",
-      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans en Nederlands.",
+      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans, Nederlands en Portugees.",
       langEN:     "Engels",
       langIT:     "Italiaans",
       langDE:     "Duits",
       langES:     "Spaans",
       langNL:     "Nederlands",
+      langPT:     "Portugees (BR)",
       next:       "Volgende →",
       prev:       "← Vorige",
+    },
+    pt: {
+      groups: {
+        "Getting Started":  "Primeiros passos",
+        "Using the Plugin": "Usando o plugin",
+        "Features":         "Funcionalidades",
+        "Tools":            "Ferramentas",
+        "Advanced":         "Avançado"
+      },
+      labels: {
+        "index.html":          "Introdução",
+        "installation.html":   "Instalação",
+        "shortcode.html":      "Shortcode [menux]",
+        "gutenberg.html":      "Bloco Gutenberg",
+        "themes.html":         "Temas e categorias",
+        "logo.html":           "Logotipo",
+        "mega-menu.html":      "Megamenu",
+        "announcement.html":   "Barra de avisos",
+        "cart.html":           "Carrinho WooCommerce",
+        "search.html":         "Busca",
+        "badges.html":         "Badges e pontos",
+        "visibility.html":     "Regras de visibilidade",
+        "mobile.html":         "Menus mobile",
+        "layout.html":         "Layout e efeitos",
+        "footer.html":         "Footer Builder",
+        "wp-integration.html": "Integração WP",
+        "import-export.html":  "Importar / Exportar",
+        "accessibility.html":  "Acessibilidade",
+        "multilingual.html":   "Multilíngue",
+        "faq.html":            "Perguntas frequentes"
+      },
+      onThisPage: "Nesta página",
+      pickTitle:  "Escolha o seu idioma",
+      pickSub:    "A documentação está disponível em inglês, italiano, alemão, espanhol, holandês e português.",
+      langEN:     "Inglês",
+      langIT:     "Italiano",
+      langDE:     "Alemão",
+      langES:     "Espanhol",
+      langNL:     "Holandês",
+      langPT:     "Português",
+      next:       "Próximo →",
+      prev:       "← Anterior",
     }
   };
 
   const getLang = ()  => localStorage.getItem(LANG_KEY);
   const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
-  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱' };
-  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands' };
+  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱', pt: '🇧🇷' };
+  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands', pt: 'Português' };
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
     const l = (navigator.language || 'en').toLowerCase();
-    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : 'en';
+    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : l.startsWith('pt') ? 'pt' : 'en';
     const tr = T[uiLang];
 
     const overlay = document.createElement('div');
@@ -251,6 +298,10 @@
           <button class="lang-opt" data-lang="nl">
             <span class="lang-flag">${FLAG.nl}</span>
             <span class="lang-name">${NATIVE.nl}</span>
+          </button>
+          <button class="lang-opt" data-lang="pt">
+            <span class="lang-flag">${FLAG.pt}</span>
+            <span class="lang-name">${NATIVE.pt}</span>
           </button>
         </div>
       </div>`;
@@ -316,6 +367,17 @@
     const article = document.querySelector('article');
     if (article && window.MENUX_NL && window.MENUX_NL[page])
       article.innerHTML = window.MENUX_NL[page];
+  }
+
+  function loadPortugueseContent(cb) {
+    if (window.MENUX_PT) { cb(); return; }
+    loadScript('pt.js', cb);
+  }
+  function applyPortugueseContent() {
+    const page = window.location.pathname.split('/').pop() || 'index.html';
+    const article = document.querySelector('article');
+    if (article && window.MENUX_PT && window.MENUX_PT[page])
+      article.innerHTML = window.MENUX_PT[page];
   }
 
   /* ── Apply page-level UI translations ────────────────────────────────── */
@@ -464,6 +526,8 @@
       loadSpanishContent(() => { applySpanishContent(); applyTranslations(lang); });
     } else if (lang === 'nl') {
       loadDutchContent(() => { applyDutchContent(); applyTranslations(lang); });
+    } else if (lang === 'pt') {
+      loadPortugueseContent(() => { applyPortugueseContent(); applyTranslations(lang); });
     } else {
       applyTranslations(lang);
     }
