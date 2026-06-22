@@ -1360,7 +1360,7 @@ window.MENUX_DE = {
 <p>Setze die Panel-Breite auf <strong>Volle Breite</strong> unter <strong>Menu Builder → Mega-Menü → Panel-Breite</strong>. Wenn du ein schmaleres Panel benötigst, überprüfe, ob das Container-CSS deiner Website <code>overflow: hidden</code> auf ein übergeordnetes Element des Menüs anwendet.</p>
 
 <h3>Kann ich ein Kontaktformular oder ein WooCommerce-Produkt in eine Mega-Menü-Spalte einfügen?</h3>
-<p>Ja — verwende den Spalteninhalt-Typ <strong>Eigenes HTML</strong> und füge einen beliebigen Shortcode oder HTML ein. Zum Beispiel: <code>[contact-form-7 id="123"]</code> oder einen WooCommerce-Produkt-Shortcode.</p>
+<p>Ja — verwende den Spalteninhalt-Typ <strong>Shortcode</strong> und füge einen beliebigen Shortcode oder HTML ein. Zum Beispiel: <code>[contact-form-7 id="123"]</code> oder einen WooCommerce-Produkt-Shortcode.</p>
 
 <h2>Mobilgeräte</h2>
 

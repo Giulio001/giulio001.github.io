@@ -1157,7 +1157,7 @@ window.MENUX_ES = {
 <p>Establece el ancho del panel en <strong>Ancho completo</strong> en <strong>Menu Builder → Megamenú → Ancho del panel</strong>. Si necesitas un panel más estrecho, comprueba que el CSS del contenedor de tu sitio no aplique <code>overflow: hidden</code> a un elemento ancestro del menú.</p>
 
 <h3>¿Puedo poner un formulario de contacto o un producto de WooCommerce en una columna del megamenú?</h3>
-<p>Sí — usa el tipo de contenido de columna <strong>HTML personalizado</strong> y pega cualquier shortcode o HTML. Por ejemplo: <code>[contact-form-7 id="123"]</code> o un shortcode de producto de WooCommerce.</p>
+<p>Sí — usa el tipo de contenido de columna <strong>Shortcode</strong> y pega cualquier shortcode o HTML. Por ejemplo: <code>[contact-form-7 id="123"]</code> o un shortcode de producto de WooCommerce.</p>
 
 <h2>Móvil</h2>
 
