@@ -267,8 +267,11 @@
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
-    const l = (navigator.language || 'en').toLowerCase();
-    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : l.startsWith('pt') ? 'pt' : 'en';
+    const saved = getLang();
+    const uiLang = (saved && T[saved]) ? saved : (() => {
+      const l = (navigator.language || 'en').toLowerCase();
+      return l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : l.startsWith('pt') ? 'pt' : 'en';
+    })();
     const tr = T[uiLang];
 
     const overlay = document.createElement('div');
