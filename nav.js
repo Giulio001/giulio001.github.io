@@ -37,10 +37,11 @@
       },
       onThisPage: "On this page",
       pickTitle:  "Choose your language",
-      pickSub:    "Documentation is available in English, Italian, and German.",
+      pickSub:    "Documentation is available in English, Italian, German, and Spanish.",
       langEN:     "English",
       langIT:     "Italian",
       langDE:     "German",
+      langES:     "Spanish",
       next:       "Next →",
       prev:       "← Prev",
     },
@@ -76,10 +77,11 @@
       },
       onThisPage: "In questa pagina",
       pickTitle:  "Scegli la tua lingua",
-      pickSub:    "La documentazione è disponibile in inglese, italiano e tedesco.",
+      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco e spagnolo.",
       langEN:     "Inglese",
       langIT:     "Italiano",
       langDE:     "Tedesco",
+      langES:     "Spagnolo",
       next:       "Successivo →",
       prev:       "← Precedente",
     },
@@ -115,12 +117,53 @@
       },
       onThisPage: "Auf dieser Seite",
       pickTitle:  "Sprache wählen",
-      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch und Deutsch verfügbar.",
+      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch und Spanisch verfügbar.",
       langEN:     "Englisch",
       langIT:     "Italienisch",
       langDE:     "Deutsch",
+      langES:     "Spanisch",
       next:       "Weiter →",
       prev:       "← Zurück",
+    },
+    es: {
+      groups: {
+        "Getting Started":  "Primeros pasos",
+        "Using the Plugin": "Uso del plugin",
+        "Features":         "Funcionalidades",
+        "Tools":            "Herramientas",
+        "Advanced":         "Avanzado"
+      },
+      labels: {
+        "index.html":          "Introducción",
+        "installation.html":   "Instalación",
+        "shortcode.html":      "Shortcode [menux]",
+        "gutenberg.html":      "Bloque Gutenberg",
+        "themes.html":         "Temas y categorías",
+        "logo.html":           "Logotipo",
+        "mega-menu.html":      "Megamenú",
+        "announcement.html":   "Barra de anuncios",
+        "cart.html":           "Carrito WooCommerce",
+        "search.html":         "Búsqueda",
+        "badges.html":         "Insignias y puntos",
+        "visibility.html":     "Reglas de visibilidad",
+        "mobile.html":         "Menús para móvil",
+        "layout.html":         "Diseño y efectos",
+        "footer.html":         "Constructor de pie de página",
+        "wp-integration.html": "Integración WP",
+        "import-export.html":  "Importar / Exportar",
+        "accessibility.html":  "Accesibilidad",
+        "multilingual.html":   "Multilingüe",
+        "faq.html":            "Preguntas frecuentes"
+      },
+      onThisPage: "En esta página",
+      pickTitle:  "Elige tu idioma",
+      pickSub:    "La documentación está disponible en inglés, italiano, alemán y español.",
+      langEN:     "Inglés",
+      langIT:     "Italiano",
+      langDE:     "Alemán",
+      langES:     "Español",
+      next:       "Siguiente →",
+      prev:       "← Anterior",
     }
   };
 
@@ -130,7 +173,7 @@
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
     const l = (navigator.language || 'en').toLowerCase();
-    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : 'en';
+    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : 'en';
     const tr = T[uiLang];
 
     const overlay = document.createElement('div');
@@ -152,6 +195,10 @@
           <button class="lang-opt" data-lang="de">
             <span class="lang-flag">&#x1F1E9;&#x1F1EA;</span>
             <span class="lang-name">${tr.langDE}</span>
+          </button>
+          <button class="lang-opt" data-lang="es">
+            <span class="lang-flag">&#x1F1EA;&#x1F1F8;</span>
+            <span class="lang-name">${tr.langES}</span>
           </button>
         </div>
       </div>`;
@@ -195,6 +242,17 @@
     const article = document.querySelector('article');
     if (article && window.MENUX_DE && window.MENUX_DE[page])
       article.innerHTML = window.MENUX_DE[page];
+  }
+
+  function loadSpanishContent(cb) {
+    if (window.MENUX_ES) { cb(); return; }
+    loadScript('es.js', cb);
+  }
+  function applySpanishContent() {
+    const page = window.location.pathname.split('/').pop() || 'index.html';
+    const article = document.querySelector('article');
+    if (article && window.MENUX_ES && window.MENUX_ES[page])
+      article.innerHTML = window.MENUX_ES[page];
   }
 
   /* ── Apply page-level UI translations ────────────────────────────────── */
@@ -261,6 +319,7 @@
       { code: 'en', flag: '&#x1F1EC;&#x1F1E7;', label: 'EN' },
       { code: 'it', flag: '&#x1F1EE;&#x1F1F9;', label: 'IT' },
       { code: 'de', flag: '&#x1F1E9;&#x1F1EA;', label: 'DE' },
+      { code: 'es', flag: '&#x1F1EA;&#x1F1F8;', label: 'ES' },
     ].map(o =>
       `<button class="lang-opt-sm${o.code === currentLang ? ' active' : ''}" data-lang="${o.code}">${o.flag} ${o.label}</button>`
     ).join('');
@@ -354,6 +413,8 @@
       loadItalianContent(() => { applyItalianContent(); applyTranslations(lang); });
     } else if (lang === 'de') {
       loadGermanContent(() => { applyGermanContent(); applyTranslations(lang); });
+    } else if (lang === 'es') {
+      loadSpanishContent(() => { applySpanishContent(); applyTranslations(lang); });
     } else {
       applyTranslations(lang);
     }
