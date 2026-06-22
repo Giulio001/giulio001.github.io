@@ -36,11 +36,11 @@
         "faq.html":            "FAQ"
       },
       onThisPage: "On this page",
-      langToggle: "IT",
       pickTitle:  "Choose your language",
-      pickSub:    "Documentation is available in English and Italian.",
+      pickSub:    "Documentation is available in English, Italian, and German.",
       langEN:     "English",
       langIT:     "Italian",
+      langDE:     "German",
       next:       "Next →",
       prev:       "← Prev",
     },
@@ -75,22 +75,62 @@
         "faq.html":            "FAQ"
       },
       onThisPage: "In questa pagina",
-      langToggle: "EN",
       pickTitle:  "Scegli la tua lingua",
-      pickSub:    "La documentazione è disponibile in inglese e italiano.",
+      pickSub:    "La documentazione è disponibile in inglese, italiano e tedesco.",
       langEN:     "Inglese",
       langIT:     "Italiano",
+      langDE:     "Tedesco",
       next:       "Successivo →",
       prev:       "← Precedente",
+    },
+    de: {
+      groups: {
+        "Getting Started":  "Erste Schritte",
+        "Using the Plugin": "Plugin verwenden",
+        "Features":         "Funktionen",
+        "Tools":            "Werkzeuge",
+        "Advanced":         "Erweitert"
+      },
+      labels: {
+        "index.html":          "Einführung",
+        "installation.html":   "Installation",
+        "shortcode.html":      "Shortcode [menux]",
+        "gutenberg.html":      "Gutenberg-Block",
+        "themes.html":         "Themes & Kategorien",
+        "logo.html":           "Logo",
+        "mega-menu.html":      "Mega-Menü",
+        "announcement.html":   "Ankündigungsleiste",
+        "cart.html":           "WooCommerce-Warenkorb",
+        "search.html":         "Suche",
+        "badges.html":         "Abzeichen & Punkte",
+        "visibility.html":     "Sichtbarkeitsregeln",
+        "mobile.html":         "Mobile Menüs",
+        "layout.html":         "Layout & Effekte",
+        "footer.html":         "Footer Builder",
+        "wp-integration.html": "WP-Integration",
+        "import-export.html":  "Import / Export",
+        "accessibility.html":  "Barrierefreiheit",
+        "multilingual.html":   "Mehrsprachigkeit",
+        "faq.html":            "FAQ"
+      },
+      onThisPage: "Auf dieser Seite",
+      pickTitle:  "Sprache wählen",
+      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch und Deutsch verfügbar.",
+      langEN:     "Englisch",
+      langIT:     "Italienisch",
+      langDE:     "Deutsch",
+      next:       "Weiter →",
+      prev:       "← Zurück",
     }
   };
 
-  const getLang  = ()  => localStorage.getItem(LANG_KEY);
-  const setLang  = l   => localStorage.setItem(LANG_KEY, l);
+  const getLang = ()  => localStorage.getItem(LANG_KEY);
+  const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
-    const uiLang = (navigator.language || 'en').toLowerCase().startsWith('it') ? 'it' : 'en';
+    const l = (navigator.language || 'en').toLowerCase();
+    const uiLang = l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : 'en';
     const tr = T[uiLang];
 
     const overlay = document.createElement('div');
@@ -109,6 +149,10 @@
             <span class="lang-flag">&#x1F1EE;&#x1F1F9;</span>
             <span class="lang-name">${tr.langIT}</span>
           </button>
+          <button class="lang-opt" data-lang="de">
+            <span class="lang-flag">&#x1F1E9;&#x1F1EA;</span>
+            <span class="lang-name">${tr.langDE}</span>
+          </button>
         </div>
       </div>`;
 
@@ -124,25 +168,36 @@
     document.body.appendChild(overlay);
   }
 
-  /* ── Italian content loader ───────────────────────────────────────────── */
-  function loadItalianContent(callback) {
-    if (window.MENUX_IT) { callback(); return; }
+  /* ── Content loaders ──────────────────────────────────────────────────── */
+  function loadScript(src, cb) {
     const s = document.createElement('script');
-    s.src = 'it.js';
-    s.onload = callback;
-    s.onerror = callback;
+    s.src = src; s.onload = cb; s.onerror = cb;
     document.head.appendChild(s);
   }
 
+  function loadItalianContent(cb) {
+    if (window.MENUX_IT) { cb(); return; }
+    loadScript('it.js', cb);
+  }
   function applyItalianContent() {
-    const current = window.location.pathname.split('/').pop() || 'index.html';
+    const page = window.location.pathname.split('/').pop() || 'index.html';
     const article = document.querySelector('article');
-    if (article && window.MENUX_IT && window.MENUX_IT[current]) {
-      article.innerHTML = window.MENUX_IT[current];
-    }
+    if (article && window.MENUX_IT && window.MENUX_IT[page])
+      article.innerHTML = window.MENUX_IT[page];
   }
 
-  /* ── Apply page-level translations ───────────────────────────────────── */
+  function loadGermanContent(cb) {
+    if (window.MENUX_DE) { cb(); return; }
+    loadScript('de.js', cb);
+  }
+  function applyGermanContent() {
+    const page = window.location.pathname.split('/').pop() || 'index.html';
+    const article = document.querySelector('article');
+    if (article && window.MENUX_DE && window.MENUX_DE[page])
+      article.innerHTML = window.MENUX_DE[page];
+  }
+
+  /* ── Apply page-level UI translations ────────────────────────────────── */
   function applyTranslations(lang) {
     const tr = T[lang];
     if (!tr) return;
@@ -201,6 +256,16 @@
   ];
 
   /* ── Build sidebar HTML ───────────────────────────────────────────────── */
+  function buildLangMenu(currentLang) {
+    return [
+      { code: 'en', flag: '&#x1F1EC;&#x1F1E7;', label: 'EN' },
+      { code: 'it', flag: '&#x1F1EE;&#x1F1F9;', label: 'IT' },
+      { code: 'de', flag: '&#x1F1E9;&#x1F1EA;', label: 'DE' },
+    ].map(o =>
+      `<button class="lang-opt-sm${o.code === currentLang ? ' active' : ''}" data-lang="${o.code}">${o.flag} ${o.label}</button>`
+    ).join('');
+  }
+
   function buildSidebar(lang) {
     const tr      = T[lang] || T.en;
     const current = window.location.pathname.split("/").pop() || "index.html";
@@ -213,7 +278,10 @@
           <a href="index.html">Giuliomax Menu Builder</a>
           <div class="sidebar-logo-meta">
             <span class="version">v3.9.0</span>
-            <button type="button" class="lang-toggle" aria-label="Switch language">${tr.langToggle}</button>
+            <div class="lang-switch">
+              <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Switch language">${lang.toUpperCase()} &#9662;</button>
+              <div class="lang-menu" hidden>${buildLangMenu(lang)}</div>
+            </div>
           </div>
         </div>
         <button type="button" class="sidebar-toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -259,14 +327,33 @@
       });
     });
 
-    /* Language toggle */
-    sidebar.querySelector(".lang-toggle").addEventListener("click", () => {
-      setLang(lang === "en" ? "it" : "en");
-      location.reload();
+    /* Language dropdown */
+    const langToggle = sidebar.querySelector(".lang-toggle");
+    const langMenu   = sidebar.querySelector(".lang-menu");
+    langToggle.addEventListener("click", e => {
+      e.stopPropagation();
+      const isOpen = !langMenu.hidden;
+      langMenu.hidden = isOpen;
+      langToggle.setAttribute("aria-expanded", isOpen ? "false" : "true");
+    });
+    sidebar.querySelectorAll(".lang-opt-sm").forEach(btn => {
+      btn.addEventListener("click", () => {
+        setLang(btn.dataset.lang);
+        location.reload();
+      });
+    });
+    document.addEventListener("click", () => {
+      if (!langMenu.hidden) {
+        langMenu.hidden = true;
+        langToggle.setAttribute("aria-expanded", "false");
+      }
     });
 
+    /* Load translated content */
     if (lang === 'it') {
       loadItalianContent(() => { applyItalianContent(); applyTranslations(lang); });
+    } else if (lang === 'de') {
+      loadGermanContent(() => { applyGermanContent(); applyTranslations(lang); });
     } else {
       applyTranslations(lang);
     }
