@@ -170,7 +170,8 @@
   const getLang = ()  => localStorage.getItem(LANG_KEY);
   const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
-  const FLAG = { en: '&#x1F1EC;&#x1F1E7;', it: '&#x1F1EE;&#x1F1F9;', de: '&#x1F1E9;&#x1F1EA;', es: '&#x1F1EA;&#x1F1F8;' };
+  const FLAG   = { en: '&#x1F1EC;&#x1F1E7;', it: '&#x1F1EE;&#x1F1F9;', de: '&#x1F1E9;&#x1F1EA;', es: '&#x1F1EA;&#x1F1F8;' };
+  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Espa&ntilde;ol' };
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
@@ -187,20 +188,20 @@
         <p class="lang-picker-sub">${tr.pickSub}</p>
         <div class="lang-picker-btns">
           <button class="lang-opt" data-lang="en">
-            <span class="lang-flag">&#x1F1EC;&#x1F1E7;</span>
-            <span class="lang-name">${tr.langEN}</span>
+            <span class="lang-flag">${FLAG.en}</span>
+            <span class="lang-name">${NATIVE.en}</span>
           </button>
           <button class="lang-opt" data-lang="it">
-            <span class="lang-flag">&#x1F1EE;&#x1F1F9;</span>
-            <span class="lang-name">${tr.langIT}</span>
+            <span class="lang-flag">${FLAG.it}</span>
+            <span class="lang-name">${NATIVE.it}</span>
           </button>
           <button class="lang-opt" data-lang="de">
-            <span class="lang-flag">&#x1F1E9;&#x1F1EA;</span>
-            <span class="lang-name">${tr.langDE}</span>
+            <span class="lang-flag">${FLAG.de}</span>
+            <span class="lang-name">${NATIVE.de}</span>
           </button>
           <button class="lang-opt" data-lang="es">
-            <span class="lang-flag">&#x1F1EA;&#x1F1F8;</span>
-            <span class="lang-name">${tr.langES}</span>
+            <span class="lang-flag">${FLAG.es}</span>
+            <span class="lang-name">${NATIVE.es}</span>
           </button>
         </div>
       </div>`;
@@ -340,7 +341,7 @@
           <div class="sidebar-logo-meta">
             <span class="version">v3.9.0</span>
             <div class="lang-switch">
-              <button type="button" class="lang-toggle" aria-label="Switch language">${FLAG[lang] || ''} ${lang.toUpperCase()} &#9662;</button>
+              <button type="button" class="lang-toggle" aria-label="Switch language">${FLAG[lang] || ''} ${NATIVE[lang] || lang.toUpperCase()} &#9662;</button>
             </div>
           </div>
         </div>
