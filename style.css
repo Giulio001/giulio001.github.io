@@ -426,16 +426,16 @@ tr:last-child td { border-bottom: none; }
   margin: 0 0 28px;
 }
 .lang-picker-btns {
-  display: flex;
-  gap: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 .lang-opt {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 20px 16px;
+  padding: 18px 12px;
   border: 2px solid var(--border);
   border-radius: 14px;
   background: #fff;
@@ -448,14 +448,14 @@ tr:last-child td { border-bottom: none; }
   background: var(--accent-lt);
   transform: translateY(-2px);
 }
-.lang-flag { font-size: 2.2rem; line-height: 1; }
-.lang-name  { font-size: 14px; font-weight: 600; color: var(--text); }
+.lang-flag { font-size: 2rem; line-height: 1; }
+.lang-name  { font-size: 13px; font-weight: 600; color: var(--text); }
 
 @media (max-width: 480px) {
-  .lang-picker-box { padding: 32px 24px; }
-  .lang-picker-btns { flex-wrap: wrap; }
-  .lang-opt { flex: 1 1 calc(50% - 7px); padding: 16px 10px; gap: 8px; }
-  .lang-flag { font-size: 1.8rem; }
+  .lang-picker-box { padding: 28px 20px; }
+  .lang-picker-btns { gap: 10px; }
+  .lang-opt { padding: 14px 10px; gap: 7px; }
+  .lang-flag { font-size: 1.7rem; }
 }
 
 /* Language dropdown switcher (sidebar) */
