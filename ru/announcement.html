@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Панель объявлений — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Добавьте тонкий промо-баннер над навигацией WordPress с произвольным сообщением, ссылкой-призывом, живым таймером обратного отсчёта и кнопкой закрытия.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/announcement.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/announcement.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/announcement.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/announcement.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/announcement.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/announcement.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/announcement.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/announcement.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/announcement.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Панель объявлений — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Добавьте тонкий промо-баннер над навигацией WordPress с произвольным сообщением, ссылкой-призывом, живым таймером обратного отсчёта и кнопкой закрытия.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/announcement.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Панель объявлений — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Добавьте тонкий промо-баннер над навигацией WordPress с произвольным сообщением, ссылкой-призывом, живым таймером обратного отсчёта и кнопкой закрытия.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Панель объявлений"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Панель объявлений</h1>
+    <p class="lead">Добавьте тонкий промо-баннер над панелью навигации (или под ней) с произвольным сообщением, ссылкой-призывом к действию и необязательным живым таймером обратного отсчёта.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/announcement-countdown.svg" alt="Панель объявлений MenuX с сообщением и живым отсчётом дней, часов, минут и секунд" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#enable">Включение панели</a>
+      <a href="#content">Настройка сообщения и ссылки</a>
+      <a href="#countdown">Таймер обратного отсчёта</a>
+      <a href="#styling">Оформление</a>
+      <a href="#position">Положение и закрытие</a>
+    </div>
+
+    <h2 id="enable">Включение панели</h2>
+    <ol class="steps">
+      <li>Перейдите в <strong>Menu Builder → Announcement</strong>.</li>
+      <li>Переключите <strong>Enable announcement bar</strong> во включённое состояние.</li>
+      <li>Сохраните настройки.</li>
+    </ol>
+    <p>Панель сразу же появляется на сайте, по умолчанию над навигацией.</p>
+
+    <h2 id="content">Настройка сообщения и ссылки</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Поле</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Текст сообщения</strong></td><td>Текст, отображаемый в панели. Только обычный текст — HTML не обрабатывается.</td></tr>
+          <tr><td><strong>URL ссылки</strong></td><td>Необязательно. Если задан, весь текст сообщения становится кликабельной ссылкой на этот URL.</td></tr>
+          <tr><td><strong>Открывать в новой вкладке</strong></td><td>Переключатель для открытия ссылки в новой вкладке браузера.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="countdown">Таймер обратного отсчёта</h2>
+    <p>Таймер обратного отсчёта показывает в панели объявлений живые тикающие часы — это удобно для распродаж, дедлайнов мероприятий или предложений с ограниченным сроком.</p>
+
+    <ol class="steps">
+      <li>В разделе <strong>Menu Builder → Announcement</strong> включите <strong>Enable countdown</strong>.</li>
+      <li>Задайте <strong>Дату и время окончания</strong> в поле даты. Таймер ведёт отсчёт до этого момента, используя часовой пояс сайта (задаётся в <em>Settings → General → Timezone</em>).</li>
+      <li>При желании укажите <strong>Сообщение по истечении</strong> — текст, который показывается вместо цифр, когда отсчёт достигает нуля.</li>
+      <li>Сохраните настройки.</li>
+    </ol>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Целевой момент вычисляется на стороне сервера, но живой отсчёт использует часы браузера посетителя. Если часы на устройстве посетителя выставлены неверно, отображаемое оставшееся время будет для него неточным. Для аукционов, где точность времени критична, используйте дополнительно отдельный плагин обратного отсчёта.</p>
+      </div>
+    </div>
+
+    <h3>Формат отображения таймера</h3>
+    <p>Таймер показывает <strong>дни · часы · минуты · секунды</strong>. Сегмент дней автоматически скрывается, когда до окончания остаётся менее одного дня. Также можно задать <strong>подпись отсчёта</strong> (текст перед таймером, по умолчанию «Ends in:»).</p>
+
+    <h2 id="styling">Оформление панели объявлений</h2>
+    <p>Все параметры оформления доступны в разделе <strong>Menu Builder → Announcement</strong>:</p>
+    <ul>
+      <li><strong>Цвет фона</strong> — сплошной цвет, выбираемый с помощью палитры</li>
+      <li><strong>Цвет текста</strong></li>
+      <li><strong>Размер шрифта</strong> — независимый от шрифта основного меню</li>
+      <li><strong>Вертикальные отступы</strong> — задают высоту панели</li>
+    </ul>
+
+    <h2 id="position">Положение и закрытие</h2>
+    <ul>
+      <li><strong>Положение</strong> — над панелью навигации (по умолчанию) или под ней.</li>
+      <li><strong>Закрытие</strong> — включите <em>Allow dismissal</em>, чтобы показать кнопку закрытия (×). После закрытия панель остаётся скрытой в течение заданного числа дней (хранится в localStorage браузера).</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="mega-menu.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Мегаменю</span>
+      </a>
+      <a class="next" href="cart.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Корзина WooCommerce</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

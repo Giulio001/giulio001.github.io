@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Интеграция меню с WP — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Замените вызовы wp_nav_menu() вашей темы на меню из Menu Builder — без правки файлов шаблонов. Работает с классическими и блочными темами WordPress.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/wp-integration.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/wp-integration.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/wp-integration.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/wp-integration.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/wp-integration.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/wp-integration.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/wp-integration.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/wp-integration.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/wp-integration.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Интеграция меню с WP — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Замените вызовы wp_nav_menu() вашей темы на меню из Menu Builder — без правки файлов шаблонов. Работает с классическими и блочными темами WordPress.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/wp-integration.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Интеграция меню с WP — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Замените вызовы wp_nav_menu() вашей темы на меню из Menu Builder — без правки файлов шаблонов. Работает с классическими и блочными темами WordPress.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Интеграция с WP"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Инструменты</p>
+    <h1>Интеграция меню с WP</h1>
+    <p class="lead">Замените стандартные навигационные меню вашей темы на меню из Menu Builder — без правки файлов шаблонов. Идеально подходит для классических PHP-тем, которые вызывают <code>wp_nav_menu()</code>.</p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#what">Что делает инструмент</a>
+      <a href="#mapping">Привязка расположения темы</a>
+      <a href="#notes">Примечания и ограничения</a>
+    </div>
+
+    <h2 id="what">Что делает инструмент</h2>
+    <p>Многие классические темы выводят навигацию в шапке, вызывая <code>wp_nav_menu()</code> для зарегистрированного <em>расположения темы</em> (например, «Основное меню», «Меню подвала»). Инструмент «Интеграция с WP» позволяет перехватить эти расположения и вывести вместо них меню из Menu Builder — так вы получаете всё оформление и все возможности плагина, не трогая <code>header.php</code> и не используя шорткод.</p>
+
+    <h2 id="mapping">Привязка расположения темы</h2>
+    <ol class="steps">
+      <li>Перейдите в <strong>Menu Builder → WP Integration</strong>.</li>
+      <li>Вы увидите таблицу со всеми навигационными расположениями, зарегистрированными вашей активной темой.</li>
+      <li>Для каждого расположения выберите в выпадающем списке расположение Menu Builder (<code>primary</code>, <code>footer</code>, <code>sidebar</code> или <code>mobile</code>), которое его заменит, — или оставьте значение <strong>— Не заменять —</strong>, чтобы сохранить исходное меню темы.</li>
+      <li>Нажмите <strong>Сохранить меню</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Если ваша тема не регистрирует ни одного расположения меню, в таблице отображается уведомление. В этом случае тема не вызывает <code>register_nav_menus()</code>, и вам следует использовать <a href="shortcode.html">шорткод</a> или <a href="gutenberg.html">блок Gutenberg</a>.</p>
+      </div>
+    </div>
+
+    <h2 id="notes">Примечания и ограничения</h2>
+    <ul>
+      <li>Расположение Menu Builder с пометкой <strong>⚠ нет элементов</strong> не содержит назначенных пунктов меню. При его выборе будет просто сохранено исходное меню темы, а не выведено пустое.</li>
+      <li>Выпадающий список показывает, сколько элементов содержит каждое расположение, чтобы вы могли убедиться, что привязываете нужное.</li>
+      <li>Этот инструмент рассчитан на классические PHP-темы. Для блочных тем (FSE) отредактируйте часть шаблона с шапкой и используйте <a href="gutenberg.html">блок Gutenberg</a>.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="footer.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Конструктор подвала</span>
+      </a>
+      <a class="next" href="import-export.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Импорт / Экспорт</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

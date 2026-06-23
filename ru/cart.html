@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Значок корзины WooCommerce в навигации — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Покажите живой значок корзины WooCommerce со счётчиком товаров прямо в панели навигации. Обновляется мгновенно через AJAX — без перезагрузки страницы.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/cart.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/cart.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/cart.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/cart.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/cart.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/cart.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/cart.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/cart.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/cart.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Значок корзины WooCommerce в навигации — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Покажите живой значок корзины WooCommerce со счётчиком товаров прямо в панели навигации. Обновляется мгновенно через AJAX — без перезагрузки страницы.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/cart.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Значок корзины WooCommerce в навигации — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Покажите живой значок корзины WooCommerce со счётчиком товаров прямо в панели навигации. Обновляется мгновенно через AJAX — без перезагрузки страницы.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Корзина WooCommerce"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Корзина WooCommerce</h1>
+    <p class="lead">Покажите значок корзины со счётчиком товаров в реальном времени прямо в панели навигации. Счётчик обновляется мгновенно, когда покупатели добавляют или удаляют товары, — без перезагрузки страницы.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/woo-cart.svg" alt="Значок корзины WooCommerce в MenuX со счётчиком и открытым выпадающим мини-корзиной" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#requirements">Требования</a>
+      <a href="#enable">Включение значка корзины</a>
+      <a href="#position">Положение значка</a>
+      <a href="#styling">Оформление</a>
+      <a href="#mini-cart">Выпадающая мини-корзина</a>
+    </div>
+
+    <h2 id="requirements">Требования</h2>
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p><strong>WooCommerce должен быть установлен и активирован</strong>, чтобы значок корзины отображался. Если WooCommerce не активен, параметр значка корзины скрыт в панели настроек, а сам значок не выводится на сайте.</p>
+      </div>
+    </div>
+
+    <h2 id="enable">Включение значка корзины</h2>
+    <ol class="steps">
+      <li>Убедитесь, что WooCommerce активен на вашем сайте.</li>
+      <li>Перейдите в <strong>Menu Builder → WooCommerce</strong>.</li>
+      <li>Переключите <strong>Show cart icon in menu</strong> во включённое состояние.</li>
+      <li>Сохраните настройки.</li>
+    </ol>
+    <p>По умолчанию значок корзины появляется у правого края панели навигации.</p>
+
+    <h2 id="position">Положение значка</h2>
+    <p>Вы можете изменить, где значок корзины располагается в панели меню:</p>
+    <ul>
+      <li><strong>Справа</strong> (по умолчанию) — после всех пунктов меню.</li>
+      <li><strong>Слева</strong> — перед всеми пунктами меню.</li>
+    </ul>
+
+    <p>Задайте положение в <strong>Menu Builder → WooCommerce</strong>.</p>
+
+    <h2 id="styling">Оформление значка корзины</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Стиль значка</strong></td><td>Выберите значок тележки, сумки или корзины.</td></tr>
+          <tr><td><strong>Цвет значка</strong></td><td>По умолчанию наследует цвет пункта меню. При необходимости задайте свой цвет.</td></tr>
+          <tr><td><strong>Показывать счётчик</strong></td><td>Переключатель для отображения пузырька со счётчиком товаров на значке.</td></tr>
+          <tr><td><strong>Показывать сумму</strong></td><td>Переключатель для отображения суммы корзины рядом со значком.</td></tr>
+          <tr><td><strong>Фон счётчика</strong></td><td>Цвет круглого пузырька со счётчиком.</td></tr>
+          <tr><td><strong>Скрывать, когда пусто</strong></td><td>Переключатель для полного скрытия значка, когда корзина пуста.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="mini-cart">Выпадающая мини-корзина</h2>
+    <p>Показывайте небольшую панель со сводкой товаров, когда пользователь взаимодействует со значком корзины, — без перехода с текущей страницы.</p>
+    <ol class="steps">
+      <li>Перейдите в <strong>Menu Builder → WooCommerce</strong>.</li>
+      <li>В настройке <strong>Mini cart</strong> выберите <strong>hover</strong> (открывается при наведении мыши), <strong>click</strong> (открывается по клику) или <strong>off</strong> (отключено).</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Счётчик корзины обновляется в реальном времени с помощью встроенной системы фрагментов WooCommerce (AJAX). Плагин не добавляет собственных AJAX-запросов.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="announcement.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Панель объявлений</span>
+      </a>
+      <a class="next" href="search.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Поиск</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

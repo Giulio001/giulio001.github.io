@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Макет и эффекты прокрутки — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Настройте закреплённую навигацию, анимации выпадающих меню, акцентные линии, разделители и эффекты при наведении — из визуальной панели макета, без CSS.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/layout.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/layout.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/layout.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/layout.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/layout.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/layout.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/layout.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/layout.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/layout.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Макет и эффекты прокрутки — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Настройте закреплённую навигацию, анимации выпадающих меню, акцентные линии, разделители и эффекты при наведении — из визуальной панели макета, без CSS.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/layout.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Макет и эффекты прокрутки — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Настройте закреплённую навигацию, анимации выпадающих меню, акцентные линии, разделители и эффекты при наведении — из визуальной панели макета, без CSS.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Макет и эффекты"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Макет и эффекты</h1>
+    <p class="lead">Тонко настройте расположение панели навигации, закрепите её вверху при прокрутке и добавьте со вкусом подобранные анимации — всё из раздела «Макет» в Menu Builder.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/layout-effects.svg" alt="Закреплённая навигация MenuX с индикатором прогресса прокрутки, подсветкой активной ссылки Scroll Spy и параметрами анимации" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#spacing">Отступы и выравнивание</a>
+      <a href="#sticky">Закреплённая навигация</a>
+      <a href="#progress">Индикатор прогресса прокрутки</a>
+      <a href="#entrance">Анимация появления</a>
+      <a href="#link-anim">Анимация ссылки при наведении</a>
+      <a href="#dropdown">Индикатор выпадающего меню</a>
+      <a href="#scroll-spy">Scroll Spy</a>
+    </div>
+
+    <h2 id="spacing">Отступы и выравнивание</h2>
+    <p>В разделе <strong>Layout</strong> вы можете управлять расположением пунктов меню:</p>
+    <ul>
+      <li><strong>Выравнивание</strong> — где располагаются пункты в панели: в начале, по центру, в конце, с равными промежутками (space-between) или равномерно (space-evenly).</li>
+      <li><strong>Промежуток</strong> — расстояние между пунктами меню.</li>
+      <li><strong>Горизонтальный / вертикальный внутренний отступ</strong> — внутренние поля панели навигации.</li>
+      <li><strong>Радиус скругления контейнера</strong> — скругление углов всей панели.</li>
+      <li><strong>Сместить последний пункт</strong> — прижать последний пункт меню к противоположному краю (удобно для призыва к действию «Контакты» или «Войти»).</li>
+    </ul>
+
+    <h2 id="sticky">Закреплённая навигация</h2>
+    <p>Включите <strong>Sticky</strong>, чтобы панель навигации оставалась зафиксированной вверху экрана, пока посетитель прокручивает страницу вниз.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Сжатие при прокрутке</strong></td><td>Панель становится компактнее после прокрутки страницы.</td></tr>
+          <tr><td><strong>Тень</strong></td><td>Добавляет тень под панелью, когда она закреплена.</td></tr>
+          <tr><td><strong>Зеркальный макет</strong></td><td>Использовать другое выравнивание в закреплённом состоянии, отличное от обычного.</td></tr>
+          <tr><td><strong>Переход</strong></td><td>Насколько плавно панель анимируется между состояниями (в секундах).</td></tr>
+          <tr><td><strong>Z-index</strong></td><td>Порядок наложения — на случай, если панель должна располагаться над другими фиксированными элементами.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="progress">Индикатор прогресса прокрутки</h2>
+    <p>Тонкая полоса, заполняющаяся по мере прокрутки страницы посетителем, — популярный штрих для длинных статей и документации.</p>
+    <ol class="steps">
+      <li>Включите <strong>индикатор прогресса прокрутки</strong> в разделе Layout.</li>
+      <li>Выберите его <strong>цвет</strong>, <strong>высоту</strong> (1–10 px) и <strong>положение</strong> (сверху или снизу панели навигации).</li>
+    </ol>
+
+    <h2 id="entrance">Анимация появления</h2>
+    <p>Анимируйте меню при первой загрузке страницы. Выберите из вариантов <strong>Проявление</strong>, <strong>Выезд вниз/вверх/влево/вправо</strong>, <strong>Приближение</strong> или <strong>Flip X</strong> — либо оставьте <strong>None</strong>.</p>
+    <p>Также можно настроить <strong>длительность</strong>, <strong>задержку</strong> перед стартом и <strong>смещение</strong>, чтобы пункты появлялись друг за другом.</p>
+
+    <h2 id="link-anim">Анимация ссылки при наведении</h2>
+    <p>Добавьте микровзаимодействие при наведении посетителя на ссылку меню. В числе вариантов: <strong>Подъём</strong>, <strong>Масштаб</strong>, <strong>Пульсация</strong>, <strong>Отскок</strong>, <strong>Тряска</strong>, <strong>Свечение</strong> и <strong>Анимированное подчёркивание</strong>.</p>
+
+    <h2 id="dropdown">Индикатор выпадающего меню</h2>
+    <p>У пунктов с подменю может отображаться небольшой индикатор. Выберите форму — <strong>треугольник</strong>, <strong>шеврон</strong>, <strong>точка</strong> или <strong>нет</strong> — и при желании задайте его цвет, размер и поворот при открытии выпадающего меню.</p>
+    <p>Сама панель выпадающего подменю полностью настраивается в разделе <strong>Style → Submenu Dropdown</strong>: радиус скругления, горизонтальный и вертикальный внутренний отступ, размер шрифта, насыщенность шрифта и минимальная ширина. Цвет при наведении вычисляется адаптивно от фона подменю, поэтому он остаётся заметным как на светлых, так и на тёмных темах.</p>
+
+    <h2 id="scroll-spy">Scroll Spy</h2>
+    <p>Scroll Spy автоматически подсвечивает ссылку навигации, соответствующую разделу, который в данный момент виден в области просмотра, пока посетитель прокручивает длинную страницу, — распространённый приём на сайтах документации, лендингах и одностраничниках.</p>
+    <ol class="steps">
+      <li>Включите <strong>Scroll Spy</strong> в разделе <strong>Layout → Layout</strong>.</li>
+      <li>Задайте <strong>смещение срабатывания</strong> (по умолчанию 80 px) — высота закреплённой панели добавляется к нему автоматически во время выполнения.</li>
+      <li>При желании включите <strong>плавную прокрутку</strong> с обновлением хеша через History API и объявлениями в ARIA-областях live для программ чтения с экрана.</li>
+    </ol>
+    <p>Последний раздел страницы всегда становится активным при прокрутке в самый низ. Ссылки на активный раздел получают визуальное оформление, заданное в разделе <strong>Colors → Active Link</strong>.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Все анимации учитывают настройку посетителя <code>prefers-reduced-motion</code> — см. страницу <a href="accessibility.html">Доступность</a>.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="mobile.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Мобильные меню</span>
+      </a>
+      <a class="next" href="footer.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Конструктор подвала</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

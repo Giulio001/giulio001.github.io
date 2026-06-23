@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Справочник по шорткоду [menux] — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Используйте шорткод [menux], чтобы встроить стилизованное меню в любое место WordPress: страницы, записи, виджеты или шаблоны тем. Справочник атрибутов.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/shortcode.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/shortcode.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/shortcode.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/shortcode.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/shortcode.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/shortcode.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/shortcode.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/shortcode.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/shortcode.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Справочник по шорткоду [menux] — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Используйте шорткод [menux], чтобы встроить стилизованное меню в любое место WordPress: страницы, записи, виджеты или шаблоны тем. Справочник атрибутов.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/shortcode.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Справочник по шорткоду [menux] — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Используйте шорткод [menux], чтобы встроить стилизованное меню в любое место WordPress: страницы, записи, виджеты или шаблоны тем. Справочник атрибутов.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Шорткод [menux]"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Использование плагина</p>
+    <h1>Шорткод <code>[menux]</code></h1>
+    <p class="lead">Шорткод <code>[menux]</code> позволяет разместить полностью стилизованное навигационное меню везде, где принимаются шорткоды: на страницах, в записях, в текстовых виджетах, в шаблонах классических тем и не только.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/shortcode.svg" alt="Редактор кода с шорткодом [menux] и отрисованные основная навигация и панель навигации подвала" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#basic">Базовое использование</a>
+      <a href="#attributes">Атрибуты</a>
+      <a href="#examples">Примеры</a>
+      <a href="#template">Использование в PHP-шаблонах</a>
+    </div>
+
+    <h2 id="basic">Базовое использование</h2>
+    <p>Простейшая форма шорткода не требует атрибутов. Она отображает меню для расположения <em>primary</em>:</p>
+    <pre><code>[menux]</code></pre>
+
+    <p>Все пункты меню, темы, мобильные настройки и функции настраиваются глобально в <strong>Menu Builder</strong> — шорткод просто выводит результат в том месте, куда вы его поместили.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Плагин управляет собственными пунктами меню в разделе <strong>Menu Builder → Menu Structure</strong>. Они не зависят от стандартного раздела WordPress <em>Внешний вид → Меню</em>.</p>
+      </div>
+    </div>
+
+    <h2 id="attributes">Атрибуты</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Атрибут</th><th>Тип</th><th>По умолчанию</th><th>Описание</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>location</code></td>
+            <td>строка</td>
+            <td><code>primary</code></td>
+            <td>Какое расположение меню отображать. Каждому пункту назначается расположение в разделе <strong>Menu Builder → Menu Structure</strong>. Доступные расположения: <code>primary</code>, <code>footer</code>, <code>sidebar</code> и <code>mobile</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="examples">Примеры</h2>
+
+    <h3>Вывод основного меню (по умолчанию)</h3>
+    <pre><code>[menux]</code></pre>
+
+    <h3>Вывод конкретного расположения</h3>
+    <pre><code>[menux location="footer"]</code></pre>
+
+    <h3>Два меню на одной странице (например, шапка и подвал)</h3>
+    <pre><code>[menux location="primary"]
+[menux location="footer"]</code></pre>
+
+    <h2 id="template">Использование в PHP-шаблонах</h2>
+    <p>В шаблонах классических тем (например, <code>header.php</code>) вывести шорткод можно так:</p>
+    <pre><code>&lt;?php echo do_shortcode('[menux]'); ?&gt;</code></pre>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Если вы используете блочную тему (FSE), вместо этого применяйте <a href="gutenberg.html">блок Gutenberg</a>. Он напрямую интегрируется с редактором сайта (Site Editor) и использует те же глобальные настройки.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="installation.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Установка</span>
+      </a>
+      <a class="next" href="gutenberg.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Блок Gutenberg</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

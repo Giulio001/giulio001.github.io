@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Поддержка мультиязычных меню — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Встроенная совместимость с WPML, Polylang и TranslatePress. Задавайте названия пунктов для каждого языка и получайте автоматическую поддержку RTL.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/multilingual.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/multilingual.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/multilingual.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/multilingual.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/multilingual.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/multilingual.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/multilingual.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/multilingual.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/multilingual.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Поддержка мультиязычных меню — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Встроенная совместимость с WPML, Polylang и TranslatePress. Задавайте названия пунктов для каждого языка и получайте автоматическую поддержку RTL.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/multilingual.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Поддержка мультиязычных меню — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Встроенная совместимость с WPML, Polylang и TranslatePress. Задавайте названия пунктов для каждого языка и получайте автоматическую поддержку RTL.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Мультиязычность"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Дополнительно</p>
+    <h1>Мультиязычность</h1>
+    <p class="lead">В Giuliomax Menu Builder встроена поддержка мультиязычных сайтов. Когда активны WPML, Polylang, TranslatePress или Multilingual Press, плагин определяет доступные языки и позволяет задать для каждого пункта меню отдельное название на каждом языке.</p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#how-it-works">Как это работает</a>
+      <a href="#setup">Настройка названий по языкам</a>
+      <a href="#detection">Поддерживаемые плагины</a>
+      <a href="#rtl">Языки RTL</a>
+      <a href="#strings">Перевод строк плагина</a>
+    </div>
+
+    <h2 id="how-it-works">Как это работает</h2>
+    <p>Когда активен совместимый мультиязычный плагин, <strong>Menu Builder</strong> автоматически определяет список доступных языков. В разделе <strong>Multilingual</strong> панели администратора вы видите обнаруженные языки.</p>
+    <p>Для каждого пункта меню в разделе <strong>Menu Builder → Menu Structure</strong> появляется отдельное поле названия для каждого обнаруженного языка. JavaScript на фронтенде считывает активный язык посетителя и отображает нужное название — без перезагрузки страницы и без отдельного меню.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Если название для языка посетителя не задано, плагин использует название по умолчанию.</p>
+      </div>
+    </div>
+
+    <h2 id="setup">Настройка названий по языкам</h2>
+    <ol class="steps">
+      <li>Установите и активируйте один из поддерживаемых мультиязычных плагинов (см. список ниже).</li>
+      <li>Откройте <strong>Menu Builder</strong> в админке WordPress.</li>
+      <li>Нажмите на любой пункт меню в разделе <strong>Menu Structure</strong>, чтобы развернуть его.</li>
+      <li>Вы увидите поле ввода названия для каждого обнаруженного языка. Заполните переведённое название для каждого языка.</li>
+      <li>Нажмите <strong>Сохранить меню</strong>.</li>
+    </ol>
+
+    <h2 id="detection">Поддерживаемые мультиязычные плагины</h2>
+    <p>Плагин автоматически определяет языки из следующих плагинов:</p>
+    <ul>
+      <li><strong>WPML</strong> — определяется через <code>ICL_SITEPRESS_VERSION</code></li>
+      <li><strong>Polylang</strong> — определяется через <code>pll_languages_list()</code></li>
+      <li><strong>TranslatePress</strong> — определяется через класс <code>TRP_Translate_Press</code></li>
+      <li><strong>Multilingual Press</strong> — определяется через <code>mlp_get_available_languages()</code></li>
+    </ul>
+    <p>Если ни один мультиязычный плагин не активен, плагин использует локаль сайта по умолчанию.</p>
+
+    <h2 id="rtl">Языки RTL (арабский, иврит, персидский и др.)</h2>
+    <p>Плагин включает полную поддержку RTL (письмо справа налево). Когда WordPress определяет, что активный язык относится к RTL (через функцию <code>is_rtl()</code>), MenuX автоматически:</p>
+    <ul>
+      <li>Зеркалирует макет меню (элементы располагаются справа налево).</li>
+      <li>Переворачивает положение выпадающих меню (панели открываются влево, а не вправо).</li>
+      <li>Меняет направление выдвижного меню (выезжает справа).</li>
+      <li>Меняет местами расположение значков (значок корзины, значок поиска).</li>
+    </ul>
+    <p>Никакой настройки не требуется — режим RTL активируется автоматически в зависимости от языковой настройки WordPress.</p>
+
+    <h2 id="strings">Перевод строк интерфейса плагина</h2>
+    <p>Собственные строки интерфейса плагина (например, метка «Закрыть» для кнопки мобильного меню) готовы к переводу через стандартную систему файлов <code>.po</code> / <code>.mo</code> в WordPress.</p>
+    <p>Текстовый домен плагина — <code>giuliomax-menu-builder</code>. Чтобы добавить перевод:</p>
+    <ol class="steps">
+      <li>Скачайте файл-шаблон <code>.pot</code> из папки <code>/languages</code> плагина.</li>
+      <li>Откройте его в <a href="https://poedit.net/" target="_blank">Poedit</a> или любом редакторе <code>.po</code>.</li>
+      <li>Сохраните перевод как <code>giuliomax-menu-builder-{locale}.po</code> (например, <code>giuliomax-menu-builder-it_IT.po</code>) и скомпилируйте в <code>.mo</code>.</li>
+      <li>Загрузите оба файла в <code>/wp-content/languages/plugins/</code>.</li>
+    </ol>
+
+    <div class="page-nav">
+      <a href="accessibility.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Доступность</span>
+      </a>
+      <a class="next" href="faq.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Частые вопросы</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

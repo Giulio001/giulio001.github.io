@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Модальное окно поиска для навигации — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Добавьте значок поиска в панель навигации WordPress, открывающий модальное окно. Ищите по ссылкам меню или по тексту на текущей странице, не покидая её.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/search.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/search.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/search.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/search.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/search.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/search.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/search.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/search.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/search.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Модальное окно поиска для навигации — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Добавьте значок поиска в панель навигации WordPress, открывающий модальное окно. Ищите по ссылкам меню или по тексту на текущей странице, не покидая её.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/search.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Модальное окно поиска для навигации — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Добавьте значок поиска в панель навигации WordPress, открывающий модальное окно. Ищите по ссылкам меню или по тексту на текущей странице, не покидая её.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Поиск"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Поиск</h1>
+    <p class="lead">Добавьте в панель навигации значок поиска, который открывает модальное окно поиска. Ищите по ссылкам меню или по тексту на текущей странице — и всё это, не покидая страницу.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/search-modal.svg" alt="Модальное окно поиска MenuX со вкладками «Меню» и «На странице», подсвеченными совпадениями и подсказками клавиш" style="display:block;width:100%;max-width:720px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#enable">Включение поиска</a>
+      <a href="#modes">Вкладки поиска</a>
+      <a href="#keyboard">Сочетания клавиш</a>
+      <a href="#styling">Внешний вид значка поиска</a>
+    </div>
+
+    <h2 id="enable">Включение поиска</h2>
+    <ol class="steps">
+      <li>Перейдите в <strong>Menu Builder → Search</strong>.</li>
+      <li>Переключите <strong>Show search icon</strong>.</li>
+      <li>Сохраните настройки.</li>
+    </ol>
+    <p>В панели навигации появляется значок лупы (положение настраивается, см. ниже). При нажатии на него открывается полноэкранное или центрированное окно поиска.</p>
+
+    <h2 id="modes">Вкладки поиска</h2>
+    <p>В модальном окне поиска есть две вкладки:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Вкладка</th><th>Как работает</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Меню</strong></td>
+            <td>Фильтрует ссылки меню по мере ввода. Совпадающие пункты подсвечиваются, несовпадающие скрываются. Запрос к серверу не требуется.</td>
+          </tr>
+          <tr>
+            <td><strong>На странице</strong></td>
+            <td>Ищет текст на текущей видимой странице. Совпадения подсвечиваются в документе, а появляющаяся панель навигации позволяет переходить между результатами.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="keyboard">Сочетания клавиш</h2>
+    <p>Когда модальное окно поиска открыто, им можно управлять полностью с клавиатуры:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Клавиша</th><th>Действие</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>↑</kbd> / <kbd>↓</kbd></td><td>Перемещение по результатам</td></tr>
+          <tr><td><kbd>Enter</kbd></td><td>Открыть подсвеченный результат</td></tr>
+          <tr><td><kbd>Escape</kbd></td><td>Закрыть окно поиска</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Окно открывается нажатием на значок поиска в панели навигации. Эти сочетания клавиш становятся активными, пока окно открыто.</p>
+      </div>
+    </div>
+
+    <h2 id="styling">Внешний вид значка поиска</h2>
+    <p>В разделе <strong>Menu Builder → Search</strong> можно настроить:</p>
+    <ul>
+      <li><strong>Цвет значка</strong> — свой цвет для значка лупы в панели навигации.</li>
+      <li><strong>Положение</strong> — отображается ли значок поиска слева или справа в панели навигации.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="cart.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Корзина WooCommerce</span>
+      </a>
+      <a class="next" href="badges.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Значки и точки</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

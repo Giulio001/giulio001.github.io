@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Конструктор мегаменю для WordPress — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Создавайте мегаменю на всю ширину с числом колонок до 4 — сочетайте ссылки, заголовки, изображения и шорткоды в любом пункте меню WordPress. Без кода.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/mega-menu.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mega-menu.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mega-menu.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mega-menu.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mega-menu.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mega-menu.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mega-menu.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/mega-menu.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mega-menu.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Конструктор мегаменю для WordPress — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Создавайте мегаменю на всю ширину с числом колонок до 4 — сочетайте ссылки, заголовки, изображения и шорткоды в любом пункте меню WordPress. Без кода.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/mega-menu.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Конструктор мегаменю для WordPress — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Создавайте мегаменю на всю ширину с числом колонок до 4 — сочетайте ссылки, заголовки, изображения и шорткоды в любом пункте меню WordPress. Без кода.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Мегаменю"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Мегаменю</h1>
+    <p class="lead">Превратите любой пункт меню верхнего уровня в панель на всю ширину с числом колонок до 4 — сочетайте ссылки, заголовки, изображения, шорткоды и многое другое, не написав ни строчки кода.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/mega-menu.svg" alt="Открытое мегаменю MenuX с четырьмя колонками ссылок, заголовками и промо-блоком" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#what-is">Что такое мегаменю?</a>
+      <a href="#enable">Включение мегаменю для пункта</a>
+      <a href="#columns">Добавление и упорядочивание колонок</a>
+      <a href="#content">Типы содержимого колонок</a>
+      <a href="#appearance">Оформление для отдельного пункта</a>
+      <a href="#presets">Пресеты</a>
+      <a href="#mobile">Поведение на мобильных</a>
+      <a href="#global">Глобальные настройки</a>
+    </div>
+
+    <h2 id="what-is">Что такое мегаменю?</h2>
+    <p>Стандартное выпадающее меню WordPress показывает один вертикальный список вложенных пунктов. <strong>Мегаменю</strong> открывает широкую панель, в которой могут быть несколько колонок, заголовки разделов, иконки и изображения. Такое решение часто встречается на крупных интернет-магазинах и насыщенных контентом порталах.</p>
+
+    <h2 id="enable">Включение мегаменю для пункта верхнего уровня</h2>
+    <ol class="steps">
+      <li>Перейдите в <strong>Menu Builder → ⚡ Mega Menu</strong> в боковой панели админки.</li>
+      <li>В списке пунктов для каждого пункта меню первого уровня отображаются значки состояния <strong>ON/OFF</strong>.</li>
+      <li>Нажмите <strong>＋ Enable Mega Menu</strong> на том пункте, который хотите преобразовать.</li>
+      <li>Нажмите <strong>⚡ Edit Columns ▶</strong>, чтобы открыть окно редактора колонок.</li>
+      <li>Добавьте колонки, наполните их блоками содержимого, затем закройте окно и сохраните.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Мегаменю можно применять только к пунктам <strong>верхнего уровня</strong>. Вложенные пункты размещаются внутри колонок, а не в виде вложенных выпадающих меню. Для одного пункта поддерживается не более <strong>4 колонок</strong>.</p>
+      </div>
+    </div>
+
+    <h2 id="columns">Добавление и упорядочивание колонок</h2>
+    <p>В окне редактора колонок вы можете:</p>
+    <ul>
+      <li><strong>Добавить колонку</strong> — нажмите <em>+ Add Column</em>. Колонки располагаются горизонтально внутри панели.</li>
+      <li><strong>Дублировать колонку</strong> — нажмите значок дублирования в шапке любой колонки, чтобы создать её копию (со всеми пунктами) и вставить сразу после исходной. Недоступно при достижении максимума в 4 колонки.</li>
+      <li><strong>Изменить порядок колонок</strong> — перетащите маркер колонки влево или вправо.</li>
+      <li><strong>Задать ширину колонки</strong> — введите процентное значение. Оставьте поле пустым, чтобы распределить ширину поровну между всеми колонками.</li>
+      <li><strong>Задать выравнивание</strong> — выберите по левому краю, по центру или по правому краю для всех пунктов колонки.</li>
+      <li><strong>Удалить колонку</strong> — нажмите значок корзины в шапке колонки.</li>
+    </ul>
+
+    <h2 id="content">Типы содержимого колонок</h2>
+    <p>Каждая колонка содержит один или несколько блоков содержимого. Нажмите <strong>+ Add item</strong> внутри колонки, чтобы выбрать тип:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Тип</th><th>Описание</th><th>Основные поля</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ссылка</strong></td>
+            <td>Кликабельная ссылка с необязательной иконкой и строкой описания.</td>
+            <td>Подпись, URL, класс иконки, описание, открывать в новой вкладке</td>
+          </tr>
+          <tr>
+            <td><strong>Заголовок</strong></td>
+            <td>Некликабельная подпись раздела для визуальной группировки ссылок.</td>
+            <td>Подпись, класс иконки</td>
+          </tr>
+          <tr>
+            <td><strong>Разделитель</strong></td>
+            <td>Тонкая горизонтальная линия для разделения групп пунктов.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Изображение</strong></td>
+            <td>Блок с изображением на всю ширину, при желании обёрнутый в ссылку. Выберите изображение из Библиотеки медиафайлов WordPress или вставьте внешний URL.</td>
+            <td>Изображение, URL ссылки, ширина, высота, открывать в новой вкладке</td>
+          </tr>
+          <tr>
+            <td><strong>Шорткод</strong></td>
+            <td>Выводит любой шорткод внутри колонки — удобно для форм обратной связи, рассылок, сеток товаров или собственных виджетов.</td>
+            <td>Строка шорткода</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="appearance">Оформление для отдельного пункта</h2>
+    <p>У каждой панели мегаменю есть собственная независимая вкладка <strong>🎨 Appearance</strong> внутри окна редактора. Изменения применяются только к панели этого пункта и переопределяют глобальные значения по умолчанию. Нажмите <strong>↺ Reset to global defaults</strong>, чтобы сбросить все переопределения для этого пункта.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Фон</strong></td><td>Сплошной цвет, один из 12 пресетов градиента или собственный градиент, созданный с помощью визуального инструмента (компас направления + два выбора цвета).</td></tr>
+          <tr><td><strong>Максимальная ширина панели (px)</strong></td><td>Ограничивает ширину этой панели (400–2400 px) и центрирует её. Оставьте поле пустым для поведения на всю ширину.</td></tr>
+          <tr><td><strong>Отступы сверху/снизу и слева/справа</strong></td><td>Внутренние отступы панели.</td></tr>
+          <tr><td><strong>Промежуток между колонками</strong></td><td>Расстояние между колонками.</td></tr>
+          <tr><td><strong>Радиус скругления</strong></td><td>Скругление двух нижних углов панели.</td></tr>
+          <tr><td><strong>Размер шрифта</strong></td><td>Базовый размер шрифта для всего содержимого панели.</td></tr>
+          <tr><td><strong>Цвет ссылки / заголовка / акцента / при наведении / описания / разделителя</strong></td><td>Полное управление цветами для отдельной панели, независимо от основного раздела «Цвета».</td></tr>
+          <tr><td><strong>Стиль разделителя</strong></td><td>Сплошной, штриховой или пунктирный.</td></tr>
+          <tr><td><strong>Скорость анимации открытия/закрытия</strong></td><td>Длительность перехода панели (0–800 мс). Установите 0 для мгновенного появления.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="presets">Пресеты</h2>
+    <p>Вкладка <strong>✨ Presets</strong> внутри панели оформления позволяет загрузить готовый макет колонок в один клик. Доступно <strong>20 отраслевых шаблонов</strong>:</p>
+    <p>SaaS, электронная коммерция, агентство, ресторан, путешествия, здравоохранение, недвижимость, юридическая фирма, финансы, мода, отель, некоммерческие организации, мероприятия, автомобили, игры, фитнес, красота и здоровье, технологический стартап, портфолио и образование.</p>
+    <p>Пресеты заполняют как содержимое колонок, <em>так и</em> подходящую цветовую палитру — поэтому они выглядят аккуратно сразу, независимо от темы вашего основного меню.</p>
+
+    <h2 id="mobile">Поведение на мобильных</h2>
+    <p>На мобильных устройствах при нажатии на пункт мегаменю выдвигается отдельная полноэкранная панель с кнопкой ← «Назад» вверху — это придаёт интерфейсу ощущение нативного приложения. Цвета фона и шрифты отдельных пунктов на мобильных нейтрализуются, поэтому ссылки всегда отображаются в том же аккуратном стиле, что и остальное мобильное меню.</p>
+    <p>Поведение на мобильных можно задать для каждого пункта в панели мегаменю:</p>
+    <ul>
+      <li><strong>Видимо на мобильных</strong> — используется панель навигации с выдвижением, описанная выше.</li>
+      <li><strong>Скрыто на мобильных</strong> — панель мегаменю не отображается на маленьких экранах.</li>
+    </ul>
+
+    <h2 id="global">Глобальные настройки</h2>
+    <p>Эти настройки находятся вверху панели <strong>⚡ Mega Menu</strong> и применяются ко всему сайту:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Настройка</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>На всю ширину</strong></td>
+            <td>Флажок для отдельного пункта, который растягивает панель на всю ширину области просмотра.</td>
+          </tr>
+          <tr>
+            <td><strong>Цвета ссылок / заголовков / акцентов по умолчанию</strong></td>
+            <td>Цвета по умолчанию для содержимого панелей мегаменю на всём сайте. Переопределения в оформлении отдельного пункта имеют приоритет.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Поведение «снисходительного наведения» встроено по умолчанию — панель мегаменю ожидает курсор, а не исчезает на полпути, когда пользователь ведёт мышь по диагонали к содержимому панели.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="logo.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Логотип</span>
+      </a>
+      <a class="next" href="announcement.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Панель объявлений</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

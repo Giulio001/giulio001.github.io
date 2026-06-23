@@ -37,13 +37,14 @@
       },
       onThisPage: "On this page",
       pickTitle:  "Choose your language",
-      pickSub:    "Documentation is available in English, Italian, German, Spanish, Dutch, and Portuguese.",
+      pickSub:    "Documentation is available in English, Italian, German, Spanish, Dutch, Portuguese, and Russian.",
       langEN:     "English",
       langIT:     "Italian",
       langDE:     "German",
       langES:     "Spanish",
       langNL:     "Dutch",
       langPT:     "Portuguese (BR)",
+      langRU:     "Russian",
       next:       "Next →",
       prev:       "← Prev",
       download:   "Download Free",
@@ -81,7 +82,7 @@
       },
       onThisPage: "In questa pagina",
       pickTitle:  "Scegli la tua lingua",
-      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo, olandese e portoghese.",
+      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo, olandese, portoghese e russo.",
       langEN:     "Inglese",
       langIT:     "Italiano",
       langDE:     "Tedesco",
@@ -125,7 +126,7 @@
       },
       onThisPage: "Auf dieser Seite",
       pickTitle:  "Sprache wählen",
-      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch, Niederländisch und Portugiesisch verfügbar.",
+      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch, Niederländisch, Portugiesisch und Russisch verfügbar.",
       langEN:     "Englisch",
       langIT:     "Italienisch",
       langDE:     "Deutsch",
@@ -169,7 +170,7 @@
       },
       onThisPage: "En esta página",
       pickTitle:  "Elige tu idioma",
-      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español, neerlandés y portugués.",
+      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español, neerlandés, portugués y ruso.",
       langEN:     "Inglés",
       langIT:     "Italiano",
       langDE:     "Alemán",
@@ -213,7 +214,7 @@
       },
       onThisPage: "Op deze pagina",
       pickTitle:  "Kies je taal",
-      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans, Nederlands en Portugees.",
+      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans, Nederlands, Portugees en Russisch.",
       langEN:     "Engels",
       langIT:     "Italiaans",
       langDE:     "Duits",
@@ -257,7 +258,7 @@
       },
       onThisPage: "Nesta página",
       pickTitle:  "Escolha o seu idioma",
-      pickSub:    "A documentação está disponível em inglês, italiano, alemão, espanhol, holandês e português.",
+      pickSub:    "A documentação está disponível em inglês, italiano, alemão, espanhol, holandês, português e russo.",
       langEN:     "Inglês",
       langIT:     "Italiano",
       langDE:     "Alemão",
@@ -268,14 +269,59 @@
       prev:       "← Anterior",
       download:   "Baixar grátis",
       installBtn: "Guia de instalação →",
+    },
+    ru: {
+      groups: {
+        "Getting Started":  "Начало работы",
+        "Using the Plugin": "Использование плагина",
+        "Features":         "Возможности",
+        "Tools":            "Инструменты",
+        "Advanced":         "Дополнительно"
+      },
+      labels: {
+        "index.html":          "Введение",
+        "installation.html":   "Установка",
+        "shortcode.html":      "Шорткод [menux]",
+        "gutenberg.html":      "Блок Gutenberg",
+        "themes.html":         "Темы и категории",
+        "logo.html":           "Логотип",
+        "mega-menu.html":      "Мегаменю",
+        "announcement.html":   "Панель объявлений",
+        "cart.html":           "Корзина WooCommerce",
+        "search.html":         "Поиск",
+        "badges.html":         "Значки и точки",
+        "visibility.html":     "Правила видимости",
+        "mobile.html":         "Мобильные меню",
+        "layout.html":         "Макет и эффекты",
+        "footer.html":         "Конструктор подвала",
+        "wp-integration.html": "Интеграция с WP",
+        "import-export.html":  "Импорт / Экспорт",
+        "accessibility.html":  "Доступность",
+        "multilingual.html":   "Мультиязычность",
+        "faq.html":            "Частые вопросы"
+      },
+      onThisPage: "На этой странице",
+      pickTitle:  "Выберите язык",
+      pickSub:    "Документация доступна на английском, итальянском, немецком, испанском, нидерландском, португальском и русском языках.",
+      langEN:     "Английский",
+      langIT:     "Итальянский",
+      langDE:     "Немецкий",
+      langES:     "Испанский",
+      langNL:     "Нидерландский",
+      langPT:     "Португальский (BR)",
+      langRU:     "Русский",
+      next:       "Далее →",
+      prev:       "← Назад",
+      download:   "Скачать бесплатно",
+      installBtn: "Руководство по установке →",
     }
   };
 
   const getLang = ()  => localStorage.getItem(LANG_KEY);
   const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
-  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱', pt: '🇧🇷' };
-  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands', pt: 'Português' };
+  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱', pt: '🇧🇷', ru: '🇷🇺' };
+  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands', pt: 'Português', ru: 'Русский' };
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
@@ -318,6 +364,10 @@
             <span class="lang-flag">${FLAG.pt}</span>
             <span class="lang-name">${NATIVE.pt}</span>
           </button>
+          <button class="lang-opt" data-lang="ru">
+            <span class="lang-flag">${FLAG.ru}</span>
+            <span class="lang-name">${NATIVE.ru}</span>
+          </button>
         </div>
       </div>`;
 
@@ -334,7 +384,7 @@
   }
 
   /* ── URL / language helpers ───────────────────────────────────────────── */
-  const LANGS = ['it','de','es','nl','pt'];
+  const LANGS = ['it','de','es','nl','pt','ru'];
 
   /* Each language is served from its own folder (/it/, /de/, …); English
      lives at the site root. Content is static per URL — no client-side

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Блок Gutenberg — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Разместите меню WordPress с помощью нативного блока MenuX для Gutenberg. Работает в редакторе сайта для тем FSE — без шорткодов и PHP.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/gutenberg.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/gutenberg.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/gutenberg.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/gutenberg.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/gutenberg.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/gutenberg.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/gutenberg.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/gutenberg.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/gutenberg.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Блок Gutenberg — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Разместите меню WordPress с помощью нативного блока MenuX для Gutenberg. Работает в редакторе сайта для тем FSE — без шорткодов и PHP.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/gutenberg.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Блок Gutenberg — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Разместите меню WordPress с помощью нативного блока MenuX для Gutenberg. Работает в редакторе сайта для тем FSE — без шорткодов и PHP.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Блок Gutenberg"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Использование плагина</p>
+    <h1>Блок Gutenberg</h1>
+    <p class="lead">Блок MenuX — это нативный блок WordPress, который позволяет размещать меню прямо в редакторе сайта (Site Editor): без шорткодов, без виджетов и без PHP.</p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#when-to-use">Когда использовать блок</a>
+      <a href="#add-block">Добавление блока</a>
+      <a href="#settings">Панель настроек блока</a>
+      <a href="#fse-header">Использование в шапке FSE</a>
+      <a href="#classic">Классические темы</a>
+    </div>
+
+    <h2 id="when-to-use">Когда использовать блок</h2>
+    <p>Используйте блок Gutenberg, если:</p>
+    <ul>
+      <li>Ваша тема поддерживает <strong>полное редактирование сайта (FSE)</strong> (например, Twenty Twenty-Four, Kadence, Blocksy).</li>
+      <li>Вы хотите управлять макетом шапки из <strong>редактора сайта</strong> (<em>Внешний вид → Редактор</em>).</li>
+      <li>Вы предпочитаете визуальную работу с перетаскиванием вместо вставки шорткодов.</li>
+    </ul>
+    <p>Если вы используете классическую тему (не FSE), подходящим инструментом будет <a href="shortcode.html">шорткод</a>.</p>
+
+    <h2 id="add-block">Добавление блока на страницу или в шаблон</h2>
+    <ol class="steps">
+      <li>Откройте страницу или шаблон, который хотите отредактировать. Для шапок, общих для всего сайта, перейдите в <strong>Внешний вид → Редактор → Шаблоны</strong> и откройте часть шаблона шапки.</li>
+      <li>Нажмите кнопку вставки <strong>+</strong> (на панели вверху слева или внутри пустой области блока).</li>
+      <li>Найдите <strong>MenuX</strong> или <strong>Menu Builder</strong>.</li>
+      <li>Нажмите на блок, чтобы вставить его, или перетащите его на нужное место.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Блок зарегистрирован под именем <code>giuliomax/menu</code>. Если вы используете дочернюю тему или собственный код, который обращается к блокам по имени, используйте этот идентификатор.</p>
+      </div>
+    </div>
+
+    <h2 id="settings">Панель настроек блока</h2>
+    <p>Когда выбран блок MenuX — Menu, его настройки отображаются в правой боковой панели на вкладке <strong>Блок</strong>.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Настройка</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Расположение меню</strong></td><td>Выберите, какое расположение отображать. Будут показаны пункты, назначенные этому расположению в разделе <strong>Menu Builder → Menu Structure</strong>.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Тема, мобильный стиль, поиск, корзина и все остальные настройки внешнего вида задаются глобально в <strong>Menu Builder</strong> — они применяются к каждому экземпляру блока или шорткода на вашем сайте.</p>
+      </div>
+    </div>
+
+    <h2 id="fse-header">Рекомендуется: размещение в шапке FSE</h2>
+    <ol class="steps">
+      <li>Перейдите в <strong>Внешний вид → Редактор</strong>.</li>
+      <li>В левой панели нажмите <strong>Части шаблона → Шапка</strong> (или создайте новую часть шаблона шапки).</li>
+      <li>Внутри шапки добавьте блок <strong>Строка</strong> или <strong>Группа</strong>, чтобы управлять выравниванием.</li>
+      <li>Вставьте блок <strong>MenuX</strong> внутрь этой строки.</li>
+      <li>С помощью элементов управления шириной и выравниванием блока расположите меню (например, на всю ширину, с выравниванием по правому краю).</li>
+      <li>Нажмите <strong>Сохранить</strong>. Теперь меню работает на всех страницах, использующих этот шаблон шапки.</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Вы можете разместить <strong>несколько блоков MenuX</strong> в одном шаблоне — например, основную навигацию в шапке и вспомогательную в подвале, — каждый из которых указывает на своё расположение меню.</p>
+      </div>
+    </div>
+
+    <h2 id="classic">Классические темы и блочный редактор</h2>
+    <p>Если ваша тема не FSE, но вы всё же используете блочный редактор для содержимого страниц, вы можете вставить блок MenuX в любую страницу. Однако для навигации, общей для всего сайта, в классических темах более надёжным подходом будет шорткод, размещённый в области виджетов или в файле темы <code>header.php</code>.</p>
+
+    <div class="page-nav">
+      <a href="shortcode.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Шорткод [menux]</span>
+      </a>
+      <a class="next" href="themes.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Темы и категории</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

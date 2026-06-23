@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Импорт и экспорт настроек — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Сохраните всю конфигурацию меню в JSON и восстановите её на любом сайте WordPress. Удобно для переноса со staging на продакшен и обмена пресетами.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/import-export.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/import-export.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/import-export.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/import-export.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/import-export.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/import-export.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/import-export.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/import-export.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/import-export.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Импорт и экспорт настроек — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Сохраните всю конфигурацию меню в JSON и восстановите её на любом сайте WordPress. Удобно для переноса со staging на продакшен и обмена пресетами.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/import-export.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Импорт и экспорт настроек — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Сохраните всю конфигурацию меню в JSON и восстановите её на любом сайте WordPress. Удобно для переноса со staging на продакшен и обмена пресетами.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Импорт / Экспорт"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Инструменты</p>
+    <h1>Импорт / Экспорт</h1>
+    <p class="lead">Сохраните всю конфигурацию меню в одном файле JSON или перенесите её между сайтами — например, со staging-сайта на продакшен.</p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#export">Экспорт конфигурации</a>
+      <a href="#import">Импорт конфигурации</a>
+      <a href="#contents">Что входит в файл</a>
+    </div>
+
+    <h2 id="export">Экспорт конфигурации</h2>
+    <ol class="steps">
+      <li>Перейдите в <strong>Menu Builder → Import / Export</strong>.</li>
+      <li>Нажмите <strong>Экспорт</strong>.</li>
+      <li>На ваш компьютер загрузится файл JSON. Сохраните его в надёжном месте как резервную копию.</li>
+    </ol>
+
+    <h2 id="import">Импорт конфигурации</h2>
+    <ol class="steps">
+      <li>На сайте назначения перейдите в <strong>Menu Builder → Import / Export</strong>.</li>
+      <li>Нажмите <strong>Выбрать файл</strong> и укажите ранее экспортированный файл JSON.</li>
+      <li>Конфигурация применяется, и страница перезагружается с импортированными настройками.</li>
+    </ol>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Импорт <strong>перезаписывает</strong> текущие пункты меню и настройки оформления на сайте назначения. Если вы хотите сохранить существующую конфигурацию, сначала экспортируйте её как резервную копию перед импортом.</p>
+      </div>
+    </div>
+
+    <h2 id="contents">Что входит в файл</h2>
+    <p>Экспортированный JSON содержит две основные части вашей конфигурации:</p>
+    <ul>
+      <li><strong>Пункты меню</strong> — полную структуру меню, включая названия, значки, бейджи, правила видимости и колонки мегаменю.</li>
+      <li><strong>Оформление</strong> — все настройки внешнего вида: значения активной темы, цвета, типографику, макет, поведение на мобильных устройствах и переключатели функций (объявления, поиск, корзина и т. д.).</li>
+    </ul>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Файл представляет собой обычный JSON, поэтому вы можете хранить его в системе контроля версий вместе с проектом и отслеживать изменения меню со временем.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="wp-integration.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Интеграция с WP</span>
+      </a>
+      <a class="next" href="accessibility.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Доступность</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

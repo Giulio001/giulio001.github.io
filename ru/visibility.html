@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Правила видимости пунктов меню — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Показывайте или скрывайте пункты меню WordPress по роли, авторизации, устройству, дате и URL — с логикой И/ИЛИ и предпросмотром в админке.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/visibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/visibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/visibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/visibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/visibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/visibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/visibility.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/visibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/visibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Правила видимости пунктов меню — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Показывайте или скрывайте пункты меню WordPress по роли, авторизации, устройству, дате и URL — с логикой И/ИЛИ и предпросмотром в админке.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/visibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Правила видимости пунктов меню — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Показывайте или скрывайте пункты меню WordPress по роли, авторизации, устройству, дате и URL — с логикой И/ИЛИ и предпросмотром в админке.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Правила видимости"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Правила видимости</h1>
+    <p class="lead">Показывайте или скрывайте отдельные пункты меню в зависимости от того, кто просматривает сайт, с какого устройства, в какое время и авторизован ли посетитель.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/visibility.svg" alt="Список пунктов меню с правилами видимости: Все, Авторизованный пользователь, Только гости, Только мобильные и расписание по времени" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#how">Как работают правила видимости</a>
+      <a href="#user-role">Выпадающий список видимости</a>
+      <a href="#device">Устройство</a>
+      <a href="#schedule">Расписание и время</a>
+      <a href="#login">Таргетинг по страницам и кампаниям</a>
+      <a href="#combining">Комбинирование правил</a>
+    </div>
+
+    <h2 id="how">Как работают правила видимости</h2>
+    <p>У каждого пункта меню свой набор правил видимости. Правила настраиваются в разделе <strong>Menu Builder → Menu Structure</strong> — нажмите на любой пункт в списке, чтобы развернуть его параметры, и найдите выпадающий список <strong>Visibility</strong> и раздел <strong>Advanced conditions</strong>.</p>
+    <p>По умолчанию все пункты видны всем. Как только вы задаёте правило, пункт показывается только посетителям, удовлетворяющим этому условию. Разные типы правил объединяются по логике <strong>И</strong> — для отображения пункта должны выполняться все включённые правила.</p>
+
+    <h2 id="user-role">Выпадающий список видимости (роль и авторизация)</h2>
+    <p>У каждого пункта есть один выпадающий список <strong>Visibility</strong>, в котором вы выбираете один из вариантов:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Вариант</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Все</strong></td><td>По умолчанию. Без ограничений — пункт показывается всем посетителям.</td></tr>
+          <tr><td><strong>Любой авторизованный пользователь</strong></td><td>Виден только пользователям, выполнившим вход (с любой ролью).</td></tr>
+          <tr><td><strong>Только гости (не авторизованные)</strong></td><td>Виден только посетителям, которые не выполнили вход. Удобно для ссылок «Войти» / «Регистрация».</td></tr>
+          <tr><td><strong>Только [роль]</strong></td><td>Виден только пользователям именно с этой ролью — например, «Только администратор», «Только редактор», «Только клиент». Вы выбираете одну роль из списка.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Пользовательские роли, добавленные другими плагинами (например, «Управляющий магазином» или «Клиент» из WooCommerce), появляются в списке автоматически. Чтобы нацелиться сразу на <strong>несколько</strong> ролей, используйте поле <strong>Roles</strong> в разделе Advanced conditions (укажите список через запятую, например <code>editor,author</code> — пункт покажется только пользователям с одной из этих ролей).</p>
+      </div>
+    </div>
+
+    <h2 id="device">Устройство</h2>
+    <p>В разделе Advanced conditions можно показывать или скрывать пункт в зависимости от типа устройства посетителя:</p>
+    <ul>
+      <li><strong>Все устройства</strong> — по умолчанию.</li>
+      <li><strong>Только мобильные</strong> — показывается только на телефонах/планшетах, скрыт на десктопе.</li>
+      <li><strong>Только десктоп</strong> — показывается только на десктопе, скрыт на мобильных.</li>
+    </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Определение устройства выполняется на стороне сервера при загрузке страницы с помощью функции WordPress <code>wp_is_mobile()</code>. В отличие от медиазапросов CSS, это означает, что в браузер отправляется корректный HTML — а не просто скрытый средствами CSS — что исключает мерцание содержимого. Учтите, что <code>wp_is_mobile()</code> относит планшеты к мобильным устройствам.</p>
+      </div>
+    </div>
+
+    <h2 id="schedule">Расписание и время</h2>
+    <p>В разделе Advanced conditions доступны два независимых элемента управления расписанием.</p>
+
+    <h3>Диапазон дат</h3>
+    <p>Задайте <strong>дату/время начала</strong> и/или <strong>дату/время окончания</strong>. Пункт виден только в этом интервале (включительно). Оставьте любое из полей пустым для открытого диапазона — удобно, чтобы рекламная ссылка появлялась и исчезала автоматически.</p>
+
+    <h3>Ежедневное временное окно</h3>
+    <p>Задайте время <strong>с</strong> и <strong>до</strong> (ЧЧ:ММ). Пункт виден только в этом окне каждый день. Пример: показывать ссылку «Онлайн-поддержка» только с 09:00 до 18:00.</p>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Правила расписания используют часовой пояс вашего сайта WordPress (задаётся в <em>Настройки → Общие → Часовой пояс</em>), а не местное время посетителя.</p>
+      </div>
+    </div>
+
+    <h2 id="login">Таргетинг по страницам и кампаниям</h2>
+    <p>Раздел Advanced дополняют ещё два условия:</p>
+    <ul>
+      <li><strong>Страницы</strong> — ограничьте пункт конкретными страницами, указав их идентификаторы (через запятую).</li>
+      <li><strong>UTM source</strong> — показывать пункт только когда посетитель приходит с подходящим параметром запроса <code>utm_source</code>. Удобно для адаптации меню под конкретную маркетинговую кампанию.</li>
+    </ul>
+
+    <h2 id="combining">Комбинирование правил</h2>
+    <p>Все активные правила должны выполняться одновременно (логика И). Например, чтобы показать пункт меню только <em>авторизованным пользователям на десктопе в рабочие часы</em>:</p>
+    <ul>
+      <li>Выпадающий список видимости → <strong>Любой авторизованный пользователь</strong></li>
+      <li>Устройство → <strong>Только десктоп</strong></li>
+      <li>Ежедневное временное окно → <strong>09:00–18:00</strong></li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="badges.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Значки и точки</span>
+      </a>
+      <a class="next" href="mobile.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Мобильные меню</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

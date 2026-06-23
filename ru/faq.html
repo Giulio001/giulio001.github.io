@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Частые вопросы — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Ответы на частые вопросы о Giuliomax Menu Builder: совместимость с темами, Gutenberg, WooCommerce, плагины кэширования, производительность и лицензия.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/faq.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/faq.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/faq.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/faq.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/faq.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/faq.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/faq.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/faq.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Частые вопросы — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Ответы на частые вопросы о Giuliomax Menu Builder: совместимость с темами, Gutenberg, WooCommerce, плагины кэширования, производительность и лицензия.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/faq.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Частые вопросы — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Ответы на частые вопросы о Giuliomax Menu Builder: совместимость с темами, Gutenberg, WooCommerce, плагины кэширования, производительность и лицензия.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Частые вопросы"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Плагин действительно бесплатный? Есть ли Pro-версия?", "acceptedAnswer": {"@type": "Answer", "text": "Да, он полностью бесплатный. Нет ни Pro-версии, ни премиум-дополнений, ни функций, скрытых за платным доступом. Всё, что описано в этой документации, доступно с первого дня и без какой-либо оплаты."}}, {"@type": "Question", "name": "Где находится исходный код плагина?", "acceptedAnswer": {"@type": "Answer", "text": "Плагин с открытым исходным кодом. Репозиторий находится по адресу github.com/Giulio001/menux-free-version. Сообщения об ошибках и пул-реквесты приветствуются."}}, {"@type": "Question", "name": "Работает ли он с любой темой WordPress?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Плагин формирует собственную разметку и стили независимо от активной темы. Единственное, что зависит от темы, — это место размещения меню: в классических темах вы используете шорткод или виджет, а в темах FSE — блок Gutenberg в редакторе сайта."}}, {"@type": "Question", "name": "Не замедлит ли он мой сайт?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Плагин подключает только тот CSS и JavaScript, который нужен для включённых вами функций. Если вы не используете таймер обратного отсчёта, этот скрипт не загружается. Ресурсы минифицированы и отдаются с вашего сервера (без обращений к сторонним CDN)."}}, {"@type": "Question", "name": "Какая версия WordPress нужна?", "acceptedAnswer": {"@type": "Answer", "text": "WordPress 5.8 или новее. Для наилучшей работы с полным редактированием сайта (FSE) и блоком Gutenberg рекомендуется WordPress 6.0 или новее."}}, {"@type": "Question", "name": "Работает ли он с конструкторами страниц (Elementor, Divi, Beaver Builder)?", "acceptedAnswer": {"@type": "Answer", "text": "Да, через шорткод [menux]. В Elementor используйте виджет Shortcode и вставьте [menux]. В Divi используйте модуль Code. В Beaver Builder используйте модуль HTML."}}, {"@type": "Question", "name": "Не конфликтует ли он с другими плагинами меню?", "acceptedAnswer": {"@type": "Answer", "text": "Он может сосуществовать с другими плагинами меню при условии, что они не применяются к одному и тому же расположению меню одновременно. Если раньше вы пользовались другим плагином (например, Max Mega Menu, UberMenu), отключите его перед активацией Giuliomax Menu Builder, чтобы избежать конфликтов стилей."}}, {"@type": "Question", "name": "Можно ли использовать его в мультисайтовой установке?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Активируйте его в сети, чтобы он был доступен на всех сайтах, или активируйте на каждом сайте отдельно. Настройки хранятся для каждого сайта по отдельности, а не на уровне всей сети."}}, {"@type": "Question", "name": "Могу ли я создавать собственные темы?", "acceptedAnswer": {"@type": "Answer", "text": "Вы можете глубоко настроить любую встроенную тему с помощью элементов управления оформлением в Menu Builder (разделы «Цвета» / «Типографика» / «Макет»). Сохранение таких настроек в виде именованного «пресета» (Экспорт → Сохранить как пресет) запланировано на одну из будущих версий."}}, {"@type": "Question", "name": "Моего шрифта нет в списке из более чем 70 шрифтов Google Fonts. Можно ли его использовать?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Подключите свой шрифт через тему, плагин или вручную, а затем введите название семейства шрифтов в Menu Builder (разделы «Цвета» / «Типографика» / «Макет») → «Типографика» → «Семейство шрифтов» → «Свой». Плагин будет использовать тот шрифт, который доступен в браузере."}}, {"@type": "Question", "name": "Как сбросить все изменения оформления и вернуться к настройкам темы по умолчанию?", "acceptedAnswer": {"@type": "Answer", "text": "В Menu Builder (разделы «Цвета» / «Типографика» / «Макет») нажмите «Сбросить к настройкам темы» внизу панели. Это вернёт все значения к тем, которые задаёт текущая применённая тема."}}, {"@type": "Question", "name": "Панель мегаменю обрезается с правого края экрана. Как это исправить?", "acceptedAnswer": {"@type": "Answer", "text": "Установите ширину панели «Во всю ширину» в Menu Builder → Mega Menu → «Ширина панели». Если вам нужна более узкая панель, проверьте, что CSS контейнера вашего сайта не применяет overflow: hidden к одному из родительских элементов меню."}}, {"@type": "Question", "name": "Можно ли разместить форму обратной связи или товар WooCommerce внутри колонки мегаменю?", "acceptedAnswer": {"@type": "Answer", "text": "Да — используйте тип содержимого колонки Shortcode и вставьте любой шорткод или HTML. Например: [contact-form-7 id=\"123\"] или шорткод товара WooCommerce."}}, {"@type": "Question", "name": "Меню для компьютера и мобильное меню видны одновременно. Как это исправить?", "acceptedAnswer": {"@type": "Answer", "text": "Обычно это означает, что другое правило CSS переопределяет стили точки перехода плагина. Откройте DevTools в браузере, изучите контейнер меню и найдите свойство display, приходящее из вашей темы. Добавьте более специфичное правило CSS в таблицу стилей вашей темы или измените значение точки перехода в Menu Builder → Mobile."}}, {"@type": "Question", "name": "Счётчик корзины не обновляется без перезагрузки страницы.", "acceptedAnswer": {"@type": "Answer", "text": "Убедитесь, что ваш плагин кэширования (если он есть) не кэширует AJAX-запросы WooCommerce. У большинства плагинов кэширования есть режим, совместимый с WooCommerce, либо они автоматически исключают запросы фрагментов корзины — сверьтесь с документацией вашего плагина кэширования."}}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Дополнительно</p>
+    <h1>Частые вопросы</h1>
+    <p class="lead">Ответы на самые частые вопросы о Giuliomax Menu Builder.</p>
+
+    <h2>Общее</h2>
+
+    <h3>Плагин действительно бесплатный? Есть ли Pro-версия?</h3>
+    <p>Да, он полностью бесплатный. Нет ни Pro-версии, ни премиум-дополнений, ни функций, скрытых за платным доступом. Всё, что описано в этой документации, доступно с первого дня и без какой-либо оплаты.</p>
+
+    <h3>Где находится исходный код плагина?</h3>
+    <p>Плагин с открытым исходным кодом. Репозиторий находится по адресу <a href="https://github.com/Giulio001/menux-free-version" target="_blank">github.com/Giulio001/menux-free-version</a>. Сообщения об ошибках и пул-реквесты приветствуются.</p>
+
+    <h3>Работает ли он с любой темой WordPress?</h3>
+    <p>Да. Плагин формирует собственную разметку и стили независимо от активной темы. Единственное, что зависит от темы, — это <em>место</em> размещения меню: в классических темах вы используете шорткод или виджет, а в темах FSE — блок Gutenberg в редакторе сайта.</p>
+
+    <h3>Не замедлит ли он мой сайт?</h3>
+    <p>Нет. Плагин подключает только тот CSS и JavaScript, который нужен для включённых вами функций. Если вы не используете таймер обратного отсчёта, этот скрипт не загружается. Ресурсы минифицированы и отдаются с вашего сервера (без обращений к сторонним CDN).</p>
+
+    <h2>Установка и совместимость</h2>
+
+    <h3>Какая версия WordPress нужна?</h3>
+    <p>WordPress 5.8 или новее. Для наилучшей работы с полным редактированием сайта (FSE) и блоком Gutenberg рекомендуется WordPress 6.0 или новее.</p>
+
+    <h3>Работает ли он с конструкторами страниц (Elementor, Divi, Beaver Builder)?</h3>
+    <p>Да, через шорткод <code>[menux]</code>. В Elementor используйте виджет <em>Shortcode</em> и вставьте <code>[menux]</code>. В Divi используйте модуль <em>Code</em>. В Beaver Builder используйте модуль <em>HTML</em>.</p>
+
+    <h3>Не конфликтует ли он с другими плагинами меню?</h3>
+    <p>Он может сосуществовать с другими плагинами меню при условии, что они не применяются к одному и тому же расположению меню одновременно. Если раньше вы пользовались другим плагином (например, Max Mega Menu, UberMenu), отключите его перед активацией Giuliomax Menu Builder, чтобы избежать конфликтов стилей.</p>
+
+    <h3>Можно ли использовать его в мультисайтовой установке?</h3>
+    <p>Да. Активируйте его в сети, чтобы он был доступен на всех сайтах, или активируйте на каждом сайте отдельно. Настройки хранятся для каждого сайта по отдельности, а не на уровне всей сети.</p>
+
+    <h2>Темы и оформление</h2>
+
+    <h3>Могу ли я создавать собственные темы?</h3>
+    <p>Вы можете глубоко настроить любую встроенную тему с помощью элементов управления оформлением в разделе <strong>Menu Builder (разделы «Цвета» / «Типографика» / «Макет»)</strong>. Сохранение таких настроек в виде именованного «пресета» (Экспорт → Сохранить как пресет) запланировано на одну из будущих версий.</p>
+
+    <h3>Моего шрифта нет в списке из более чем 70 шрифтов Google Fonts. Можно ли его использовать?</h3>
+    <p>Да. Подключите свой шрифт через тему, плагин или вручную, а затем введите название семейства шрифтов в разделе <strong>Menu Builder (разделы «Цвета» / «Типографика» / «Макет») → «Типографика» → «Семейство шрифтов» → «Свой»</strong>. Плагин будет использовать тот шрифт, который доступен в браузере.</p>
+
+    <h3>Как сбросить все изменения оформления и вернуться к настройкам темы по умолчанию?</h3>
+    <p>В разделе <strong>Menu Builder (разделы «Цвета» / «Типографика» / «Макет»)</strong> нажмите <em>«Сбросить к настройкам темы»</em> внизу панели. Это вернёт все значения к тем, которые задаёт текущая применённая тема.</p>
+
+    <h2>Мегаменю</h2>
+
+    <h3>Панель мегаменю обрезается с правого края экрана. Как это исправить?</h3>
+    <p>Установите ширину панели <strong>«Во всю ширину»</strong> в <strong>Menu Builder → Mega Menu → «Ширина панели»</strong>. Если вам нужна более узкая панель, проверьте, что CSS контейнера вашего сайта не применяет <code>overflow: hidden</code> к одному из родительских элементов меню.</p>
+
+    <h3>Можно ли разместить форму обратной связи или товар WooCommerce внутри колонки мегаменю?</h3>
+    <p>Да — используйте тип содержимого колонки <strong>Shortcode</strong> и вставьте любой шорткод или HTML. Например: <code>[contact-form-7 id="123"]</code> или шорткод товара WooCommerce.</p>
+
+    <h2>Мобильные устройства</h2>
+
+    <h3>Меню для компьютера и мобильное меню видны одновременно. Как это исправить?</h3>
+    <p>Обычно это означает, что другое правило CSS переопределяет стили точки перехода плагина. Откройте DevTools в браузере, изучите контейнер меню и найдите свойство <code>display</code>, приходящее из вашей темы. Добавьте более специфичное правило CSS в таблицу стилей вашей темы или измените значение точки перехода в <strong>Menu Builder → Mobile</strong>.</p>
+
+    <h2>WooCommerce</h2>
+
+    <h3>Счётчик корзины не обновляется без перезагрузки страницы.</h3>
+    <p>Убедитесь, что ваш плагин кэширования (если он есть) не кэширует AJAX-запросы WooCommerce. У большинства плагинов кэширования есть режим, совместимый с WooCommerce, либо они автоматически исключают запросы фрагментов корзины — сверьтесь с документацией вашего плагина кэширования.</p>
+
+    <h2>Как получить помощь</h2>
+    <p>Если ваш вопрос здесь не освещён:</p>
+    <ul>
+      <li>Создайте issue на <a href="https://github.com/Giulio001/menux-free-version/issues" target="_blank">GitHub</a>.</li>
+      <li>Оставьте тему в <a href="https://wordpress.org/plugins/giuliomax-menu-builder/#support" target="_blank">форуме поддержки на WordPress.org</a>.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="multilingual.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Мультиязычность</span>
+      </a>
+      <span></span>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

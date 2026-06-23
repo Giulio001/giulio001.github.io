@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Доступность (WCAG 2.2, уровень AA) — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder соответствует WCAG 2.2 уровня AA из коробки: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Доступность (WCAG 2.2, уровень AA) — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder соответствует WCAG 2.2 уровня AA из коробки: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Доступность (WCAG 2.2, уровень AA) — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder соответствует WCAG 2.2 уровня AA из коробки: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Доступность"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Дополнительно</p>
+    <h1>Доступность</h1>
+    <p class="lead">Giuliomax Menu Builder создан с расчётом на соответствие WCAG 2.2 уровня AA. Навигация полностью работает без мыши, выпадающие меню озвучиваются программами чтения с экрана, а анимации можно отключить на уровне системы.</p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#wcag">Соответствие WCAG 2.2 AA</a>
+      <a href="#keyboard">Навигация с клавиатуры</a>
+      <a href="#aria">Атрибуты ARIA</a>
+      <a href="#focus">Управление фокусом</a>
+      <a href="#motion">Уменьшение анимации</a>
+      <a href="#testing">Проверка вашего меню</a>
+    </div>
+
+    <h2 id="wcag">Соответствие WCAG 2.2 AA</h2>
+    <p>Плагин протестирован на соответствие следующим критериям успеха WCAG 2.2, относящимся к навигационным компонентам:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Критерий</th><th>Уровень</th><th>Как выполняется</th></tr></thead>
+        <tbody>
+          <tr><td>1.4.3 Контрастность (минимальная)</td><td>AA</td><td>Все встроенные темы протестированы на соответствие коэффициенту контрастности текста 4.5:1.</td></tr>
+          <tr><td>2.1.1 Клавиатура</td><td>A</td><td>Все функции доступны только с клавиатуры.</td></tr>
+          <tr><td>2.1.2 Отсутствие клавиатурной ловушки</td><td>A</td><td>Фокус всегда можно вывести из меню без использования указывающего устройства.</td></tr>
+          <tr><td>2.4.3 Порядок фокуса</td><td>A</td><td>Порядок фокуса соответствует визуальному порядку чтения меню.</td></tr>
+          <tr><td>2.4.7 Видимость фокуса</td><td>AA</td><td>На каждом интерактивном элементе отображается видимый индикатор фокуса.</td></tr>
+          <tr><td>2.4.11 Внешний вид фокуса</td><td>AA</td><td>Индикаторы фокуса соответствуют требованиям к минимальному размеру и контрастности (новый критерий в WCAG 2.2).</td></tr>
+          <tr><td>4.1.2 Имя, роль, значение</td><td>A</td><td>У всех интерактивных элементов есть доступное имя и корректная роль ARIA.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="keyboard">Навигация с клавиатуры</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Клавиша</th><th>Действие</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>Tab</kbd></td><td>Переместить фокус на следующий пункт меню или интерактивный элемент.</td></tr>
+          <tr><td><kbd>Shift + Tab</kbd></td><td>Переместить фокус на предыдущий элемент.</td></tr>
+          <tr><td><kbd>Enter</kbd> / <kbd>Space</kbd></td><td>Активировать ссылку или открыть / закрыть выпадающее меню.</td></tr>
+          <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Перемещать фокус по элементам внутри открытого выпадающего меню или панели мегаменю.</td></tr>
+          <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Перемещаться между элементами верхнего уровня.</td></tr>
+          <tr><td><kbd>Escape</kbd></td><td>Закрыть текущее выпадающее меню или панель мегаменю и вернуть фокус на родительский элемент.</td></tr>
+          <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td>Перейти к первому / последнему элементу в списке выпадающего меню.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="aria">Атрибуты ARIA</h2>
+    <p>Плагин автоматически добавляет в формируемую разметку следующие атрибуты ARIA:</p>
+    <ul>
+      <li><code>role="navigation"</code> и <code>aria-label</code> для элемента <code>&lt;nav&gt;</code> (метка совпадает с названием меню в WordPress).</li>
+      <li><code>aria-haspopup="true"</code> и <code>aria-expanded</code> для элементов верхнего уровня, у которых есть выпадающее меню или мегаменю.</li>
+      <li><code>aria-controls</code>, связывающий кнопку-триггер с её панелью.</li>
+      <li><code>role="menu"</code> и <code>role="menuitem"</code> внутри выпадающих меню.</li>
+      <li><code>aria-current="page"</code> для элемента, соответствующего текущей странице.</li>
+    </ul>
+    <p>Ничего из этого настраивать не нужно — атрибуты применяются автоматически на основе структуры меню.</p>
+
+    <h2 id="focus">Управление фокусом</h2>
+    <ul>
+      <li>При открытии выпадающего меню фокус перемещается на первый элемент внутри него.</li>
+      <li>При закрытии выпадающего меню (по Escape или при переводе фокуса в сторону) фокус возвращается на элемент, открывший его.</li>
+      <li>Оверлей мобильного меню удерживает фокус внутри себя, пока открыт (фокус нельзя вывести за пределы панели клавишей Tab). При закрытии оверлея фокус возвращается на кнопку-гамбургер.</li>
+    </ul>
+
+    <h2 id="motion">Уменьшение анимации</h2>
+    <p>Все переходы и анимации учитывают CSS-медиазапрос <code>prefers-reduced-motion: reduce</code>. Когда пользователь включил режим «Уменьшить движение» в настройках доступности своей операционной системы:</p>
+    <ul>
+      <li>Анимации появления/затухания выпадающих меню заменяются мгновенным показом/скрытием.</li>
+      <li>Переходы открытия/закрытия мобильного меню становятся мгновенными.</li>
+      <li>Анимация появления панели объявлений отключается.</li>
+      <li>Анимации появления пунктов меню отключаются.</li>
+    </ul>
+
+    <h2 id="testing">Проверка вашего меню</h2>
+    <p>После настройки меню используйте следующие инструменты, чтобы проверить доступность:</p>
+    <ul>
+      <li><strong>Только клавиатура</strong> — отключите мышь и пройдитесь по всему меню, используя только Tab, клавиши со стрелками, Enter и Escape.</li>
+      <li><strong>axe DevTools</strong> — бесплатное расширение браузера, которое запускает автоматические проверки WCAG на живой странице.</li>
+      <li><strong>NVDA / VoiceOver</strong> — программы чтения с экрана для проверки того, что состояния выпадающих меню и метки озвучиваются корректно.</li>
+      <li><strong>Color Contrast Analyzer</strong> — убедитесь, что ваши собственные настройки цветов по-прежнему соответствуют минимальному коэффициенту 4.5:1.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="import-export.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Импорт / Экспорт</span>
+      </a>
+      <a class="next" href="multilingual.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Мультиязычность</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Стили и настройка мобильного меню — Документация Giuliomax Menu Builder</title>
+  <meta name="description" content="Выберите один из четырёх стилей мобильной навигации — выдвижное меню, push, оверлей или полноэкранное. Настройте бургер, точку перехода, анимации и жесты.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/ru/mobile.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mobile.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mobile.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mobile.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mobile.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mobile.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mobile.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/mobile.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mobile.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Стили и настройка мобильного меню — Документация Giuliomax Menu Builder">
+  <meta property="og:description" content="Выберите один из четырёх стилей мобильной навигации — выдвижное меню, push, оверлей или полноэкранное. Настройте бургер, точку перехода, анимации и жесты.">
+  <meta property="og:url" content="https://giulio001.github.io/ru/mobile.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Стили и настройка мобильного меню — Документация Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Выберите один из четырёх стилей мобильной навигации — выдвижное меню, push, оверлей или полноэкранное. Настройте бургер, точку перехода, анимации и жесты.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Документация", "item": "https://giulio001.github.io/ru/"}, {"@type": "ListItem", "position": 2, "name": "Мобильные меню"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Возможности</p>
+    <h1>Мобильные меню</h1>
+    <p class="lead">Выберите один из четырёх самостоятельных стилей мобильного меню и точно настройте поведение навигации на маленьких экранах — и всё это без правки CSS или JavaScript.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/mobile-menu.svg" alt="Мобильное меню MenuX в виде левого выдвижного меню с оверлеем и развёрнутым подменю-аккордеоном" style="display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>На этой странице</strong>
+      <a href="#breakpoint">Настройка точки перехода</a>
+      <a href="#styles">Мобильные стили</a>
+      <a href="#hamburger">Кнопка-бургер</a>
+      <a href="#link-colors">Цвета ссылок на мобильных</a>
+      <a href="#submenu">Поведение подменю</a>
+      <a href="#mega-mobile">Мегаменю на мобильных</a>
+      <a href="#preview">Живой предпросмотр на телефоне</a>
+    </div>
+
+    <h2 id="breakpoint">Настройка точки перехода</h2>
+    <p>Точка перехода (breakpoint) — это ширина области просмотра, ниже которой десктопное меню скрывается и появляется мобильное. Задайте её в разделе <strong>Menu Builder → Mobile</strong>.</p>
+    <p>Значение по умолчанию — <strong>768 px</strong> (стандартная граница планшет/мобильный). Укажите любое значение в пикселях, подходящее вашему макету, или выберите <strong>Auto</strong>, чтобы плагин динамически определял доступное пространство.</p>
+
+    <h2 id="styles">Стили мобильного меню</h2>
+
+    <h3>1. Выпадающее меню <span class="badge badge-green">По умолчанию</span></h3>
+    <p>Самый распространённый стиль. Пункты меню выстраиваются вертикально в классической выпадающей панели прямо под панелью навигации. Подпункты идут с отступом под своим родителем.</p>
+    <ul>
+      <li>Привычный и понятный всем</li>
+      <li>Хорошо подходит для меню с большим числом пунктов</li>
+      <li>Лучше всего для: блогов, корпоративных сайтов, портфолио</li>
+    </ul>
+
+    <h3>2. Полноэкранное</h3>
+    <p>Пункты меню центрируются на полноэкранном оверлее, закрывающем всю область просмотра. Крупная типографика, много свободного пространства.</p>
+    <ul>
+      <li>Эффектный и современный вид</li>
+      <li>Лучше всего для сайтов максимум с 5–8 пунктами верхнего уровня</li>
+      <li>Лучше всего для: агентств, фотографов, лендингов</li>
+    </ul>
+
+    <h3>3. Выдвижное меню — слева</h3>
+    <p>Панель выезжает с левого края экрана, частично перекрывая содержимое страницы. Остальная часть страницы затемняется, но остаётся частично видимой.</p>
+    <ul>
+      <li>Привычно по мобильным приложениям (например, Gmail, Google Maps)</li>
+      <li>Хорошо для глубоких иерархий навигации</li>
+      <li>Лучше всего для: интернет-магазинов, порталов, сайтов с документацией</li>
+    </ul>
+
+    <h3>4. Выдвижное меню — справа</h3>
+    <p>То же, что и левое выдвижное меню, но выезжает с правого края. Удобно, когда кнопка-бургер расположена в правой части панели, а панель слева выглядела бы нелогично.</p>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Переключайтесь между стилями в разделе <strong>Menu Builder → Mobile</strong>. Изменение вступает в силу сразу — переопубликовывать меню не нужно.</p>
+      </div>
+    </div>
+
+    <h2 id="hamburger">Кнопка-бургер</h2>
+    <p>Кнопка-бургер (☰) — это переключатель, который открывает и закрывает мобильное меню. Настройте её в разделе <strong>Menu Builder → Mobile</strong>:</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Параметр</th><th>Описание</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Стиль иконки</strong></td><td>Classic (3 линии), Modern (скруглённый) или Minimal (тонкий).</td></tr>
+          <tr><td><strong>Выравнивание</strong></td><td>Слева, по центру или справа в мобильной панели навигации.</td></tr>
+          <tr><td><strong>Цвет иконки</strong></td><td>Независимо от цвета пунктов меню.</td></tr>
+          <tr><td><strong>Фон кнопки</strong></td><td>Необязательный цвет фона за иконкой бургера. Плагин принудительно задаёт прозрачное значение по умолчанию, чтобы стили кнопок вашей темы не проступали.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="link-colors">Цвета ссылок на мобильных</h2>
+    <p>Ссылкам внутри мобильного меню можно задать собственные цвета, полностью независимые от десктопного меню. Три отдельных выбора цвета находятся в разделе <strong>Style → Hamburger → Mobile link text</strong>:</p>
+    <ul>
+      <li><strong>Normal</strong> — цвет ссылки по умолчанию внутри мобильного меню</li>
+      <li><strong>Hover</strong> — цвет при касании или наведении на ссылку</li>
+      <li><strong>Active</strong> — цвет для текущего активного пункта</li>
+    </ul>
+    <p>Оставьте любое поле пустым, чтобы унаследовать цвета десктопного меню.</p>
+
+    <h2 id="submenu">Поведение подменю на мобильных</h2>
+    <p>Когда у пункта меню есть подпункты, вы можете управлять тем, как они разворачиваются на мобильных, с помощью параметра <strong>аккордеон</strong>:</p>
+    <ul>
+      <li><strong>Аккордеон включён</strong> — одновременно может быть открыто только одно подменю. При открытии одного остальные автоматически закрываются. Рекомендуется для длинных меню.</li>
+      <li><strong>Аккордеон выключен</strong> (по умолчанию) — несколько подменю могут оставаться развёрнутыми одновременно.</li>
+    </ul>
+    <p>Задайте это в разделе <strong>Menu Builder → Mobile</strong>.</p>
+
+    <h2 id="mega-mobile">Мегаменю на мобильных</h2>
+    <p>Когда у пункта верхнего уровня включено мегаменю, нажатие на него на мобильном выдвигает отдельную полноэкранную панель с одними этими ссылками — со стрелкой ← назад вверху. Это придаёт навигации ощущение нативного приложения (как на крупных розничных сайтах), сохраняя список чистым и читаемым.</p>
+    <p>Поведением мегаменю на мобильных можно управлять отдельно для каждого пункта на панели <strong>⚡ Mega Menu</strong>:</p>
+    <ul>
+      <li><strong>Видно на мобильных</strong> (push-режим) — стандартная push-навигация, описанная выше.</li>
+      <li><strong>Скрыто на мобильных</strong> — панель мегаменю не выводится на маленьких экранах; подпункты полностью скрыты.</li>
+    </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>На мобильных персональные переопределения оформления мегаменю (фон, цвета, шрифты) автоматически нейтрализуются, поэтому ссылки всегда отображаются в том же нейтральном стиле, что и остальное мобильное меню, — это исключает неудачные цветовые сочетания из десктопных пресетов.</p>
+      </div>
+    </div>
+
+    <h2 id="preview">Живой предпросмотр на телефоне</h2>
+    <p>Пока вы находитесь на вкладке <strong>Mobile</strong> панели администрирования, закреплённый макет телефона в правой части экрана обновляется в реальном времени при изменении любой мобильной настройки — стиля открытия, цвета оверлея, выравнивания бургера, цвета ссылок, ширины выдвижного меню и многого другого. Сохранять ничего не нужно, чтобы увидеть результат.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Плагин автоматически учитывает медиазапрос CSS <code>prefers-reduced-motion</code>. Если посетитель включил «Уменьшение движения» в настройках доступности своей ОС, все анимации отключаются независимо от настройки выше.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="visibility.html">
+        <span class="nav-dir">← Назад</span>
+        <span class="nav-title">Правила видимости</span>
+      </a>
+      <a class="next" href="layout.html">
+        <span class="nav-dir">Далее →</span>
+        <span class="nav-title">Макет и эффекты</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>
