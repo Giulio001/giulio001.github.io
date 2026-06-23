@@ -46,6 +46,8 @@
       langPT:     "Portuguese (BR)",
       next:       "Next →",
       prev:       "← Prev",
+      download:   "Download Free",
+      installBtn: "Installation guide →",
     },
     it: {
       groups: {
@@ -88,6 +90,8 @@
       langPT:     "Portoghese (BR)",
       next:       "Successivo →",
       prev:       "← Precedente",
+      download:   "Scarica gratis",
+      installBtn: "Guida all'installazione →",
     },
     de: {
       groups: {
@@ -130,6 +134,8 @@
       langPT:     "Portugiesisch (BR)",
       next:       "Weiter →",
       prev:       "← Zurück",
+      download:   "Gratis herunterladen",
+      installBtn: "Installationsanleitung →",
     },
     es: {
       groups: {
@@ -172,6 +178,8 @@
       langPT:     "Portugués (BR)",
       next:       "Siguiente →",
       prev:       "← Anterior",
+      download:   "Descargar gratis",
+      installBtn: "Guía de instalación →",
     },
     nl: {
       groups: {
@@ -214,6 +222,8 @@
       langPT:     "Portugees (BR)",
       next:       "Volgende →",
       prev:       "← Vorige",
+      download:   "Gratis downloaden",
+      installBtn: "Installatiegids →",
     },
     pt: {
       groups: {
@@ -256,6 +266,8 @@
       langPT:     "Português",
       next:       "Próximo →",
       prev:       "← Anterior",
+      download:   "Baixar grátis",
+      installBtn: "Guia de instalação →",
     }
   };
 
@@ -422,7 +434,10 @@
       }
     });
     if (inGroup) html += `</div>`;
-    html += `</nav>`;
+    html += `</nav>
+    <div class="sidebar-footer">
+      <a href="https://wordpress.org/plugins/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-download">&#8659; ${tr.download || 'Download Free'}</a>
+    </div>`;
     return html;
   }
 
