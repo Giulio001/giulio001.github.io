@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Référence du shortcode [menux] — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Intégrez un menu de navigation stylisé partout dans WordPress avec le shortcode [menux] : pages, articles, widgets ou thèmes classiques. Référence complète.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/shortcode.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/shortcode.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/shortcode.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/shortcode.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/shortcode.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/shortcode.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/shortcode.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/shortcode.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/shortcode.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/shortcode.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Référence du shortcode [menux] — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Intégrez un menu de navigation stylisé partout dans WordPress avec le shortcode [menux] : pages, articles, widgets ou thèmes classiques. Référence complète.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/shortcode.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Référence du shortcode [menux] — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Intégrez un menu de navigation stylisé partout dans WordPress avec le shortcode [menux] : pages, articles, widgets ou thèmes classiques. Référence complète.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"},
+      {"@type": "ListItem", "position": 2, "name": "Shortcode [menux]"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Utiliser l’extension</p>
+    <h1>Shortcode <code>[menux]</code></h1>
+    <p class="lead">Le shortcode <code>[menux]</code> vous permet de placer un menu de navigation entièrement stylisé partout où les shortcodes sont acceptés : pages, articles, widgets de texte, modèles de thèmes classiques, et plus encore.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/shortcode.svg" alt="Éditeur de code affichant le shortcode [menux] ainsi que les barres de navigation principale et de pied de page générées" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#basic">Utilisation de base</a>
+      <a href="#attributes">Attributs</a>
+      <a href="#examples">Exemples</a>
+      <a href="#template">Utilisation dans les modèles PHP</a>
+    </div>
+
+    <h2 id="basic">Utilisation de base</h2>
+    <p>La forme la plus simple du shortcode ne requiert aucun attribut. Elle affiche l’emplacement de menu <em>primary</em> :</p>
+    <pre><code>[menux]</code></pre>
+
+    <p>Tous les éléments de menu, thèmes, réglages mobiles et fonctionnalités se configurent globalement dans <strong>Menu Builder</strong> — le shortcode se contente d’afficher le résultat là où vous le placez.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>L’extension gère ses propres éléments de menu dans <strong>Menu Builder → Structure du menu</strong>. Ils sont indépendants des menus natifs de WordPress (<em>Apparence → Menus</em>).</p>
+      </div>
+    </div>
+
+    <h2 id="attributes">Attributs</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Attribut</th><th>Type</th><th>Valeur par défaut</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>location</code></td>
+            <td>chaîne</td>
+            <td><code>primary</code></td>
+            <td>L’emplacement de menu à afficher. Chaque élément se voit attribuer un emplacement dans <strong>Menu Builder → Structure du menu</strong>. Les emplacements disponibles sont <code>primary</code>, <code>footer</code>, <code>sidebar</code> et <code>mobile</code>.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="examples">Exemples</h2>
+
+    <h3>Afficher le menu principal (par défaut)</h3>
+    <pre><code>[menux]</code></pre>
+
+    <h3>Afficher un emplacement précis</h3>
+    <pre><code>[menux location="footer"]</code></pre>
+
+    <h3>Deux menus sur une même page (par exemple en-tête et pied de page)</h3>
+    <pre><code>[menux location="primary"]
+[menux location="footer"]</code></pre>
+
+    <h2 id="template">Utilisation dans les modèles PHP</h2>
+    <p>Dans les modèles de thèmes classiques (par exemple <code>header.php</code>), vous pouvez afficher le shortcode avec :</p>
+    <pre><code>&lt;?php echo do_shortcode('[menux]'); ?&gt;</code></pre>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Si vous utilisez un thème basé sur les blocs (FSE), utilisez plutôt le <a href="gutenberg.html">bloc Gutenberg</a>. Il s’intègre directement à l’éditeur de site (Site Editor) et utilise les mêmes réglages globaux.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="installation.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Installation</span>
+      </a>
+      <a class="next" href="gutenberg.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Bloc Gutenberg</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

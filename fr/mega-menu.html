@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Constructeur de méga-menus pour WordPress — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Créez des méga-menus pleine largeur jusqu’à 4 colonnes : liens, titres, images et shortcodes dans tout élément de menu WordPress, sans coder.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/mega-menu.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mega-menu.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mega-menu.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mega-menu.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mega-menu.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mega-menu.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mega-menu.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/mega-menu.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/mega-menu.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mega-menu.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Constructeur de méga-menus pour WordPress — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Créez des méga-menus pleine largeur jusqu’à 4 colonnes : liens, titres, images et shortcodes dans tout élément de menu WordPress, sans coder.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/mega-menu.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Constructeur de méga-menus pour WordPress — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Créez des méga-menus pleine largeur jusqu’à 4 colonnes : liens, titres, images et shortcodes dans tout élément de menu WordPress, sans coder.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Documentation","item":"https://giulio001.github.io/fr/"},
+    {"@type":"ListItem","position":2,"name":"Méga-menu"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Fonctionnalités</p>
+    <h1>Méga-menu</h1>
+    <p class="lead">Transformez n’importe quel élément de menu de premier niveau en un panneau pleine largeur jusqu’à 4 colonnes — combinez liens, titres, images, shortcodes et bien plus, sans écrire une seule ligne de code.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/mega-menu.svg" alt="Un méga-menu MenuX ouvert, avec quatre colonnes de liens, des titres et un bloc promotionnel" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#what-is">Qu’est-ce qu’un méga-menu ?</a>
+      <a href="#enable">Activer le méga-menu sur un élément</a>
+      <a href="#columns">Ajouter et organiser les colonnes</a>
+      <a href="#content">Types de contenu des colonnes</a>
+      <a href="#appearance">Apparence par élément</a>
+      <a href="#presets">Préréglages</a>
+      <a href="#mobile">Comportement sur mobile</a>
+      <a href="#global">Réglages globaux</a>
+    </div>
+
+    <h2 id="what-is">Qu’est-ce qu’un méga-menu ?</h2>
+    <p>Un menu déroulant WordPress classique affiche une simple liste verticale de sous-éléments. Un <strong>méga-menu</strong>, lui, ouvre un large panneau pouvant contenir plusieurs colonnes, des titres de section, des icônes et des images. On le retrouve fréquemment sur les grands sites e-commerce et les portails riches en contenu.</p>
+
+    <h2 id="enable">Activer le méga-menu sur un élément de premier niveau</h2>
+    <ol class="steps">
+      <li>Ouvrez <strong>Menu Builder → ⚡ Mega Menu</strong> dans la barre latérale d’administration.</li>
+      <li>La liste des éléments affiche un badge d’état <strong>ON/OFF</strong> pour chaque élément de navigation de premier niveau.</li>
+      <li>Cliquez sur <strong>＋ Activer le méga-menu</strong> sur l’élément que vous souhaitez convertir.</li>
+      <li>Cliquez sur <strong>⚡ Modifier les colonnes ▶</strong> pour ouvrir la fenêtre de l’éditeur de colonnes.</li>
+      <li>Ajoutez des colonnes, remplissez-les de blocs de contenu, puis fermez la fenêtre et enregistrez.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Les méga-menus ne peuvent s’appliquer qu’aux éléments de <strong>premier niveau</strong>. Les sous-éléments sont disposés à l’intérieur des colonnes, et non sous forme de menus déroulants imbriqués. Chaque élément accepte au maximum <strong>4 colonnes</strong>.</p>
+      </div>
+    </div>
+
+    <h2 id="columns">Ajouter et organiser les colonnes</h2>
+    <p>Dans la fenêtre de l’éditeur de colonnes, vous pouvez :</p>
+    <ul>
+      <li><strong>Ajouter une colonne</strong> — cliquez sur <em>+ Ajouter une colonne</em>. Les colonnes se disposent horizontalement dans le panneau.</li>
+      <li><strong>Dupliquer une colonne</strong> — cliquez sur l’icône de duplication dans l’en-tête d’une colonne pour la cloner (avec tous ses éléments) et l’insérer juste après l’originale. L’option est désactivée une fois la limite de 4 colonnes atteinte.</li>
+      <li><strong>Réorganiser les colonnes</strong> — faites glisser la poignée de la colonne vers la gauche ou la droite.</li>
+      <li><strong>Définir la largeur d’une colonne</strong> — saisissez un pourcentage. Laissez vide pour une répartition égale entre toutes les colonnes.</li>
+      <li><strong>Définir l’alignement</strong> — choisissez Gauche, Centre ou Droite pour tous les éléments de la colonne.</li>
+      <li><strong>Supprimer une colonne</strong> — cliquez sur l’icône de corbeille dans l’en-tête de la colonne.</li>
+    </ul>
+
+    <h2 id="content">Types de contenu des colonnes</h2>
+    <p>Chaque colonne contient un ou plusieurs blocs de contenu. Cliquez sur <strong>+ Ajouter un élément</strong> dans une colonne pour choisir un type :</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Type</th><th>Description</th><th>Champs principaux</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Lien</strong></td>
+            <td>Un lien cliquable avec, en option, une icône et une ligne de description.</td>
+            <td>Libellé, URL, Classe d’icône, Description, Ouvrir dans un nouvel onglet</td>
+          </tr>
+          <tr>
+            <td><strong>Titre</strong></td>
+            <td>Un libellé de section non cliquable qui regroupe visuellement les liens.</td>
+            <td>Libellé, Classe d’icône</td>
+          </tr>
+          <tr>
+            <td><strong>Séparateur</strong></td>
+            <td>Un fin trait horizontal pour séparer les groupes d’éléments.</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td><strong>Image</strong></td>
+            <td>Un bloc image pleine largeur, éventuellement encapsulé dans un lien. Choisissez une image dans la médiathèque WP ou collez une URL externe.</td>
+            <td>Image, URL du lien, Largeur, Hauteur, Ouvrir dans un nouvel onglet</td>
+          </tr>
+          <tr>
+            <td><strong>Shortcode</strong></td>
+            <td>Affiche n’importe quel shortcode dans la colonne — pratique pour les formulaires de contact, les newsletters, les grilles de produits ou les widgets personnalisés.</td>
+            <td>Chaîne du shortcode</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="appearance">Apparence par élément</h2>
+    <p>Chaque panneau de méga-menu dispose de son propre onglet <strong>🎨 Apparence</strong>, indépendant, dans la fenêtre de l’éditeur. Les modifications ne s’appliquent qu’au panneau de cet élément et remplacent les valeurs globales par défaut. Cliquez sur <strong>↺ Rétablir les valeurs globales</strong> pour effacer toutes les personnalisations de cet élément.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Réglage</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Arrière-plan</strong></td><td>Couleur unie, l’un des 12 préréglages de dégradé, ou un dégradé personnalisé créé avec le sélecteur visuel (boussole de direction + deux sélecteurs de couleur).</td></tr>
+          <tr><td><strong>Largeur maximale du panneau (px)</strong></td><td>Limite la largeur de ce panneau (400–2400 px) et le centre. Laissez vide pour un affichage pleine largeur.</td></tr>
+          <tr><td><strong>Marge intérieure haut/bas et gauche/droite</strong></td><td>Espacement interne du panneau.</td></tr>
+          <tr><td><strong>Espacement entre colonnes</strong></td><td>Espace entre les colonnes.</td></tr>
+          <tr><td><strong>Rayon des angles</strong></td><td>Arrondi appliqué aux deux coins inférieurs du panneau.</td></tr>
+          <tr><td><strong>Taille de police</strong></td><td>Taille de police de base pour tout le contenu du panneau.</td></tr>
+          <tr><td><strong>Couleur des liens / titres / accent / survol / description / séparateur</strong></td><td>Contrôle complet des couleurs propre à chaque panneau, indépendamment de la section Couleurs principale.</td></tr>
+          <tr><td><strong>Style de séparateur</strong></td><td>Plein, en tirets ou en pointillés.</td></tr>
+          <tr><td><strong>Vitesse d’animation d’ouverture/fermeture</strong></td><td>Durée de la transition du panneau (0–800 ms). Réglez sur 0 pour un affichage instantané.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="presets">Préréglages</h2>
+    <p>L’onglet <strong>✨ Préréglages</strong>, dans le panneau Apparence, vous permet de charger une disposition de colonnes complète en un clic. <strong>20 modèles sectoriels</strong> sont prêts à l’emploi :</p>
+    <p>SaaS, E-commerce, Agence, Restaurant, Voyage, Santé, Immobilier, Cabinet d’avocats, Finance, Mode, Hôtellerie, Associations, Événementiel, Automobile, Jeux vidéo, Fitness, Beauté et bien-être, Start-up tech, Portfolio et Éducation.</p>
+    <p>Les préréglages remplissent à la fois le contenu des colonnes <em>et</em> une palette de couleurs assortie — ainsi, ils offrent un rendu soigné d’emblée, quel que soit le thème de votre menu principal.</p>
+
+    <h2 id="mobile">Comportement sur mobile</h2>
+    <p>Sur mobile, toucher un élément de méga-menu fait glisser un panneau dédié en plein écran, avec un bouton de retour ← en haut — pour une expérience digne d’une application native. Les couleurs d’arrière-plan et les polices propres à chaque élément sont neutralisées sur mobile, afin que les liens conservent toujours le même style épuré que le reste du menu mobile.</p>
+    <p>Vous pouvez définir le comportement mobile par élément dans le panneau Méga-menu :</p>
+    <ul>
+      <li><strong>Visible sur mobile</strong> — utilise le panneau de navigation par poussée décrit ci-dessus.</li>
+      <li><strong>Masqué sur mobile</strong> — le panneau méga n’est pas affiché sur les petits écrans.</li>
+    </ul>
+
+    <h2 id="global">Réglages globaux</h2>
+    <p>Ces réglages se trouvent en haut du panneau <strong>⚡ Mega Menu</strong> et s’appliquent à l’ensemble du site :</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Réglage</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Pleine largeur</strong></td>
+            <td>Case à cocher, par élément, qui fait occuper à ce panneau toute la largeur de la fenêtre.</td>
+          </tr>
+          <tr>
+            <td><strong>Couleurs par défaut des liens / titres / accent</strong></td>
+            <td>Couleurs par défaut, valables pour tout le site, du contenu des panneaux méga. Les personnalisations d’apparence par élément ont la priorité.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Le comportement de « survol tolérant » est intégré d’office — le panneau méga attend la souris au lieu de disparaître en cours de route lorsque l’utilisateur se dirige en diagonale vers son contenu.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="logo.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Logo</span>
+      </a>
+      <a class="next" href="announcement.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Barre d’annonce</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

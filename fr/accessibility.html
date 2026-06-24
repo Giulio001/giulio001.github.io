@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Accessibilité (WCAG 2.2 niveau AA) — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder respecte le niveau AA des WCAG 2.2 dès l’installation : navigation au clavier, rôles ARIA, gestion du focus et animations réduites.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/accessibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/accessibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/accessibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/accessibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/accessibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/accessibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/accessibility.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/accessibility.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/accessibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/accessibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Accessibilité (WCAG 2.2 niveau AA) — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder respecte le niveau AA des WCAG 2.2 dès l’installation : navigation au clavier, rôles ARIA, gestion du focus et animations réduites.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/accessibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Accessibilité (WCAG 2.2 niveau AA) — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder respecte le niveau AA des WCAG 2.2 dès l’installation : navigation au clavier, rôles ARIA, gestion du focus et animations réduites.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Accessibilité"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Avancé</p>
+    <h1>Accessibilité</h1>
+    <p class="lead">Giuliomax Menu Builder est conçu pour respecter le niveau AA des WCAG 2.2. La navigation fonctionne entièrement sans souris, les menus déroulants sont annoncés aux lecteurs d’écran et les animations peuvent être désactivées à l’échelle du système.</p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#wcag">Conformité WCAG 2.2 AA</a>
+      <a href="#keyboard">Navigation au clavier</a>
+      <a href="#aria">Attributs ARIA</a>
+      <a href="#focus">Gestion du focus</a>
+      <a href="#motion">Animations réduites</a>
+      <a href="#testing">Tester votre menu</a>
+    </div>
+
+    <h2 id="wcag">Conformité WCAG 2.2 AA</h2>
+    <p>L’extension est testée par rapport aux critères de réussite WCAG 2.2 suivants, pertinents pour les composants de navigation :</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Critère</th><th>Niveau</th><th>Comment il est respecté</th></tr></thead>
+        <tbody>
+          <tr><td>1.4.3 Contraste (minimum)</td><td>AA</td><td>Tous les thèmes intégrés sont testés pour respecter un rapport de contraste de 4,5:1 pour le texte.</td></tr>
+          <tr><td>2.1.1 Clavier</td><td>A</td><td>Toutes les fonctionnalités sont accessibles au seul clavier.</td></tr>
+          <tr><td>2.1.2 Pas de piège au clavier</td><td>A</td><td>Le focus peut toujours quitter le menu sans recourir à un dispositif de pointage.</td></tr>
+          <tr><td>2.4.3 Ordre de focus</td><td>A</td><td>L’ordre du focus suit l’ordre de lecture visuel du menu.</td></tr>
+          <tr><td>2.4.7 Visibilité du focus</td><td>AA</td><td>Un indicateur de focus visible s’affiche sur chaque élément interactif.</td></tr>
+          <tr><td>2.4.11 Apparence du focus</td><td>AA</td><td>Les indicateurs de focus respectent les exigences minimales de taille et de contraste (nouveauté des WCAG 2.2).</td></tr>
+          <tr><td>4.1.2 Nom, rôle, valeur</td><td>A</td><td>Tous les éléments interactifs possèdent un nom accessible et un rôle ARIA correct.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="keyboard">Navigation au clavier</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Touche</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>Tab</kbd></td><td>Déplacer le focus vers l’élément de menu ou l’élément interactif suivant.</td></tr>
+          <tr><td><kbd>Maj + Tab</kbd></td><td>Déplacer le focus vers l’élément précédent.</td></tr>
+          <tr><td><kbd>Entrée</kbd> / <kbd>Espace</kbd></td><td>Activer un lien, ou ouvrir / fermer un menu déroulant.</td></tr>
+          <tr><td><kbd>↓</kbd> / <kbd>↑</kbd></td><td>Déplacer le focus parmi les éléments d’un menu déroulant ou d’un panneau de méga-menu ouvert.</td></tr>
+          <tr><td><kbd>→</kbd> / <kbd>←</kbd></td><td>Naviguer entre les éléments de premier niveau.</td></tr>
+          <tr><td><kbd>Échap</kbd></td><td>Fermer le menu déroulant ou le panneau de méga-menu en cours et redonner le focus à l’élément parent.</td></tr>
+          <tr><td><kbd>Origine</kbd> / <kbd>Fin</kbd></td><td>Atteindre le premier / dernier élément d’une liste déroulante.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="aria">Attributs ARIA</h2>
+    <p>L’extension ajoute automatiquement les attributs ARIA suivants au balisage généré :</p>
+    <ul>
+      <li><code>role="navigation"</code> et <code>aria-label</code> sur l’élément <code>&lt;nav&gt;</code> (le libellé correspond au nom du menu dans WordPress).</li>
+      <li><code>aria-haspopup="true"</code> et <code>aria-expanded</code> sur les éléments de premier niveau dotés d’un menu déroulant ou d’un méga-menu.</li>
+      <li><code>aria-controls</code> reliant le bouton déclencheur à son panneau.</li>
+      <li><code>role="menu"</code> et <code>role="menuitem"</code> à l’intérieur des menus déroulants.</li>
+      <li><code>aria-current="page"</code> sur l’élément correspondant à la page courante.</li>
+    </ul>
+    <p>Vous n’avez rien à configurer : tout cela est appliqué automatiquement en fonction de la structure du menu.</p>
+
+    <h2 id="focus">Gestion du focus</h2>
+    <ul>
+      <li>Lorsqu’un menu déroulant s’ouvre, le focus se déplace vers son premier élément.</li>
+      <li>Lorsqu’un menu déroulant se ferme (via Échap ou en déplaçant le focus ailleurs), le focus revient sur l’élément déclencheur.</li>
+      <li>La superposition du menu mobile retient le focus à l’intérieur tant qu’elle est ouverte (impossible de tabuler hors du panneau). Sa fermeture redonne le focus au bouton hamburger.</li>
+    </ul>
+
+    <h2 id="motion">Animations réduites</h2>
+    <p>Toutes les transitions et animations respectent la media query CSS <code>prefers-reduced-motion: reduce</code>. Lorsque l’utilisateur a activé « Réduire les animations » dans les réglages d’accessibilité de son système d’exploitation :</p>
+    <ul>
+      <li>Les animations de glissement / fondu des menus déroulants sont remplacées par un affichage / masquage instantané.</li>
+      <li>Les transitions d’ouverture / fermeture du menu mobile sont instantanées.</li>
+      <li>L’animation d’apparition de la barre d’annonce est désactivée.</li>
+      <li>Les animations d’apparition des éléments de menu sont désactivées.</li>
+    </ul>
+
+    <h2 id="testing">Tester votre menu</h2>
+    <p>Après avoir configuré votre menu, utilisez les outils suivants pour vérifier son accessibilité :</p>
+    <ul>
+      <li><strong>Clavier uniquement</strong> — débranchez votre souris et parcourez l’intégralité du menu à l’aide des seules touches Tab, des flèches, Entrée et Échap.</li>
+      <li><strong>axe DevTools</strong> — une extension de navigateur gratuite qui exécute des contrôles WCAG automatisés sur la page en ligne.</li>
+      <li><strong>NVDA / VoiceOver</strong> — des lecteurs d’écran permettant de vérifier que les états des menus déroulants et les libellés sont correctement annoncés.</li>
+      <li><strong>Color Contrast Analyzer</strong> — vérifiez que vos couleurs personnalisées respectent toujours le rapport minimal de 4,5:1.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="import-export.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Import / Export</span>
+      </a>
+      <a class="next" href="multilingual.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Multilingue</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

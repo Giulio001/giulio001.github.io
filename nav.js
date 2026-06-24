@@ -37,7 +37,7 @@
       },
       onThisPage: "On this page",
       pickTitle:  "Choose your language",
-      pickSub:    "Documentation is available in English, Italian, German, Spanish, Dutch, Portuguese, and Russian.",
+      pickSub:    "Documentation is available in English, Italian, German, Spanish, Dutch, Portuguese, Russian, and French.",
       langEN:     "English",
       langIT:     "Italian",
       langDE:     "German",
@@ -82,7 +82,7 @@
       },
       onThisPage: "In questa pagina",
       pickTitle:  "Scegli la tua lingua",
-      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo, olandese, portoghese e russo.",
+      pickSub:    "La documentazione è disponibile in inglese, italiano, tedesco, spagnolo, olandese, portoghese, russo e francese.",
       langEN:     "Inglese",
       langIT:     "Italiano",
       langDE:     "Tedesco",
@@ -126,7 +126,7 @@
       },
       onThisPage: "Auf dieser Seite",
       pickTitle:  "Sprache wählen",
-      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch, Niederländisch, Portugiesisch und Russisch verfügbar.",
+      pickSub:    "Die Dokumentation ist auf Englisch, Italienisch, Deutsch, Spanisch, Niederländisch, Portugiesisch, Russisch und Französisch verfügbar.",
       langEN:     "Englisch",
       langIT:     "Italienisch",
       langDE:     "Deutsch",
@@ -170,7 +170,7 @@
       },
       onThisPage: "En esta página",
       pickTitle:  "Elige tu idioma",
-      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español, neerlandés, portugués y ruso.",
+      pickSub:    "La documentación está disponible en inglés, italiano, alemán, español, neerlandés, portugués, ruso y francés.",
       langEN:     "Inglés",
       langIT:     "Italiano",
       langDE:     "Alemán",
@@ -214,7 +214,7 @@
       },
       onThisPage: "Op deze pagina",
       pickTitle:  "Kies je taal",
-      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans, Nederlands, Portugees en Russisch.",
+      pickSub:    "De documentatie is beschikbaar in het Engels, Italiaans, Duits, Spaans, Nederlands, Portugees, Russisch en Frans.",
       langEN:     "Engels",
       langIT:     "Italiaans",
       langDE:     "Duits",
@@ -258,7 +258,7 @@
       },
       onThisPage: "Nesta página",
       pickTitle:  "Escolha o seu idioma",
-      pickSub:    "A documentação está disponível em inglês, italiano, alemão, espanhol, holandês, português e russo.",
+      pickSub:    "A documentação está disponível em inglês, italiano, alemão, espanhol, holandês, português, russo e francês.",
       langEN:     "Inglês",
       langIT:     "Italiano",
       langDE:     "Alemão",
@@ -302,7 +302,7 @@
       },
       onThisPage: "На этой странице",
       pickTitle:  "Выберите язык",
-      pickSub:    "Документация доступна на английском, итальянском, немецком, испанском, нидерландском, португальском и русском языках.",
+      pickSub:    "Документация доступна на английском, итальянском, немецком, испанском, нидерландском, португальском, русском и французском языках.",
       langEN:     "Английский",
       langIT:     "Итальянский",
       langDE:     "Немецкий",
@@ -314,21 +314,67 @@
       prev:       "← Назад",
       download:   "Скачать бесплатно",
       installBtn: "Руководство по установке →",
+    },
+    fr: {
+      groups: {
+        "Getting Started":  "Premiers pas",
+        "Using the Plugin": "Utilisation de l’extension",
+        "Features":         "Fonctionnalités",
+        "Tools":            "Outils",
+        "Advanced":         "Avancé"
+      },
+      labels: {
+        "index.html":          "Introduction",
+        "installation.html":   "Installation",
+        "shortcode.html":      "Shortcode [menux]",
+        "gutenberg.html":      "Bloc Gutenberg",
+        "themes.html":         "Thèmes et catégories",
+        "logo.html":           "Logo",
+        "mega-menu.html":      "Méga-menu",
+        "announcement.html":   "Barre d’annonce",
+        "cart.html":           "Panier WooCommerce",
+        "search.html":         "Recherche",
+        "badges.html":         "Badges et pastilles",
+        "visibility.html":     "Règles de visibilité",
+        "mobile.html":         "Menus mobiles",
+        "layout.html":         "Mise en page et effets",
+        "footer.html":         "Constructeur de pied de page",
+        "wp-integration.html": "Intégration WP",
+        "import-export.html":  "Import / Export",
+        "accessibility.html":  "Accessibilité",
+        "multilingual.html":   "Multilingue",
+        "faq.html":            "FAQ"
+      },
+      onThisPage: "Sur cette page",
+      pickTitle:  "Choisissez votre langue",
+      pickSub:    "La documentation est disponible en anglais, italien, allemand, espagnol, néerlandais, portugais, russe et français.",
+      langEN:     "Anglais",
+      langIT:     "Italien",
+      langDE:     "Allemand",
+      langES:     "Espagnol",
+      langNL:     "Néerlandais",
+      langPT:     "Portugais (BR)",
+      langRU:     "Russe",
+      langFR:     "Français",
+      next:       "Suivant →",
+      prev:       "← Précédent",
+      download:   "Télécharger gratuitement",
+      installBtn: "Guide d’installation →",
     }
   };
 
   const getLang = ()  => localStorage.getItem(LANG_KEY);
   const setLang = l   => localStorage.setItem(LANG_KEY, l);
 
-  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱', pt: '🇧🇷', ru: '🇷🇺' };
-  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands', pt: 'Português', ru: 'Русский' };
+  const FLAG   = { en: '🇬🇧', it: '🇮🇹', de: '🇩🇪', es: '🇪🇸', nl: '🇳🇱', pt: '🇧🇷', ru: '🇷🇺', fr: '🇫🇷' };
+  const NATIVE = { en: 'English', it: 'Italiano', de: 'Deutsch', es: 'Español', nl: 'Nederlands', pt: 'Português', ru: 'Русский', fr: 'Français' };
 
   /* ── Language picker overlay ──────────────────────────────────────────── */
   function showPicker(onDone) {
     const saved = getLang();
     const uiLang = (saved && T[saved]) ? saved : (() => {
       const l = (navigator.language || 'en').toLowerCase();
-      return l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : l.startsWith('pt') ? 'pt' : 'en';
+      return l.startsWith('it') ? 'it' : l.startsWith('de') ? 'de' : l.startsWith('es') ? 'es' : l.startsWith('nl') ? 'nl' : l.startsWith('pt') ? 'pt' : l.startsWith('ru') ? 'ru' : l.startsWith('fr') ? 'fr' : 'en';
     })();
     const tr = T[uiLang];
 
@@ -368,6 +414,10 @@
             <span class="lang-flag">${FLAG.ru}</span>
             <span class="lang-name">${NATIVE.ru}</span>
           </button>
+          <button class="lang-opt" data-lang="fr">
+            <span class="lang-flag">${FLAG.fr}</span>
+            <span class="lang-name">${NATIVE.fr}</span>
+          </button>
         </div>
       </div>`;
 
@@ -384,7 +434,7 @@
   }
 
   /* ── URL / language helpers ───────────────────────────────────────────── */
-  const LANGS = ['it','de','es','nl','pt','ru'];
+  const LANGS = ['it','de','es','nl','pt','ru','fr'];
 
   /* Each language is served from its own folder (/it/, /de/, …); English
      lives at the site root. Content is static per URL — no client-side

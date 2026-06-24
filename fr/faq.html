@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>FAQ — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Réponses aux questions fréquentes sur Giuliomax Menu Builder : thèmes, Gutenberg, WooCommerce, extensions de cache, performances et licence.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/faq.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/faq.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/faq.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/faq.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/faq.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/faq.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/faq.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/faq.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/faq.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/faq.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="FAQ — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Réponses aux questions fréquentes sur Giuliomax Menu Builder : thèmes, Gutenberg, WooCommerce, extensions de cache, performances et licence.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/faq.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Réponses aux questions fréquentes sur Giuliomax Menu Builder : thèmes, Gutenberg, WooCommerce, extensions de cache, performances et licence.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"},
+    {"@type": "ListItem", "position": 2, "name": "FAQ"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "L’extension est-elle vraiment gratuite ? Existe-t-il une version Pro ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, entièrement gratuite. Il n’existe pas de version Pro, pas de modules complémentaires premium et aucune fonctionnalité bloquée derrière un paywall. Tout ce qui est décrit dans cette documentation est disponible dès le premier jour, sans frais."}}, {"@type": "Question", "name": "Où se trouve le code source de l’extension ?", "acceptedAnswer": {"@type": "Answer", "text": "L’extension est open source. Le dépôt se trouve à l’adresse github.com/Giulio001/menux-free-version. Les rapports de bogues et les pull requests sont les bienvenus."}}, {"@type": "Question", "name": "Fonctionne-t-elle avec n’importe quel thème WordPress ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. L’extension génère son propre balisage et ses propres styles, indépendamment du thème actif. La seule considération propre au thème est l’endroit où vous placez le menu : pour les thèmes classiques, vous utilisez le shortcode ou un widget ; pour les thèmes FSE, vous utilisez le bloc Gutenberg dans l’éditeur de site (Site Editor)."}}, {"@type": "Question", "name": "Va-t-elle ralentir mon site ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L’extension ne charge que le CSS et le JavaScript nécessaires aux fonctionnalités que vous avez activées. Si vous n’utilisez pas le compte à rebours, son script n’est pas chargé. Les ressources sont minifiées et servies depuis votre serveur (aucun appel CDN vers des services tiers)."}}, {"@type": "Question", "name": "De quelle version de WordPress ai-je besoin ?", "acceptedAnswer": {"@type": "Answer", "text": "WordPress 5.8 ou une version supérieure. Pour profiter de la meilleure expérience d’édition complète du site (FSE) avec le bloc Gutenberg, WordPress 6.0 ou une version supérieure est recommandé."}}, {"@type": "Question", "name": "Fonctionne-t-elle avec les constructeurs de pages (Elementor, Divi, Beaver Builder) ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui, via le shortcode [menux]. Dans Elementor, utilisez le widget Shortcode et collez [menux]. Dans Divi, utilisez le module Code. Dans Beaver Builder, utilisez le module HTML."}}, {"@type": "Question", "name": "Entre-t-elle en conflit avec d’autres extensions de menu ?", "acceptedAnswer": {"@type": "Answer", "text": "Elle peut coexister avec d’autres extensions de menu, tant qu’elles ne sont pas toutes deux appliquées au même emplacement de menu. Si vous utilisiez auparavant une autre extension (par exemple Max Mega Menu ou UberMenu), désactivez-la avant d’activer Giuliomax Menu Builder afin d’éviter les conflits de style."}}, {"@type": "Question", "name": "Puis-je l’utiliser sur une installation multisite ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Activez-la à l’échelle du réseau pour la rendre disponible sur tous les sites, ou activez-la site par site. Les réglages sont stockés par site, et non à l’échelle du réseau."}}, {"@type": "Question", "name": "Puis-je créer mes propres thèmes ?", "acceptedAnswer": {"@type": "Answer", "text": "Vous pouvez personnaliser en profondeur n’importe quel thème intégré à l’aide des contrôles de style de Menu Builder (sections Couleurs / Typographie / Mise en page). L’enregistrement de ces personnalisations sous forme de « préréglage » nommé (Export → Enregistrer comme préréglage) est prévu pour une future version."}}, {"@type": "Question", "name": "Ma police personnalisée ne figure pas dans la liste des 70+ Google Fonts. Puis-je l’utiliser ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Chargez votre police via votre thème, une extension ou en la déclarant manuellement, puis saisissez le nom de la famille de police dans Menu Builder (sections Couleurs / Typographie / Mise en page) → Typographie → Famille de police → Personnalisée. L’extension utilisera la police disponible dans le navigateur."}}, {"@type": "Question", "name": "Comment réinitialiser toutes les modifications de style et revenir aux valeurs par défaut du thème ?", "acceptedAnswer": {"@type": "Answer", "text": "Dans Menu Builder (sections Couleurs / Typographie / Mise en page), cliquez sur Réinitialiser aux valeurs par défaut du thème, en bas du panneau. Cela restaure toutes les valeurs telles que définies par le thème actuellement appliqué."}}, {"@type": "Question", "name": "Le panneau du méga-menu est coupé sur le côté droit de l’écran. Comment corriger cela ?", "acceptedAnswer": {"@type": "Answer", "text": "Réglez la largeur du panneau sur Pleine largeur dans Menu Builder → Méga-menu → Largeur du panneau. Si vous avez besoin d’un panneau plus étroit, vérifiez que le CSS du conteneur de votre site n’applique pas overflow: hidden à un élément ancêtre du menu."}}, {"@type": "Question", "name": "Puis-je placer un formulaire de contact ou un produit WooCommerce dans une colonne de méga-menu ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui — utilisez le type de contenu de colonne Shortcode et collez n’importe quel shortcode ou code HTML. Par exemple : [contact-form-7 id=\"123\"] ou un shortcode de produit WooCommerce."}}, {"@type": "Question", "name": "Le menu de bureau et le menu mobile sont visibles en même temps. Comment corriger cela ?", "acceptedAnswer": {"@type": "Answer", "text": "Cela signifie généralement qu’une autre règle CSS prend le dessus sur les styles de point de rupture de l’extension. Ouvrez les outils de développement du navigateur, inspectez le conteneur du menu et recherchez une propriété display provenant de votre thème. Ajoutez une règle CSS plus spécifique à la feuille de style de votre thème, ou ajustez la valeur du point de rupture dans Menu Builder → Mobile."}}, {"@type": "Question", "name": "Le compteur du panier ne se met pas à jour sans recharger la page.", "acceptedAnswer": {"@type": "Answer", "text": "Assurez-vous que votre extension de cache (le cas échéant) ne met pas en cache les requêtes AJAX de WooCommerce. La plupart des extensions de cache proposent un mode compatible WooCommerce ou excluent automatiquement les requêtes de fragments de panier — consultez la documentation de votre extension de cache."}}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Avancé</p>
+    <h1>Foire aux questions</h1>
+    <p class="lead">Réponses aux questions les plus courantes sur Giuliomax Menu Builder.</p>
+
+    <h2>Généralités</h2>
+
+    <h3>L’extension est-elle vraiment gratuite ? Existe-t-il une version Pro ?</h3>
+    <p>Oui, entièrement gratuite. Il n’existe pas de version Pro, pas de modules complémentaires premium et aucune fonctionnalité bloquée derrière un paywall. Tout ce qui est décrit dans cette documentation est disponible dès le premier jour, sans frais.</p>
+
+    <h3>Où se trouve le code source de l’extension ?</h3>
+    <p>L’extension est open source. Le dépôt se trouve à l’adresse <a href="https://github.com/Giulio001/menux-free-version" target="_blank">github.com/Giulio001/menux-free-version</a>. Les rapports de bogues et les pull requests sont les bienvenus.</p>
+
+    <h3>Fonctionne-t-elle avec n’importe quel thème WordPress ?</h3>
+    <p>Oui. L’extension génère son propre balisage et ses propres styles, indépendamment du thème actif. La seule considération propre au thème est <em>l’endroit</em> où vous placez le menu : pour les thèmes classiques, vous utilisez le shortcode ou un widget ; pour les thèmes FSE, vous utilisez le bloc Gutenberg dans l’éditeur de site (Site Editor).</p>
+
+    <h3>Va-t-elle ralentir mon site ?</h3>
+    <p>Non. L’extension ne charge que le CSS et le JavaScript nécessaires aux fonctionnalités que vous avez activées. Si vous n’utilisez pas le compte à rebours, son script n’est pas chargé. Les ressources sont minifiées et servies depuis votre serveur (aucun appel CDN vers des services tiers).</p>
+
+    <h2>Installation et compatibilité</h2>
+
+    <h3>De quelle version de WordPress ai-je besoin ?</h3>
+    <p>WordPress 5.8 ou une version supérieure. Pour profiter de la meilleure expérience d’édition complète du site (FSE) avec le bloc Gutenberg, WordPress 6.0 ou une version supérieure est recommandé.</p>
+
+    <h3>Fonctionne-t-elle avec les constructeurs de pages (Elementor, Divi, Beaver Builder) ?</h3>
+    <p>Oui, via le shortcode <code>[menux]</code>. Dans Elementor, utilisez le widget <em>Shortcode</em> et collez <code>[menux]</code>. Dans Divi, utilisez le module <em>Code</em>. Dans Beaver Builder, utilisez le module <em>HTML</em>.</p>
+
+    <h3>Entre-t-elle en conflit avec d’autres extensions de menu ?</h3>
+    <p>Elle peut coexister avec d’autres extensions de menu, tant qu’elles ne sont pas toutes deux appliquées au même emplacement de menu. Si vous utilisiez auparavant une autre extension (par exemple Max Mega Menu ou UberMenu), désactivez-la avant d’activer Giuliomax Menu Builder afin d’éviter les conflits de style.</p>
+
+    <h3>Puis-je l’utiliser sur une installation multisite ?</h3>
+    <p>Oui. Activez-la à l’échelle du réseau pour la rendre disponible sur tous les sites, ou activez-la site par site. Les réglages sont stockés par site, et non à l’échelle du réseau.</p>
+
+    <h2>Thèmes et style</h2>
+
+    <h3>Puis-je créer mes propres thèmes ?</h3>
+    <p>Vous pouvez personnaliser en profondeur n’importe quel thème intégré à l’aide des contrôles de style de <strong>Menu Builder (sections Couleurs / Typographie / Mise en page)</strong>. L’enregistrement de ces personnalisations sous forme de « préréglage » nommé (Export → Enregistrer comme préréglage) est prévu pour une future version.</p>
+
+    <h3>Ma police personnalisée ne figure pas dans la liste des 70+ Google Fonts. Puis-je l’utiliser ?</h3>
+    <p>Oui. Chargez votre police via votre thème, une extension ou en la déclarant manuellement, puis saisissez le nom de la famille de police dans <strong>Menu Builder (sections Couleurs / Typographie / Mise en page) → Typographie → Famille de police → Personnalisée</strong>. L’extension utilisera la police disponible dans le navigateur.</p>
+
+    <h3>Comment réinitialiser toutes les modifications de style et revenir aux valeurs par défaut du thème ?</h3>
+    <p>Dans <strong>Menu Builder (sections Couleurs / Typographie / Mise en page)</strong>, cliquez sur <em>Réinitialiser aux valeurs par défaut du thème</em>, en bas du panneau. Cela restaure toutes les valeurs telles que définies par le thème actuellement appliqué.</p>
+
+    <h2>Méga-menu</h2>
+
+    <h3>Le panneau du méga-menu est coupé sur le côté droit de l’écran. Comment corriger cela ?</h3>
+    <p>Réglez la largeur du panneau sur <strong>Pleine largeur</strong> dans <strong>Menu Builder → Méga-menu → Largeur du panneau</strong>. Si vous avez besoin d’un panneau plus étroit, vérifiez que le CSS du conteneur de votre site n’applique pas <code>overflow: hidden</code> à un élément ancêtre du menu.</p>
+
+    <h3>Puis-je placer un formulaire de contact ou un produit WooCommerce dans une colonne de méga-menu ?</h3>
+    <p>Oui — utilisez le type de contenu de colonne <strong>Shortcode</strong> et collez n’importe quel shortcode ou code HTML. Par exemple : <code>[contact-form-7 id="123"]</code> ou un shortcode de produit WooCommerce.</p>
+
+    <h2>Mobile</h2>
+
+    <h3>Le menu de bureau et le menu mobile sont visibles en même temps. Comment corriger cela ?</h3>
+    <p>Cela signifie généralement qu’une autre règle CSS prend le dessus sur les styles de point de rupture de l’extension. Ouvrez les outils de développement du navigateur, inspectez le conteneur du menu et recherchez une propriété <code>display</code> provenant de votre thème. Ajoutez une règle CSS plus spécifique à la feuille de style de votre thème, ou ajustez la valeur du point de rupture dans <strong>Menu Builder → Mobile</strong>.</p>
+
+    <h2>WooCommerce</h2>
+
+    <h3>Le compteur du panier ne se met pas à jour sans recharger la page.</h3>
+    <p>Assurez-vous que votre extension de cache (le cas échéant) ne met pas en cache les requêtes AJAX de WooCommerce. La plupart des extensions de cache proposent un mode compatible WooCommerce ou excluent automatiquement les requêtes de fragments de panier — consultez la documentation de votre extension de cache.</p>
+
+    <h2>Obtenir de l’aide</h2>
+    <p>Si votre question ne trouve pas de réponse ici :</p>
+    <ul>
+      <li>Ouvrez un ticket sur <a href="https://github.com/Giulio001/menux-free-version/issues" target="_blank">GitHub</a>.</li>
+      <li>Lancez une discussion d’assistance sur le <a href="https://wordpress.org/plugins/giuliomax-menu-builder/#support" target="_blank">forum de support de WordPress.org</a>.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="multilingual.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Multilingue</span>
+      </a>
+      <span></span>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

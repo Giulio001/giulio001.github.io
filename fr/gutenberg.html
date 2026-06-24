@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Bloc Gutenberg — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Placez votre menu WordPress avec le bloc Gutenberg natif MenuX. Fonctionne dans l’éditeur de site des thèmes FSE — sans shortcode ni PHP.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/gutenberg.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/gutenberg.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/gutenberg.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/gutenberg.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/gutenberg.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/gutenberg.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/gutenberg.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/gutenberg.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/gutenberg.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/gutenberg.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Bloc Gutenberg — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Placez votre menu WordPress avec le bloc Gutenberg natif MenuX. Fonctionne dans l’éditeur de site des thèmes FSE — sans shortcode ni PHP.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/gutenberg.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bloc Gutenberg — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Placez votre menu WordPress avec le bloc Gutenberg natif MenuX. Fonctionne dans l’éditeur de site des thèmes FSE — sans shortcode ni PHP.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"},
+      {"@type": "ListItem", "position": 2, "name": "Bloc Gutenberg"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Utiliser l’extension</p>
+    <h1>Bloc Gutenberg</h1>
+    <p class="lead">Le bloc MenuX est un bloc WordPress natif qui vous permet de placer votre menu directement dans l’éditeur de site (Site Editor) — sans shortcode, sans widget et sans PHP.</p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#when-to-use">Quand utiliser le bloc</a>
+      <a href="#add-block">Ajouter le bloc</a>
+      <a href="#settings">Panneau de réglages du bloc</a>
+      <a href="#fse-header">L’utiliser dans un en-tête FSE</a>
+      <a href="#classic">Thèmes classiques</a>
+    </div>
+
+    <h2 id="when-to-use">Quand utiliser le bloc</h2>
+    <p>Utilisez le bloc Gutenberg si :</p>
+    <ul>
+      <li>Votre thème est un thème en <strong>édition complète du site (FSE)</strong> (par exemple Twenty Twenty-Four, Kadence, Blocksy).</li>
+      <li>Vous souhaitez gérer la mise en page de votre en-tête depuis l’<strong>éditeur de site</strong> (<em>Apparence → Éditeur</em>).</li>
+      <li>Vous préférez un flux de travail visuel, en glisser-déposer, plutôt que de coller des shortcodes.</li>
+    </ul>
+    <p>Si vous utilisez un thème classique (non FSE), le <a href="shortcode.html">shortcode</a> est l’outil adapté.</p>
+
+    <h2 id="add-block">Ajouter le bloc à une page ou à un modèle</h2>
+    <ol class="steps">
+      <li>Ouvrez la page ou le modèle à modifier. Pour les en-têtes valables sur tout le site, allez dans <strong>Apparence → Éditeur → Modèles</strong> et ouvrez la partie de modèle de votre en-tête.</li>
+      <li>Cliquez sur le bouton d’insertion <strong>+</strong> (barre d’outils en haut à gauche ou à l’intérieur d’une zone de bloc vide).</li>
+      <li>Recherchez <strong>MenuX</strong> ou <strong>Menu Builder</strong>.</li>
+      <li>Cliquez sur le bloc pour l’insérer, ou glissez-le à la position souhaitée.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Le bloc est enregistré sous le nom <code>giuliomax/menu</code>. Si vous utilisez un thème enfant ou du code personnalisé qui référence les blocs par leur nom, utilisez cet identifiant.</p>
+      </div>
+    </div>
+
+    <h2 id="settings">Panneau de réglages du bloc</h2>
+    <p>Lorsque le bloc MenuX — Menu est sélectionné, ses réglages apparaissent dans la barre latérale de droite, sous l’onglet <strong>Bloc</strong>.</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Réglage</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Emplacement de menu</strong></td><td>Choisissez l’emplacement à afficher. Les éléments attribués à cet emplacement dans <strong>Menu Builder → Structure du menu</strong> seront affichés.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Le thème, le style mobile, la recherche, le panier et tous les autres réglages d’apparence se configurent globalement dans <strong>Menu Builder</strong> — ils s’appliquent à chaque instance du bloc ou du shortcode présente sur votre site.</p>
+      </div>
+    </div>
+
+    <h2 id="fse-header">Recommandé : le placer dans un en-tête FSE</h2>
+    <ol class="steps">
+      <li>Allez dans <strong>Apparence → Éditeur</strong>.</li>
+      <li>Dans le panneau de gauche, cliquez sur <strong>Parties de modèle → En-tête</strong> (ou créez une nouvelle partie de modèle d’en-tête).</li>
+      <li>Dans l’en-tête, ajoutez un bloc <strong>Ligne</strong> ou <strong>Groupe</strong> pour contrôler l’alignement.</li>
+      <li>Insérez le bloc <strong>MenuX</strong> à l’intérieur de cette ligne.</li>
+      <li>Utilisez les contrôles de largeur et d’alignement du bloc pour positionner le menu (par exemple en pleine largeur, aligné à droite).</li>
+      <li>Cliquez sur <strong>Enregistrer</strong>. Le menu est désormais en ligne sur toutes les pages qui utilisent ce modèle d’en-tête.</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Vous pouvez placer <strong>plusieurs blocs MenuX</strong> dans le même modèle — par exemple une navigation principale dans l’en-tête et une navigation secondaire dans le pied de page — chacun pointant vers un emplacement de menu différent.</p>
+      </div>
+    </div>
+
+    <h2 id="classic">Thèmes classiques et éditeur de blocs</h2>
+    <p>Si votre thème n’est pas FSE mais que vous utilisez tout de même l’éditeur de blocs pour le contenu des pages, vous pouvez insérer le bloc MenuX dans n’importe quelle page. Toutefois, pour une navigation valable sur tout le site avec un thème classique, placer le shortcode dans une zone de widgets ou dans le fichier <code>header.php</code> du thème reste l’approche la plus fiable.</p>
+
+    <div class="page-nav">
+      <a href="shortcode.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Shortcode [menux]</span>
+      </a>
+      <a class="next" href="themes.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Thèmes et catégories</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

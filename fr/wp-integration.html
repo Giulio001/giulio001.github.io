@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Intégration WP des menus — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Remplacez les appels wp_nav_menu() de votre thème par un menu Menu Builder, sans modifier le moindre fichier de modèle. Compatible thèmes classiques et blocs.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/wp-integration.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/wp-integration.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/wp-integration.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/wp-integration.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/wp-integration.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/wp-integration.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/wp-integration.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/wp-integration.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/wp-integration.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/wp-integration.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Intégration WP des menus — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Remplacez les appels wp_nav_menu() de votre thème par un menu Menu Builder, sans modifier le moindre fichier de modèle. Compatible thèmes classiques et blocs.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/wp-integration.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Intégration WP des menus — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Remplacez les appels wp_nav_menu() de votre thème par un menu Menu Builder, sans modifier le moindre fichier de modèle. Compatible thèmes classiques et blocs.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Intégration WP"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Outils</p>
+    <h1>Intégration WP des menus</h1>
+    <p class="lead">Remplacez les menus de navigation natifs de votre thème par un menu Menu Builder, sans modifier le moindre fichier de modèle. Idéal pour les thèmes classiques en PHP qui font appel à <code>wp_nav_menu()</code>.</p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#what">À quoi ça sert</a>
+      <a href="#mapping">Associer un emplacement du thème</a>
+      <a href="#notes">Remarques et limites</a>
+    </div>
+
+    <h2 id="what">À quoi ça sert</h2>
+    <p>De nombreux thèmes classiques affichent la navigation de leur en-tête en appelant <code>wp_nav_menu()</code> sur un <em>emplacement de thème</em> déclaré (par exemple « Menu principal » ou « Menu du pied de page »). L’outil Intégration WP vous permet d’intercepter ces emplacements pour y afficher un menu Menu Builder à la place : vous bénéficiez ainsi de tout le style et de toutes les fonctionnalités de l’extension, sans toucher à <code>header.php</code> ni recourir à un shortcode.</p>
+
+    <h2 id="mapping">Associer un emplacement du thème</h2>
+    <ol class="steps">
+      <li>Rendez-vous dans <strong>Menu Builder → Intégration WP</strong>.</li>
+      <li>Vous y trouverez un tableau listant chaque emplacement de navigation déclaré par votre thème actif.</li>
+      <li>Pour chaque emplacement, choisissez dans le menu déroulant un emplacement Menu Builder (<code>primary</code>, <code>footer</code>, <code>sidebar</code> ou <code>mobile</code>) pour le remplacer, ou laissez <strong>— Ne pas remplacer —</strong> afin de conserver le menu d’origine du thème.</li>
+      <li>Cliquez sur <strong>Enregistrer le menu</strong>.</li>
+    </ol>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Si votre thème ne déclare aucun emplacement de menu, le tableau affiche un avertissement. Dans ce cas, votre thème n’appelle pas <code>register_nav_menus()</code> et vous devez plutôt utiliser le <a href="shortcode.html">shortcode</a> ou le <a href="gutenberg.html">bloc Gutenberg</a>.</p>
+      </div>
+    </div>
+
+    <h2 id="notes">Remarques et limites</h2>
+    <ul>
+      <li>Un emplacement Menu Builder signalé par <strong>⚠ aucun élément</strong> ne contient aucun élément de menu. Le sélectionner conservera simplement le menu d’origine du thème plutôt que d’afficher un menu vide.</li>
+      <li>Le menu déroulant indique le nombre d’éléments que contient chaque emplacement, ce qui vous permet de vérifier que vous l’associez au bon menu.</li>
+      <li>Cet outil cible les thèmes classiques basés sur PHP. Pour les thèmes à base de blocs (FSE), modifiez la partie de modèle de l’en-tête et utilisez plutôt le <a href="gutenberg.html">bloc Gutenberg</a>.</li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="footer.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Constructeur de pied de page</span>
+      </a>
+      <a class="next" href="import-export.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Import / Export</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

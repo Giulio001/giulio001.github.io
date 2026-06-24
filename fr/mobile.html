@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Styles et configuration des menus mobiles — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Quatre styles de navigation mobile : panneau, push, superposition ou plein écran. Réglez le bouton hamburger, le point de rupture et les animations.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/mobile.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/mobile.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/mobile.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/mobile.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/mobile.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/mobile.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/mobile.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/mobile.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/mobile.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/mobile.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Styles et configuration des menus mobiles — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Quatre styles de navigation mobile : panneau, push, superposition ou plein écran. Réglez le bouton hamburger, le point de rupture et les animations.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/mobile.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Styles et configuration des menus mobiles — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Quatre styles de navigation mobile : panneau, push, superposition ou plein écran. Réglez le bouton hamburger, le point de rupture et les animations.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"}, {"@type": "ListItem", "position": 2, "name": "Menus mobiles"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Fonctionnalités</p>
+    <h1>Menus mobiles</h1>
+    <p class="lead">Choisissez parmi quatre styles de menu mobile distincts et définissez précisément le comportement de votre navigation sur petit écran — le tout sans toucher au CSS ni au JavaScript.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/mobile-menu.svg" alt="Menu mobile MenuX présenté sous forme de panneau coulissant à gauche avec superposition et sous-menu en accordéon déployé" style="display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#breakpoint">Définir le point de rupture</a>
+      <a href="#styles">Les styles mobiles</a>
+      <a href="#hamburger">Bouton hamburger</a>
+      <a href="#link-colors">Couleurs des liens mobiles</a>
+      <a href="#submenu">Comportement des sous-menus</a>
+      <a href="#mega-mobile">Méga-menus sur mobile</a>
+      <a href="#preview">Aperçu téléphone en direct</a>
+    </div>
+
+    <h2 id="breakpoint">Définir le point de rupture</h2>
+    <p>Le point de rupture (breakpoint) est la largeur de fenêtre en dessous de laquelle le menu de bureau est masqué et le menu mobile apparaît. Définissez-le dans <strong>Menu Builder → Mobile</strong>.</p>
+    <p>La valeur par défaut est de <strong>768 px</strong> (limite standard entre tablette et mobile). Saisissez la valeur en pixels qui convient à votre mise en page, ou choisissez <strong>Auto</strong> pour laisser l’extension détecter dynamiquement l’espace disponible.</p>
+
+    <h2 id="styles">Les styles de menu mobile</h2>
+
+    <h3>1. Menu déroulant <span class="badge badge-green">Par défaut</span></h3>
+    <p>Le style le plus courant. Les éléments de menu s’empilent verticalement dans un panneau déroulant classique, juste sous la barre de menu. Les sous-éléments sont indentés sous leur parent.</p>
+    <ul>
+      <li>Familier et compris de tous</li>
+      <li>Convient bien aux menus comportant de nombreux éléments</li>
+      <li>Idéal pour : blogs, sites d’entreprise, portfolios</li>
+    </ul>
+
+    <h3>2. Plein écran</h3>
+    <p>Les éléments de menu sont centrés sur une superposition en plein écran qui couvre toute la fenêtre. Grande typographie, beaucoup d’espace pour respirer.</p>
+    <ul>
+      <li>Effet spectaculaire et moderne</li>
+      <li>Idéal pour les sites comptant au maximum 5 à 8 éléments de premier niveau</li>
+      <li>Idéal pour : agences, photographes, pages d’atterrissage</li>
+    </ul>
+
+    <h3>3. Panneau coulissant — Gauche</h3>
+    <p>Un panneau se glisse depuis le bord gauche de l’écran et recouvre en partie le contenu de la page. Le reste de la page s’assombrit mais reste partiellement visible.</p>
+    <ul>
+      <li>Familier des applications mobiles (par exemple Gmail, Google Maps)</li>
+      <li>Convient aux hiérarchies de navigation profondes</li>
+      <li>Idéal pour : e-commerce, portails, sites de documentation</li>
+    </ul>
+
+    <h3>4. Panneau coulissant — Droite</h3>
+    <p>Identique au panneau coulissant à gauche, mais il se glisse depuis le bord droit. Utile lorsque votre bouton hamburger se trouve à droite de la barre et qu’un panneau aligné à gauche paraîtrait contre-intuitif.</p>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Basculez d’un style à l’autre dans <strong>Menu Builder → Mobile</strong>. Le changement prend effet immédiatement — inutile de republier votre menu.</p>
+      </div>
+    </div>
+
+    <h2 id="hamburger">Bouton hamburger</h2>
+    <p>Le bouton hamburger (☰) est la commande qui ouvre et ferme le menu mobile. Configurez-le dans la section <strong>Menu Builder → Mobile</strong> :</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Style d’icône</strong></td><td>Classique (3 traits), Moderne (arrondi) ou Minimal (fin).</td></tr>
+          <tr><td><strong>Alignement</strong></td><td>À gauche, au centre ou à droite de la barre de navigation mobile.</td></tr>
+          <tr><td><strong>Couleur de l’icône</strong></td><td>Indépendante de la couleur des éléments de menu.</td></tr>
+          <tr><td><strong>Arrière-plan du bouton</strong></td><td>Couleur d’arrière-plan facultative derrière l’icône hamburger. L’extension impose un fond transparent par défaut afin que les styles de bouton de votre thème ne transparaissent pas.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="link-colors">Couleurs des liens mobiles</h2>
+    <p>Vous pouvez attribuer aux liens du menu mobile leurs propres couleurs, totalement indépendantes de celles du menu de bureau. Vous trouverez trois sélecteurs de couleur dédiés dans <strong>Style → Hamburger → Texte des liens mobiles</strong> :</p>
+    <ul>
+      <li><strong>Normal</strong> — couleur par défaut des liens dans le menu mobile</li>
+      <li><strong>Survol</strong> — couleur lorsque le lien est touché ou survolé</li>
+      <li><strong>Actif</strong> — couleur de l’élément actuellement actif</li>
+    </ul>
+    <p>Laissez un champ vide pour hériter des couleurs du menu de bureau.</p>
+
+    <h2 id="submenu">Comportement des sous-menus sur mobile</h2>
+    <p>Lorsqu’un élément de menu possède des sous-éléments, vous pouvez contrôler la façon dont ils se déploient sur mobile grâce à l’option <strong>accordéon</strong> :</p>
+    <ul>
+      <li><strong>Accordéon activé</strong> — un seul sous-menu peut être ouvert à la fois. En ouvrir un referme automatiquement les autres. Recommandé pour les longs menus.</li>
+      <li><strong>Accordéon désactivé</strong> (par défaut) — plusieurs sous-menus peuvent rester déployés en même temps.</li>
+    </ul>
+    <p>Réglez ceci dans la section <strong>Menu Builder → Mobile</strong>.</p>
+
+    <h2 id="mega-mobile">Méga-menus sur mobile</h2>
+    <p>Lorsqu’un élément de premier niveau a un méga-menu activé, le toucher sur mobile fait glisser un panneau dédié en plein écran n’affichant que ces liens — avec un bouton ← de retour en haut. La navigation gagne ainsi une sensation d’application native (semblable aux grands sites de vente au détail) tout en gardant la liste claire et lisible.</p>
+    <p>Vous pouvez contrôler le comportement mobile du méga-menu élément par élément depuis le panneau <strong>⚡ Méga-menu</strong> :</p>
+    <ul>
+      <li><strong>Visible sur mobile</strong> (push-screen) — la navigation push par défaut décrite ci-dessus.</li>
+      <li><strong>Masqué sur mobile</strong> — le méga-panneau n’est pas rendu sur les petits écrans ; les sous-éléments sont entièrement masqués.</li>
+    </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Sur mobile, les personnalisations d’apparence propres à chaque méga-menu (arrière-plan, couleurs, polices) sont automatiquement neutralisées afin que les liens s’affichent toujours avec le même style neutre que le reste du menu mobile — ce qui évite les combinaisons de couleurs incohérentes héritées des préréglages de bureau.</p>
+      </div>
+    </div>
+
+    <h2 id="preview">Aperçu téléphone en direct</h2>
+    <p>Tant que vous êtes dans l’onglet <strong>Mobile</strong> du panneau d’administration, une maquette de téléphone épinglée sur le côté droit de l’écran se met à jour en temps réel à chaque modification d’un réglage mobile — style d’ouverture, couleur de la superposition, alignement du hamburger, couleur des liens, largeur du panneau, et bien plus. Aucun enregistrement n’est nécessaire pour en voir l’effet.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>L’extension respecte automatiquement la media query CSS <code>prefers-reduced-motion</code>. Si le visiteur a activé « Réduire les animations » dans les réglages d’accessibilité de son système d’exploitation, toutes les animations sont désactivées, quel que soit le réglage ci-dessus.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="visibility.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Règles de visibilité</span>
+      </a>
+      <a class="next" href="layout.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Mise en page et effets</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

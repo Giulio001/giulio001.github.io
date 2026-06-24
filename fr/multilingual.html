@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Prise en charge multilingue des menus — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Compatibilité native avec WPML, Polylang et TranslatePress. Attribuez un libellé par langue à chaque élément et profitez d’une mise en page RTL automatique.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/multilingual.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/multilingual.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/multilingual.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/multilingual.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/multilingual.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/multilingual.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/multilingual.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/multilingual.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/multilingual.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/multilingual.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Prise en charge multilingue des menus — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Compatibilité native avec WPML, Polylang et TranslatePress. Attribuez un libellé par langue à chaque élément et profitez d’une mise en page RTL automatique.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/multilingual.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prise en charge multilingue des menus — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Compatibilité native avec WPML, Polylang et TranslatePress. Attribuez un libellé par langue à chaque élément et profitez d’une mise en page RTL automatique.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"},
+    {"@type": "ListItem", "position": 2, "name": "Multilingue"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Avancé</p>
+    <h1>Multilingue</h1>
+    <p class="lead">Giuliomax Menu Builder prend en charge nativement les sites multilingues. Lorsque WPML, Polylang, TranslatePress ou Multilingual Press est actif, l’extension détecte les langues disponibles et vous permet d’attribuer un libellé distinct à chaque élément de menu, pour chaque langue.</p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#how-it-works">Fonctionnement</a>
+      <a href="#setup">Configurer des libellés par langue</a>
+      <a href="#detection">Extensions prises en charge</a>
+      <a href="#rtl">Langues RTL</a>
+      <a href="#strings">Traduire les chaînes de l’extension</a>
+    </div>
+
+    <h2 id="how-it-works">Fonctionnement</h2>
+    <p>Lorsqu’une extension multilingue compatible est active, <strong>Menu Builder</strong> détecte automatiquement la liste des langues disponibles. Dans la section <strong>Multilingue</strong> du panneau d’administration, vous pouvez consulter les langues détectées.</p>
+    <p>Chaque élément de menu dans <strong>Menu Builder → Structure du menu</strong> dispose d’un champ de libellé distinct pour chaque langue détectée. Le JavaScript du front-office lit la langue active du visiteur et affiche le bon libellé, sans rechargement de page ni menu séparé.</p>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>Si aucun libellé n’est défini pour la langue du visiteur, l’extension se rabat sur le libellé par défaut.</p>
+      </div>
+    </div>
+
+    <h2 id="setup">Configurer des libellés par langue</h2>
+    <ol class="steps">
+      <li>Installez et activez une extension multilingue prise en charge (voir la liste ci-dessous).</li>
+      <li>Ouvrez <strong>Menu Builder</strong> dans l’administration de WordPress.</li>
+      <li>Cliquez sur un élément de menu dans la section <strong>Structure du menu</strong> pour le déployer.</li>
+      <li>Un champ de libellé apparaît pour chaque langue détectée. Renseignez le libellé traduit pour chaque langue.</li>
+      <li>Cliquez sur <strong>Enregistrer le menu</strong>.</li>
+    </ol>
+
+    <h2 id="detection">Extensions multilingues prises en charge</h2>
+    <p>L’extension détecte automatiquement les langues à partir des extensions suivantes :</p>
+    <ul>
+      <li><strong>WPML</strong> — détecté via <code>ICL_SITEPRESS_VERSION</code></li>
+      <li><strong>Polylang</strong> — détecté via <code>pll_languages_list()</code></li>
+      <li><strong>TranslatePress</strong> — détecté via la classe <code>TRP_Translate_Press</code></li>
+      <li><strong>Multilingual Press</strong> — détecté via <code>mlp_get_available_languages()</code></li>
+    </ul>
+    <p>Si aucune extension multilingue n’est active, l’extension utilise la locale par défaut du site.</p>
+
+    <h2 id="rtl">Langues RTL (arabe, hébreu, persan, etc.)</h2>
+    <p>L’extension intègre une prise en charge complète du RTL (de droite à gauche). Lorsque WordPress détecte que la langue active est en RTL (via la fonction <code>is_rtl()</code>), MenuX procède automatiquement aux opérations suivantes :</p>
+    <ul>
+      <li>Inversion de la mise en page du menu (les éléments s’enchaînent de droite à gauche).</li>
+      <li>Inversion de la position des menus déroulants (les panneaux s’ouvrent vers la gauche au lieu de la droite).</li>
+      <li>Inversion du sens du panneau coulissant (il apparaît depuis la droite).</li>
+      <li>Inversion de la position des icônes (icône du panier, icône de recherche).</li>
+    </ul>
+    <p>Aucune configuration n’est nécessaire : le mode RTL s’active automatiquement selon le réglage de langue de WordPress.</p>
+
+    <h2 id="strings">Traduire les chaînes d’interface de l’extension</h2>
+    <p>Les chaînes d’interface propres à l’extension (par exemple le libellé « Fermer » du bouton de menu mobile) sont prêtes à être traduites via le système standard de fichiers <code>.po</code> / <code>.mo</code> de WordPress.</p>
+    <p>Le domaine de traduction (text domain) de l’extension est <code>giuliomax-menu-builder</code>. Pour ajouter une traduction :</p>
+    <ol class="steps">
+      <li>Téléchargez le fichier modèle <code>.pot</code> depuis le dossier <code>/languages</code> de l’extension.</li>
+      <li>Ouvrez-le dans <a href="https://poedit.net/" target="_blank">Poedit</a> ou n’importe quel éditeur de fichiers <code>.po</code>.</li>
+      <li>Enregistrez votre traduction sous le nom <code>giuliomax-menu-builder-{locale}.po</code> (par exemple <code>giuliomax-menu-builder-it_IT.po</code>) et compilez-la en <code>.mo</code>.</li>
+      <li>Téléversez les deux fichiers dans <code>/wp-content/languages/plugins/</code>.</li>
+    </ol>
+
+    <div class="page-nav">
+      <a href="accessibility.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Accessibilité</span>
+      </a>
+      <a class="next" href="faq.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">FAQ</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

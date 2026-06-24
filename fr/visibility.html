@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Règles de visibilité des éléments de menu — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Affichez ou masquez vos éléments de menu WordPress selon le rôle, la connexion, l’appareil ou l’horaire — avec logique ET/OU et aperçu en direct.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/visibility.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/visibility.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/visibility.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/visibility.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/visibility.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/visibility.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/visibility.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/visibility.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/visibility.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/visibility.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Règles de visibilité des éléments de menu — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Affichez ou masquez vos éléments de menu WordPress selon le rôle, la connexion, l’appareil ou l’horaire — avec logique ET/OU et aperçu en direct.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/visibility.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Règles de visibilité des éléments de menu — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Affichez ou masquez vos éléments de menu WordPress selon le rôle, la connexion, l’appareil ou l’horaire — avec logique ET/OU et aperçu en direct.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://giulio001.github.io/fr/"}, {"@type": "ListItem", "position": 2, "name": "Règles de visibilité"}]}
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Fonctionnalités</p>
+    <h1>Règles de visibilité</h1>
+    <p class="lead">Affichez ou masquez chaque élément de menu en fonction de la personne qui consulte le site, de l’appareil qu’elle utilise, du moment de sa visite ou de son état de connexion.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/visibility.svg" alt="Liste d’éléments de menu affichant des règles de visibilité : Tout le monde, Utilisateur connecté, Visiteurs uniquement, Mobile uniquement et une planification horaire" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#how">Fonctionnement des règles de visibilité</a>
+      <a href="#user-role">Menu déroulant de visibilité</a>
+      <a href="#device">Appareil</a>
+      <a href="#schedule">Planification et horaires</a>
+      <a href="#login">Ciblage par page et par campagne</a>
+      <a href="#combining">Combiner les règles</a>
+    </div>
+
+    <h2 id="how">Fonctionnement des règles de visibilité</h2>
+    <p>Chaque élément de menu possède son propre jeu de règles de visibilité. Elles se configurent dans <strong>Menu Builder → Structure du menu</strong> — cliquez sur n’importe quel élément de la liste pour déployer ses options et repérez le menu déroulant <strong>Visibilité</strong> ainsi que la section <strong>Conditions avancées</strong>.</p>
+    <p>Par défaut, tous les éléments sont visibles par tout le monde. Dès que vous définissez une règle, l’élément n’est plus affiché qu’aux visiteurs qui remplissent cette condition. Les différents types de règles se combinent avec une logique <strong>ET</strong> — toutes les règles activées doivent correspondre pour que l’élément apparaisse.</p>
+
+    <h2 id="user-role">Menu déroulant de visibilité (rôle et connexion)</h2>
+    <p>Chaque élément dispose d’un unique menu déroulant <strong>Visibilité</strong> dans lequel vous choisissez l’une des options suivantes :</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Tout le monde</strong></td><td>Valeur par défaut. Aucune restriction — l’élément est affiché à tous les visiteurs.</td></tr>
+          <tr><td><strong>Tout utilisateur connecté</strong></td><td>Visible uniquement par les utilisateurs connectés (quel que soit leur rôle).</td></tr>
+          <tr><td><strong>Visiteurs uniquement (non connectés)</strong></td><td>Visible uniquement par les visiteurs non connectés. Pratique pour les liens « Connexion » / « Inscription ».</td></tr>
+          <tr><td><strong>[Rôle] uniquement</strong></td><td>Visible uniquement par les utilisateurs ayant exactement ce rôle — par exemple « Administrateur uniquement », « Éditeur uniquement », « Client uniquement ». Vous sélectionnez un rôle dans la liste.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Les rôles personnalisés ajoutés par d’autres extensions (par exemple « Responsable de boutique » ou « Client » de WooCommerce) apparaissent automatiquement dans le menu déroulant. Pour cibler <strong>plusieurs</strong> rôles à la fois, utilisez plutôt le champ <strong>Rôles</strong> des conditions avancées (saisissez une liste séparée par des virgules, par exemple <code>editor,author</code> — l’élément ne s’affiche qu’aux utilisateurs possédant l’un de ces rôles).</p>
+      </div>
+    </div>
+
+    <h2 id="device">Appareil</h2>
+    <p>Dans les conditions avancées, affichez ou masquez un élément selon le type d’appareil du visiteur :</p>
+    <ul>
+      <li><strong>Tous les appareils</strong> — valeur par défaut.</li>
+      <li><strong>Mobile uniquement</strong> — affiché uniquement sur téléphones/tablettes, masqué sur ordinateur.</li>
+      <li><strong>Ordinateur uniquement</strong> — affiché uniquement sur ordinateur, masqué sur mobile.</li>
+    </ul>
+
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p>La détection de l’appareil s’effectue côté serveur, au chargement de la page, grâce à la fonction <code>wp_is_mobile()</code> de WordPress. Contrairement aux media queries CSS, le HTML adéquat est ainsi envoyé au navigateur — l’élément n’est pas simplement masqué en CSS — ce qui évite tout clignotement du contenu. Notez que <code>wp_is_mobile()</code> considère les tablettes comme des appareils mobiles.</p>
+      </div>
+    </div>
+
+    <h2 id="schedule">Planification et horaires</h2>
+    <p>Deux contrôles de planification indépendants sont disponibles dans les conditions avancées.</p>
+
+    <h3>Plage de dates</h3>
+    <p>Définissez une <strong>date/heure de début</strong> et/ou une <strong>date/heure de fin</strong>. L’élément n’est visible qu’entre ces deux moments (bornes incluses). Laissez l’un des champs vide pour une plage ouverte — pratique pour programmer l’apparition et la disparition automatiques d’un lien promotionnel.</p>
+
+    <h3>Créneau horaire quotidien</h3>
+    <p>Définissez une heure <strong>De</strong> et une heure <strong>À</strong> (HH:MM). L’élément n’est visible que pendant ce créneau, chaque jour. Exemple : n’afficher un lien « Support en direct » qu’entre 09:00 et 18:00.</p>
+
+    <div class="callout warn">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <p>Les règles de planification se basent sur le fuseau horaire de votre site WordPress (défini dans <em>Réglages → Général → Fuseau horaire</em>), et non sur l’heure locale du visiteur.</p>
+      </div>
+    </div>
+
+    <h2 id="login">Ciblage par page et par campagne</h2>
+    <p>Deux conditions supplémentaires complètent la section avancée :</p>
+    <ul>
+      <li><strong>Pages</strong> — limitez l’élément à des pages précises en saisissant leurs identifiants de page (séparés par des virgules).</li>
+      <li><strong>Source UTM</strong> — n’affichez l’élément que lorsque le visiteur arrive avec un paramètre <code>utm_source</code> correspondant. Pratique pour adapter le menu à une campagne marketing donnée.</li>
+    </ul>
+
+    <h2 id="combining">Combiner les règles</h2>
+    <p>Toutes les règles actives doivent correspondre simultanément (logique ET). Par exemple, pour n’afficher un élément de menu qu’aux <em>utilisateurs connectés, sur ordinateur, pendant les heures de bureau</em> :</p>
+    <ul>
+      <li>Menu déroulant Visibilité → <strong>Tout utilisateur connecté</strong></li>
+      <li>Appareil → <strong>Ordinateur uniquement</strong></li>
+      <li>Créneau horaire quotidien → <strong>09:00–18:00</strong></li>
+    </ul>
+
+    <div class="page-nav">
+      <a href="badges.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Badges et pastilles</span>
+      </a>
+      <a class="next" href="mobile.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Menus mobiles</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>

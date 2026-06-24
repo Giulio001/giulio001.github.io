@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#6366f1">
+  <title>Icône du panier WooCommerce dans la navigation — Documentation Giuliomax Menu Builder</title>
+  <meta name="description" content="Affichez une icône de panier WooCommerce en direct, avec un badge du nombre d’articles, dans votre barre de navigation. Mise à jour instantanée via AJAX.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://giulio001.github.io/fr/cart.html">
+
+  <link rel="alternate" hreflang="en" href="https://giulio001.github.io/cart.html">
+  <link rel="alternate" hreflang="it" href="https://giulio001.github.io/it/cart.html">
+  <link rel="alternate" hreflang="de" href="https://giulio001.github.io/de/cart.html">
+  <link rel="alternate" hreflang="es" href="https://giulio001.github.io/es/cart.html">
+  <link rel="alternate" hreflang="nl" href="https://giulio001.github.io/nl/cart.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://giulio001.github.io/pt/cart.html">
+  <link rel="alternate" hreflang="ru" href="https://giulio001.github.io/ru/cart.html">
+  <link rel="alternate" hreflang="fr" href="https://giulio001.github.io/fr/cart.html">
+  <link rel="alternate" hreflang="x-default" href="https://giulio001.github.io/cart.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Icône du panier WooCommerce dans la navigation — Documentation Giuliomax Menu Builder">
+  <meta property="og:description" content="Affichez une icône de panier WooCommerce en direct, avec un badge du nombre d’articles, dans votre barre de navigation. Mise à jour instantanée via AJAX.">
+  <meta property="og:url" content="https://giulio001.github.io/fr/cart.html">
+  <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Icône du panier WooCommerce dans la navigation — Documentation Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Affichez une icône de panier WooCommerce en direct, avec un badge du nombre d’articles, dans votre barre de navigation. Mise à jour instantanée via AJAX.">
+  <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
+
+  <link rel="stylesheet" href="/style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Documentation","item":"https://giulio001.github.io/fr/"},
+    {"@type":"ListItem","position":2,"name":"Panier WooCommerce"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<aside id="sidebar"></aside>
+<main>
+  <article>
+    <p class="breadcrumb">Fonctionnalités</p>
+    <h1>Panier WooCommerce</h1>
+    <p class="lead">Affichez une icône de panier avec un badge indiquant en temps réel le nombre d’articles, directement dans votre barre de navigation. Le badge se met à jour instantanément lorsque les clients ajoutent ou retirent des produits — sans rechargement de la page.</p>
+    <p style="margin:2rem 0 2.5rem;"><img src="/assets/img/woo-cart.svg" alt="Icône du panier WooCommerce MenuX avec un badge de comptage et un mini-panier déroulant ouvert" style="display:block;width:100%;max-width:880px;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:12px;"></p>
+
+    <div class="on-this-page">
+      <strong>Sur cette page</strong>
+      <a href="#requirements">Prérequis</a>
+      <a href="#enable">Activer l’icône du panier</a>
+      <a href="#position">Position de l’icône</a>
+      <a href="#styling">Mise en forme</a>
+      <a href="#mini-cart">Mini-panier déroulant</a>
+    </div>
+
+    <h2 id="requirements">Prérequis</h2>
+    <div class="callout note">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">
+        <p><strong>WooCommerce doit être installé et activé</strong> pour que l’icône du panier s’affiche. Si WooCommerce n’est pas actif, l’option de l’icône du panier est masquée dans le panneau de réglages et l’icône n’apparaît pas sur le site.</p>
+      </div>
+    </div>
+
+    <h2 id="enable">Activer l’icône du panier</h2>
+    <ol class="steps">
+      <li>Assurez-vous que WooCommerce est actif sur votre site.</li>
+      <li>Ouvrez <strong>Menu Builder → WooCommerce</strong>.</li>
+      <li>Activez l’option <strong>Afficher l’icône du panier dans le menu</strong>.</li>
+      <li>Enregistrez les réglages.</li>
+    </ol>
+    <p>Par défaut, l’icône du panier apparaît à l’extrémité droite de la barre de navigation.</p>
+
+    <h2 id="position">Position de l’icône</h2>
+    <p>Vous pouvez modifier l’emplacement de l’icône du panier dans la barre de menu :</p>
+    <ul>
+      <li><strong>Droite</strong> (par défaut) — après tous les éléments du menu.</li>
+      <li><strong>Gauche</strong> — avant tous les éléments du menu.</li>
+    </ul>
+
+    <p>Définissez la position dans <strong>Menu Builder → WooCommerce</strong>.</p>
+
+    <h2 id="styling">Mettre en forme l’icône du panier</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Style d’icône</strong></td><td>Choisissez entre une icône de chariot, de sac ou de panier.</td></tr>
+          <tr><td><strong>Couleur de l’icône</strong></td><td>Hérite par défaut de la couleur des éléments de menu. Définissez une couleur personnalisée si nécessaire.</td></tr>
+          <tr><td><strong>Afficher le badge de comptage</strong></td><td>Activez cette option pour afficher la pastille du nombre d’articles sur l’icône.</td></tr>
+          <tr><td><strong>Afficher le total</strong></td><td>Activez cette option pour afficher le montant total du panier à côté de l’icône.</td></tr>
+          <tr><td><strong>Arrière-plan du badge</strong></td><td>Couleur de la pastille ronde de comptage.</td></tr>
+          <tr><td><strong>Masquer quand le panier est vide</strong></td><td>Activez cette option pour masquer entièrement l’icône lorsque le panier est vide.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="mini-cart">Mini-panier déroulant</h2>
+    <p>Affichez un petit panneau récapitulatif des produits lorsque l’utilisateur interagit avec l’icône du panier — sans quitter la page en cours.</p>
+    <ol class="steps">
+      <li>Ouvrez <strong>Menu Builder → WooCommerce</strong>.</li>
+      <li>Dans le réglage <strong>Mini-panier</strong>, choisissez <strong>survol</strong> (s’ouvre au passage de la souris), <strong>clic</strong> (s’ouvre au clic) ou <strong>désactivé</strong>.</li>
+    </ol>
+
+    <div class="callout tip">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">
+        <p>Le nombre d’articles du panier se met à jour en temps réel grâce au système natif de fragments de WooCommerce (AJAX). L’extension n’ajoute aucun appel AJAX personnalisé.</p>
+      </div>
+    </div>
+
+    <div class="page-nav">
+      <a href="announcement.html">
+        <span class="nav-dir">← Précédent</span>
+        <span class="nav-title">Barre d’annonce</span>
+      </a>
+      <a class="next" href="search.html">
+        <span class="nav-dir">Suivant →</span>
+        <span class="nav-title">Recherche</span>
+      </a>
+    </div>
+  </article>
+</main>
+<script src="/nav.js"></script>
+</body>
+</html>
