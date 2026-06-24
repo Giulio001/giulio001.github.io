@@ -451,9 +451,16 @@
     if (lang === 'en') return page === 'index.html' ? '/' : '/' + page;
     return page === 'index.html' ? '/' + lang + '/' : '/' + lang + '/' + page;
   }
+  function isTranslatablePage() {
+    return pages.some(p => p.href === currentPage());
+  }
   function goToLang(lang) {
     setLang(lang);
-    if (lang !== currentLang()) window.location.href = urlFor(lang, currentPage());
+    if (lang === currentLang()) return;
+    /* Standalone pages (e.g. comparison landings) exist only in English —
+       send the visitor to that language's home rather than a 404. */
+    const page = isTranslatablePage() ? currentPage() : 'index.html';
+    window.location.href = urlFor(lang, page);
   }
 
   /* ── Pages manifest ───────────────────────────────────────────────────── */
@@ -576,10 +583,12 @@
     /* Explicit language URL — respect it and remember the preference */
     setLang(here);
     document.addEventListener("DOMContentLoaded", () => init(here));
-  } else if (saved && T[saved] && saved !== 'en') {
+  } else if (saved && T[saved] && saved !== 'en' && pages.some(p => p.href === currentPage())) {
     /* On the default (English) URL but the visitor has chosen another
        language before — send them to their version. Crawlers have no saved
-       preference, so they never redirect and every URL stays indexable. */
+       preference, so they never redirect and every URL stays indexable.
+       Standalone English-only pages (comparison landings) are skipped so
+       they never redirect to a non-existent translated URL. */
     window.location.replace(urlFor(saved, currentPage()));
   } else {
     document.addEventListener("DOMContentLoaded", () => {
