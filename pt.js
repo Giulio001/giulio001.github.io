@@ -4,7 +4,7 @@ window.MENUX_PT = {
 "index.html": `
 <nav class="breadcrumb"><a href="index.html">Documentação</a> › Primeiros passos › Introdução</nav>
 <h1>Giuliomax Menu Builder</h1>
-<p>Bem-vindo à documentação oficial do <strong>Giuliomax Menu Builder v3.9.0</strong> — o plugin de navegação mais completo para WordPress. Com ele você cria menus responsivos, megamenus, barras de avisos, integrações com WooCommerce e muito mais, sem escrever uma linha de código.</p>
+<p>Bem-vindo à documentação oficial do <strong>Giuliomax Menu Builder v3.9.5</strong> — o plugin de navegação mais completo para WordPress. Com ele você cria menus responsivos, megamenus, barras de avisos, integrações com WooCommerce e muito mais, sem escrever uma linha de código.</p>
 
 <h2 id="o-que-e">O que é o Giuliomax Menu Builder?</h2>
 <p>O Giuliomax Menu Builder substitui o sistema de menus padrão do WordPress por uma solução moderna e altamente configurável. Você controla tudo pelo painel de administração: cores, fontes, animações, regras de visibilidade e comportamento responsivo.</p>

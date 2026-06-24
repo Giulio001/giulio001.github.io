@@ -438,7 +438,7 @@
   /* Standalone pages that live outside the sidebar manifest but DO exist in
      every language folder (e.g. comparison landings). They take part in
      language routing just like manifest pages. */
-  const EXTRA_PAGES = ['vs-max-mega-menu.html','vs-ubermenu.html'];
+  const EXTRA_PAGES = ['vs-max-mega-menu.html','vs-ubermenu.html','vs-wp-mega-menu.html','vs-quadmenu.html'];
 
   /* Each language is served from its own folder (/it/, /de/, …); English
      lives at the site root. Content is static per URL — no client-side
@@ -520,7 +520,7 @@
         <div class="sidebar-logo">
           <a href="index.html">Giuliomax Menu Builder</a>
           <div class="sidebar-logo-meta">
-            <span class="version">v3.9.0</span>
+            <span class="version">v3.9.5</span>
             <div class="lang-switch">
               <button type="button" class="lang-toggle" aria-label="Switch language">${FLAG[lang] || ''} ${NATIVE[lang] || lang.toUpperCase()} &#9662;</button>
             </div>
