@@ -435,6 +435,10 @@
 
   /* ── URL / language helpers ───────────────────────────────────────────── */
   const LANGS = ['it','de','es','nl','pt','ru','fr'];
+  /* Standalone pages that live outside the sidebar manifest but DO exist in
+     every language folder (e.g. comparison landings). They take part in
+     language routing just like manifest pages. */
+  const EXTRA_PAGES = ['vs-max-mega-menu.html','vs-ubermenu.html'];
 
   /* Each language is served from its own folder (/it/, /de/, …); English
      lives at the site root. Content is static per URL — no client-side
@@ -452,7 +456,8 @@
     return page === 'index.html' ? '/' + lang + '/' : '/' + lang + '/' + page;
   }
   function isTranslatablePage() {
-    return pages.some(p => p.href === currentPage());
+    const page = currentPage();
+    return pages.some(p => p.href === page) || EXTRA_PAGES.includes(page);
   }
   function goToLang(lang) {
     setLang(lang);
@@ -583,7 +588,7 @@
     /* Explicit language URL — respect it and remember the preference */
     setLang(here);
     document.addEventListener("DOMContentLoaded", () => init(here));
-  } else if (saved && T[saved] && saved !== 'en' && pages.some(p => p.href === currentPage())) {
+  } else if (saved && T[saved] && saved !== 'en' && isTranslatablePage()) {
     /* On the default (English) URL but the visitor has chosen another
        language before — send them to their version. Crawlers have no saved
        preference, so they never redirect and every URL stays indexable.
