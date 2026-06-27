@@ -438,7 +438,7 @@
   /* Standalone pages that live outside the sidebar manifest but DO exist in
      every language folder (e.g. comparison landings). They take part in
      language routing just like manifest pages. */
-  const EXTRA_PAGES = ['vs-max-mega-menu.html','vs-ubermenu.html','vs-wp-mega-menu.html','vs-quadmenu.html'];
+  const EXTRA_PAGES = ['comparisons.html','vs-max-mega-menu.html','vs-ubermenu.html','vs-wp-mega-menu.html','vs-quadmenu.html'];
 
   /* Each language is served from its own folder (/it/, /de/, …); English
      lives at the site root. Content is static per URL — no client-side
