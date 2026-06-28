@@ -11,7 +11,8 @@
         "Using the Plugin": "Using the Plugin",
         "Features":         "Features",
         "Tools":            "Tools",
-        "Advanced":         "Advanced"
+        "Advanced":         "Advanced",
+        "Compare":          "Compare"
       },
       labels: {
         "index.html":          "Introduction",
@@ -33,6 +34,7 @@
         "import-export.html":  "Import / Export",
         "accessibility.html":  "Accessibility",
         "multilingual.html":   "Multilingual",
+        "comparisons.html":    "vs paid plugins",
         "faq.html":            "FAQ"
       },
       onThisPage: "On this page",
@@ -56,7 +58,8 @@
         "Using the Plugin": "Uso del Plugin",
         "Features":         "Funzionalità",
         "Tools":            "Strumenti",
-        "Advanced":         "Avanzato"
+        "Advanced":         "Avanzato",
+        "Compare":          "Confronti"
       },
       labels: {
         "index.html":          "Introduzione",
@@ -78,6 +81,7 @@
         "import-export.html":  "Import / Export",
         "accessibility.html":  "Accessibilità",
         "multilingual.html":   "Multilingua",
+        "comparisons.html":    "vs plugin a pagamento",
         "faq.html":            "FAQ"
       },
       onThisPage: "In questa pagina",
@@ -100,7 +104,8 @@
         "Using the Plugin": "Plugin verwenden",
         "Features":         "Funktionen",
         "Tools":            "Werkzeuge",
-        "Advanced":         "Erweitert"
+        "Advanced":         "Erweitert",
+        "Compare":          "Vergleiche"
       },
       labels: {
         "index.html":          "Einführung",
@@ -122,6 +127,7 @@
         "import-export.html":  "Import / Export",
         "accessibility.html":  "Barrierefreiheit",
         "multilingual.html":   "Mehrsprachigkeit",
+        "comparisons.html":    "vs Premium-Plugins",
         "faq.html":            "FAQ"
       },
       onThisPage: "Auf dieser Seite",
@@ -144,7 +150,8 @@
         "Using the Plugin": "Uso del plugin",
         "Features":         "Funcionalidades",
         "Tools":            "Herramientas",
-        "Advanced":         "Avanzado"
+        "Advanced":         "Avanzado",
+        "Compare":          "Comparativas"
       },
       labels: {
         "index.html":          "Introducción",
@@ -166,6 +173,7 @@
         "import-export.html":  "Importar / Exportar",
         "accessibility.html":  "Accesibilidad",
         "multilingual.html":   "Multilingüe",
+        "comparisons.html":    "vs plugins de pago",
         "faq.html":            "Preguntas frecuentes"
       },
       onThisPage: "En esta página",
@@ -188,7 +196,8 @@
         "Using the Plugin": "Plugin gebruiken",
         "Features":         "Mogelijkheden",
         "Tools":            "Hulpmiddelen",
-        "Advanced":         "Geavanceerd"
+        "Advanced":         "Geavanceerd",
+        "Compare":          "Vergelijkingen"
       },
       labels: {
         "index.html":          "Inleiding",
@@ -210,6 +219,7 @@
         "import-export.html":  "Importeren / Exporteren",
         "accessibility.html":  "Toegankelijkheid",
         "multilingual.html":   "Meertalig",
+        "comparisons.html":    "vs betaalde plugins",
         "faq.html":            "Veelgestelde vragen"
       },
       onThisPage: "Op deze pagina",
@@ -232,7 +242,8 @@
         "Using the Plugin": "Usando o plugin",
         "Features":         "Funcionalidades",
         "Tools":            "Ferramentas",
-        "Advanced":         "Avançado"
+        "Advanced":         "Avançado",
+        "Compare":          "Comparações"
       },
       labels: {
         "index.html":          "Introdução",
@@ -254,6 +265,7 @@
         "import-export.html":  "Importar / Exportar",
         "accessibility.html":  "Acessibilidade",
         "multilingual.html":   "Multilíngue",
+        "comparisons.html":    "vs plugins pagos",
         "faq.html":            "Perguntas frequentes"
       },
       onThisPage: "Nesta página",
@@ -276,7 +288,8 @@
         "Using the Plugin": "Использование плагина",
         "Features":         "Возможности",
         "Tools":            "Инструменты",
-        "Advanced":         "Дополнительно"
+        "Advanced":         "Дополнительно",
+        "Compare":          "Сравнения"
       },
       labels: {
         "index.html":          "Введение",
@@ -298,6 +311,7 @@
         "import-export.html":  "Импорт / Экспорт",
         "accessibility.html":  "Доступность",
         "multilingual.html":   "Мультиязычность",
+        "comparisons.html":    "vs платные плагины",
         "faq.html":            "Частые вопросы"
       },
       onThisPage: "На этой странице",
@@ -321,7 +335,8 @@
         "Using the Plugin": "Utilisation de l’extension",
         "Features":         "Fonctionnalités",
         "Tools":            "Outils",
-        "Advanced":         "Avancé"
+        "Advanced":         "Avancé",
+        "Compare":          "Comparatifs"
       },
       labels: {
         "index.html":          "Introduction",
@@ -343,6 +358,7 @@
         "import-export.html":  "Import / Export",
         "accessibility.html":  "Accessibilité",
         "multilingual.html":   "Multilingue",
+        "comparisons.html":    "vs extensions payantes",
         "faq.html":            "FAQ"
       },
       onThisPage: "Sur cette page",
@@ -495,6 +511,8 @@
     { href: "accessibility.html",  label: "Accessibility" },
     { href: "multilingual.html",   label: "Multilingual" },
     { href: "faq.html",            label: "FAQ" },
+    { group: "Compare" },
+    { href: "comparisons.html",    label: "vs paid plugins" },
   ];
 
   /* ── Build sidebar HTML ───────────────────────────────────────────────── */
