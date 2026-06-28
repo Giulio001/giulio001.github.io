@@ -546,7 +546,7 @@
         <div class="sidebar-logo">
           <a href="index.html">Giuliomax Menu Builder</a>
           <div class="sidebar-logo-meta">
-            <span class="version">v3.9.5</span>
+            <span class="version">v3.9.6</span>
             <div class="lang-switch">
               <button type="button" class="lang-toggle" aria-label="Switch language">${FLAG[lang] || ''} ${NATIVE[lang] || lang.toUpperCase()} &#9662;</button>
             </div>
@@ -575,7 +575,7 @@
     html += `</nav>
     <div class="sidebar-footer">
       <a href="https://wordpress.org/plugins/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-download">&#8659; ${tr.download || 'Download Free'}</a>
-      <a href="https://wordpress.org/support/plugin/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-support">&#128172; ${tr.support || 'Get support'}</a>
+      <a href="https://wordpress.org/support/plugin/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>${tr.support || 'Get support'}</a>
     </div>`;
     return html;
   }
