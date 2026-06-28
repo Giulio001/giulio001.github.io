@@ -50,6 +50,7 @@
       next:       "Next →",
       prev:       "← Prev",
       download:   "Download Free",
+      support:    "Get support",
       installBtn: "Installation guide →",
     },
     it: {
@@ -96,6 +97,7 @@
       next:       "Successivo →",
       prev:       "← Precedente",
       download:   "Scarica gratis",
+      support:    "Richiedi supporto",
       installBtn: "Guida all'installazione →",
     },
     de: {
@@ -142,6 +144,7 @@
       next:       "Weiter →",
       prev:       "← Zurück",
       download:   "Gratis herunterladen",
+      support:    "Support erhalten",
       installBtn: "Installationsanleitung →",
     },
     es: {
@@ -188,6 +191,7 @@
       next:       "Siguiente →",
       prev:       "← Anterior",
       download:   "Descargar gratis",
+      support:    "Obtener soporte",
       installBtn: "Guía de instalación →",
     },
     nl: {
@@ -234,6 +238,7 @@
       next:       "Volgende →",
       prev:       "← Vorige",
       download:   "Gratis downloaden",
+      support:    "Ondersteuning vragen",
       installBtn: "Installatiegids →",
     },
     pt: {
@@ -280,6 +285,7 @@
       next:       "Próximo →",
       prev:       "← Anterior",
       download:   "Baixar grátis",
+      support:    "Obter suporte",
       installBtn: "Guia de instalação →",
     },
     ru: {
@@ -327,6 +333,7 @@
       next:       "Далее →",
       prev:       "← Назад",
       download:   "Скачать бесплатно",
+      support:    "Получить поддержку",
       installBtn: "Руководство по установке →",
     },
     fr: {
@@ -375,6 +382,7 @@
       next:       "Suivant →",
       prev:       "← Précédent",
       download:   "Télécharger gratuitement",
+      support:    "Obtenir de l’aide",
       installBtn: "Guide d’installation →",
     }
   };
@@ -567,6 +575,7 @@
     html += `</nav>
     <div class="sidebar-footer">
       <a href="https://wordpress.org/plugins/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-download">&#8659; ${tr.download || 'Download Free'}</a>
+      <a href="https://wordpress.org/support/plugin/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-support">&#128172; ${tr.support || 'Get support'}</a>
     </div>`;
     return html;
   }
