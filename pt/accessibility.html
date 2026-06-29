@@ -8,8 +8,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#6366f1">
-  <title>Acessibilidade — Giuliomax Menu Builder</title>
-  <meta name="description" content="O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes WCAG 2.1 nível AA e as práticas do WAI-ARIA…">
+  <title>Acessibilidade (WCAG 2.2 AA) — Giuliomax Menu Builder</title>
+  <meta name="description" content="O Giuliomax Menu Builder foi projetado para oferecer suporte ao WCAG 2.2 nível AA, com navegação completa por teclado, papéis ARIA, gerenciamento de foco e suporte a prefers-reduced-motion.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://giulio001.github.io/pt/accessibility.html">
 
@@ -27,8 +27,8 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Acessibilidade — Giuliomax Menu Builder">
-  <meta property="og:description" content="O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes WCAG 2.1 nível AA e as práticas do WAI-ARIA…">
+  <meta property="og:title" content="Acessibilidade (WCAG 2.2 AA) — Giuliomax Menu Builder">
+  <meta property="og:description" content="O Giuliomax Menu Builder foi projetado para oferecer suporte ao WCAG 2.2 nível AA, com navegação completa por teclado, papéis ARIA, gerenciamento de foco e suporte a prefers-reduced-motion.">
   <meta property="og:url" content="https://giulio001.github.io/pt/accessibility.html">
   <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
   <meta property="og:image:width" content="1200">
@@ -36,8 +36,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Acessibilidade — Giuliomax Menu Builder">
-  <meta name="twitter:description" content="O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes WCAG 2.1 nível AA e as práticas do WAI-ARIA…">
+  <meta name="twitter:title" content="Acessibilidade (WCAG 2.2 AA) — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="O Giuliomax Menu Builder foi projetado para oferecer suporte ao WCAG 2.2 nível AA, com navegação completa por teclado, papéis ARIA, gerenciamento de foco e suporte a prefers-reduced-motion.">
   <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
 
   <link rel="stylesheet" href="/style.css">
@@ -51,7 +51,13 @@
   <article>
 <nav class="breadcrumb"><a href="index.html">Documentação</a> › Avançado › Acessibilidade</nav>
 <h1>Acessibilidade</h1>
-<p>O Giuliomax Menu Builder foi desenvolvido com acessibilidade como requisito central, seguindo as diretrizes <strong>WCAG 2.1 nível AA</strong> e as práticas do <strong>WAI-ARIA Authoring Practices Guide</strong>.</p>
+<p>O Giuliomax Menu Builder foi projetado para oferecer suporte ao <strong>WCAG 2.2 nível AA</strong>, seguindo também as práticas do <strong>WAI-ARIA Authoring Practices Guide</strong>.</p>
+<div class="callout note">
+  <span class="callout-icon">&#8505;&#65039;</span>
+  <div class="callout-body">
+    <p><strong>Sobre a conformidade.</strong> Esses recursos foram desenvolvidos para oferecer suporte ao WCAG 2.2 nível AA, mas a conformidade final do seu site publicado também depende do seu conteúdo, do seu tema e de quaisquer cores personalizadas que você definir. Teste seu site com as ferramentas listadas abaixo.</p>
+  </div>
+</div>
 
 <h2 id="teclado">Navegação por teclado</h2>
 <ul>
@@ -72,7 +78,7 @@
 </ul>
 
 <h2 id="contraste">Contraste de cores</h2>
-<p>Todos os temas padrão do plugin atendem à razão mínima de contraste de <strong>4,5:1</strong> para texto normal e <strong>3:1</strong> para texto grande, conforme o critério WCAG 1.4.3. Ao criar temas personalizados, use a ferramenta de verificação de contraste integrada no painel para confirmar a conformidade.</p>
+<p>Os temas padrão do plugin foram projetados para atender à razão mínima de contraste de <strong>4,5:1</strong> para texto normal e <strong>3:1</strong> para texto grande, conforme o critério WCAG 1.4.3; cores personalizadas que você sobrescrever precisam ser verificadas novamente. Ao criar temas personalizados, use a ferramenta de verificação de contraste integrada no painel para confirmar a conformidade.</p>
 
 <h2 id="reduced-motion">Preferência por movimento reduzido</h2>
 <p>O plugin respeita automaticamente a configuração <code>prefers-reduced-motion: reduce</code> do sistema operacional do usuário:</p>

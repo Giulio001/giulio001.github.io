@@ -8,8 +8,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#6366f1">
-  <title>Toegankelijkheid — Giuliomax Menu Builder</title>
-  <meta name="description" content="Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door…">
+  <title>Toegankelijkheid (WCAG 2.2 AA) — Giuliomax Menu Builder</title>
+  <meta name="description" content="Giuliomax Menu Builder is ontworpen om WCAG 2.2 niveau AA te ondersteunen: volledige toetsenbordnavigatie, ARIA-rollen, focusbeheer en ondersteuning voor prefers-reduced-motion.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://giulio001.github.io/nl/accessibility.html">
 
@@ -27,8 +27,8 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
   <meta property="og:locale" content="nl_NL">
-  <meta property="og:title" content="Toegankelijkheid — Giuliomax Menu Builder">
-  <meta property="og:description" content="Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door…">
+  <meta property="og:title" content="Toegankelijkheid (WCAG 2.2 AA) — Giuliomax Menu Builder">
+  <meta property="og:description" content="Giuliomax Menu Builder is ontworpen om WCAG 2.2 niveau AA te ondersteunen: volledige toetsenbordnavigatie, ARIA-rollen, focusbeheer en ondersteuning voor prefers-reduced-motion.">
   <meta property="og:url" content="https://giulio001.github.io/nl/accessibility.html">
   <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
   <meta property="og:image:width" content="1200">
@@ -36,8 +36,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Toegankelijkheid — Giuliomax Menu Builder">
-  <meta name="twitter:description" content="Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door…">
+  <meta name="twitter:title" content="Toegankelijkheid (WCAG 2.2 AA) — Giuliomax Menu Builder">
+  <meta name="twitter:description" content="Giuliomax Menu Builder is ontworpen om WCAG 2.2 niveau AA te ondersteunen: volledige toetsenbordnavigatie, ARIA-rollen, focusbeheer en ondersteuning voor prefers-reduced-motion.">
   <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
 
   <link rel="stylesheet" href="/style.css">
@@ -51,10 +51,17 @@
   <article>
 <p class="breadcrumb">Geavanceerd</p>
 <h1>Toegankelijkheid</h1>
-<p class="lead">Giuliomax Menu Builder is ontwikkeld om te voldoen aan WCAG 2.2 niveau AA. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door schermlezers en beweging kan systeembreed worden uitgeschakeld.</p>
+<p class="lead">Giuliomax Menu Builder is ontworpen om WCAG 2.2 niveau AA te ondersteunen. De navigatie werkt volledig zonder muis, dropdowns worden aangekondigd door schermlezers en beweging kan systeembreed worden uitgeschakeld.</p>
+<div class="callout note">
+  <span class="callout-icon">&#8505;&#65039;</span>
+  <div class="callout-body">
+    <p><strong>Over conformiteit.</strong> Deze functies zijn ontworpen om WCAG 2.2 niveau AA te ondersteunen, maar de uiteindelijke conformiteit van je live website hangt ook af van je inhoud, je thema en eventuele aangepaste kleuren die je instelt. Test je website met de hieronder vermelde hulpmiddelen.</p>
+  </div>
+</div>
+
 <div class="on-this-page">
   <strong>Op deze pagina</strong>
-  <a href="#wcag">WCAG 2.2 AA-conformiteit</a>
+  <a href="#wcag">WCAG 2.2 AA-ondersteuning</a>
   <a href="#toetsenbord">Toetsenbordnavigatie</a>
   <a href="#aria">ARIA-attributen</a>
   <a href="#focus">Focusbeheer</a>
@@ -62,12 +69,13 @@
   <a href="#testen">Je menu testen</a>
 </div>
 
-<h2 id="wcag">WCAG 2.2 AA-conformiteit</h2>
+<h2 id="wcag">WCAG 2.2 AA-ondersteuning</h2>
+<p>De plugin is ontworpen rond de volgende WCAG 2.2-succescriteria die relevant zijn voor navigatiecomponenten:</p>
 <div class="table-wrap">
   <table>
     <thead><tr><th>Criterium</th><th>Niveau</th><th>Hoe het is geïmplementeerd</th></tr></thead>
     <tbody>
-      <tr><td>1.4.3 Contrast (minimum)</td><td>AA</td><td>Alle ingebouwde thema's worden getest op een contrastverhouding van 4,5:1 voor tekst.</td></tr>
+      <tr><td>1.4.3 Contrast (minimum)</td><td>AA</td><td>Ingebouwde thema's zijn ontworpen om een contrastverhouding van 4,5:1 te halen; aangepaste kleuroverschrijvingen moeten opnieuw worden gecontroleerd.</td></tr>
       <tr><td>2.1.1 Toetsenbord</td><td>A</td><td>Alle functionaliteit is uitsluitend met het toetsenbord te bedienen.</td></tr>
       <tr><td>2.1.2 Geen toetsenbordval</td><td>A</td><td>De focus kan het menu altijd verlaten zonder een aanwijsapparaat.</td></tr>
       <tr><td>2.4.3 Focusvolgorde</td><td>A</td><td>De focusvolgorde volgt de visuele leesvolgorde van het menu.</td></tr>

@@ -9,7 +9,7 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#6366f1">
   <title>Доступность (WCAG 2.2, уровень AA) — Документация Giuliomax Menu Builder</title>
-  <meta name="description" content="Giuliomax Menu Builder соответствует WCAG 2.2 уровня AA из коробки: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
+  <meta name="description" content="Giuliomax Menu Builder создан с расчётом на поддержку WCAG 2.2 уровня AA: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://giulio001.github.io/ru/accessibility.html">
 
@@ -28,7 +28,7 @@
   <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="Доступность (WCAG 2.2, уровень AA) — Документация Giuliomax Menu Builder">
-  <meta property="og:description" content="Giuliomax Menu Builder соответствует WCAG 2.2 уровня AA из коробки: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
+  <meta property="og:description" content="Giuliomax Menu Builder создан с расчётом на поддержку WCAG 2.2 уровня AA: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
   <meta property="og:url" content="https://giulio001.github.io/ru/accessibility.html">
   <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
   <meta property="og:image:width" content="1200">
@@ -37,7 +37,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Доступность (WCAG 2.2, уровень AA) — Документация Giuliomax Menu Builder">
-  <meta name="twitter:description" content="Giuliomax Menu Builder соответствует WCAG 2.2 уровня AA из коробки: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
+  <meta name="twitter:description" content="Giuliomax Menu Builder создан с расчётом на поддержку WCAG 2.2 уровня AA: навигация с клавиатуры, роли ARIA, управление фокусом и поддержка prefers-reduced-motion.">
   <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
 
   <link rel="stylesheet" href="/style.css">
@@ -51,11 +51,17 @@
   <article>
     <p class="breadcrumb">Дополнительно</p>
     <h1>Доступность</h1>
-    <p class="lead">Giuliomax Menu Builder создан с расчётом на соответствие WCAG 2.2 уровня AA. Навигация полностью работает без мыши, выпадающие меню озвучиваются программами чтения с экрана, а анимации можно отключить на уровне системы.</p>
+    <p class="lead">Giuliomax Menu Builder создан с расчётом на поддержку WCAG 2.2 уровня AA. Навигация полностью работает без мыши, выпадающие меню озвучиваются программами чтения с экрана, а анимации можно отключить на уровне системы.</p>
+    <div class="callout note">
+      <span class="callout-icon">&#8505;&#65039;</span>
+      <div class="callout-body">
+        <p><strong>О соответствии.</strong> Эти функции созданы с расчётом на поддержку WCAG 2.2 уровня AA, однако итоговое соответствие вашего работающего сайта зависит также от вашего контента, вашей темы и любых заданных вами собственных цветов. Проверяйте свой сайт с помощью перечисленных ниже инструментов.</p>
+      </div>
+    </div>
 
     <div class="on-this-page">
       <strong>На этой странице</strong>
-      <a href="#wcag">Соответствие WCAG 2.2 AA</a>
+      <a href="#wcag">Поддержка WCAG 2.2 AA</a>
       <a href="#keyboard">Навигация с клавиатуры</a>
       <a href="#aria">Атрибуты ARIA</a>
       <a href="#focus">Управление фокусом</a>
@@ -63,13 +69,13 @@
       <a href="#testing">Проверка вашего меню</a>
     </div>
 
-    <h2 id="wcag">Соответствие WCAG 2.2 AA</h2>
-    <p>Плагин протестирован на соответствие следующим критериям успеха WCAG 2.2, относящимся к навигационным компонентам:</p>
+    <h2 id="wcag">Поддержка WCAG 2.2 AA</h2>
+    <p>Плагин спроектирован вокруг следующих критериев успеха WCAG 2.2, относящихся к навигационным компонентам:</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Критерий</th><th>Уровень</th><th>Как выполняется</th></tr></thead>
         <tbody>
-          <tr><td>1.4.3 Контрастность (минимальная)</td><td>AA</td><td>Все встроенные темы протестированы на соответствие коэффициенту контрастности текста 4.5:1.</td></tr>
+          <tr><td>1.4.3 Контрастность (минимальная)</td><td>AA</td><td>Встроенные темы спроектированы с расчётом на коэффициент контрастности 4.5:1; собственные переопределения цветов нужно перепроверять.</td></tr>
           <tr><td>2.1.1 Клавиатура</td><td>A</td><td>Все функции доступны только с клавиатуры.</td></tr>
           <tr><td>2.1.2 Отсутствие клавиатурной ловушки</td><td>A</td><td>Фокус всегда можно вывести из меню без использования указывающего устройства.</td></tr>
           <tr><td>2.4.3 Порядок фокуса</td><td>A</td><td>Порядок фокуса соответствует визуальному порядку чтения меню.</td></tr>
