@@ -206,6 +206,16 @@ h1 { font-size: 2.1rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px;
   text-decoration: none;
 }
 
+/* ── Legal / trademark note (comparison pages) ─────────────────────────────── */
+.legal-note {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: .78rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
 /* ── Typography ────────────────────────────────────────────────────────────── */
 h2 { font-size: 1.45rem; font-weight: 700; margin: 48px 0 12px; }
 h3 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 8px; }
