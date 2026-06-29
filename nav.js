@@ -51,6 +51,7 @@
       prev:       "← Prev",
       download:   "Download Free",
       support:    "Get support",
+      trademark:  "Independent project — not affiliated with WordPress, WooCommerce or other trademarks of their respective owners.",
       installBtn: "Installation guide →",
     },
     it: {
@@ -98,6 +99,7 @@
       prev:       "← Precedente",
       download:   "Scarica gratis",
       support:    "Richiedi supporto",
+      trademark:  "Progetto indipendente — non affiliato a WordPress, WooCommerce o altri marchi dei rispettivi proprietari.",
       installBtn: "Guida all'installazione →",
     },
     de: {
@@ -145,6 +147,7 @@
       prev:       "← Zurück",
       download:   "Gratis herunterladen",
       support:    "Support erhalten",
+      trademark:  "Unabhängiges Projekt — nicht mit WordPress, WooCommerce oder anderen Marken der jeweiligen Inhaber verbunden.",
       installBtn: "Installationsanleitung →",
     },
     es: {
@@ -192,6 +195,7 @@
       prev:       "← Anterior",
       download:   "Descargar gratis",
       support:    "Obtener soporte",
+      trademark:  "Proyecto independiente: sin afiliación con WordPress, WooCommerce u otras marcas de sus respectivos propietarios.",
       installBtn: "Guía de instalación →",
     },
     nl: {
@@ -239,6 +243,7 @@
       prev:       "← Vorige",
       download:   "Gratis downloaden",
       support:    "Ondersteuning vragen",
+      trademark:  "Onafhankelijk project — niet gelieerd aan WordPress, WooCommerce of andere merken van hun respectieve eigenaren.",
       installBtn: "Installatiegids →",
     },
     pt: {
@@ -286,6 +291,7 @@
       prev:       "← Anterior",
       download:   "Baixar grátis",
       support:    "Obter suporte",
+      trademark:  "Projeto independente — sem afiliação com WordPress, WooCommerce ou outras marcas dos respectivos proprietários.",
       installBtn: "Guia de instalação →",
     },
     ru: {
@@ -334,6 +340,7 @@
       prev:       "← Назад",
       download:   "Скачать бесплатно",
       support:    "Получить поддержку",
+      trademark:  "Независимый проект — не связан с WordPress, WooCommerce и другими торговыми марками их владельцев.",
       installBtn: "Руководство по установке →",
     },
     fr: {
@@ -383,6 +390,7 @@
       prev:       "← Précédent",
       download:   "Télécharger gratuitement",
       support:    "Obtenir de l’aide",
+      trademark:  "Projet indépendant — sans affiliation avec WordPress, WooCommerce ou d’autres marques de leurs propriétaires respectifs.",
       installBtn: "Guide d’installation →",
     }
   };
@@ -546,7 +554,7 @@
         <div class="sidebar-logo">
           <a href="index.html">Giuliomax Menu Builder</a>
           <div class="sidebar-logo-meta">
-            <span class="version">v3.9.6</span>
+            <span class="version">v3.9.7</span>
             <div class="lang-switch">
               <button type="button" class="lang-toggle" aria-label="Switch language">${FLAG[lang] || ''} ${NATIVE[lang] || lang.toUpperCase()} &#9662;</button>
             </div>
@@ -576,6 +584,7 @@
     <div class="sidebar-footer">
       <a href="https://wordpress.org/plugins/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-download">&#8659; ${tr.download || 'Download Free'}</a>
       <a href="https://wordpress.org/support/plugin/giuliomax-menu-builder/" target="_blank" rel="noopener" class="sidebar-support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>${tr.support || 'Get support'}</a>
+      <p class="sidebar-legal">${tr.trademark || ''}</p>
     </div>`;
     return html;
   }

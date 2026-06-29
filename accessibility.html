@@ -8,8 +8,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#6366f1">
-  <title>Accessibility (WCAG 2.2 Level AA) — Giuliomax Menu Builder Docs</title>
-  <meta name="description" content="Giuliomax Menu Builder meets WCAG 2.2 Level AA out of the box: full keyboard navigation, ARIA roles, focus management, and prefers-reduced-motion support.">
+  <title>Accessibility (WCAG 2.2 AA) — Giuliomax Menu Builder Docs</title>
+  <meta name="description" content="Giuliomax Menu Builder is designed to support WCAG 2.2 Level AA: full keyboard navigation, ARIA roles, focus management, and prefers-reduced-motion support.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://giulio001.github.io/accessibility.html">
 
@@ -27,8 +27,8 @@
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Giuliomax Menu Builder Docs">
   <meta property="og:locale" content="en_GB">
-  <meta property="og:title" content="Accessibility (WCAG 2.2 Level AA) — Giuliomax Menu Builder Docs">
-  <meta property="og:description" content="Giuliomax Menu Builder meets WCAG 2.2 Level AA out of the box: full keyboard navigation, ARIA roles, focus management, and prefers-reduced-motion support.">
+  <meta property="og:title" content="Accessibility (WCAG 2.2 AA) — Giuliomax Menu Builder Docs">
+  <meta property="og:description" content="Giuliomax Menu Builder is designed to support WCAG 2.2 Level AA: full keyboard navigation, ARIA roles, focus management, and prefers-reduced-motion support.">
   <meta property="og:url" content="https://giulio001.github.io/accessibility.html">
   <meta property="og:image" content="https://giulio001.github.io/assets/img/og-cover.png">
   <meta property="og:image:width" content="1200">
@@ -36,8 +36,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Accessibility (WCAG 2.2 Level AA) — Giuliomax Menu Builder Docs">
-  <meta name="twitter:description" content="Giuliomax Menu Builder meets WCAG 2.2 Level AA out of the box: full keyboard navigation, ARIA roles, focus management, and prefers-reduced-motion support.">
+  <meta name="twitter:title" content="Accessibility (WCAG 2.2 AA) — Giuliomax Menu Builder Docs">
+  <meta name="twitter:description" content="Giuliomax Menu Builder is designed to support WCAG 2.2 Level AA: full keyboard navigation, ARIA roles, focus management, and prefers-reduced-motion support.">
   <meta name="twitter:image" content="https://giulio001.github.io/assets/img/og-cover.png">
 
   <link rel="stylesheet" href="style.css">
@@ -59,11 +59,17 @@
   <article>
     <p class="breadcrumb">Advanced</p>
     <h1>Accessibility</h1>
-    <p class="lead">Giuliomax Menu Builder is built to meet WCAG 2.2 Level AA. Navigation works fully without a mouse, dropdowns are announced to screen readers, and motion can be disabled system-wide.</p>
+    <p class="lead">Giuliomax Menu Builder is designed to support WCAG 2.2 Level AA. Navigation works fully without a mouse, dropdowns are announced to screen readers, and motion can be disabled system-wide.</p>
+    <div class="callout note">
+      <span class="callout-icon">&#8505;&#65039;</span>
+      <div class="callout-body">
+        <p><strong>About conformance.</strong> These features are built to support WCAG 2.2 Level AA, but the final conformance of your live site also depends on your content, your theme, and any custom colors you set. Test your site with the tools listed below.</p>
+      </div>
+    </div>
 
     <div class="on-this-page">
       <strong>On this page</strong>
-      <a href="#wcag">WCAG 2.2 AA compliance</a>
+      <a href="#wcag">WCAG 2.2 AA support</a>
       <a href="#keyboard">Keyboard navigation</a>
       <a href="#aria">ARIA attributes</a>
       <a href="#focus">Focus management</a>
@@ -71,13 +77,13 @@
       <a href="#testing">Testing your menu</a>
     </div>
 
-    <h2 id="wcag">WCAG 2.2 AA compliance</h2>
-    <p>The plugin is tested against the following WCAG 2.2 success criteria relevant to navigation components:</p>
+    <h2 id="wcag">WCAG 2.2 AA support</h2>
+    <p>The plugin is designed around the following WCAG 2.2 success criteria relevant to navigation components:</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Criterion</th><th>Level</th><th>How it is met</th></tr></thead>
         <tbody>
-          <tr><td>1.4.3 Contrast (Minimum)</td><td>AA</td><td>All built-in themes are tested to meet a 4.5:1 contrast ratio for text.</td></tr>
+          <tr><td>1.4.3 Contrast (Minimum)</td><td>AA</td><td>Built-in themes are designed to meet a 4.5:1 contrast ratio; custom color overrides must be re-checked.</td></tr>
           <tr><td>2.1.1 Keyboard</td><td>A</td><td>All functionality is operable via keyboard alone.</td></tr>
           <tr><td>2.1.2 No Keyboard Trap</td><td>A</td><td>Focus can always leave the menu without using a pointing device.</td></tr>
           <tr><td>2.4.3 Focus Order</td><td>A</td><td>Focus order follows the visual reading order of the menu.</td></tr>
