@@ -213,6 +213,14 @@ h1 { font-size: 2.1rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px;
   opacity: .7;
 }
 
+/* ── Comparison table legend ───────────────────────────────────────────────── */
+.table-legend {
+  font-size: .8rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
 /* ── Legal / trademark note (comparison pages) ─────────────────────────────── */
 .legal-note {
   margin-top: 36px;
