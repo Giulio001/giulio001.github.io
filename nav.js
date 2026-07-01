@@ -51,7 +51,7 @@
       prev:       "← Prev",
       download:   "Download Free",
       support:    "Get support",
-      trademark:  "Independent project — not affiliated with WordPress, WooCommerce or other trademarks of their respective owners.",
+      trademark:  "Independent project, not affiliated with WordPress, WooCommerce, or any other trademarks mentioned. All trademarks belong to their respective owners.",
       installBtn: "Installation guide →",
     },
     it: {
@@ -195,7 +195,7 @@
       prev:       "← Anterior",
       download:   "Descargar gratis",
       support:    "Obtener soporte",
-      trademark:  "Proyecto independiente: sin afiliación con WordPress, WooCommerce u otras marcas de sus respectivos propietarios.",
+      trademark:  "Proyecto independiente — sin afiliación con WordPress, WooCommerce u otras marcas de sus respectivos propietarios.",
       installBtn: "Guía de instalación →",
     },
     nl: {
@@ -390,7 +390,7 @@
       prev:       "← Précédent",
       download:   "Télécharger gratuitement",
       support:    "Obtenir de l’aide",
-      trademark:  "Projet indépendant — sans affiliation avec WordPress, WooCommerce ou d’autres marques de leurs propriétaires respectifs.",
+      trademark:  "Projet indépendant, non affilié à WordPress, WooCommerce ni à aucune autre marque citée, qui restent la propriété de leurs détenteurs respectifs.",
       installBtn: "Guide d’installation →",
     }
   };
